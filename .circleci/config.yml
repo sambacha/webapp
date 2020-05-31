@@ -1,24 +1,24 @@
 version: 2
 jobs:
-  build:
+  test:
     docker:
       - image: circleci/node:10
-    working_directory: ~/gatsby-site
+    working_directory: ~/repo
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            # Find a cache corresponding to this specific package-lock.json
-            - v1-npm-deps-{{ checksum "package-lock.json" }}
-            # Fallback cache to be used
-            - v1-npm-deps-
       - run:
-          name: Install Dependencies
-          command: npm install
-      - save_cache:
-          key: v1-npm-deps-{{ checksum "package-lock.json" }}
-          paths:
-            - ./node_modules
+          name: Install yarn
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.15.2
+            export PATH=$HOME/.yarn/bin:$PATH
+      - run: yarn install --offline --frozen-lockfile
       - run:
-          name: Gatsby Build
-          command: npm run build
+          name: Run ci checks
+          command: yarn ci-check
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - test
+Terms
