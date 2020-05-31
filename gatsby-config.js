@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Theme Carbon',
-    description: 'A Gatsby theme for the carbon design system',
-    keywords: 'gatsby,theme,carbon',
+    title: 'Freight Trust & Clearing',
+    description: 'Enterprise EDI Smart Contract Network for Supply Chains',
+    keywords: 'blockchain,edi,smart contracts,trade',
   },
   pathPrefix: `/gtc`,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Carbon Design Gatsby Theme',
-        short_name: 'Gatsby Theme Carbon',
+        name: 'Freight Trust & Clearing Network',
+        short_name: 'Freight Trust Network',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#0062ff',
