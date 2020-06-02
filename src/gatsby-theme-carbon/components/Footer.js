@@ -86,7 +86,17 @@ const CustomFooter = ({homepage}) => (
         <p>tel:(628) 222 - 5915</p>
         <p>fax:(818) 457 - 5660</p>
       </Column>
-      <Column colMd={6} colLg={6}>
+      <Column colMd={2} colLg={2}></Column>
+      <Column colMd={2} colLg={2}>
+        <a href="https://twitter.com/freighttrustnet">Twitter</a>
+        <a href="#top">Linkedin</a>
+        <a href="#top">Medium</a>
+        <a href="https://t.me/freighttrust">Telegram</a>
+      </Column>
+      <Column colMd={2} colLg={2}>
+        <a href="https://github.com/freight-chain">Github</a>
+        <a href="#top">Gitlab</a>
+        <a href="#top">Docker</a>
       </Column>
     </Row>
 
