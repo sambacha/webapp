@@ -59,6 +59,7 @@ $carbon--theme: $carbon--theme--g90;
   @include carbon--type-style('body-short-01');
   margin-top: $spacing-04;
   margin-left: $spacing-04;
+  margin-right: $spacing-04;
 }
 
 .footerContent h5 {
@@ -131,6 +132,10 @@ $carbon--theme: $carbon--theme--g90;
 .footerButtonCol div {
   width: 100%;
   display: inline-block;
+}
+
+.footerDiectoryRow {
+  padding-top: $layout-01;
 }
 
 @media (max-width: 673px) {

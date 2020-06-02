@@ -6,6 +6,7 @@ import {
   footerLinkCol,
   footerButtonCol,
   footerLastRow,
+  footerDiectoryRow,
   footerFollowSection,
 } from "./Footer.module.scss";
 import { Button } from "carbon-components-react";
@@ -15,7 +16,7 @@ import cx from 'classnames';
 const CustomFooter = ({homepage}) => (
   <div className={cx(footerContent, { [footerContentDefault]: !homepage })}>
     <Row className={footerRow}>
-      <Column colMd={3} colLg={3} colXl={3}>
+      <Column colMd={3} colLg={3} colXl={3} className={footerLinkCol}>
         <h1>FREIGHT TRUST</h1>
       </Column>
       <Column colMd={7} colLg={7} colXl={8}>
@@ -75,6 +76,17 @@ const CustomFooter = ({homepage}) => (
         <div>
           <Button kind="tertiary">Log In</Button>
         </div>
+      </Column>
+    </Row>
+
+    <Row className={footerDiectoryRow}>
+      <Column colMd={6} colLg={6}>
+        <p>Address: 1424 4TH ST, STE 214 PMB 1513, SANTA MONICA, California, US, 90401</p>
+        <p>LEI: 254900C9UJMDGJ0ILK56</p>
+        <p>tel:(628) 222 - 5915</p>
+        <p>fax:(818) 457 - 5660</p>
+      </Column>
+      <Column colMd={6} colLg={6}>
       </Column>
     </Row>
 
