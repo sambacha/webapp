@@ -9,7 +9,6 @@ const Default = ({ pageContext, children, location, Title }) => {
   const { frontmatter = {}, relativePagePath, titleType } = pageContext;
   const { tabs, title, theme, description, keywords } = frontmatter;
 
-  console.log('Default', title, Title, pageContext, frontmatter)
   return (
     <Layout
       tabs={tabs}
