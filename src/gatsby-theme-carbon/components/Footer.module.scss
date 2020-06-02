@@ -110,15 +110,22 @@ $carbon--theme: $carbon--theme--g90;
 .footerLastRow {
   padding-top: $spacing-06;
   padding-bottom: $spacing-08;
+
+  span {
+    margin-right: $spacing-06;
+  }
 }
 
 .footerFollowSection{
+  height: 100%;
   display: flex;
   align-items: flex-end;
 }
 
 .footerFollowSection p {
-  float: right;
+  // float: right;
+  width: 100%;
+  text-align: right;
 }
 
 .footerButtonCol div {
@@ -135,5 +142,11 @@ $carbon--theme: $carbon--theme--g90;
   .footerButtonCol {
     margin-top: $layout-03;
     display: flex;
+  }
+
+  .footerFollowSection p {
+    // float: right;
+    width: 100%;
+    text-align: left;
   }
 }
