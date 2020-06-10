@@ -9,7 +9,7 @@ const Switcher = ({ children }) => {
   return (
     <nav
       className={cx(nav, { [open]: switcherIsOpen })}
-      aria-label="IBM Design ecosystem navigation"
+      aria-label="Freight Trust & Clearing"
       aria-expanded={switcherIsOpen}
       tabIndex="-1"
     >
@@ -56,7 +56,7 @@ const DefaultChildren = () => {
 
   return (
     <>
-      <SwitcherLink href="#top">Managed EDI</SwitcherLink>
+      <SwitcherLink href="#top">Marketplace</SwitcherLink>
       <SwitcherLink href="#top">Solutions</SwitcherLink>
       <SwitcherLink href="#top">Blockchain</SwitcherLink>
       <SwitcherLink href="#top">Corporate</SwitcherLink>

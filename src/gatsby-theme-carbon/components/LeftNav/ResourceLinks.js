@@ -11,8 +11,8 @@ const links = [
     href: 'https://github.com/freight-chain',
   },
   {
-    title: 'Telegram',
-    href: 'https://t.me/freighttrust',
+    title: 'Contact',
+    href: 'https://freight.page.link/demo',
   },
 ];
 
