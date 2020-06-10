@@ -44,7 +44,7 @@ const Header = ({ children }) => {
             className={navLink}
             to="/freight"
           >
-            EDI
+            Solutions
           </Link>
           <Link
             className={navLink}
@@ -62,7 +62,7 @@ const Header = ({ children }) => {
             className={navLink}
             to="/"
           >
-            Solutions
+            Marketplace
           </Link>
           <Link
             className={navLink}
@@ -95,7 +95,7 @@ const Header = ({ children }) => {
 
 const DefaultHeaderText = () => (
   <>
-    Carbon&nbsp;<span>Design System</span>
+    Freight Trust<span>& Clearing</span>
   </>
 );
 

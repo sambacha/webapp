@@ -81,22 +81,22 @@ const CustomFooter = ({homepage}) => (
 
     <Row className={footerDiectoryRow}>
       <Column colMd={6} colLg={6}>
-        <p>Address: 1424 4TH ST, STE 214 PMB 1513, SANTA MONICA, California, US, 90401</p>
+        <p>Address: 1424 4TH ST Santa Monica, CA</p>
         <p>LEI: 254900C9UJMDGJ0ILK56</p>
-        <p>tel:(628) 222 - 5915</p>
-        <p>fax:(818) 457 - 5660</p>
+        <p>support@freight.zendesk.com</p>
+        <p></p>
       </Column>
       <Column colMd={2} colLg={2}></Column>
       <Column colMd={2} colLg={2}>
         <a href="https://twitter.com/freighttrustnet">Twitter</a>
         <a href="#top">Linkedin</a>
-        <a href="#top">Medium</a>
+        <a href="https://medium.com/freighttrust">Medium</a>
         <a href="https://t.me/freighttrust">Telegram</a>
       </Column>
       <Column colMd={2} colLg={2}>
-        <a href="https://github.com/freight-chain">Github</a>
-        <a href="#top">Gitlab</a>
-        <a href="#top">Docker</a>
+        <a href="https://github.com/freight-chain">GitHub Community</a>
+        <a href="https://gitlab.com/fr8">GitLab Devops</a>
+        <a href="https://hub.docker.com/r/freightcorp">Docker</a>
       </Column>
     </Row>
 

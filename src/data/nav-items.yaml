@@ -1,36 +1,18 @@
-- title: Managed EDI
+- title: Features
   pages:
     - path: /
-- title: Freight
+- title: Solutions
   pages:
-    - path: /freight
-- title: GLOBAL
+    - path: /solutions
+- title: Marketplace
+  pages:
+    - title: Marketplace Integrations
+      path: /marketplace
+- title: Corporate
+  pages:
+    - title: Corporate Information
+      path: /corporate
+- title: Data
   pages:
     - title: Global Container Index
       path: /freight
-- title: PACIFIC
-  pages:
-    - title: China/East Asia to North America West Coast
-      path: /freight
-    - title: North America West Coast to China/East Asia
-      path: /freight
-    - title: China/East Asia to North America East Coast
-      path: /freight
-    - title: North America East Coast  to China/East Asia
-      path: /freight
-- title: SUEZ
-  pages:
-    - title: China/East Asia to North America East Coast
-      path: /freight
-    - title: North America East Coast  to China/East Asia
-      path: /freight
-
-- title: ATLANTIC
-  pages:
-    - title: North America West Coast to China/East Asia
-      path: /freight
-    - title: China/East Asia to North America East Coast
-      path: /freight
-    - title: North America East Coast  to China/East Asia
-      path: /freight
-
