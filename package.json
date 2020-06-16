@@ -13,18 +13,12 @@
     "build:analyze": "ANALYZE=true yarn build"
   },
   "dependencies": {
-    "@babel/core": "^7.0.0",
-    "core-js": "^3",
     "gatsby": "^2.19.0",
     "gatsby-theme-carbon": "^1.22.1",
-    "netlify": "^4.3.0",
-    "react": "16.8.1",
-    "react-dom": "16.8.1",
-    "react-refresh": "^0.8.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-responsive": "^8.0.3",
-    "recharts": "^1.8.5",
-    "typescript": "^3.9.5",
-    "webpack": "^4",
-    "yup": "^0.27.0"
+    "react-use-auth": "^0.7.5",
+    "recharts": "^1.8.5"
   }
 }
