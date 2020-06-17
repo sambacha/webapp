@@ -1,17 +1,21 @@
 import React, { useEffect } from "react";
  
 import { useAuth } from "react-use-auth";
+import Layout from 'gatsby-theme-carbon/src/components/Layout';
  
 const Auth0CallbackPage = () => {
     const { handleAuthentication } = useAuth();
     useEffect(() => {
         handleAuthentication();
-    });
+    }, []);
  
     return (
-      <h1 style={{width: '100%', textAlign: 'center', marginTop: '200px'}}>
-          Redirecting...
-      </h1>
+        <Layout>
+            <h1>
+                This is the auth callback page, you should be redirected
+                immediately.
+            </h1>
+        </Layout>
     );
 };
  

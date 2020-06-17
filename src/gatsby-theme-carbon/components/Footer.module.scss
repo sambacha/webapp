@@ -102,6 +102,9 @@ $carbon--theme: $carbon--theme--g90;
 
 .footerLinkCol {
   display: flex;
+  h1 {
+    padding-left: $spacing-05;
+  }
 }
 
 .footerRow > div {
