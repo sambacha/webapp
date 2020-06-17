@@ -20,7 +20,7 @@ const CustomFooter = ({ homepage }) => {
     <div className={cx(footerContent, { [footerContentDefault]: !homepage })}>
       <Row className={footerRow}>
         <Column colMd={3} colLg={3} colXl={3} className={footerLinkCol}>
-          <h1>FREIGHT TRUST</h1>
+          <h1>Freight Trust & Clearing</h1>
         </Column>
         <Column colMd={7} colLg={7} colXl={8}>
           <div className={footerLinkCol}>
@@ -101,7 +101,7 @@ const CustomFooter = ({ homepage }) => {
           <a href="https://t.me/freighttrust">Telegram</a>
         </Column>
         <Column colMd={2} colLg={2}>
-          <a href="https://github.com/freight-chain">GitHub Community</a>
+          <a href="https://github.com/freight-trust">GitHub</a>
           <a href="https://gitlab.com/fr8">GitLab Devops</a>
           <a href="https://hub.docker.com/r/freightcorp">Docker</a>
         </Column>
