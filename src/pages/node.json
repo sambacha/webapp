@@ -1,0 +1,5 @@
+[
+    {"Category":"Nodes","Item":"Authority,Validator,Failover"},
+    {"Category":"Nodlet","Item":"query,sync,transaction"},
+    {"Category":"Staking","Item":"Operator,Pool"}
+]

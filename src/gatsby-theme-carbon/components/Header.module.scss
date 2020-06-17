@@ -1,14 +1,17 @@
 @import '~carbon-components/scss/globals/scss/layout';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;600;700&display=swap');
 
 .header button {
   display: flex;
   justify-content: center;
+  font-family: 'IBM Plex Sans', sans-serif;
   align-items: center;
 }
 
 header.header {
   background-color: $ui-05;
   border-bottom: 1px solid $inverse-02;
+  font-family: 'IBM Plex Sans', sans-serif;
   z-index: z('floating');
 }
 
@@ -53,6 +56,7 @@ header.header {
 
 .headerName {
   @include carbon--type-style('body-short-02');
+  font-family: 'IBM Plex Sans', sans-serif;
   transition: opacity $duration--fast-02 $carbon--standard-easing;
   color: $inverse-01;
   text-decoration: none;
@@ -127,6 +131,7 @@ header.header {
   margin-left: 32px; 
   text-decoration: none;
   font-size: 14px;
+  font-family: 'IBM Plex Sans', sans-serif;
   line-height: 24px;
   letter-spacing: 0.16px;
   
