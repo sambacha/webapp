@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Freight Trust & Clearing Corporation',
-    description: 'Digital Freight & Compliance EDI Network',
+    description: 'Blockchain Powered EDI for Supply Chain, Trade Finance & Logistics',
     keywords: 'edi,logistics,supply chain,customs,trade,freight',
   },
   pathPrefix: `/gtc`,

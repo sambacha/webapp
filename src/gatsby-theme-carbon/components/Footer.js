@@ -26,22 +26,22 @@ const CustomFooter = ({ homepage }) => {
           <div className={footerLinkCol}>
             <div>
               <h5>Product</h5>
-              <a href="/freight">EDI/API Logs and Metrics</a>
-              <a href="/freight">EDI/API Monitoring</a>
-              <a href="/freight">Embedded Logs</a>
-              <a href="/freight">GraphQL Analytics</a>
-              <a href="/freight">Extensions</a>
-              <a href="/freight">Infrastructure</a>
+              <a href="/freight">EDI & XML</a>
+              <a href="/freight">RESTful API</a>
+              <a href="/freight">SOAP & WSDL</a>
+              <a href="/freight">Inflight Mapping</a>
+              <a href="/freight">Inflight Parser</a>
+              <a href="/freight">AS2/OFTP2</a>
               <a href="/freight">Customs and Tariffs</a>
-              <a href="/freight">IFTA and SAFER</a>
+              <a href="/freight">Digital Legal Parity</a>
             </div>
             <div>
               <h5>Corporate</h5>
               <a href="/freight">About Us</a>
               <a href="/freight">Press</a>
               <a href="/freight">Customers</a>
-              <a href="/freight">Careers</a>
-              <a href="/freight">Blog</a>
+              <a href="/freight">Branding</a>
+              <a href="/freight">Whitepapers</a>
               <a href="/freight">System Status</a>
               <a href="/freight">Security & Compliance</a>
             </div>
@@ -50,7 +50,7 @@ const CustomFooter = ({ homepage }) => {
               <a href="/freight">Trucking</a>
               <a href="/freight">Maritime</a>
               <a href="/freight">Intermodal</a>
-              <a href="/freight">NVOCCs</a>
+              <a href="/freight">Finance</a>
             </div>
             <div>
               <h5>Resources</h5>
