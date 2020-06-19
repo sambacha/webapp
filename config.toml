@@ -1,0 +1,26 @@
+[netlify]
+  base = "."
+  command = "yarn clean && gatsby build"
+  publish = "public"
+
+[build]
+    command = "gatsby build"
+
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = false
+[build.processing.js]
+  bundle = true
+  minify = false
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true   
+   
+[context.staging]   
+  command = "yarn clean && gatsby build"
+
+[serve]
+  command = "gatsby serve" 

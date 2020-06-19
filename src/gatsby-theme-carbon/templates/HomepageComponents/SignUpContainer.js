@@ -12,7 +12,7 @@ export const SignUpContainer = ({
     <h2>{subTitle}</h2>
         
     <div className={signupForm}>
-      <h3>Sign up for a free account</h3>
+      <h3>Special Pricing Available</h3>
       <Row>
         <Column colMd={12} colLg={6} className={signupRow}>
           <TextInput placeholder="First Name" labelText="" id="first-name" />
@@ -30,7 +30,7 @@ export const SignUpContainer = ({
         </Column>
 
         <Column colMd={12} colLg={12} className={signupRow}>
-          <Button>Register</Button>
+          <Button>Request Information</Button>
         </Column>
       </Row>
     </div>

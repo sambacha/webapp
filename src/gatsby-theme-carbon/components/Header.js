@@ -44,19 +44,19 @@ const Header = ({ children }) => {
             className={navLink}
             to="/freight"
           >
+            Products
+          </Link>
+          <Link
+            className={navLink}
+            to="/"
+          >
             Solutions
           </Link>
           <Link
             className={navLink}
             to="/"
           >
-            Features
-          </Link>
-          <Link
-            className={navLink}
-            to="/"
-          >
-            Integrations
+            Partners
           </Link>
           <Link
             className={navLink}
