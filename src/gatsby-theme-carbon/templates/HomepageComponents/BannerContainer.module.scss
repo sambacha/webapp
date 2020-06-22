@@ -6,20 +6,28 @@ $carbon--theme: $carbon--theme--g90;
 
 .bannerContainer {
   background: #000;
-  padding: $layout-04 $layout-02;
+  height: 100vh;
+  padding: 0 $layout-02;
+  padding-top: 30%;
   color: $text-04;
+  position: relative;
 
   @include carbon--breakpoint('md') {
-    padding: $layout-07 $layout-06;
+    padding: 0 $layout-06;
   }
 
   @include carbon--breakpoint('lg') {
-    padding: $layout-07 $layout-06;
+    padding: 0 $layout-06;
   }
+}
+
+.banner {
+  padding-top: 40%
 }
 
 .banner h1 {
   @include carbon--type-style('productive-heading-07');
+  color: $interactive-04;
 }
 
 .banner p {
@@ -37,4 +45,11 @@ $carbon--theme: $carbon--theme--g90;
   @include carbon--breakpoint('lg') {
     margin-bottom: 0px;
   }
+}
+
+.bannerImage {
+  width: 90vw;
+  position: absolute;
+  right: 0;
+  opacity: 0.6;
 }

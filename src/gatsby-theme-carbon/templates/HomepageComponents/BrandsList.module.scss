@@ -17,6 +17,17 @@ $carbon--theme: $carbon--theme--g90;
   @include carbon--breakpoint('lg') {
     padding: $layout-05 $layout-07 !important;
   }
+
+  a {
+    width: 150px;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    @include carbon--type-style('productive-heading-02');
+  }
 }
 
 .brands-content a {
@@ -26,6 +37,7 @@ $carbon--theme: $carbon--theme--g90;
 .brands-content h1 {
   text-align: center;
   @include carbon--type-style('productive-heading-04');
+  text-shadow: 2px 2px 8px #FFFFFF;
 }
 
 .brands-content p {
