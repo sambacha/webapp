@@ -52,4 +52,16 @@ $carbon--theme: $carbon--theme--g90;
   position: absolute;
   right: 0;
   opacity: 0.6;
+
+  @include carbon--breakpoint('lg') {
+    width: 80vw;
+  }
+
+  @include carbon--breakpoint('xlg') {
+    width: 80vw;
+  }
+
+  @include carbon--breakpoint('max') {
+    width: 70vw;
+  }
 }
