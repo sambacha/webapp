@@ -20,6 +20,14 @@ $carbon--theme: $carbon--theme--g90;
   .articleCardImage {
     border-radius: 50%;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-    margin-bottom: $spacing-06;
+    margin: auto;
+    margin-bottom: $spacing-09;
+    max-width: 320px;
+    transition: transform .1s;
+    cursor: pointer;
+  }
+
+  .articleCardImage:hover {
+    transform: scale(1.2);
   }
 }
