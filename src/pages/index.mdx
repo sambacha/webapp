@@ -6,6 +6,7 @@ description: Seamless Trade & Compliance for Supply Chains, Trade Finance & Logi
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 import {
   ArticleContainer,
+  CustomArticleCard,
   BrandsList,
   SnapContent,
   SnapCard,
@@ -20,7 +21,7 @@ export default HomepageTemplate;
 
 <BannerContainer 
   title="Unified Supply Chain Orchestration"
-  content="Seamless Trade, Compliance and Visability"
+  content="Seamless Trade, Compliance and Visibility"
   buttonLabel="Get Started Today"
 >
 
@@ -34,32 +35,32 @@ export default HomepageTemplate;
   >
   <Row>
     <Column colMd={2} colLg={2}>
-      <Button kind="secondary" href="#top">
+      <Button kind="primary" href="#top">
         RESTful API
       </Button>
     </Column>
     <Column colMd={2} colLg={2}>
-      <Button kind="secondary" href="#top">
+      <Button kind="primary" href="#top">
         EDINT AS2/AS4
       </Button>
     </Column>
     <Column colMd={2} colLg={2}>
-      <Button kind="secondary" href="#top">
+      <Button kind="primary" href="#top">
         IBM MQ
       </Button>
     </Column>
     <Column colMd={2} colLg={2}>
-      <Button kind="secondary" href="#top">
+      <Button kind="primary" href="#top">
         FIX Protocol
       </Button>
     </Column>
     <Column colMd={2} colLg={2}>
-      <Button kind="secondary" href="#top">
+      <Button kind="primary" href="#top">
         SOAP XML/JSON
       </Button>
     </Column>
     <Column colMd={2} colLg={2}>
-      <Button kind="secondary" href="#top">
+      <Button kind="primary" href="#top">
         RosettaNet
       </Button>
     </Column>
@@ -106,31 +107,34 @@ export default HomepageTemplate;
 >
 <Row>
 <Column colMd={4} colLg={4}>
-    <ArticleCard
+    <CustomArticleCard
       subTitle="Communication"
       title="Managed Connectivity"
       color="dark"
+      imgSrc="https://www.xeneta.com/hubfs/Xeneta_2020_website_assets/Images/Illustration_freight_shippers.png"
       >
 
-  </ArticleCard>
+  </CustomArticleCard>
 </Column>
 <Column colMd={4} colLg={4}>
-    <ArticleCard
+    <CustomArticleCard
       subTitle="Partners"
       title="Network of Networks"
       color="dark"
+      imgSrc="https://www.xeneta.com/hubfs/Xeneta_2020_website_assets/Images/Illustration_freight_forwarders.png"
       >
 
-  </ArticleCard>
+  </CustomArticleCard>
 </Column>
 <Column colMd={4} colLg={4}>
-    <ArticleCard
+    <CustomArticleCard
       subTitle="Data Formats & Standards"
       title="Open Source"
       color="dark"
+      imgSrc="https://www.xeneta.com/hubfs/Xeneta_2020_website_assets/Images/Illustration_carriers.png"
       >
 
-  </ArticleCard>
+  </CustomArticleCard>
 </Column>
 </Row>
 </ArticleContainer>

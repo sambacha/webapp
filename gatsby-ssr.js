@@ -1,7 +1,6 @@
 import './src/styles/index.scss';
 import React from "react";
 import { navigate } from "gatsby";
- 
 import { AuthProvider } from "react-use-auth";
  
 export const wrapRootElement = ({ element }) => (

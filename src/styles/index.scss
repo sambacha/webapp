@@ -26,3 +26,11 @@ $carbon--theme: $carbon--theme--g90;
 .container:not(.container--homepage) .bx--grid {
   max-width: unset;
 }
+
+.container--homepage {
+  margin-top: 0px;
+}
+
+.bx--btn {
+  padding-right: 12px;
+}

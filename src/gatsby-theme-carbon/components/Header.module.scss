@@ -9,8 +9,9 @@
 }
 
 header.header {
-  background-color: $ui-05;
-  border-bottom: 1px solid $inverse-02;
+  // background-color: $ui-05;
+  // border-bottom: 1px solid $inverse-02;
+  background-color: rgba($color: $ui-05, $alpha: 0.5);
   font-family: 'IBM Plex Sans', sans-serif;
   z-index: z('floating');
 }
@@ -58,23 +59,25 @@ header.header {
   @include carbon--type-style('body-short-02');
   font-family: 'IBM Plex Sans', sans-serif;
   transition: opacity $duration--fast-02 $carbon--standard-easing;
-  color: $inverse-01;
+  color: $ui-02;
   text-decoration: none;
   position: absolute;
-  left: 0;
+  left: $layout-06;
   white-space: nowrap;
-  padding: 0 $spacing-05;
+  // padding: 0 $spacing-05;
   height: 3rem;
   border-top: 1px solid transparent;
   display: flex;
   align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
   &:focus {
     outline: 2px solid $inverse-01;
     outline-offset: -2px;
   }
 
   @include carbon--breakpoint('lg') {
-    left: 0;
+    left: 150;
   }
 }
 
@@ -123,20 +126,23 @@ header.header {
 // }
 
 .navLists {
-  margin-left: 130px;
+  // margin-left: 130px;
   display: flex;
+  position: absolute;
+  right: $layout-06;
 }
 
 .navLink {
   margin-left: 32px; 
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'IBM Plex Sans', sans-serif;
   line-height: 24px;
-  letter-spacing: 0.16px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
   
-  color: #C6C6C6;
-  
+  color: $ui-02;
+  line-height: 40px;
 }
 
 .navLeftBorder {
@@ -156,4 +162,11 @@ header.header {
   .globalBar {
     display: none !important;
   }
+}
+
+
+// Custom styles
+
+.header {
+  height: 100px !important;
 }

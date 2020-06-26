@@ -22,12 +22,15 @@ import {
 import { AppSwitcher20, Close20 } from '@carbon/icons-react';
 import cx from 'classnames';
 import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
+import { Button } from 'carbon-components-react'
+import { useAuth } from "react-use-auth";
 
 const Header = ({ children }) => {
   const {
     toggleNavState,
     switcherIsOpen,
   } = useContext(NavContext);
+  const { isAuthenticated, login, logout } = useAuth();
 
   return (
     <>
@@ -39,7 +42,7 @@ const Header = ({ children }) => {
           Freight Trust
         </Link>
         <div className={navLists}>
-          <div className={navLeftBorder}></div>
+          {/* <div className={navLeftBorder}></div> */}
           <Link
             className={navLink}
             to="/freight"
@@ -70,6 +73,14 @@ const Header = ({ children }) => {
           >
             Pricing
           </Link>
+          <div
+            className={navLink}
+          >
+            {
+              isAuthenticated() ? <Button kind="primary" size='field' onClick={logout}>SIGN OUT</Button> :
+              <Button kind="primary" size='field' onClick={login}>SIGN IN</Button>
+            }
+          </div>
         </div>
         
         <HeaderGlobalBar className={globalBar}>

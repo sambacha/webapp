@@ -7,7 +7,7 @@ export const ArticleContainer = ({
   subTitle,
   children
 }) => (
-  <div className={articleContent}>
+  <div className={articleContent} id="article-content">
     <Row>
       <Column colMd={6} colLg={6}>
         <h1>{title}</h1>
