@@ -75,3 +75,5 @@ yarn.lock
 .yarn-integrity
 # Local Netlify folder
 .netlify
+
+.scannerwork/

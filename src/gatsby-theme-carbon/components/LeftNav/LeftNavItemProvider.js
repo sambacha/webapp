@@ -1,5 +1,30 @@
-// src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
-import { useNavItems as themeUseNavItems } from 'gatsby-theme-carbon/src/components/LeftNav/LeftNavItemProvider';
+
+import { useStaticQuery, graphql } from 'gatsby';
+
+export function themeUseNavItems() {
+  const {
+    allNavItemsYaml: { edges },
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  } = useStaticQuery(graphql`
+    query LEFT_NAV_QUERY1 {
+      allNavItemsYaml {
+        edges {
+          node {
+            title
+            pages {
+              title
+              path
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const navItems = edges.map(({ node }) => node);
+  return navItems;
+}
+
 // add nav items
 export function useNavItems() {
   const navItems = themeUseNavItems();
@@ -12,3 +37,4 @@ export function useNavItems() {
   // });
   return navItems;
 }
+

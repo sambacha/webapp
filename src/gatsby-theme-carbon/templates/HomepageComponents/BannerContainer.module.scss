@@ -5,7 +5,11 @@ $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .bannerContainer {
-  background: #000;
+  background: url(../../../images/banner-background.svg);
+  background-color: #1B1F23;
+  background-size: auto 100%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
   height: 100vh;
   padding: 0 $layout-02;
   padding-top: 30%;
@@ -38,7 +42,7 @@ $carbon--theme: $carbon--theme--g90;
   margin-bottom: $spacing-06;
 }
 
-.banner a {
+.banner .buttonContainer {
   margin-top: $spacing-09;
   margin-bottom: $spacing-08;
 
