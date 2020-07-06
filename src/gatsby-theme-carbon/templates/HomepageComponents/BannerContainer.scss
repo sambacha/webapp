@@ -1,15 +1,11 @@
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .bannerContainer {
-  background: url(../../../images/banner-background.svg);
-  background-color: #1B1F23;
-  background-size: auto 100%;
-  background-position: right bottom;
-  background-repeat: no-repeat;
+  background-color: #1b1f23;
   height: 100vh;
   padding: 0 $layout-02;
   padding-top: 30%;
@@ -25,8 +21,16 @@ $carbon--theme: $carbon--theme--g90;
   }
 }
 
+.bannerContainerWithBg {
+  background: url(../../../images/banner-background.svg);
+  background-color: #1b1f23;
+  background-size: auto 100%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
 .banner {
-  padding-top: 40%
+  padding-top: 40%;
 }
 
 .banner h1 {
@@ -35,7 +39,6 @@ $carbon--theme: $carbon--theme--g90;
 }
 
 .banner p {
-
   @include carbon--type-style('productive-heading-03');
 
   margin-top: $spacing-09;

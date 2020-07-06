@@ -4,17 +4,19 @@
   "version": "1.22.1",
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop -H 0.0.0.0",
+    "dev": "npm run pretest && gatsby develop -H 0.0.0.0",
     "dev:clean": "yarn clean && yarn dev",
     "build": "gatsby build",
     "build:clean": "yarn clean && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "build:analyze": "ANALYZE=true yarn build"
+    "build:analyze": "ANALYZE=true yarn build",
+    "pretest": "./node_modules/.bin/eslint --ext .js src"
   },
   "dependencies": {
     "gatsby": "^2.19.0",
     "gatsby-theme-carbon": "^1.22.1",
+    "husky": "^4.2.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-responsive": "^8.0.3",
@@ -23,5 +25,10 @@
   },
   "devDependencies": {
     "eslint-config-react-app": "^5.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pretest"
+    }
   }
 }
