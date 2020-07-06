@@ -1,12 +1,13 @@
-import React, { useContext } from 'react';
-import cx from 'classnames';
-import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
-import { nav, open, divider, link, linkDisabled } from './Switcher.module.scss';
+import React, { useContext } from 'react'
+import cx from 'classnames'
+import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext'
+import { nav, open, divider, link, linkDisabled } from './Switcher.module.scss'
 
 const Switcher = ({ children }) => {
-  const { switcherIsOpen } = useContext(NavContext);
+  const { switcherIsOpen } = useContext(NavContext)
 
   return (
+    // eslint-disable-next-line jsx-a11y/role-supports-aria-props
     <nav
       className={cx(nav, { [open]: switcherIsOpen })}
       aria-label="Freight Trust & Clearing"
@@ -15,14 +16,14 @@ const Switcher = ({ children }) => {
     >
       <ul>{children}</ul>
     </nav>
-  );
-};
+  )
+}
 
 export const SwitcherDivider = (props) => (
   <li className={divider}>
     <span {...props} />
   </li>
-);
+)
 
 export const SwitcherLink = ({
   disabled,
@@ -30,9 +31,9 @@ export const SwitcherLink = ({
   href: hrefProp,
   ...rest
 }) => {
-  const href = disabled || !hrefProp ? undefined : hrefProp;
-  const className = disabled ? linkDisabled : link;
-  const { switcherIsOpen } = useContext(NavContext);
+  const href = disabled || !hrefProp ? undefined : hrefProp
+  const className = disabled ? linkDisabled : link
+  const { switcherIsOpen } = useContext(NavContext)
 
   return (
     <li>
@@ -47,13 +48,12 @@ export const SwitcherLink = ({
         {children}
       </a>
     </li>
-  );
-};
+  )
+}
 
 // https://css-tricks.com/using-css-transitions-auto-dimensions/
 // Note: if you change this, update the max-height in the switcher stylesheet
 const DefaultChildren = () => {
-
   return (
     <>
       <SwitcherLink href="#top">Marketplace</SwitcherLink>
@@ -63,11 +63,11 @@ const DefaultChildren = () => {
       <SwitcherLink href="#top">Blog</SwitcherLink>
       <SwitcherLink href="#top">Contact</SwitcherLink>
     </>
-  );
-};
+  )
+}
 
 Switcher.defaultProps = {
   children: <DefaultChildren />,
-};
+}
 
-export default Switcher;
+export default Switcher
