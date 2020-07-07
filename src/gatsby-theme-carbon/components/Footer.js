@@ -25,15 +25,15 @@ const CustomFooter = ({ homepage }) => {
         <Column colMd={7} colLg={7} colXl={8}>
           <div className={footerLinkCol}>
             <div>
-              <h5>Product</h5>
-              <a href="/freight">EDI & XML</a>
-              <a href="/freight">RESTful API</a>
-              <a href="/freight">SOAP & WSDL</a>
-              <a href="/freight">Inflight Mapping</a>
-              <a href="/freight">Inflight Parser</a>
-              <a href="/freight">AS2/OFTP2</a>
-              <a href="/freight">Customs and Tariffs</a>
-              <a href="/freight">Digital Legal Parity</a>
+              <h5>Quick Links</h5>
+              <a href="/freight">Partners</a>
+              <a href="/freight">Integrations</a>
+              <a href="/freight">Service Bus</a>
+              <a href="/freight">API</a>
+              <a href="/freight">ABI</a>
+              <a href="/freight">Rulebook</a>
+              <a href="/freight">Omnibus</a>
+              <a href="/freight">Legal Parity</a>
             </div>
             <div>
               <h5>Corporate</h5>
@@ -43,7 +43,7 @@ const CustomFooter = ({ homepage }) => {
               <a href="/freight">Branding</a>
               <a href="/freight">Whitepapers</a>
               <a href="/freight">System Status</a>
-              <a href="/freight">Security & Compliance</a>
+              <a href="/freight">Compliance</a>
             </div>
             <div>
               <h5>Solutions</h5>
@@ -56,13 +56,9 @@ const CustomFooter = ({ homepage }) => {
               <h5>Resources</h5>
               <a href="/freight">Documentation</a>
               <a href="/freight">Open Source</a>
-              <a href="/freight">Developer Relations</a>
-              <a href="/freight">API Engineering</a>
-              <a href="/freight">API Security</a>
-              <a href="/freight">Customer Success</a>
-              <a href="/freight">Network Stats</a>
-              <a href="/freight">Block Explorer</a>
-              <a href="/freight">Smart Contract Addresses</a>
+              <a href="/freight">Developers</a>
+              <a href="/freight">Engineering</a>
+              <a href="/freight">Security</a>
             </div>
           </div>
         </Column>
@@ -88,7 +84,7 @@ const CustomFooter = ({ homepage }) => {
 
       <Row className={footerDiectoryRow}>
         <Column colMd={6} colLg={6}>
-          <p>Address: 1424 4TH ST Santa Monica, CA</p>
+          <p></p>
           <p>LEI: 254900C9UJMDGJ0ILK56</p>
           <p>support@freight.zendesk.com</p>
           <p></p>
