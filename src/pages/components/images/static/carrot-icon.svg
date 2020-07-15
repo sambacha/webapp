@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon color</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.5 0.5 4.5 4 0.5 7.5"></polygon>
+    </defs>
+    <g id="Edit-here" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-297.000000, -47.000000)">
+            <g id="icon/navigation/caret/left/16" transform="translate(297.000000, 47.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icon-color" fill="#171717" transform="translate(2.500000, 4.000000) scale(-1, 1) translate(-2.500000, -4.000000) " xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

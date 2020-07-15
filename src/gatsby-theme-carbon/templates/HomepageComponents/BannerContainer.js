@@ -17,7 +17,11 @@ const BannerText = ({
       {buttonComponent ? (
         buttonComponent
       ) : (
-        <Button href="#top" kind="primary" onClick={() => buttonAction()}>
+        <Button
+          href="#top"
+          kind="primary"
+          onClick={buttonAction ? () => buttonAction() : () => {}}
+        >
           {buttonLabel}
         </Button>
       )}
@@ -26,7 +30,6 @@ const BannerText = ({
 )
 
 export const BannerContainer = ({
-  children,
   title,
   content,
   buttonLabel,
