@@ -13,7 +13,13 @@ import { sideNavDark } from 'gatsby-theme-carbon/src/components/LeftNav/LeftNav.
 const LeftNav = (props) => {
   const { leftNavIsOpen } = useContext(NavContext)
 
-  const navItems = useNavItems()
+  const defaultNavItems = useNavItems()
+
+  const { isCustomNav, customNavItems } = props
+
+  const navItems = isCustomNav ? customNavItems : defaultNavItems
+
+  console.log('\n\n---------- nav items -----------\n\n', navItems)
 
   // TODO: replace old addon website styles with sass modules, move to wrapper
   return (
@@ -33,9 +39,14 @@ const LeftNav = (props) => {
       >
         <SideNavItems>
           {navItems.map((item, i) => (
-            <LeftNavItem items={item.pages} category={item.title} key={i} />
+            <LeftNavItem
+              items={item.pages}
+              category={item.title}
+              isSpace={item.isSpace}
+              key={i}
+            />
           ))}
-          <LeftNavResourceLinks />
+          {props.noResourceLinks ? null : <LeftNavResourceLinks />}
         </SideNavItems>
       </SideNav>
     </LeftNavWrapper>

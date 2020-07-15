@@ -1,14 +1,14 @@
 /* eslint-disable import/no-unresolved */
-import React, { useLayoutEffect } from 'react';
+import React, { useLayoutEffect } from 'react'
 
-import LeftNav from 'gatsby-theme-carbon/src/components/LeftNav';
-import Meta from 'gatsby-theme-carbon/src/components/Meta';
-import Header from 'gatsby-theme-carbon/src/components/Header';
-import Switcher from 'gatsby-theme-carbon/src/components/Switcher';
-import Footer from 'gatsby-theme-carbon/src/components/Footer';
-import Container from 'gatsby-theme-carbon/src/components/Container';
+import LeftNav from 'gatsby-theme-carbon/src/components/LeftNav'
+import Meta from 'gatsby-theme-carbon/src/components/Meta'
+import Header from 'gatsby-theme-carbon/src/components/Header'
+import Switcher from 'gatsby-theme-carbon/src/components/Switcher'
+import Footer from 'gatsby-theme-carbon/src/components/Footer'
+import Container from 'gatsby-theme-carbon/src/components/Container'
 
-import 'gatsby-theme-carbon/src/styles/index.scss';
+import 'gatsby-theme-carbon/src/styles/index.scss'
 
 const Layout = ({
   children,
@@ -19,8 +19,10 @@ const Layout = ({
   pageDescription,
   pageKeywords,
   tabs,
+  customNavItems,
+  noResourceLinks,
 }) => {
-  const is404 = children.key === null;
+  const is404 = children.key === null
 
   useLayoutEffect(() => {
     // eslint-disable-next-line global-require
@@ -31,11 +33,11 @@ const Layout = ({
       easing: 'easeInOutCubic',
       clip: true,
       offset: tabs ? 112 : 64,
-    });
-    return scroll.destroy;
-  }, [tabs]);
+    })
+    return scroll.destroy
+  }, [tabs])
 
-  console.log('Layout', homepage)
+  console.log('\n\n----------    Layout     ----------\n\n', customNavItems)
 
   return (
     <>
@@ -48,18 +50,23 @@ const Layout = ({
       <Header />
       <Switcher />
 
-      {
-        !homepage &&
-        <LeftNav homepage={homepage} is404Page={is404} theme="dark" />
-      }
+      {!homepage && (
+        <LeftNav
+          homepage={homepage}
+          is404Page={is404}
+          theme="dark"
+          isCustomNav={customNavItems ? true : false}
+          customNavItems={customNavItems}
+          noResourceLinks={noResourceLinks}
+        />
+      )}
 
       <Container homepage={homepage} theme={theme}>
         {children}
         <Footer homepage={homepage} />
       </Container>
-
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

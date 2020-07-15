@@ -1,4 +1,4 @@
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;600;700&display=swap');
 
 // Use the gray 10 theme
@@ -22,7 +22,6 @@ $carbon--theme: $carbon--theme--g90;
 }
 
 .footerContent h1 {
-
   @include carbon--type-style('productive-heading-03');
   margin-bottom: $spacing-07;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -41,7 +40,6 @@ $carbon--theme: $carbon--theme--g90;
 }
 
 .footerContent p {
-
   @include carbon--type-style('body-long-01');
   margin-top: $spacing-05;
 }
@@ -110,6 +108,12 @@ $carbon--theme: $carbon--theme--g90;
   h1 {
     padding-left: $spacing-05;
   }
+
+  .hide-on-mobile {
+    div {
+      width: 100%;
+    }
+  }
 }
 
 .footerRow > div {
@@ -125,7 +129,7 @@ $carbon--theme: $carbon--theme--g90;
   }
 }
 
-.footerFollowSection{
+.footerFollowSection {
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -161,5 +165,28 @@ $carbon--theme: $carbon--theme--g90;
     // float: right;
     width: 100%;
     text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerLinkCol {
+    div {
+      width: 50%;
+    }
+
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+
+  .footerLinkColMobile {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 601px) {
+  .footerLinkColMobile {
+    display: none;
   }
 }

@@ -1,4 +1,4 @@
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -6,10 +6,9 @@ $carbon--theme: $carbon--theme--g90;
 
 .trading-signup-modal {
   .bx--modal-container {
-    height: 600px;
-
+    height: auto;
+    margin-top: 60px;
     .bx--tile-group {
-
       .bx--tile {
         min-height: unset;
       }
@@ -24,7 +23,7 @@ $carbon--theme: $carbon--theme--g90;
           height: 20px;
           line-height: 20px;
         }
-  
+
         .radio-title-right-span {
           margin-left: auto;
         }
@@ -53,7 +52,6 @@ $carbon--theme: $carbon--theme--g90;
     }
 
     .bx--modal-content {
-
       h2 {
         text-align: center;
         @include carbon--type-style('productive-heading-03');
@@ -92,6 +90,10 @@ $carbon--theme: $carbon--theme--g90;
       }
 
       overflow: initial;
+
+      .bx--loading {
+        margin: auto;
+      }
     }
   }
 }
