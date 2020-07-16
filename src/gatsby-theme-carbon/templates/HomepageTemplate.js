@@ -37,9 +37,9 @@ Homepage.defaultProps = {
     <HomepageBanner
       renderText={() => (
         <h1>
-          Carbon
+          Freight Trust
           <br />
-          Design System
+          Distributed Systems
         </h1>
       )}
       image={Carbon}

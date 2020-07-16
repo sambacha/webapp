@@ -17,10 +17,10 @@
 [build.processing.html]
   pretty_urls = true
 [build.processing.images]
-  compress = true   
+  compress = true
    
-[context.staging]   
+[context.staging]
   command = "yarn clean && gatsby build"
 
 [serve]
-  command = "gatsby serve" 
+  command = "gatsby serve"
