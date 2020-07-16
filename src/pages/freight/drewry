@@ -1,0 +1,127 @@
+---
+title: Freight Trust Network
+description: Product Overview
+---
+
+export const Title = () => (
+  <span>
+   Product
+  </span>
+)
+
+<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="freighttrust" data-slug-hash="QWyZMmw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Drewry Container Index Graph Example">
+  <span>See the Pen <a href="https://codepen.io/freighttrust/pen/QWyZMmw">
+  Drewry Container Index Graph Example</a> by sam bacha (<a href="https://codepen.io/freighttrust">@freighttrust</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+ <br />
+ <br />
+
+<div class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="freighttrust" data-slug-hash="QWyZMmw" data-prefill='{"title":"Drewry Container Index Graph Example","tags":[],"scripts":[],"stylesheets":[]}'>
+  <pre data-lang="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0-alpha/dist/Chart.js">&lt;/script>
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey@0.1.3">&lt;/script>
+
+&lt;div class="chart">
+  &lt;canvas id="chart">&lt;/canvas>
+&lt;/div>
+
+&lt;div class="chart">
+  &lt;canvas id="chart2">&lt;/canvas>
+&lt;/div>
+
+</pre>
+  <pre data-lang="css">.chart {
+  max-width: 800px;
+  max-height: 600px;
+}
+
+canvas {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}</pre>
+  <pre data-lang="js">var ctx = document.getElementById("chart").getContext("2d");
+var ctx2 = document.getElementById("chart2").getContext("2d");
+
+var colors = {
+  Oil: "black",
+  Coal: "gray",
+  "Fossil Fuels": "slategray",
+  Electricity: "blue",
+  Energy: "orange"
+};
+
+function getColor(name) {
+  return colors[name] || "green";
+}
+
+
+
+var colors2 = ['#fff5eb', '#fee6ce', '#fdd0a2', '#fdae6b', '#fd8d3c', '#f16913', '#d94801', '#a63603', '#7f2704'];
+var assigned = {};
+function c2(name) {
+  return assigned[name] || (assigned[name] = colors2[Object.keys(assigned).length % colors2.length]);
+}
+var chart2 = new Chart(ctx2, {
+  type: "sankey",
+  data: {
+    datasets: [
+      {
+        data: [
+            { from: "Vancouver", to: "Toronto", flow: 5 },
+          { from: "Vancouver", to: "Shanghai", flow: 1 },
+          { from: "Vancouver", to: "Japan", flow: 1 },
+          { from: "Vancouver", to: "Shanghai", flow: 1 },
+          { from: "Canada", to: "Toronto", flow: 1 },
+          { from: "Canada", to: "Shanghai", flow: 5 },
+          { from: "Canada", to: "Shanghai", flow: 1 },
+          { from: "Houston", to: "Toronto", flow: 1 },
+          { from: "Houston", to: "Shanghai", flow: 1 },
+          { from: "Houston", to: "Japan", flow: 5 },
+          { from: "Houston", to: "Shanghai", flow: 1 },
+          { from: "USA", to: "Toronto", flow: 1 },
+          { from: "USA", to: "Shanghai", flow: 1 },
+          { from: "USA", to: "Japan", flow: 1 },
+          { from: "USA", to: "Shanghai", flow: 5 },
+          { from: "Toronto", to: "Memphis", flow: 2 },
+          { from: "Toronto", to: "New York", flow: 1 },
+          { from: "Toronto", to: "Chicago", flow: 1 },
+          { from: "Toronto", to: "Los Angeles", flow: 3 },
+          { from: "Shanghai", to: "Memphis", flow: 1 },
+          { from: "Shanghai", to: "New York", flow: 3 },
+          { from: "Shanghai", to: "Hong Kong", flow: 3 },
+          { from: "Shanghai", to: "Chicago", flow: 3 },
+          { from: "Shanghai", to: "Los Angeles", flow: 1 },
+          { from: "Japan", to: "New York", flow: 1 },
+          { from: "Japan", to: "Chicago", flow: 3 },
+          { from: "Japan", to: "Los Angeles", flow: 1 },
+          { from: "Shanghai", to: "Memphis", flow: 1 },
+          { from: "Shanghai", to: "New York", flow: 1 },
+          { from: "Shanghai", to: "Chicago", flow: 2 },
+          { from: "Shanghai", to: "Los Angeles", flow: 7 },
+          { from: "Los Angeles", to: "China", flow: 5 },
+          { from: "Los Angeles", to: "Yantian", flow: 1 },
+          { from: "Los Angeles", to: "Tianjin", flow: 3 },
+          { from: "Memphis", to: "China", flow: 5 },
+          { from: "Memphis", to: "Yantian", flow: 1 },
+          { from: "Memphis", to: "Tianjin", flow: 3 },
+          { from: "New York", to: "China", flow: 5 },
+          { from: "New York", to: "Yantian", flow: 1 },
+          { from: "New York", to: "Tianjin", flow: 3 },
+          { from: "Hong Kong", to: "China", flow: 5 },
+          { from: "Hong Kong", to: "Yantian", flow: 1 },
+          { from: "Hong Kong", to: "Tianjin", flow: 3 },
+          { from: "Chicago", to: "China", flow: 5 },
+          { from: "Chicago", to: "Yantian", flow: 1 },
+          { from: "Chicago", to: "Tianjin", flow: 3 }
+        ],
+        colorFrom: (c) => c2(c.dataset.data[c.dataIndex].from),
+        colorTo: (c) => c2(c.dataset.data[c.dataIndex].to)
+      }
+    ]
+  }
+});
+</pre></div>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
