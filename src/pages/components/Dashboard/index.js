@@ -32,7 +32,15 @@ import './style.scss'
 
 const customRowData = [
   {
-    id: 'BLUJAYSOLUTIONSAMER1',
+    id: 'KLEINSCHMIDT',
+    name: 'KLEINSCHDMIT',
+    entityCode: 'D-U-N-S Number, Dun & Boradcast',
+    entityID: '124215133',
+    testMode: 'true',
+    status: 'pending',
+  },
+  {
+    id: 'BLUJAYSOLUTIONS',
     name: 'BLUJAYSOLUTIONSAMER',
     entityCode: 'D-U-N-S Number, Dun & Boradcast',
     entityID: '124215133',
@@ -40,15 +48,7 @@ const customRowData = [
     status: 'pending',
   },
   {
-    id: 'BLUJAYSOLUTIONSAMER2',
-    name: 'BLUJAYSOLUTIONSAMER',
-    entityCode: 'D-U-N-S Number, Dun & Boradcast',
-    entityID: '124215133',
-    testMode: 'true',
-    status: 'pending',
-  },
-  {
-    id: 'BLUJAYSOLUTIONSAMER3',
+    id: 'BLUJAYSOLUTIONS2411',
     name: 'BLUJAYSOLUTIONSAMER',
     entityCode: 'D-U-N-S Number, Dun & Boradcast',
     entityID: '124215133',

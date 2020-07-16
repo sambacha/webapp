@@ -19,48 +19,48 @@ import cx from 'classnames'
 const ProductFooter = (
   <div>
     <h5>Quick Links</h5>
-    <a href="/freight">Partners</a>
-    <a href="/freight">Integrations</a>
-    <a href="/freight">Service Bus</a>
-    <a href="/freight">API</a>
-    <a href="/freight">ABI</a>
-    <a href="/freight">Rulebook</a>
-    <a href="/freight">Omnibus</a>
-    <a href="/freight">Legal Parity</a>
+    <a href="https://freight.page.link/demo">Partners</a>
+    <a href="https://freight.page.link/demo">Integrations</a>
+    <a href="https://freight.page.link/demo">Service Bus</a>
+    <a href="https://freight.page.link/demo">API</a>
+    <a href="https://freight.page.link/demo">ABI</a>
+    <a href="https://freight.page.link/demo">Rulebook</a>
+    <a href="https://freight.page.link/demo">Omnibus</a>
+    <a href="https://freight.page.link/demo">Legal Parity</a>
   </div>
 )
 
 const CoporateFooter = (
   <div>
     <h5>Corporate</h5>
-    <a href="/freight">About Us</a>
-    <a href="/freight">Press</a>
-    <a href="/freight">Customers</a>
-    <a href="/freight">Branding</a>
-    <a href="/freight">Whitepapers</a>
-    <a href="/freight">System Status</a>
-    <a href="/freight">Compliance</a>
+    <a href="https://freight.page.link/demo">About Us</a>
+    <a href="https://freight.page.link/demo">Press</a>
+    <a href="https://freight.page.link/demo">Customers</a>
+    <a href="https://freight.page.link/demo">Branding</a>
+    <a href="https://freight.page.link/demo">Whitepapers</a>
+    <a href="https://freight.page.link/demo">System Status</a>
+    <a href="https://freight.page.link/demo">Compliance</a>
   </div>
 )
 
 const SolutionsFooter = (
   <div>
     <h5>Solutions</h5>
-    <a href="/freight">Trucking</a>
-    <a href="/freight">Maritime</a>
-    <a href="/freight">Intermodal</a>
-    <a href="/freight">Finance</a>
+    <a href="https://freight.page.link/demo">Trucking</a>
+    <a href="https://freight.page.link/demo">Maritime</a>
+    <a href="https://freight.page.link/demo">Intermodal</a>
+    <a href="https://freight.page.link/demo">Finance</a>
   </div>
 )
 
 const ResourcesFooter = (
   <div>
     <h5>Resources</h5>
-    <a href="/freight">Documentation</a>
-    <a href="/freight">Open Source</a>
-    <a href="/freight">Developers</a>
-    <a href="/freight">Engineering</a>
-    <a href="/freight">Security</a>
+    <a href="https://freight.page.link/demo">Documentation</a>
+    <a href="https://freight.page.link/demo">Open Source</a>
+    <a href="https://freight.page.link/demo">Developers</a>
+    <a href="https://freight.page.link/demo">Engineering</a>
+    <a href="https://freight.page.link/demo">Security</a>
   </div>
 )
 
@@ -109,7 +109,9 @@ const CustomFooter = ({ homepage }) => {
           className={footerButtonCol}
         >
           <div>
-            <Button>Register</Button>
+            <Button Register
+            href="https://freight.page.link/demo"
+            />
           </div>
           <div>
             {isAuthenticated() ? (
@@ -139,22 +141,22 @@ const CustomFooter = ({ homepage }) => {
           <a href="https://twitter.com/freighttrustnet">Twitter</a>
           <a href="#top">Linkedin</a>
           <a href="https://medium.com/freighttrust">Medium</a>
-          <a href="https://t.me/freighttrust">Telegram</a>
+          <a href="https://t.mehttps://freight.page.link/demotrust">Telegram</a>
         </Column>
 
         <Column colMd={2} colLg={2}>
           <a href="https://github.com/freight-trust">GitHub</a>
-          <a href="https://gitlab.com/fr8">GitLab Devops</a>
-          <a href="https://hub.docker.com/r/freightcorp">Docker</a>
+          <a href="http://fr8.link">Network</a>
+          <a href="http://freightlayer.io">Block Explorer</a>
         </Column>
       </Row>
 
       <Row className={footerLastRow}>
         <Column colMd={6} colLg={6}>
           <div className={footerFollowSection}>
-            <span>Terms of Service</span>
-            <span>Privacy Policy</span>
-            <span>Security</span>
+            <span Terms of Service href="https://github.com/freight-trust/legal/blob/master/src/terms-of-service.md" />
+            <span Privacy Policy href="https://github.com/freight-trust/legal/blob/master/src/privacy-policy.md" />
+            <span Security href="https://github.com/freight-trust/infrastructure/tree/master/security" />
           </div>
         </Column>
 

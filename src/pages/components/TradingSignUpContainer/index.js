@@ -180,9 +180,9 @@ class TradingSignUpContainer extends Component {
     return (
       <div>
         <BannerContainer
-          title="Trading Partner Page"
-          content="Sign up page for trading partners of freight trust"
-          buttonLabel="Click to open sign up modal"
+          title="Trading Channel Protocol"
+          content="Trading Channel Creation Window"
+          buttonLabel="Create Trading Channel"
           buttonAction={this.showModal}
           noBgImage
         />
