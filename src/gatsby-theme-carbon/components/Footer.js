@@ -19,48 +19,46 @@ import cx from 'classnames'
 const ProductFooter = (
   <div>
     <h5>Quick Links</h5>
-    <a href="/freight">Partners</a>
-    <a href="/freight">Integrations</a>
-    <a href="/freight">Service Bus</a>
-    <a href="/freight">API</a>
-    <a href="/freight">ABI</a>
-    <a href="/freight">Rulebook</a>
-    <a href="/freight">Omnibus</a>
-    <a href="/freight">Legal Parity</a>
+    <a href="https://drewry.co.uk">Partners</a>
+    <a href="https://freight.page.link/request-information">Integrations</a>
+    <a href="https://ft-docs.netlify.app">API</a>
+    <a href="https://ft-docs.netlify.app">ABI</a>
+    <a href="https://ft-docs.netlify.appn">Rulebook</a>
+    <a href="https://ft-docs.netlify.app">Omnibus</a>
+    <a href="https://freight.page.link/request-information">Legal Parity</a>
   </div>
 )
 
 const CoporateFooter = (
   <div>
     <h5>Corporate</h5>
-    <a href="/freight">About Us</a>
-    <a href="/freight">Press</a>
-    <a href="/freight">Customers</a>
-    <a href="/freight">Branding</a>
-    <a href="/freight">Whitepapers</a>
-    <a href="/freight">System Status</a>
-    <a href="/freight">Compliance</a>
+    <a href="https://ft-docs.netlify.app">About Us</a>
+    <a href="https://freight.page.link/request-information">Press</a>
+    <a href="https://github.com/freight-trust/branding">Branding</a>
+    <a href="https://freight.page.link/request-information">Whitepapers</a>
+    <a href="https://freight.page.link/request-information">System Status</a>
+    <a href="https://freight.page.link/request-information">Compliance</a>
   </div>
 )
 
 const SolutionsFooter = (
   <div>
     <h5>Solutions</h5>
-    <a href="/freight">Trucking</a>
-    <a href="/freight">Maritime</a>
-    <a href="/freight">Intermodal</a>
-    <a href="/freight">Finance</a>
+    <a href="https://freight.page.link/request-information">Trucking</a>
+    <a href="https://freight.page.link/request-information">Maritime</a>
+    <a href="https://freight.page.link/request-information">Intermodal</a>
+    <a href="https://freight.page.link/request-information">Finance</a>
   </div>
 )
 
 const ResourcesFooter = (
   <div>
     <h5>Resources</h5>
-    <a href="/freight">Documentation</a>
-    <a href="/freight">Open Source</a>
-    <a href="/freight">Developers</a>
-    <a href="/freight">Engineering</a>
-    <a href="/freight">Security</a>
+    <a href="https://ft-docs.netlify.app">Documentation</a>
+    <a href="https://github.com/freight-trust">Open Source</a>
+    <a href="https://github.com/freight-trust">Developers</a>
+    <a href="https://github.com/freight-trust">Engineering</a>
+    <a href="https://github.com/freight-trust/security">Security</a>
   </div>
 )
 

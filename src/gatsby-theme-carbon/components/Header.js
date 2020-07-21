@@ -29,7 +29,7 @@ import {
   navLink,
   globalBar,
 } from './Header.module.scss'
-
+// href="https://freight.page.link/request-information"
 const Header = ({ children }) => {
   const { leftNavIsOpen, toggleNavState, switcherIsOpen } = useContext(
     NavContext
@@ -50,25 +50,25 @@ const Header = ({ children }) => {
         isActive={leftNavIsOpen}
       />
 
-      <Link className={headerName} to="/">
+      <Link className={headerName} to="https://freight.page.link/request-information">
         Freight Trust
       </Link>
 
       <div className={navLists}>
         <div className={navLeftBorder}></div>
-        <Link className={navLink} to="/freight">
+        <Link className={navLink} to="https://freight.page.link/request-information">
           Products
         </Link>
-        <Link className={navLink} to="/">
+        <Link className={navLink} to="https://freight.page.link/request-information">
           Solutions
         </Link>
-        <Link className={navLink} to="/">
+        <Link className={navLink} to="https://freight.page.link/request-information">
           Partners
         </Link>
-        <Link className={navLink} to="/">
+        <Link className={navLink} to="https://freight.page.link/request-information">
           Marketplace
         </Link>
-        <Link className={navLink} to="/">
+        <Link className={navLink} to="https://freight.page.link/request-information">
           Pricing
         </Link>
       </div>

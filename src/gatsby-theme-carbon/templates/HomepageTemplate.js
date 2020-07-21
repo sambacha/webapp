@@ -24,6 +24,7 @@ const Homepage = ({
       titleType={titleType}
       homepage
       theme="dark"
+      href="https://freight.page.link/request-information"
     >
 
       <Main className={mainContent}>{children}</Main>

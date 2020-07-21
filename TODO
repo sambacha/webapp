@@ -1,0 +1,15 @@
+TODO
+
+Error Messages:
+@types/gatsby-theme-carbon` if it exists or add a new declaration (.d.ts)
+ file containing `declare module 'gatsby-theme-carbon';`ts(7016)
+
+ImageS:
+- remove: Article 05
+ Dont use .webp format
+
++ use images in the "static" folder
+    - SVG format 
+    - PNG format (defined w x h)
+
+ 
