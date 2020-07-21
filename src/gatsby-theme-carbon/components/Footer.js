@@ -108,9 +108,9 @@ const CustomFooter = ({ homepage }) => {
           colXl={1}
           className={footerButtonCol}
         >
-          <div>
+          {/* <div>
             <Button>Register</Button>
-          </div>
+          </div> */}
           <div>
             {isAuthenticated() ? (
               <Button kind="tertiary" onClick={logout}>
