@@ -8,11 +8,7 @@ const Auth0CallbackPage = () => {
     handleAuthentication()
   }, [handleAuthentication])
 
-  return (
-    <h1>
-      This is the auth callback page, you should be redirected immediately.
-    </h1>
-  )
+  return <div />
 }
 
 export default Auth0CallbackPage

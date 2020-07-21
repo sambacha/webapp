@@ -176,7 +176,6 @@ class TradingSignUpContainer extends Component {
       </Modal>
     )
 
-    console.log('Trading sign up', this)
     return (
       <div>
         <BannerContainer
