@@ -182,6 +182,7 @@ class TradingSignUpContainer extends Component {
           title="Trading Partner Page"
           content="Sign up page for trading partners of freight trust"
           buttonLabel="Click to open sign up modal"
+          href="https://freight.page.link/request-information"
           buttonAction={this.showModal}
           noBgImage
         />
