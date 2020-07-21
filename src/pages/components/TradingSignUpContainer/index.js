@@ -176,13 +176,19 @@ class TradingSignUpContainer extends Component {
       </Modal>
     )
 
-    console.log('Trading sign up', this)
     return (
       <div>
         <BannerContainer
+<<<<<<< HEAD
           title="Trading Channel Protocol"
           content="Trading Channel Creation Window"
           buttonLabel="Create Trading Channel"
+=======
+          title="Trading Partner Page"
+          content="Sign up page for trading partners of freight trust"
+          buttonLabel="Click to open sign up modal"
+          href="https://freight.page.link/request-information"
+>>>>>>> 309506aaaf21913b5869a6a43aeabf68161f810f
           buttonAction={this.showModal}
           noBgImage
         />

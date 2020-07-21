@@ -1,9 +1,10 @@
-import './src/styles/index.scss';
-import React from "react";
-import { navigate } from "gatsby";
-import { AuthProvider } from "react-use-auth";
- 
+import './src/styles/index.scss'
+import React from 'react'
+import { navigate } from 'gatsby'
+import { AuthProvider } from 'react-use-auth'
+
 export const wrapRootElement = ({ element }) => (
+<<<<<<< HEAD
     <AuthProvider
         navigate={navigate}
         auth0_domain="besu.auth0.com"
@@ -12,3 +13,13 @@ export const wrapRootElement = ({ element }) => (
         {element}
     </AuthProvider>
 );
+=======
+  <AuthProvider
+    navigate={navigate}
+    auth0_domain="besu.auth0.com"
+    auth0_client_id="ubgigpsqe48GdzYbsXFoKoa9xhDDvkyX"
+  >
+    {element}
+  </AuthProvider>
+)
+>>>>>>> 309506aaaf21913b5869a6a43aeabf68161f810f

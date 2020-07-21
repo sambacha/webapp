@@ -12,7 +12,7 @@ const links = [
   },
   {
     title: 'Contact',
-    href: 'https://freight.page.link/demo',
+    href: 'https://freight.page.link/request-information',
   },
 ];
 

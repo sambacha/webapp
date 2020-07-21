@@ -37,7 +37,6 @@ export const BannerContainer = ({
   buttonAction,
   noBgImage,
 }) => {
-  console.log('noBgImage', noBgImage)
   return (
     <div
       className={`bannerContainer ${noBgImage ? '' : 'bannerContainerWithBg'}`}
