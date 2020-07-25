@@ -25,7 +25,6 @@ const ProductFooter = (
     <a href="https://ft-docs.netlify.app">ABI</a>
     <a href="https://ft-docs.netlify.appn">Rulebook</a>
     <a href="https://ft-docs.netlify.app">Omnibus</a>
-    <a href="https://freight.page.link/request-information">Legal Parity</a>
   </div>
 )
 
@@ -35,8 +34,6 @@ const CoporateFooter = (
     <a href="https://ft-docs.netlify.app">About Us</a>
     <a href="https://freight.page.link/request-information">Press</a>
     <a href="https://github.com/freight-trust/branding">Branding</a>
-    <a href="https://freight.page.link/request-information">Whitepapers</a>
-    <a href="https://freight.page.link/request-information">System Status</a>
     <a href="https://freight.page.link/request-information">Compliance</a>
   </div>
 )
@@ -44,10 +41,10 @@ const CoporateFooter = (
 const SolutionsFooter = (
   <div>
     <h5>Solutions</h5>
-    <a href="https://freight.page.link/request-information">Trucking</a>
-    <a href="https://freight.page.link/request-information">Maritime</a>
-    <a href="https://freight.page.link/request-information">Intermodal</a>
-    <a href="https://freight.page.link/request-information">Finance</a>
+    <a href="https://freight.page.link/request-information">For Trucking</a>
+    <a href="https://freight.page.link/request-information">For Maritime</a>
+    <a href="https://freight.page.link/request-information">For Intermodal</a>
+    <a href="https://freight.page.link/request-information">For Finance</a>
   </div>
 )
 
@@ -135,15 +132,17 @@ const CustomFooter = ({ homepage }) => {
 
         <Column colMd={2} colLg={2}>
           <a href="https://twitter.com/freighttrustnet">Twitter</a>
-          <a href="#top">Linkedin</a>
+          <a href="#top">Instagram</a>
           <a href="https://medium.com/freighttrust">Medium</a>
           <a href="https://t.me/freighttrust">Telegram</a>
         </Column>
 
         <Column colMd={2} colLg={2}>
           <a href="https://github.com/freight-trust">GitHub</a>
-          <a href="https://gitlab.com/fr8">GitLab Devops</a>
+          <a href="https://github.com/freight-trust/releases">Releases</a>
           <a href="https://hub.docker.com/r/freightcorp">Docker</a>
+          <a href="https://hub.docker.com/r/freightcorp">RSS</a>
+
         </Column>
       </Row>
 

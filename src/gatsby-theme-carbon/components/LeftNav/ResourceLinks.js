@@ -8,7 +8,7 @@ const links = [
   },
   {
     title: 'Github',
-    href: 'https://github.com/freight-chain',
+    href: 'https://github.com/freight-trust',
   },
   {
     title: 'Contact',

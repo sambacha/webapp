@@ -40,15 +40,6 @@ const Header = ({ children }) => {
     <ShellHeader aria-label="Header" className={header}>
       <SkipToContent href="#main-content" className={skipToContent} />
 
-      <HeaderMenuButton
-        className={cx('bx--header__action--menu', headerButton)}
-        aria-label="Open menu"
-        onClick={() => {
-          toggleNavState('leftNavIsOpen')
-          toggleNavState('switcherIsOpen', 'close')
-        }}
-        isActive={leftNavIsOpen}
-      />
 
       <Link className={headerName} to="https://freight.page.link/request-information">
         Freight Trust
@@ -57,16 +48,16 @@ const Header = ({ children }) => {
       <div className={navLists}>
         <div className={navLeftBorder}></div>
         <Link className={navLink} to="https://freight.page.link/request-information">
-          Products
+          Supply Chain
+        </Link>
+        <Link className={navLink} to="https://freight.page.link/request-information">
+          Trade Finance
         </Link>
         <Link className={navLink} to="https://freight.page.link/request-information">
           Solutions
         </Link>
         <Link className={navLink} to="https://freight.page.link/request-information">
-          Partners
-        </Link>
-        <Link className={navLink} to="https://freight.page.link/request-information">
-          Marketplace
+          Network
         </Link>
         <Link className={navLink} to="https://freight.page.link/request-information">
           Pricing
@@ -75,21 +66,6 @@ const Header = ({ children }) => {
 
       {navigationStyle && <HeaderNav />}
 
-      <HeaderGlobalBar className={globalBar}>
-        <HeaderGlobalAction
-          className={cx(headerButton, switcherButton, {
-            [switcherButtonOpen]: switcherIsOpen,
-          })}
-          aria-label="Switch"
-          onClick={() => {
-            toggleNavState('switcherIsOpen')
-            toggleNavState('searchIsOpen', 'close')
-            toggleNavState('leftNavIsOpen', 'close')
-          }}
-        >
-          {switcherIsOpen ? <Close20 /> : <AppSwitcher20 />}
-        </HeaderGlobalAction>
-      </HeaderGlobalBar>
     </ShellHeader>
   )
 }

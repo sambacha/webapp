@@ -56,11 +56,11 @@ export const SwitcherLink = ({
 const DefaultChildren = () => {
   return (
     <>
-      <SwitcherLink href="#top">Marketplace</SwitcherLink>
-      <SwitcherLink href="#top">Solutions</SwitcherLink>
-      <SwitcherLink href="#top">Blockchain</SwitcherLink>
+      <SwitcherLink href="#top">Trade Compliance</SwitcherLink>
+      <SwitcherLink href="#top">Trade Messages</SwitcherLink>
+      <SwitcherLink href="#top">Trade Finance</SwitcherLink>
       <SwitcherLink href="#top">Corporate</SwitcherLink>
-      <SwitcherLink href="#top">Blog</SwitcherLink>
+      <SwitcherLink href="#top">Support</SwitcherLink>
       <SwitcherLink href="#top">Contact</SwitcherLink>
     </>
   )
