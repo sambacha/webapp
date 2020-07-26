@@ -151,7 +151,7 @@ const CustomFooter = ({ homepage }) => {
           <div className={footerFollowSection}>
             <span>Terms of Service</span>
             <span>Privacy Policy</span>
-            <span>Security</span>
+            <span> Security </span>
           </div>
         </Column>
 
