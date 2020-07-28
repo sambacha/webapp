@@ -3,6 +3,9 @@ import { FourOhFour } from 'gatsby-theme-carbon'
 
 const links = [
   { href: 'https://freighttrust.com', text: 'Homepage' },
+  { href: '', text: '' },
+  { href: '', text: '' },
+  { href: 'https://freighttrust.com', text: 'Homepage' },
   { href: 'https://freighttrust.com', text: 'Status Trace' },
 ]
 

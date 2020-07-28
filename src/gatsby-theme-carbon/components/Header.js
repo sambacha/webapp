@@ -47,20 +47,20 @@ const Header = ({ children }) => {
 
       <div className={navLists}>
         <div className={navLeftBorder}></div>
+        <Link className={navLink} to="/features">
+          Solutions
+        </Link>
         <Link className={navLink} to="https://freight.page.link/request-information">
-          Supply Chain
+          Vehicles
         </Link>
         <Link className={navLink} to="https://freight.page.link/request-information">
           Trade Finance
         </Link>
-        <Link className={navLink} to="https://freight.page.link/request-information">
-          Solutions
+        <Link className={navLink} to="/dashboard">
+         Trade Network
         </Link>
-        <Link className={navLink} to="https://freight.page.link/request-information">
-          Network
-        </Link>
-        <Link className={navLink} to="https://freight.page.link/request-information">
-          Pricing
+        <Link className={navLink} to="/trading">
+        Protocol
         </Link>
       </div>
 
