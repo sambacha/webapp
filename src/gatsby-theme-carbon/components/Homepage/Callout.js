@@ -1,21 +1,21 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { Grid, Column, Row } from 'gatsby-theme-carbon';
+import React from 'react'
+import styled from '@emotion/styled'
+import { Grid, Column, Row } from 'gatsby-theme-carbon'
 
-import { grid, row, firstColumn, secondColumn } from './Callout.module.scss';
+import { grid, row, firstColumn, secondColumn } from './Callout.module.scss'
 
 const StyledGrid = styled(Grid)`
-  background-color: ${props =>
+  background-color: ${(props) =>
     props.theme.colors[props.backgroundColor] ||
     props.backgroundColor ||
     props.theme.colors.interactive02};
-  color: ${props =>
+  color: ${(props) =>
     props.theme.colors[props.color] ||
     props.color ||
     props.theme.colors.inverse01}};
   width: 100%;
   max-width: 100%;
-`;
+`
 
 const HomepageCallout = ({ leftText, rightText, ...rest }) => (
   <StyledGrid className={grid} {...rest}>
@@ -24,15 +24,14 @@ const HomepageCallout = ({ leftText, rightText, ...rest }) => (
       <Column colLg={4} colMd={4} className={firstColumn}>
         {leftText()}
       </Column>
-      <Column colLg={1} colMd={1}>
-      </Column>
+      <Column colLg={1} colMd={1}></Column>
       <Column colLg={4} colMd={4} className={secondColumn}>
         {rightText()}
       </Column>
       <Column colLg={1} colMd={1}></Column>
     </Row>
   </StyledGrid>
-);
+)
 
 HomepageCallout.defaultProps = {
   leftText: function renderLeftText() {
@@ -40,7 +39,7 @@ HomepageCallout.defaultProps = {
       <>
         Freight <strong>Trust & Clearing</strong>
       </>
-    );
+    )
   },
   rightText: function renderRightText() {
     return (
@@ -48,8 +47,8 @@ HomepageCallout.defaultProps = {
         <strong>Freight Trust Network</strong>
         <br />
       </p>
-    );
+    )
   },
-};
+}
 
-export default HomepageCallout;
+export default HomepageCallout

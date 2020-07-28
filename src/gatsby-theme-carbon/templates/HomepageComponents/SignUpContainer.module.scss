@@ -1,4 +1,4 @@
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -47,7 +47,6 @@ $carbon--theme: $carbon--theme--g90;
 }
 
 @media (max-width: 768px) {
-
   .signup-form {
     // margin: auto;
     // // margin: $spacing-01 $layout-07;

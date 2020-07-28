@@ -1,12 +1,8 @@
-import React from "react";
-import { articleContent } from "./ArticleContainer.module.scss";
-import { Row, Column } from "gatsby-theme-carbon";
+import React from 'react'
+import { articleContent } from './ArticleContainer.module.scss'
+import { Row, Column } from 'gatsby-theme-carbon'
 
-export const ArticleContainer = ({
-  title,
-  subTitle,
-  children
-}) => (
+export const ArticleContainer = ({ title, subTitle, children }) => (
   <div className={articleContent} id="article-content">
     <Row>
       <Column colMd={6} colLg={6}>
@@ -20,4 +16,4 @@ export const ArticleContainer = ({
     </Row>
     {children}
   </div>
-);
+)

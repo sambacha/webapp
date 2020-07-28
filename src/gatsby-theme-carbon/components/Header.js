@@ -40,8 +40,10 @@ const Header = ({ children }) => {
     <ShellHeader aria-label="Header" className={header}>
       <SkipToContent href="#main-content" className={skipToContent} />
 
-
-      <Link className={headerName} to="https://freight.page.link/request-information">
+      <Link
+        className={headerName}
+        to="https://freight.page.link/request-information"
+      >
         Freight Trust
       </Link>
 
@@ -50,22 +52,27 @@ const Header = ({ children }) => {
         <Link className={navLink} to="/features">
           Solutions
         </Link>
-        <Link className={navLink} to="https://freight.page.link/request-information">
+        <Link
+          className={navLink}
+          to="https://freight.page.link/request-information"
+        >
           Vehicles
         </Link>
-        <Link className={navLink} to="https://freight.page.link/request-information">
+        <Link
+          className={navLink}
+          to="https://freight.page.link/request-information"
+        >
           Trade Finance
         </Link>
         <Link className={navLink} to="/dashboard">
-         Trade Network
+          Trade Network
         </Link>
         <Link className={navLink} to="/trading">
-        Protocol
+          Protocol
         </Link>
       </div>
 
       {navigationStyle && <HeaderNav />}
-
     </ShellHeader>
   )
 }

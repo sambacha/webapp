@@ -1,11 +1,10 @@
-# Freight Trust Corporate 
+# Freight Trust Corporate
 
 ### Overview
 
 - React
 - Gatsby
 - Fathom
-
 
 ## License
 

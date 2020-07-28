@@ -1,4 +1,4 @@
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;600;700&display=swap');
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -17,7 +17,6 @@ $carbon--theme: $carbon--theme--g90;
   height: 100%;
   margin: 0px !important;
 }
-
 
 .grid {
   background-size: cover;

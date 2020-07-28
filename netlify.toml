@@ -1,6 +1,6 @@
 [netlify]
   base = "."
-  command = "npm install && rm -rf .cache && gatsby clean && gatsby build"
+  command = "npm install && gatsby clean && gatsby build"
   publish = "public"
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
@@ -27,5 +27,5 @@
 [context.staging]
   command = "npm run build"
 
-[serve]
-  command = "gatsby serve"
+[build.analyze]
+  command = "ANALYZE=true gatsby build"
