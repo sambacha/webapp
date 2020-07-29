@@ -12,11 +12,3 @@ export const wrapRootElement = ({ element }) => (
         {element}
     </AuthProvider>
 );
-  <AuthProvider
-    navigate={navigate}
-    auth0_domain="besu.auth0.com"
-    auth0_client_id="ubgigpsqe48GdzYbsXFoKoa9xhDDvkyX"
-  >
-    {element}
-  </AuthProvider>
-)

@@ -5,7 +5,6 @@ module.exports = {
       'Blockchain Powered EDI for Supply Chain, Trade Finance & Logistics',
     keywords: 'edi,logistics,supply chain,customs,trade,freight',
     siteUrl: `https://www.freighttrust.com`,
-    author: 'drew',
   },
   pathPrefix: `/gtc`,
   plugins: [
@@ -141,9 +140,22 @@ module.exports = {
       resolve: 'gatsby-plugin-iubenda-cookie-footer',
       options: {
         iubendaOptions: {
+          countryDetection: true,
+          consentOnContinuedBrowsing: false,
+          ccpaAcknowledgeOnDisplay: true,
+          whitelabel: false,
           lang: 'en',
-          siteId: 1565428,
-          cookiePolicyId: 6938658,
+          siteId: 1967509,
+          preferenceCookie: { expireAfter: 365 },
+          enableCcpa: true,
+          cookiePolicyId: 55466554,
+          banner: {
+            acceptButtonDisplay: true,
+            customizeButtonDisplay: true,
+            rejectButtonDisplay: true,
+            position: 'bottom',
+            rejectButtonCaption: 'Decline',
+          },
         },
       },
     },
