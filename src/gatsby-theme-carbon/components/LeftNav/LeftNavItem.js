@@ -21,8 +21,6 @@ const LeftNavItem = (props) => {
   }
   const pathPrefix = usePathprefix()
 
-  console.log('\n\n--------- LeftNavItem ---------\n\n', items, isSpace)
-
   return (
     <Location>
       {({ location }) => {

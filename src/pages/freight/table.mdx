@@ -1,4 +1,4 @@
-import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
+import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage'
 import {
   ArticleContainer,
   BrandsList,
@@ -7,10 +7,10 @@ import {
   SignUpContainer,
   BannerContainer,
   RequestDemoContent,
-} from "gatsby-theme-carbon/src/templates/HomepageComponents";
-import { Button } from "carbon-components-react";
+} from 'gatsby-theme-carbon/src/templates/HomepageComponents'
+import { Button } from 'carbon-components-react'
 
-export default HomepageTemplate;
+export default HomepageTemplate
 
 <BannerContainer 
   title="Eliminate expensive EDI pricing today"
@@ -26,7 +26,6 @@ export default HomepageTemplate;
   title="Operational Playbooks and Data Workflows"
   content="We provide our users the ability to utilizde Apache NiFi and Jupyter Notebooks to automatically ingest real time data thats relevent to their business."
 >
-
 
   <Row>
     <Column colMd={2} colLg={2}>
@@ -62,40 +61,37 @@ export default HomepageTemplate;
   </Row>
 </BrandsList>
 
-
-
-
 <DataTable
-  filterRows={function noRefCheck(){}}
+  filterRows={function noRefCheck() {}}
   headers={[
     {
       header: 'Name',
-      key: 'name'
+      key: 'name',
     },
     {
       header: 'Protocol',
-      key: 'protocol'
+      key: 'protocol',
     },
     {
       header: 'Port',
-      key: 'port'
+      key: 'port',
     },
     {
       header: 'Rule',
-      key: 'rule'
+      key: 'rule',
     },
     {
       header: 'Attached Groups',
-      key: 'attached_groups'
+      key: 'attached_groups',
     },
     {
       header: 'Status',
-      key: 'status'
-    }
+      key: 'status',
+    },
   ]}
   locale="en"
   overflowMenuOnHover
-  render={function noRefCheck(){}}
+  render={function noRefCheck() {}}
   rows={[
     {
       attached_groups: 'Kevin’s VM Groups',
@@ -104,7 +100,7 @@ export default HomepageTemplate;
       port: 3000,
       protocol: 'HTTP',
       rule: 'Round robin',
-      status: 'Disabled'
+      status: 'Disabled',
     },
     {
       attached_groups: 'Maureen’s VM Groups',
@@ -113,7 +109,7 @@ export default HomepageTemplate;
       port: 443,
       protocol: 'HTTP',
       rule: 'Round robin',
-      status: 'Starting'
+      status: 'Starting',
     },
     {
       attached_groups: 'Andrew’s VM Groups',
@@ -122,7 +118,7 @@ export default HomepageTemplate;
       port: 80,
       protocol: 'HTTP',
       rule: 'DNS delegation',
-      status: 'Active'
+      status: 'Active',
     },
     {
       attached_groups: 'Marc’s VM Groups',
@@ -131,7 +127,7 @@ export default HomepageTemplate;
       port: 3000,
       protocol: 'HTTP',
       rule: 'Round robin',
-      status: 'Disabled'
+      status: 'Disabled',
     },
     {
       attached_groups: 'Mel’s VM Groups',
@@ -140,7 +136,7 @@ export default HomepageTemplate;
       port: 443,
       protocol: 'HTTP',
       rule: 'Round robin',
-      status: 'Starting'
+      status: 'Starting',
     },
     {
       attached_groups: 'Ronja’s VM Groups',
@@ -149,10 +145,10 @@ export default HomepageTemplate;
       port: 80,
       protocol: 'HTTP',
       rule: 'DNS delegation',
-      status: 'Active'
-    }
+      status: 'Active',
+    },
   ]}
   size={null}
-  sortRow={function noRefCheck(){}}
-  translateWithId={function noRefCheck(){}}
+  sortRow={function noRefCheck() {}}
+  translateWithId={function noRefCheck() {}}
 />

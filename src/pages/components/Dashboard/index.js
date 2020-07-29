@@ -199,8 +199,6 @@ class Dashboard extends Component {
                   </TableHead>
                   <TableBody>
                     {rows.map((row) => {
-                      console.log('row\n', row)
-
                       return (
                         <TableRow {...getRowProps({ row })}>
                           <TableSelectRow {...getSelectionProps({ row })} />

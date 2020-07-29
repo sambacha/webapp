@@ -1,4 +1,4 @@
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -37,7 +37,7 @@ $carbon--theme: $carbon--theme--g90;
 .brands-content h1 {
   text-align: center;
   @include carbon--type-style('productive-heading-04');
-  text-shadow: 2px 2px 8px #FFFFFF;
+  text-shadow: 2px 2px 8px #ffffff;
 }
 
 .brands-content p {

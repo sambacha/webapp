@@ -13,7 +13,7 @@ pages:
     - rm -rf public/
     - yarn install
     - yarn build:clean
-    
+
   artifacts:
     paths:
       - public

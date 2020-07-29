@@ -1,4 +1,4 @@
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -23,7 +23,7 @@ $carbon--theme: $carbon--theme--g90;
     margin: auto;
     margin-bottom: $spacing-09;
     max-width: 320px;
-    transition: transform .1s;
+    transition: transform 0.1s;
     cursor: pointer;
   }
 

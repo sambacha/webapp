@@ -1,7 +1,7 @@
-import React from "react";
-import { snapCard, snapContent } from "./SnapContent.module.scss";
-import { Button } from "carbon-components-react";
-import { Row, Column } from "gatsby-theme-carbon";
+import React from 'react'
+import { snapCard, snapContent } from './SnapContent.module.scss'
+import { Button } from 'carbon-components-react'
+import { Row, Column } from 'gatsby-theme-carbon'
 
 export const SnapCard = (props) => (
   <div className={snapCard}>
@@ -11,12 +11,9 @@ export const SnapCard = (props) => (
       {props.buttonLabel}
     </Button>
   </div>
-);
+)
 
-export const SnapContent = ({
-  title,
-  children
-}) => (
+export const SnapContent = ({ title, children }) => (
   <div className={snapContent}>
     <Row>
       <Column colSm={12} colMd={6} colLg={6}>
@@ -26,4 +23,4 @@ export const SnapContent = ({
     </Row>
     {children}
   </div>
-);
+)

@@ -19,8 +19,6 @@ const LeftNav = (props) => {
 
   const navItems = isCustomNav ? customNavItems : defaultNavItems
 
-  console.log('\n\n---------- nav items -----------\n\n', navItems)
-
   // TODO: replace old addon website styles with sass modules, move to wrapper
   return (
     <LeftNavWrapper expanded={leftNavIsOpen}>

@@ -19,82 +19,44 @@ import cx from 'classnames'
 const ProductFooter = (
   <div>
     <h5>Quick Links</h5>
-<<<<<<< HEAD
-    <a href="https://freight.page.link/demo">Partners</a>
-    <a href="https://freight.page.link/demo">Integrations</a>
-    <a href="https://freight.page.link/demo">Service Bus</a>
-    <a href="https://freight.page.link/demo">API</a>
-    <a href="https://freight.page.link/demo">ABI</a>
-    <a href="https://freight.page.link/demo">Rulebook</a>
-    <a href="https://freight.page.link/demo">Omnibus</a>
-    <a href="https://freight.page.link/demo">Legal Parity</a>
-=======
     <a href="https://drewry.co.uk">Partners</a>
     <a href="https://freight.page.link/request-information">Integrations</a>
     <a href="https://ft-docs.netlify.app">API</a>
-    <a href="https://ft-docs.netlify.app">ABI</a>
     <a href="https://ft-docs.netlify.appn">Rulebook</a>
     <a href="https://ft-docs.netlify.app">Omnibus</a>
-    <a href="https://freight.page.link/request-information">Legal Parity</a>
->>>>>>> 309506aaaf21913b5869a6a43aeabf68161f810f
   </div>
 )
 
 const CoporateFooter = (
   <div>
     <h5>Corporate</h5>
-<<<<<<< HEAD
-    <a href="https://freight.page.link/demo">About Us</a>
-    <a href="https://freight.page.link/demo">Press</a>
-    <a href="https://freight.page.link/demo">Customers</a>
-    <a href="https://freight.page.link/demo">Branding</a>
-    <a href="https://freight.page.link/demo">Whitepapers</a>
-    <a href="https://freight.page.link/demo">System Status</a>
-    <a href="https://freight.page.link/demo">Compliance</a>
-=======
     <a href="https://ft-docs.netlify.app">About Us</a>
     <a href="https://freight.page.link/request-information">Press</a>
     <a href="https://github.com/freight-trust/branding">Branding</a>
     <a href="https://freight.page.link/request-information">Whitepapers</a>
     <a href="https://freight.page.link/request-information">System Status</a>
     <a href="https://freight.page.link/request-information">Compliance</a>
->>>>>>> 309506aaaf21913b5869a6a43aeabf68161f810f
   </div>
 )
 
 const SolutionsFooter = (
   <div>
     <h5>Solutions</h5>
-<<<<<<< HEAD
-    <a href="https://freight.page.link/demo">Trucking</a>
-    <a href="https://freight.page.link/demo">Maritime</a>
-    <a href="https://freight.page.link/demo">Intermodal</a>
-    <a href="https://freight.page.link/demo">Finance</a>
-=======
     <a href="https://freight.page.link/request-information">Trucking</a>
     <a href="https://freight.page.link/request-information">Maritime</a>
     <a href="https://freight.page.link/request-information">Intermodal</a>
     <a href="https://freight.page.link/request-information">Finance</a>
->>>>>>> 309506aaaf21913b5869a6a43aeabf68161f810f
   </div>
 )
 
 const ResourcesFooter = (
   <div>
     <h5>Resources</h5>
-<<<<<<< HEAD
     <a href="https://freight.page.link/demo">Documentation</a>
     <a href="https://freight.page.link/demo">Open Source</a>
     <a href="https://freight.page.link/demo">Developers</a>
-    <a href="https://freight.page.link/demo">Engineering</a>
     <a href="https://freight.page.link/demo">Security</a>
-=======
-    <a href="https://ft-docs.netlify.app">Documentation</a>
-    <a href="https://github.com/freight-trust">Open Source</a>
-    <a href="https://github.com/freight-trust">Developers</a>
-    <a href="https://github.com/freight-trust">Engineering</a>
     <a href="https://github.com/freight-trust/security">Security</a>
->>>>>>> 309506aaaf21913b5869a6a43aeabf68161f810f
   </div>
 )
 
@@ -142,17 +104,15 @@ const CustomFooter = ({ homepage }) => {
           colXl={1}
           className={footerButtonCol}
         >
-<<<<<<< HEAD
+          {/* <div>
+            <Button>Register</Button>
+          </div> */}
           <div>
             <Button Register
             href="https://freight.page.link/demo"
             />
           </div>
-=======
-          {/* <div>
-            <Button>Register</Button>
-          </div> */}
->>>>>>> 309506aaaf21913b5869a6a43aeabf68161f810f
+
           <div>
             {isAuthenticated() ? (
               <Button kind="tertiary" onClick={logout}>
