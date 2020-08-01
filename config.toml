@@ -1,10 +1,20 @@
-[netlify]
-  base = "."
-  command = "yarn clean && gatsby build"
-  publish = "public"
+[context.production]
+  command = "npm install && mpm run-script build"
+  [context.production.environment]
+    base = "."
+    command = "npm run-script clean && mpm run-script build"
+    publish = "public"
+    environment = {  NODE_VERSION = "12" }
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
 [build]
-    command = "gatsby build"
+    command = "npm run build"
+
 
 [build.processing]
   skip_processing = false
@@ -18,9 +28,3 @@
   pretty_urls = true
 [build.processing.images]
   compress = true
-   
-[context.staging]
-  command = "yarn clean && gatsby build"
-
-[serve]
-  command = "gatsby serve"

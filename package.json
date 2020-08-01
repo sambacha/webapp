@@ -48,6 +48,7 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-react": "^7.20.3",
     "gatsby-plugin-eslint": "^2.0.8",
+    "standard-changelog": "^2.0.24",
     "webpack": "^4.43.0"
   },
   "husky": {

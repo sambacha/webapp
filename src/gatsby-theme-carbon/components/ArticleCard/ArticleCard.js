@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import { Link } from 'gatsby';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classnames from 'classnames'
+import { Link } from 'gatsby'
 import {
   Launch20,
   Download20,
   ArrowRight20,
   Error20,
   Email20,
-} from '@carbon/icons-react';
-import { settings } from 'carbon-components';
+} from '@carbon/icons-react'
+import { settings } from 'carbon-components'
 
-const { prefix } = settings;
+const { prefix } = settings
 
 export default class ArticleCard extends React.Component {
   render() {
@@ -28,28 +28,28 @@ export default class ArticleCard extends React.Component {
       actionIcon,
       className,
       ...rest
-    } = this.props;
+    } = this.props
 
-    let isLink;
+    let isLink
     if (href !== undefined) {
-      isLink = href.charAt(0) === '/';
+      isLink = href.charAt(0) === '/'
     }
 
     const ArticleCardClassNames = classnames([`${prefix}--article-card`], {
       [className]: className,
       [`${prefix}--article-card--disabled`]: disabled,
       [`${prefix}--article-card--dark`]: color === 'dark',
-    });
+    })
 
     const aspectRatioClassNames = classnames(
       [`${prefix}--aspect-ratio`],
       [`${prefix}--aspect-ratio--2x1`]
-    );
+    )
 
     const carbonTileclassNames = classnames(
       [`${prefix}--tile`],
       [`${prefix}--tile--clickable`]
-    );
+    )
 
     const cardContent = (
       <>
@@ -99,17 +99,17 @@ export default class ArticleCard extends React.Component {
           </div>
         </div>
       </>
-    );
+    )
 
-    let cardContainer;
+    let cardContainer
     if (disabled === true) {
-      cardContainer = <div className={carbonTileclassNames}>{cardContent}</div>;
+      cardContainer = <div className={carbonTileclassNames}>{cardContent}</div>
     } else if (isLink === true) {
       cardContainer = (
         <Link to={href} className={carbonTileclassNames} {...rest}>
           {cardContent}
         </Link>
-      );
+      )
     } else {
       cardContainer = (
         <a
@@ -121,10 +121,10 @@ export default class ArticleCard extends React.Component {
         >
           {cardContent}
         </a>
-      );
+      )
     }
 
-    return <div className={ArticleCardClassNames}>{cardContainer}</div>;
+    return <div className={ArticleCardClassNames}>{cardContainer}</div>
   }
 }
 
@@ -180,10 +180,10 @@ ArticleCard.propTypes = {
    * Specify a custom class
    */
   className: PropTypes.string,
-};
+}
 
 ArticleCard.defaultProps = {
   color: 'light',
   disabled: false,
   actionIcon: '',
-};
+}

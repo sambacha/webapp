@@ -104,13 +104,13 @@ const CustomFooter = ({ homepage }) => {
           colXl={1}
           className={footerButtonCol}
         >
-          {/* <div>
-            <Button>Register</Button>
-          </div> */}
+          {
+            <div>
+              <Button>Register</Button>
+            </div>
+          }
           <div>
-            <Button Register
-            href="https://freight.page.link/demo"
-            />
+            <Button Register href="https://freight.page.link/demo" />
           </div>
 
           <div>
@@ -154,9 +154,21 @@ const CustomFooter = ({ homepage }) => {
       <Row className={footerLastRow}>
         <Column colMd={6} colLg={6}>
           <div className={footerFollowSection}>
-            <span Terms of Service href="https://github.com/freight-trust/legal/blob/master/src/terms-of-service.md" />
-            <span Privacy Policy href="https://github.com/freight-trust/legal/blob/master/src/privacy-policy.md" />
-            <span Security href="https://github.com/freight-trust/infrastructure/tree/master/security" />
+            <span
+              Terms
+              of
+              Service
+              href="https://github.com/freight-trust/legal/blob/master/src/terms-of-service.md"
+            />
+            <span
+              Privacy
+              Policy
+              href="https://github.com/freight-trust/legal/blob/master/src/privacy-policy.md"
+            />
+            <span
+              Security
+              href="https://github.com/freight-trust/infrastructure/tree/master/security"
+            />
           </div>
         </Column>
 
