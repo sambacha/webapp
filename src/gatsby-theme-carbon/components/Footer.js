@@ -140,9 +140,8 @@ const CustomFooter = ({ homepage }) => {
           <a href="https://github.com/freight-trust">GitHub</a>
           <a href="https://github.com/freight-trust/releases">Releases</a>
           <a href="https://quay.io/organization/freight">Quay.io</a>
-          <a href="https://raw.githubusercontent.com/freight-trust/rss/master/corporate.atom">
-            RSS
-          </a>
+          <a href="https://raw.githubusercontent.com/freight-trust/rss/master/corporate.atom">RSS</a>
+
         </Column>
       </Row>
 
