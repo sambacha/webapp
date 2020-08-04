@@ -38,56 +38,7 @@ export default HomepageTemplate
   title="An Ecosystem Unlike Any Other"
   content="Blockchain, EDI messaging & Commodities"
 >
-  <Row>
-    <Column colMd={2} colLg={2}>
-      <Button
-        kind="secondary"
-        href="https://freight.page.link/request-information"
-      >
-        EDI X12
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button
-        kind="secondary"
-        href="https://freight.page.link/request-information"
-      >
-        EDINT AS2/AS4
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button
-        kind="secondary"
-        href="https://freight.page.link/request-information"
-      >
-        EDI EDIFACT
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button
-        kind="secondary"
-        href="https://freight.page.link/request-information"
-      >
-        Customs/Imports
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button
-        kind="secondary"
-        href="https://freight.page.link/request-information"
-      >
-        Customs/Exports
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button
-        kind="secondary"
-        href="https://freight.page.link/request-information"
-      >
-        Freight Forwarders
-      </Button>
-    </Column>
-  </Row>
+
 </BrandsList>
 
 <SnapContent
@@ -108,33 +59,33 @@ export default HomepageTemplate
   <Row>
     <Column colSm={12} colMd={6} colLg={6}>
       <SnapCard
-        title="Unworkable"
-        buttonLabel="Closed-source Ecosystems"
-        content="Broken business processes have significant consequences. We provide consistent workflows to provision, secure, connect, and run a fault-tolerant EDI VAN Network at half the cost per message "
+        title="Data exchange"
+        buttonLabel="B2B Messages"
+        content="Exchange information and data with partners in different currencies and languages."
         href="https://freight.page.link/snap-find-out-more"
       />
     </Column>
     <Column colSm={12} colMd={6} colLg={6}>
       <SnapCard
-        title="Unavoidable"
+        title="Customs compliance"
         buttonLabel="From Regulations to Trade"
-        content="Easily share job related information across your network, keeping yourself and your trading communities better informed and able to make more timely decisions. "
+        content="Direct data exchange with national customs and government authorities keeps you compliant with global regulatory requirements."
         href="https://freight.page.link/snap-find-out-more"
       />
     </Column>
     <Column colSm={12} colMd={6} colLg={6}>
       <SnapCard
-        title="Urgent"
-        buttonLabel="Real Time Workflow"
-        content="Get instant validation details per message, segment and data element. Submit documents and shipping information in real-time to increase operational efficiency and accuracy."
+        title="Blockchain Connectivity"
+        buttonLabel="MQ + Smart Contracts"
+        content="Set-up messaging with a range of partners, including overseas agents, customs brokers, shipping companies, CFS, warehouse and more."
         href="https://freight.page.link/snap-find-out-more"
       />
     </Column>
     <Column colSm={12} colMd={6} colLg={6}>
       <SnapCard
-        title="Automated Notifications"
+        title="Improve visibility"
         buttonLabel="Mapping, Batching, and Scheduling"
-        content="Status of shipments for clearing, Statements (for Type 3 filings), Invoices, delivery orders, and Forms 7501and 3461. Get drawback reports that provide detail about their entries."
+        content="Easily share job related information across your network, keeping yourself and your trading communities better informed and able to make more timely decisions."
         href="https://freight.page.link/snap-find-out-more"
       />
     </Column>
@@ -143,7 +94,8 @@ export default HomepageTemplate
 
 <ArticleContainer
   title="Automation as Dynamic Infrastructure"
-  subTitle="Built-in automation tools which trigger data transmission between partiess creating one single unified workflow for communicating and resolving issues."
+  subTitle="Freight Trust enables integrations with our workflow automation tools which triggers data transmission between partiess creating one single unified workflow for communicating and resolving issues, automatically.
+  "
 >
 <Row>
 <Column colMd={4} colLg={4}>
@@ -168,7 +120,7 @@ export default HomepageTemplate
       date="July 29th, 2020"
       readTime="Read time: 3 min"
       color="dark"
-      href="https://medium.com/freighttrust/the-dominant-design-of-information-processing-for-the-21st-century-9acdbc86ade7?source=collection_home---4------0-----------------------"
+      href="https://medium.com/freighttrust"
       actionIcon="arrowRight"
       >
 
@@ -182,7 +134,7 @@ export default HomepageTemplate
       author="Analysis"
       date="July 20th, 2020"
       readTime="Read time: 4 min"
-      href="https://medium.com/freighttrust/cheirographon-examining-2-000-years-of-signatures-and-contracts-d9f133189974?source=collection_home---4------2-----------------------"
+      href="https://medium.com/freighttrust"
       actionIcon="arrowRight"
       >
 
@@ -203,10 +155,11 @@ export default HomepageTemplate
   subTitle="The most reliable ocean container freight pricing combined with our enterprise blockchain EDI Network"
 >
 
-  <Button href="https://drewry.co.uk" kind="secondary">
-    Visit
+  <Button href="https://freight.page.link/request-information" kind="secondary">
+    Request Information
   </Button>
   <Button href="https://freight.page.link/request-information" kind="tertiary">
     Contact Us
   </Button>
 </RequestDemoContent>
+p

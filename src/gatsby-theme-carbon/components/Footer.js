@@ -19,10 +19,10 @@ import cx from 'classnames'
 const ProductFooter = (
   <div>
     <h5>Quick Links</h5>
-    <a href="https://drewry.co.uk">Partners</a>
+    <a href="https://drewry.co.uk">Drewry Freight Index</a>
     <a href="https://freight.page.link/request-information">Integrations</a>
     <a href="https://ft-docs.netlify.app">API</a>
-    <a href="https://ft-docs.netlify.appn">Rulebook</a>
+    <a href="https://ft-docs.netlify.app">Rulebook</a>
     <a href="https://ft-docs.netlify.app">Omnibus</a>
   </div>
 )
@@ -33,8 +33,6 @@ const CoporateFooter = (
     <a href="https://ft-docs.netlify.app">About Us</a>
     <a href="https://freight.page.link/request-information">Press</a>
     <a href="https://github.com/freight-trust/branding">Branding</a>
-    <a href="https://freight.page.link/request-information">Whitepapers</a>
-    <a href="https://freight.page.link/request-information">System Status</a>
     <a href="https://freight.page.link/request-information">Compliance</a>
   </div>
 )
@@ -42,20 +40,20 @@ const CoporateFooter = (
 const SolutionsFooter = (
   <div>
     <h5>Solutions</h5>
-    <a href="https://freight.page.link/request-information">Trucking</a>
-    <a href="https://freight.page.link/request-information">Maritime</a>
-    <a href="https://freight.page.link/request-information">Intermodal</a>
-    <a href="https://freight.page.link/request-information">Finance</a>
+    <a href="https://freight.page.link/request-information">For Trucking</a>
+    <a href="https://freight.page.link/request-information">For Maritime</a>
+    <a href="https://freight.page.link/request-information">For Intermodal</a>
+    <a href="https://freight.page.link/request-information">For Finance</a>
   </div>
 )
 
 const ResourcesFooter = (
   <div>
     <h5>Resources</h5>
-    <a href="https://freight.page.link/demo">Documentation</a>
-    <a href="https://freight.page.link/demo">Open Source</a>
-    <a href="https://freight.page.link/demo">Developers</a>
-    <a href="https://freight.page.link/demo">Security</a>
+    <a href="https://ft-docs.netlify.app">Documentation</a>
+    <a href="https://github.com/freight-trust">Open Source</a>
+    <a href="https://github.com/freight-chain">Community</a>
+    <a href="https://github.com/freight-trust/editoken">$EDI Token</a>
     <a href="https://github.com/freight-trust/security">Security</a>
   </div>
 )
@@ -104,15 +102,9 @@ const CustomFooter = ({ homepage }) => {
           colXl={1}
           className={footerButtonCol}
         >
-          {
-            <div>
-              <Button>Register</Button>
-            </div>
-          }
-          <div>
-            <Button Register href="https://freight.page.link/demo" />
-          </div>
-
+          {/* <div>
+            <Button>Register</Button>
+          </div> */}
           <div>
             {isAuthenticated() ? (
               <Button kind="tertiary" onClick={logout}>
@@ -139,36 +131,27 @@ const CustomFooter = ({ homepage }) => {
 
         <Column colMd={2} colLg={2}>
           <a href="https://twitter.com/freighttrustnet">Twitter</a>
-          <a href="#top">Linkedin</a>
+          <a href="#top">Instagram</a>
           <a href="https://medium.com/freighttrust">Medium</a>
-          <a href="https://t.mehttps://freight.page.link/demotrust">Telegram</a>
+          <a href="https://t.me/freighttrust">Telegram</a>
         </Column>
 
         <Column colMd={2} colLg={2}>
           <a href="https://github.com/freight-trust">GitHub</a>
-          <a href="http://fr8.link">Network</a>
-          <a href="http://freightlayer.io">Block Explorer</a>
+          <a href="https://github.com/freight-trust/releases">Releases</a>
+          <a href="https://quay.io/organization/freight">Quay.io</a>
+          <a href="https://raw.githubusercontent.com/freight-trust/rss/master/corporate.atom">
+            RSS
+          </a>
         </Column>
       </Row>
 
       <Row className={footerLastRow}>
         <Column colMd={6} colLg={6}>
           <div className={footerFollowSection}>
-            <span
-              Terms
-              of
-              Service
-              href="https://github.com/freight-trust/legal/blob/master/src/terms-of-service.md"
-            />
-            <span
-              Privacy
-              Policy
-              href="https://github.com/freight-trust/legal/blob/master/src/privacy-policy.md"
-            />
-            <span
-              Security
-              href="https://github.com/freight-trust/infrastructure/tree/master/security"
-            />
+            <span>Terms of Service</span>
+            <span>Privacy Policy</span>
+            <span> Security </span>
           </div>
         </Column>
 

@@ -1,0 +1,1588 @@
+---
+title: Boilerplate
+description: Boilerplate of all the components of the carbon theme
+---
+
+<PageDescription>
+
+Boilerplate of all the components of the carbon theme
+
+</PageDescription>
+
+## Accordion
+
+<Accordion>
+<AccordionItem title="Title 1">
+
+In ac nisi ut mauris venenatis blandit a et ante. Mauris eu congue velit, eget
+dictum diam. Etiam sed turpis quis ligula interdum lobortis eu et libero.
+Praesent nec eros sit amet elit tempor egestas cursus non nulla. Vestibulum
+dictum luctus lorem in rhoncus.
+
+Nullam vestibulum blandit libero, ac tempus felis tristique id. Aliquam rhoncus
+vestibulum dui eu dictum. Morbi congue purus eu libero sodales, nec sollicitudin
+ligula tempor.
+
+- list item
+- list item
+- list item
+
+</AccordionItem>
+  <AccordionItem title="Title 2">Content Section</AccordionItem>
+  <AccordionItem title="Title 3">Content Section</AccordionItem>
+</Accordion>
+
+## Code
+
+```mdx path=components/Accordion/Accordion.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Accordion
+<Accordion>
+  <AccordionItem title="Title 1">Content Section</AccordionItem>
+  <AccordionItem title="Title 2">Content Section</AccordionItem>
+  <AccordionItem title="Title 3">Content Section</AccordionItem>
+</Accordion>
+```
+
+## AnchorLinks
+
+<Title>Normal</Title>
+
+<AnchorLinks>
+  <AnchorLink>Link 1</AnchorLink>
+  <AnchorLink>Link 2</AnchorLink>
+  <AnchorLink>Link 3</AnchorLink>
+  <AnchorLink>Link 4</AnchorLink>
+  <AnchorLink>Link 5</AnchorLink>
+  <AnchorLink>Link 6</AnchorLink>
+  <AnchorLink>Link 7</AnchorLink>
+</AnchorLinks>
+
+<Title>Small</Title>
+
+<AnchorLinks small>
+  <AnchorLink>Small link 1</AnchorLink>
+  <AnchorLink>Small link 2</AnchorLink>
+  <AnchorLink>Small link 3</AnchorLink>
+</AnchorLinks>
+
+## Code
+
+<Title>Normal</Title>
+
+```mdx path=components/AnchorLinks/AnchorLinks.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/AnchorLinks
+<AnchorLinks>
+  <AnchorLink>Link 1</AnchorLink>
+  <AnchorLink>Link 2</AnchorLink>
+  <AnchorLink>Link 3</AnchorLink>
+  <AnchorLink>Link 4</AnchorLink>
+  <AnchorLink>Link 5</AnchorLink>
+  <AnchorLink>Link 6</AnchorLink>
+  <AnchorLink>Link 7</AnchorLink>
+</AnchorLinks>
+```
+
+<Title>Small</Title>
+
+```mdx path=components/AnchorLinks/AnchorLinks.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/AnchorLinks
+<AnchorLinks small>
+  <AnchorLink>Small link 1</AnchorLink>
+  <AnchorLink>Small link 2</AnchorLink>
+  <AnchorLink>Small link 3</AnchorLink>
+</AnchorLinks>
+```
+
+## ArticleCard
+
+<Row>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      subTitle="subTitle"
+      title="Title"
+      author="Josh Black"
+      date="April 29, 2019"
+      readTime="Read time: 5 min"
+      href="/"
+      >
+
+  </ArticleCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      title="Explore & Create"
+      author="Josh Black"
+      href="https://www.ibm.com"
+      actionIcon="arrowRight"
+      >
+
+  </ArticleCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      title="Explore & Create a longer title example in this space"
+      href="https://www.ibm.com"
+      disabled
+      >
+
+  </ArticleCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      title="Explore & Create"
+      color="dark"
+      href="https://www.ibm.com"
+      actionIcon="download"
+      >
+
+  </ArticleCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      subTitle="subTitle"
+      title="Explore & Create"
+      author="Josh Black"
+      readTime="Read time: 5 min"
+      color="dark"
+      href="https://www.ibm.com"
+      actionIcon="email"
+      >
+
+  </ArticleCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      subTitle="subTitle"
+      title="Explore & Create"
+      author="Josh Black"
+      date="April 29, 2019"
+      readTime="Read time: 5 min"
+      color="dark"
+      disabled
+      >
+
+  </ArticleCard>
+</Column>
+</Row>
+
+## Code
+
+```mdx path=components/ArticleCard/ArticleCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ArticleCard
+<Row>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      subTitle="subTitle"
+      title="Title"
+      author="Josh Black"
+      date="April 29, 2019"
+      readTime="Read time: 5 min"
+      href="/">
+
+![Dark article layout mockup](/images/Article_05.jpg)
+
+    </ArticleCard>
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      title="Explore & Create"
+      author="Josh Black"
+      href="https://www.ibm.com"
+      actionIcon="arrowRight">
+
+![Dark article layout mockup](/images/Article_05.jpg)
+
+    </ArticleCard>
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      title="Explore & Create a longer title example in this space"
+      href="https://www.ibm.com"
+      disabled>
+
+![Dark article layout mockup](/images/Article_05.jpg)
+
+    </ArticleCard>
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      title="Explore & Create"
+      color="dark"
+      href="https://www.ibm.com"
+      actionIcon="download">
+
+![Dark article layout mockup](/images/Article_05.jpg)
+
+    </ArticleCard>
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      title="Explore & Create"
+      author="Josh Black"
+      readTime="Read time: 5 min"
+      color="dark"
+      href="https://www.ibm.com"
+      actionIcon="email">
+
+![Dark article layout mockup](/images/Article_05.jpg)
+
+    </ArticleCard>
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+    <ArticleCard
+      title="Explore & Create"
+      author="Josh Black"
+      date="April 29, 2019"
+      readTime="Read time: 5 min"
+      color="dark"
+      disabled>
+
+![Dark article layout mockup](/images/Article_05.jpg)
+
+    </ArticleCard>
+
+  </Column>
+</Row>
+```
+
+## Aside
+
+<Row>
+<Column colMd={5} colLg={8}>
+
+It is more important than ever that we own our own ethos, make palpable our
+brand values, and incorporate an instantly identifiable IBMness in everything we
+do.
+
+> Without aesthetic, design is either the humdrum repetition of familiar clichés
+> or a wild scramble for novelty. Without aesthetic, the computer is but a
+> mindless speed machine, producing effects without substance, form without
+> relevant content, or content without meaningful form.
+>
+> <cite>– Paul Rand</cite>
+
+Aesthetic is defined as the philosophical theory or set of principles governing
+outward appearance or actions.
+
+</Column>
+<Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
+<Aside aria-label="Example aside">
+
+**Good design is always good design.**
+
+What we borrow from our own design history is not a mid-century aesthetic in
+stylistic terms, but the modernist attitudes and approach used at the time.
+
+</Aside>
+
+</Column>
+</Row>
+
+### Code
+
+```mdx path=components/Aside/Aside.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Aside
+<Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
+  <Aside>
+
+**Good design is always good design.** What we borrow from our own design
+history is not a mid-century aesthetic in stylistic terms, but the modernist
+attitudes and approach used at the time.
+
+  </Aside>
+</Column>
+```
+
+## Caption
+
+<Title>Normal</Title>
+
+<Caption>
+  This is a regular caption. It will attempt to respond to it’s container
+  element appropriately.
+</Caption>
+
+<Title>Full-width</Title>
+
+<Caption fullWidth>
+  This is a full width caption. With this prop, the caption’s width will be 100%
+  so it will fill its container.
+</Caption>
+
+### Code
+
+<Title>Normal</Title>
+
+```mdx path=components/Caption/Caption.js src= https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Caption
+<Caption>
+  This is a regular caption. It will attempt to respond to it’s container
+  element appropriately.
+</Caption>
+```
+
+<Title>Full</Title>
+
+```mdx path=components/Caption/Caption.js src= https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Caption
+<Caption fullWidth>
+
+This is a full width caption. With this prop, the caption’s width will be 100%
+so it will fill its container.
+
+</Caption>
+```
+
+## Code blocks
+
+<Title>Horizontal overflow</Title>
+
+```markdown path=/directory/file.mdx
+## Path and src w/ overflow
+
+This example overflows to demonstrate the text fading out under the side bar.
+This example overflows to demonstrate the text fading out under the side bar.
+This example overflows to demonstrate the text fading out under the side bar.
+This example overflows to demonstrate the text fading out under the side bar.
+```
+
+<Title>Vertical overflow</Title>
+
+```markdown path=/directory/file.mdx
+## Path and src w/ overflow
+
+This example demonstrates the show more button. This example demonstrates the
+show more button. This example demonstrates the show more button. This example
+demonstrates the show more button. This example demonstrates the show more
+button. This example demonstrates the show more button. This example
+demonstrates the show more button. This example demonstrates the show more
+button. This example demonstrates the show more button. This example
+demonstrates the show more button. This example demonstrates the show more
+button. This example demonstrates the show more button.
+```
+
+### Code
+
+````
+```markdown path=/directory/file.mdx src=https://gatsby-theme-carbon.now.sh
+### Path and src
+
+This code snippet provides both a `path` and a `src`.
+```
+````
+
+## DoDontExample
+
+<Row>
+<Column colMd={4} colLg={4}>
+
+<Title>Image</Title>
+
+<DoDontExample type="do" captionTitle="Caption title" caption="Caption">
+
+![Alt text](./images/light-theme.jpg)
+
+</DoDontExample>
+</Column>
+<Column colMd={4} colLg={4}>
+
+<Title>Text</Title>
+
+<DoDontExample type="dont" aspectRatio="1:1"  color="dark" captionTitle="Caption title" caption="Caption" text="This is some text" />
+</Column>
+</Row>
+<Row>
+<Column colLg={8}>
+
+<Title>Video</Title>
+
+<DoDontExample type="do" caption="Caption" captionTitle="Caption title">
+
+<Video title="Video example" vimeoId="310583077" />
+
+</DoDontExample>
+</Column>
+</Row>
+
+### Code
+
+<Title>Image</Title>
+
+```mdx path=components/DoDontExample/DoDontExample.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/DoDontExample
+<DoDontExample type="do" captionTitle="Caption title" caption="Caption">
+
+![Alt text](images/light-theme.jpg)
+
+</DoDontExample>
+```
+
+<Title>Text</Title>
+
+```mdx path=components/DoDontExample/DoDontExample.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/DoDontExample
+<DoDontExample
+  type="dont"
+  aspectRatio="1:1"
+  color="dark"
+  captionTitle="Caption title"
+  caption="Caption"
+  text="This is some text"
+/>
+```
+
+<Title>Video</Title>
+
+```mdx path=components/DoDontExample/DoDontExample.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/DoDontExample
+<DoDontExample type="do" caption="Caption" captionTitle="Caption title">
+  <Video vimeoId="310583077" />
+</DoDontExample>
+```
+
+## DoDontRow
+
+<DoDontRow>
+
+<DoDont aspectRatio="1:1">
+
+![Alt text](./images/light-theme.jpg)
+
+</DoDont>
+
+<DoDont aspectRatio="1:1" type="dont">
+
+![Alt text](./images/light-theme.jpg)
+
+</DoDont>
+
+</DoDontRow>
+
+<DoDontRow>
+
+<DoDont aspectRatio="1:1" text="This is some text" />
+
+<DoDont type="dont" aspectRatio="1:1" text="This is some text" color="dark" />
+
+</DoDontRow>
+
+<DoDontRow>
+
+<DoDont
+  text="This is some text"
+  color="dark"
+  captionTitle="Caption title"
+  caption="Caption"
+  colLg="8"
+/>
+
+</DoDontRow>
+
+<DoDontRow>
+
+<DoDont colLg='8' captionTitle="Caption title" caption="Caption">
+
+<Video title="Video example" vimeoId="310583077" />
+
+</DoDont>
+
+</DoDontRow>
+
+### Code
+
+### Image
+
+```mdx path=components/DoDontRow/DoDontRow.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/DoDontRow
+<DoDontRow>
+  <DoDont aspectRatio="1:1">![Alt text](./images/light-theme.jpg)</DoDont>
+  <DoDont type="dont" aspectRatio="1:1">
+    ![Alt text](./images/light-theme.jpg)
+  </DoDont>
+</DoDontRow>
+```
+
+### Text
+
+```mdx path=components/DoDontRow/DoDontRow.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/DoDontRow
+<DoDontRow>
+  <DoDont text="This is some text" aspectRatio="1:1" />
+  <DoDont type="dont" text="This is some text" color="dark" aspectRatio="1:1" />
+</DoDontRow>
+<DoDontRow>
+  <DoDont
+    text="This is some text"
+    captionTitle="Caption title"
+    caption="Caption"
+    aspectRatio="1:1"
+    colLg="8"
+  />
+</DoDontRow>
+```
+
+### Video
+
+```mdx path=components/DoDontRow/DoDontRow.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/DoDontRow
+<DoDontRow>
+  <DoDont captionTitle="Caption title" caption="Caption" colLg="8">
+    <Video title="Video example" vimeoId="310583077" />
+  </DoDont>
+</DoDontRow>
+```
+
+## FeatureCard
+
+<FeatureCard
+  subTitle="With subtitle"
+  title="Title"
+  actionIcon="arrowRight"
+  href="/"
+  >
+
+![demo image](/images/large-image.jpg)
+
+</FeatureCard>
+
+<FeatureCard
+  title="Title"
+  actionIcon="arrowRight"
+  href="/"
+  color="dark"
+  >
+
+![smart work](/images/smart-work.jpg)
+
+</FeatureCard>
+
+## Code
+
+```mdx path=components/FeatureCard/FeatureCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/FeatureCard
+<FeatureCard
+  subTitle="With subtitle"
+  title="Title"
+  actionIcon="arrowRight"
+  href="/"
+  disabled
+  color="dark">
+
+![demo image](/images/large-image.jpg)
+
+</FeatureCard>
+```
+
+## Activating the dialog
+
+The Feedback button only becomes visible once you've supplied an `onSubmit`
+handler. To do that, we'll need to shadow the `FeedbackDialog` component.
+
+1. Create a new javascript file under
+   `src/gatsby-theme-carbon/components/FeedbackDialog/FeedbackDialog.js`.
+   Matching the filepath exactly is important here.
+
+2. Copy the following snippet into your new file
+
+```jsx
+import React from 'react'
+import ThemeFeedbackDialog from 'gatsby-theme-carbon/src/components/FeedbackDialog/FeedbackDialog'
+
+const FeedbackDialog = ({ props }) => {
+  const onSubmit = (data) => {
+    console.log({ ...data })
+  }
+
+  return <ThemeFeedbackDialog {...props} onSubmit={onSubmit} />
+}
+
+export default FeedbackDialog
+```
+
+## Creating a handler
+
+Next, you'll need a place to send the data. For the Carbon website, we use a
+serverless function that forwards the data to a
+[SurveyGizmo](https://www.surveygizmo.com/) quiz. You can see that function
+[here](https://github.com/carbon-design-system/carbon-website/blob/master/api/survey.ts).
+
+The handler can send a fetch request off to the endpoint you create. Update the
+`onSubmit` handler to send the data wherever you want. This function receives
+the following arguments:
+
+- `experience`: "Negative", "Positive" or "Neutral"
+- `comment`: An optional comment
+- `path`: the window location when the survey was submitted
+
+```jsx
+const FeedbackDialog = ({ props }) => {
+  const onSubmit = data => {
+    fetch(process.env.API_ENDPOINT, {
+      method: 'POST',
+      body: JSON.stringify(data),
+  });
+
+  return <ThemeFeedbackDialog {...props} onSubmit={onSubmit} />;
+};
+```
+
+## GifPlayer
+
+<Row>
+<Column colLg='4'>
+
+<Title>Light</Title>
+
+<GifPlayer>
+
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif)
+
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.jpg)
+
+</GifPlayer>
+</Column>
+</Row>
+
+<Row>
+<Column colLg='8'>
+
+<Title>Dark</Title>
+
+<GifPlayer color='dark'>
+
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif)
+
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.jpg)
+
+</GifPlayer>
+</Column>
+</Row>
+
+## Code
+
+Place two images inside of the GifPlayer component. The first image will be used
+as the gif, the second image will be used as the static image on pause. Only
+provide two images inside the component, do not place any other children inside
+the component.
+
+<Title>Light</Title>
+
+```mdx path=components/GifPlayer/GifPlayer.js src= https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/GifPlayer
+<Column colLg='4'>
+<GifPlayer>
+
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif) // must be gif
+
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.jpg) // must be static
+image
+
+</GifPlayer>
+</Column>
+```
+
+<Title>Dark</Title>
+
+```mdx path=components/GifPlayer/GifPlayer.js src= https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/GifPlayer
+<Column colLg='8'>
+<GifPlayer color='dark'>
+
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif) //
+must be gif
+
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.jpg) //must
+be static image
+
+</GifPlayer>
+</Column>
+```
+
+## Row
+
+The `<Row>` component is a wrapper that adds the `bx--row` class to a wrapper
+div. You will want to use this to define rows that you will place `<Column>`
+components inside of.
+
+### Code
+
+```mdx path=components/Grid.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Grid
+<Row>
+  <Column>
+    Content or additional <Components />
+  </Column>
+</Row>
+```
+
+<Title>Row props</Title>
+
+| property  | propType | required | default | description           |
+| --------- | -------- | -------- | ------- | --------------------- |
+| children  | node     |          |         |                       |
+| className | string   |          |         | Add custom class name |
+
+## Column
+
+The `<Column>` component is used to define column widths for your content, you
+can set the rules at different breakpoints with the props.
+
+### Example
+
+<Row>
+<Column colMd={4} colLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+</Row>
+
+<Title>No gutter left</Title>
+
+<Row>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+</Row>
+
+<Title>No gutter</Title>
+
+<Row>
+<Column colMd={4} colLg={4} noGutterSm>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4} noGutterSm>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4} noGutterSm>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+</Row>
+
+<Title>Offset</Title>
+
+<Row>
+<Column colMd={4} colLg={4} offsetLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+</Row>
+
+### Code
+
+```mdx path=components/Grid.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Grid
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+</Row>
+```
+
+<Title>No gutter left</Title>
+
+```mdx path=components/Grid.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Grid
+<Row>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+</Row>
+```
+
+<Title>No gutter</Title>
+
+```mdx path=components/Grid.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Grid
+<Row>
+  <Column colMd={4} colLg={4} noGutterSm>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+</Row>
+```
+
+<Title>Offset</Title>
+
+```mdx path=components/Grid.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Grid
+<Row>
+  <Column colMd={4} colLg={4} offsetLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4}>
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+</Row>
+```
+
+## Example
+
+<Row className="image-card-group">
+<Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard
+      title="Title"
+      href="/"
+      >
+
+![Square](/images/square.jpg)
+
+  </ImageCard>
+  <ImageCard
+      title="Dark title"
+      titleColor="dark"
+      aspectRatio="1:1"
+      href="/"
+      actionIcon="arrowRight"
+      subTitleColor="dark"
+      subTitle="Dark subtitle"
+      >
+
+![Light dark](./images/light-dark.jpg)
+
+  </ImageCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard
+      title="Title"
+      subTitle="Subtitle"
+      aspectRatio="1:2"
+      href="/"
+      actionIcon="download"
+      titleColor="light"
+      subTitleColor="light"
+      >
+
+![Plane image](./images/plane.jpg)
+
+  </ImageCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard
+      aspectRatio="1:1"
+      href="/"
+      hoverColor="dark"
+      >
+
+![color pallete array](/images/color-grid.svg)
+
+  </ImageCard>
+      <ImageCard
+      disabled
+      title="Title"
+      subTitle="Subtitle"
+      aspectRatio="1:1"
+      href="/"
+      >
+
+![IBM Cloud Server](/images/IBM_Cloud_Server.jpg)
+
+  </ImageCard>
+</Column>
+</Row>
+
+## Code
+
+```mdx path=components/ImageCard/ImageCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ImageCard
+<Row className="image-card-group">
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard title="Title" subTitle="Subtitle" href="/">
+
+![Square](/images/square.jpg)
+
+    </ImageCard>
+    <ImageCard
+      title="Dark title"
+      titleColor="dark"
+      aspectRatio="1:1"
+      href="/"
+      actionIcon="arrowRight"
+      subTitleColor="dark"
+      subTitle="Dark subtitle">
+
+![Light dark](./images/light-dark.jpg)
+
+    </ImageCard>
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard
+      title="Title"
+      subTitle="Subtitle"
+      aspectRatio="1:2"
+      href="/"
+      actionIcon="download"
+      titleColor="light"
+      subTitleColor="light">
+
+![Plane image](./images/plane.jpg)
+
+    </ImageCard>
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard aspectRatio="1:1" href="/" hoverColor="dark">
+
+![color pallete array](/images/color-grid.svg)
+
+    </ImageCard>
+    <ImageCard disabled aspectRatio="1:1" href="/">
+
+![Square](/images/square.jpg)
+
+    </ImageCard>
+
+  </Column>
+</Row>
+```
+
+## Example
+
+Click on an image to open the gallery.
+
+<ImageGallery>
+
+<ImageGalleryImage alt="IBM Design" title="IBM Design" col={4}>
+
+![IBM Design](/images/IBM_Design_landing.jpg)
+
+</ImageGalleryImage>
+
+<ImageGalleryImage  alt="IBM Cloud Logo" title="IBM Cloud" col={4}>
+
+![IBM Cloud Logo](/images/IBM_Cloud_Logo.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Developers" title="IBM Cloud Developers" col={4}>
+
+![IBM Cloud Developers](/images/IBM_Cloud_Developers.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Data Center" title="IBM Cloud Data Center" col={8}>
+
+![IBM Cloud Data Center](/images/IBM_Cloud_Data_Center.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Interconnect" title="IBM Cloud Interconnect" col={4}>
+
+![IBM Cloud Interconnect](/images/IBM_Cloud_Interconnect.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Notebook" title="IBM Cloud Notebook" col={4}>
+
+![IBM Cloud Notebook](/images/IBM_Cloud_Notebook.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Platform Prototype" title="IBM Cloud Platform" col={8}>
+
+<GifPlayer color='dark'>
+
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif)
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.jpg)
+
+</GifPlayer>
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Pictograms" title="IBM Cloud Pictograms" col={4}>
+
+<GifPlayer>
+
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif)
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.jpg)
+
+</GifPlayer>
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Server" title="IBM Cloud Server" col={4}>
+
+![IBM Cloud Server](/images/IBM_Cloud_Server.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Platform Prototype" title="IBM Cloud Platform" col={4}>
+
+<Video src="/videos/hero-video.mp4" poster="/images/poster.jpg">
+  <track default src="/videos/vtt/hero-video.vtt" srcLang="en" />
+</Video>
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Think" title="IBM Cloud Think" col={4}>
+
+![IBM Cloud Think](/images/IBM_Cloud_Think_Keynote.jpg)
+
+</ImageGalleryImage>
+
+</ImageGallery>
+
+## Code
+
+You can use the ImageGallery component in markdown by nesting your images inside
+the ImageGallery component and using the ImageGalleryImage component to define
+the image’s location, title, alt tag, and the columns the image on the page will
+span at the medium and large breakpoints. There is no gallery view for mobile so
+the small breakpoint is not defined.
+
+Here’s an example of how to use the ImageGallery and the ImageGalleryImage
+components in markdown.
+
+```mdx path=/components/ImageGallery.mdx src=https://gatsby-theme-carbon.now.sh
+<ImageGallery>
+<ImageGalleryImage alt="IBM Design" title="IBM Design" col={4}>
+
+![IBM Design](/images/IBM_Design_landing.jpg)
+
+</ImageGalleryImage>
+
+<ImageGalleryImage  alt="IBM Cloud Logo" title="IBM Cloud" col={4}>
+
+![IBM Cloud Logo](/images/IBM_Cloud_Logo.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Developers" title="IBM Cloud Developers" col={4}>
+
+![IBM Cloud Developers](/images/IBM_Cloud_Developers.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Data Center" title="IBM Cloud Data Center" col={8}>
+
+![IBM Cloud Data Center](/images/IBM_Cloud_Data_Center.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Interconnect" title="IBM Cloud Interconnect" col={4}>
+
+![IBM Cloud Interconnect](/images/IBM_Cloud_Interconnect.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Notebook" title="IBM Cloud Notebook" col={4}>
+
+![IBM Cloud Notebook](/images/IBM_Cloud_Notebook.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Platform Prototype" title="IBM Cloud Platform" col={8}>
+
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Pictograms" title="IBM Cloud Pictograms" col={4}>
+
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Server" title="IBM Cloud Server" col={4}>
+
+![IBM Cloud Server](/images/IBM_Cloud_Server.jpg)
+
+</ImageGalleryImage>
+<ImageGalleryImage alt="IBM Cloud Think" title="IBM Cloud Think" col={4}>
+
+![IBM Cloud Think](/images/IBM_Cloud_Think_Keynote.jpg)
+
+</ImageGalleryImage>
+</ImageGallery>
+```
+
+## Example
+
+<Title>Info</Title>
+
+<InlineNotification>
+
+**Lorem ipsum:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
+
+</InlineNotification>
+
+<Title>Error</Title>
+
+<InlineNotification kind="error">
+
+**Error:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
+
+</InlineNotification>
+
+<Title>Success</Title>
+
+<InlineNotification kind="success">
+
+**Success:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
+
+</InlineNotification>
+
+<Title>Warning</Title>
+
+<InlineNotification kind="warning">
+
+**Warning:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
+
+</InlineNotification>
+
+## Code
+
+```mdx path=components/InlineNotification/InlineNotification.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/InlineNotification
+// Info
+
+<InlineNotification>
+
+**Lorem ipsum:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
+
+</InlineNotification>
+
+// Error
+
+<InlineNotification kind="error">
+
+**Error:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
+
+</InlineNotification>
+
+// Success
+
+<InlineNotification kind="success">
+
+**Success:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
+
+</InlineNotification>
+
+// Warning
+
+<InlineNotification kind="warning">
+
+**Warning:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
+
+</InlineNotification>
+```
+
+## Example
+
+<Title>Group</Title>
+
+<CardGroup>
+
+<MiniCard title="26 characters per MiniCard" href="/demo">
+
+![Github icon](/images/github-icon.png)
+
+</MiniCard>
+<MiniCard title="Use the default icon" href="/demo" />
+
+<MiniCard
+  title="Choose from other icons"
+  href="/demo"
+  actionIcon="arrowRight"
+/>
+
+<MiniCard title="Or bring your own" href="/demo">
+
+![Github icon](/images/sketch-icon.png)
+
+</MiniCard>
+
+</CardGroup>
+
+<Title>Aside</Title>
+
+<Row>
+<Column colLg={8}>
+
+When you have the mini resource card sitting aside the main content, be sure to
+add the `gutterLg`, properties to the `<MiniCard>`. This will ensure the
+MiniCard has the appropriate gutters at the approriate breakpoints.
+
+</Column>
+<MiniCard
+  gutterLg
+  title="By itself, as an Aside"
+  href="https://gatsby-theme-carbon.now.sh"
+  >
+
+![Sketch icon](/images/sketch-icon.png)
+
+</MiniCard>
+</Row>
+
+## Code
+
+<Title>Group</Title>
+
+```mdx path=components/MiniCard/MiniCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/MiniCard
+<CardGroup>
+  <MiniCard title="26 characters per MiniCard" href="/demo">
+    ![Github icon](/images/github-icon.png)
+  </MiniCard>
+  <MiniCard title="Use the default icon" href="/demo" />
+  <MiniCard
+    title="Choose from other icons"
+    href="/demo"
+    actionIcon="arrowRight"
+  />
+  <MiniCard title="Or bring your own" href="/demo">
+    ![Github icon](/images/sketch-icon.png)
+  </MiniCard>
+</CardGroup>
+```
+
+<Title>Aside</Title>
+
+```mdx path=components/MiniCard/MiniCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/MiniCard
+<Row>
+<Column colLg={8}>
+
+When you have the mini resource card sitting aside the main content, be sure to
+add the `gutterLg`, properties to the `<MiniCard>`. This will ensure the
+MiniCard has the appropriate gutters at the approriate breakpoints.
+
+</Column>
+<MiniCard
+  gutterLg
+  title="By itself, as an Aside"
+  href="https://gatsby-theme-carbon.now.sh"
+  >
+
+![Sketch icon](/images/sketch-icon.png)
+
+</MiniCard>
+</Row>
+```
+
+## Example
+
+<Row className="resource-card-group">
+<Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="With subtitle"
+      title="Title"
+      aspectRatio="2:1"
+      actionIcon="arrowRight"
+      href="https://gatsby-theme-carbon.now.sh"
+      >
+
+![IBM Rebus](/images/rebus.svg)
+
+  </ResourceCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Only subtitle"
+      actionIcon="download"
+      aspectRatio="2:1"
+      href="https://gatsby-theme-carbon.now.sh"
+      >
+
+![Github icon](/images/github-icon.png)
+
+  </ResourceCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Alternate color"
+      title="Dark"
+      aspectRatio="2:1"
+      color="dark"
+      actionIcon="email"
+      href="https://gatsby-theme-carbon.now.sh"
+      >
+
+![Sketch icon](/images/sketch-icon.png)
+
+  </ResourceCard>
+</Column>
+<Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      title="Disabled card"
+      aspectRatio="2:1"
+      disabled
+      href="https://gatsby-theme-carbon.now.sh"
+      >
+
+![Sketch icon](/images/sketch-icon.png)
+
+  </ResourceCard>
+</Column>
+</Row>
+
+## Code
+
+<Title>Group</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Row className="resource-card-group">
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Carbon Design System"
+      href="https://www.carbondesignsystem.com">
+
+![Github icon](/images/github-icon.png)
+
+    </ResourceCard>
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Carbon Design System"
+      href="https://www.carbondesignsystem.com">
+
+![Github icon](/images/github-icon.png)
+
+    </ResourceCard>
+
+  </Column>
+</Row>
+```
+
+<Title>With title</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Column colMd={4} colLg={4} noGutterSm>
+  <ResourceCard
+    subTitle="With subtitle"
+    title="Title"
+    aspectRatio="2:1"
+    actionIcon="arrowRight"
+    href="https://gatsby-theme-carbon.now.sh">
+
+![Github icon](/images/github-icon.png)
+
+  </ResourceCard>
+</Column>
+```
+
+<Title>Only subtitle</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Column colMd={4} colLg={4} noGutterSm>
+  <ResourceCard
+    subTitle="Only subtitle"
+    actionIcon="download"
+    aspectRatio="2:1"
+    href="https://gatsby-theme-carbon.now.sh">
+
+![Github icon](/images/github-icon.png)
+
+  </ResourceCard>
+</Column>
+```
+
+<Title>Dark</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Column colMd={4} colLg={4} noGutterSm>
+  <ResourceCard
+    subTitle="Alternate color"
+    title="Dark"
+    aspectRatio="2:1"
+    color="dark"
+    actionIcon="email"
+    href="https://gatsby-theme-carbon.now.sh">
+
+![Sketch icon](/images/sketch-icon.png)
+
+  </ResourceCard>
+</Column>
+```
+
+<Title>Disabled</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Column colMd={4} colLg={4} noGutterSm>
+  <ResourceCard
+    title="Disabled card"
+    aspectRatio="2:1"
+    disabled
+    href="https://gatsby-theme-carbon.now.sh"
+  />
+</Column>
+```
+
+## Example
+
+<Tabs>
+
+<Tab label="Just text">
+
+The tab component can be used for a variety of content. From text, to images, to
+columns. If you want to have multiple columns, you’ll need to use our `Row` and
+`Column` helpers as demonstrated in the "Two images" tab.
+
+</Tab>
+
+<Tab label="Single image">
+
+If your content is full width, you don’t need `Row` and `Column`
+
+![color array](images/colors.jpg)
+
+</Tab>
+
+<Tab label="Two images">
+
+<Row>
+<Column colSm={6} colLg={6}>
+
+Column one
+
+![color array](images/colors.jpg)
+
+</Column>
+<Column colSm={6} colLg={6}>
+
+Column two
+
+![color array](images/colors.jpg)
+
+</Column>
+</Row>
+
+</Tab>
+
+</Tabs>
+
+## Code
+
+<Title>Text</Title>
+
+```mdx path=components/Tabs/Tabs.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Tabs
+// Start with the wrapper component (Tabs)
+
+<Tabs>
+
+<Tab label="Text">
+
+The tab component can be used for a variety of content. From text, to images, to
+columns. If you want to have multiple columns, you’ll need to use our `Row` and
+`Column` helpers as demonstrated in the "Two images" tab.
+
+</Tab>
+```
+
+<Title>Single image</Title>
+
+```mdx path=components/Tabs/Tabs.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Tabs
+<Tab label="Single image">
+  If your content is full width, you don’t need `Row` and `Column` ![color
+  array](images/colors.jpg)
+</Tab>
+```
+
+<Title>Multiple images</Title>
+
+```mdx path=components/Tabs/Tabs.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Tabs
+<Tab label="Two images">
+
+<Row>
+<Column colSm={6} colLg={6}>
+
+Column one
+
+![color array](images/colors.jpg)
+
+</Column>
+<Column colSm={6} colLg={6}>
+
+Column two
+
+![color array](images/colors.jpg)
+
+</Column>
+</Row>
+
+</Tab>
+
+// Make sure you close the wrapper component
+
+</Tabs>
+```
