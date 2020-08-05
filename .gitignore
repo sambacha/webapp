@@ -1,3 +1,6 @@
+.cache
+public/
+.cache/
 node_modules
 .vscode/
 .idea/

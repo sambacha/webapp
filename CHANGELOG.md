@@ -1,16 +1,12 @@
 ## [1.23.1](https://github.com/freight-trust/webapp/compare/v1.23.0...v1.23.1) (2020-08-05)
 
-
 ### Features
 
 * **1.24:** version release ([def60b8](https://github.com/freight-trust/webapp/commit/def60b832cc6d2d9175406215367a89e799360d6)), closes [#30](https://github.com/freight-trust/webapp/issues/30)
 
-
 ### BREAKING CHANGES
 
 * **1.24:** non-SPDX compliant files will be rejected moving forward
-
-
 
 ### Changelog
 
