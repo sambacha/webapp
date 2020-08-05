@@ -1,7 +1,4 @@
-// SPDX-License-Identifier: Apache-2.0
-// SPDXVersion: SPDX-2.2
-// SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
-// Application Styles
+// This is where your application styles could go.
 @import '@carbon/themes/scss/themes';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
 
@@ -10,7 +7,7 @@ $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 // import Carbon styles here
-@import "carbon-components/scss/globals/scss/styles.scss";
+// @import "carbon-components/scss/globals/scss/styles.scss";
 
 @media (min-width: 66rem) {
   .container--homepage .bx--grid {

@@ -1,4 +1,4 @@
-/*
+/**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
  *   SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
@@ -25,7 +25,7 @@ const links = [
   },
   {
     title: 'Github',
-    href: 'https://github.com/freight-trust',
+    href: 'https://github.com/freight-chain',
   },
   {
     title: 'Contact',

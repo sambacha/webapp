@@ -50,8 +50,6 @@
     "gatsby-plugin-mdx": "^1.1.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sass": "^2.2.1",
-    "gatsby-plugin-sass-resources": "^2.0.0",
-    "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8",
     "gatsby-remark-copy-linked-files": "^2.2.1",
     "gatsby-remark-images": "^3.2.1",
@@ -88,8 +86,11 @@
     "recharts": "^1.8.5",
     "standard-version": "^8.0.2",
     "gatsby": "^2.24.14",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^16.8.1",
+    "eslint-plugin-react-hooks": "2.0",
+    "eslint-plugin-jsx-a11y": "^6.0",
+    "eslint-plugin-import": "^2.0",
+    "react-dom": "^16.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -104,12 +105,10 @@
     "eslint-loader": "^4.0.2",
     "standard-changelog": "^2.0.24",
     "tsutils": "3.17.1",
+    "typescript": "2.8.0",
     "webpack": "^4.43.0"
   },
   "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "typescript": ">=2.8.0",
     "eslint-plugin-react-hooks": "2.0",
     "eslint-plugin-jsx-a11y": "^6.0",
     "eslint-plugin-import": "^2.0",

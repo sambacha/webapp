@@ -1,4 +1,4 @@
-/*
+/**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
  *   SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
@@ -15,7 +15,6 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-
 import React, { PureComponent } from 'react'
 import {
   AreaChart,

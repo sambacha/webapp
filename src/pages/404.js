@@ -1,4 +1,4 @@
-/*
+/**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
  *   SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
@@ -15,14 +15,13 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-
 import React from 'react'
 import { FourOhFour } from 'gatsby-theme-carbon'
 
 const links = [
   { href: 'https://freighttrust.com', text: 'Homepage' },
   { href: 'mailto:support@freight.zendesk.com', text: 'Support' },
-  { href: 'https://github.com/freight-trust/status', text: 'Status Page' },
+  { href: 'https://github.com/freight-trust', text: 'GitHub' },
 ]
 
 const Custom404 = () => <FourOhFour links={links} />
