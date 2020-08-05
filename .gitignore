@@ -70,7 +70,7 @@ public
 
 # Yarn
 yarn-error.log
-yarn.lock
+# yarn.lock -- NETLIFY REQUIRES YARN.LOCK
 .pnp/
 .pnp.js
 # Yarn Integrity file
