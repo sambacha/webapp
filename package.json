@@ -1,8 +1,14 @@
 {
   "name": "@freight-trust/corporate",
   "private": true,
-  "version": "1.23.0",
+  "version": "1.23.1",
   "license": "Apache-2.0",
+  "email": "corporate@freighttrust.com",
+  "url": "https://freighttrust.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freight-trust/webapp.git"
+  },
   "scripts": {
     "dev": "npm run pretest && gatsby develop -H 0.0.0.0",
     "dev:clean": "yarn clean && yarn dev",
@@ -101,19 +107,21 @@
     "webpack": "^4.43.0"
   },
   "peerDependencies": {
-    "gatsby": "^2.20.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "typescript": ">=2.8.0",
-    "eslint-plugin-react-hooks": "@1.x",
-    "eslint-plugin-jsx-a11y": "^6.x",
-    "eslint-plugin-import": "^2.x",
-    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-react-hooks": "2.0",
+    "eslint-plugin-jsx-a11y": "^6.0",
+    "eslint-plugin-import": "^2.0",
+    "eslint-plugin-flowtype": "4.0",
     "react-refresh": "^0.8.2"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run pretest"
     }
-  }
+  },
+  "contributors": [
+    "Freight Trust & Clearing <corporate@freighttrust.com>"
+  ]
 }

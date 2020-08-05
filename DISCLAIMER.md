@@ -1,3 +1,9 @@
+<!-- 
+SPDX-License-Identifier: Apache-2.0
+SPDXVersion: SPDX-2.2
+SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation 
+-->
+
 # DISCLAIMER
 
 **Last updated July 01, 2020**
