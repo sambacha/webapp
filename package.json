@@ -19,9 +19,14 @@
     "build:analyze": "ANALYZE=true yarn build",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "pretest": "./node_modules/.bin/eslint --ext .js src",
-    "gh": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/freight-trust/webapp.git"
+    "gh": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/freight-trust/webapp.git",
+        "test:links:check": "find . -name \\*.md ! -path \"./node_modules/*\" -exec ./node_modules/markdown-link-check/markdown-link-check -q -c CI/linkchecker/link_check_conf.json {} \\; > linkchecker.out 2>&1",
+    "test:links:display": "cat linkchecker.out",
+    "test:links:verify": "! grep 'ERROR:' linkchecker.out",
+    "test:links": "npm run test:links:check && npm run test:links:display && npm run test:links:verify"
   },
   "dependencies": {
+   "markdown-link-check": "3.7.3",
     "@carbon/charts": "^0.34.8",
     "@carbon/charts-react": "^0.34.8",
     "@carbon/elements": "^10.11.0",
@@ -125,3 +130,4 @@
     "Freight Trust & Clearing <corporate@freighttrust.com>"
   ]
 }
+
