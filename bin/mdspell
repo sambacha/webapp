@@ -1,0 +1,1 @@
+mdspell '**/*.md' '!**/node_modules/**/*.md' --ignore-numbers --ignore-acronyms --en-us
