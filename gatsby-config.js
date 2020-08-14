@@ -35,16 +35,6 @@ module.exports = {
     //       },
     //        },
     {
-      resolve: 'gatsby-plugin-fathom',
-      options: {
-        /* trackingUrl is only necessary if you're self-hosting Fathom, 
-                otherwise this defaults to the hosted version of Fathom */
-        trackingUrl: 'dog.freighttrust.com',
-        /* the Tracking ID you copied earlier */
-        siteId: 'KRZBORKB',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Freight Trust Network',
