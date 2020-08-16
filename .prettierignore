@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 build
 dist
 es
@@ -51,3 +52,8 @@ packages/components/docs/js
 
 # Generated files
 **/generated/**
+=======
+public/
+.cache
+node_modules
+>>>>>>> master

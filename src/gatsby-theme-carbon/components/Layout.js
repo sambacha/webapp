@@ -37,8 +37,6 @@ const Layout = ({
     return scroll.destroy
   }, [tabs])
 
-  console.log('\n\n----------    Layout     ----------\n\n', customNavItems)
-
   return (
     <>
       <Meta

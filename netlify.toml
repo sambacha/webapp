@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [netlify]
   base = "."
   command = "npm install && gatsby clean && gatsby build"
@@ -10,11 +11,28 @@
     
 [build]
     command = "npm run build"
+=======
+[build]
+  command = "yarn && yarn build"
+  base = "."
+  publish = "public"
+
+# [headers]
+# Define which paths this specific [[headers]] block will cover.
+ # for = "/*"
+ # [headers.values]
+ #   Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+[context.testing]
+    command = "yarn && yarn run pretest"
+
+>>>>>>> master
 
 [build.processing]
   skip_processing = false
 [build.processing.css]
   bundle = true
+<<<<<<< HEAD
   minify = false
 [build.processing.js]
   bundle = true
@@ -29,3 +47,13 @@
 
 [build.analyze]
   command = "ANALYZE=true gatsby build"
+=======
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+>>>>>>> master

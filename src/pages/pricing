@@ -1,0 +1,208 @@
+---
+title: Boilerplate
+description: Boilerplate of all the components of the carbon theme
+---
+
+<PageDescription>
+
+EDI Blockchain Network
+
+</PageDescription>
+
+## Accordion
+
+<Accordion>
+<AccordionItem title="ASC X12">
+
+204 Motor Carrier Shipment Information - Version 4010
+210 Freight Details and Invoice - Version 4010
+211 Motor Carrier Bill of Lading - Version 4010
+214 Shipment Status Message - Version 4010
+997 Functional Acknowledgement
+
+- Get your customer specific tariff rates
+- Get your volume and spot quote rates
+- Track by PRO Number, BOL Number, or PO Number.  Retrieve BOL and POD images.
+- Get day of the week specific transit times
+- Automate your shipping processes by creating a Bill of Lading, share documents, create shipping labels, retrieve a rate quote, and pickup requests through a single API call
+
+</AccordionItem>
+  <AccordionItem title="Secure by Default">
+- Mailboxing – Freight Trust receives electronic messages and forwards them onto the recipient. This includes orders, invoices, advance ship notices or any other business documents.
+- Security – Blockchain’s inherent security exceeds industry standards to protect your data throughout our Smart Contract VAN.
+- Duplicate Control – The Freight Trust Blockchain VAN protects against duplicate transmissions and will alert or discard duplicate transmissions as required.
+
+  </AccordionItem>
+
+  <AccordionItem title="Multiple Protocol Support">
+- Simplify: file transfers by unifying all services and processes into a single platform independent solution
+- Gain control of users and system resources
+- Automate file transfers between trading partners and respond to server side events
+- Provide a secure web-based file transfer gateway to clients without installing any software
+- Support for all popular file transfer protocols including AS2, FTP/S, SFTP, SCP, AFTP, OFTP and HTTP/S
+
+  </AccordionItem>
+</Accordion>
+
+## EDI X12 Support
+
+```mdx path=components/Accordion/Accordion.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Accordion
+ISA*00* *00* *ZZ*ZIM *ZZ*TRAC *200506*1404*U*00401*000000001*0*P*>
+GS*IO*ZIM*TRAC*20200506*1404*1*X*004010
+ST*310*000000001
+B3*B*ZIMUSNH7203007**DE**20200506*00****ZIMU**OT
+B2A*02*BL
+V1*9260421*ANNA MAERSK*DK*9S*ZIMU***L
+N1*SH*C.H. ROBINSON FREIGHT SERVICES*25*CNNNJCHNSE
+N3*(CHINA) LIMITED 13 TH FLOOR*GREENLAND COMMERCIAL CE
+N3*NO.1258 YU YUAN ROADCHANGNING*DISTRICT, SHANGHAI,200050 CHINA
+N4*NANJING**000000*CN
+N1*CN*C.H. ROBINSON INTERNATIONAL INC.*25*CABUUCHROB
+N3*404-4445 LOUGHEED HIGHWAY*BURNABY, BC V5C 0E4 CANADA
+N3*T: 604.821.1677 X7032
+N4*BURNABY*BC*V5C 0E4*CA
+N1*N1*C.H.ROBINSON INTERNATIONAL,INC.*25*USCHMMO
+N3*901 CARONDELET DRIVE*KANSAS CITY,MO,64114,UNITED STATES
+N3*T:+1-816-8919169 F:+1-816-8917454
+N4*KANSAS*MO*64114*US
+N1*FW*ZIM LOGISTICS (CHINA) CO. LTD.*25*CNSZIMLO
+N3*N/A
+N4*N/A
+R4*L*K*57035*SHANGHAI (SH)*CN***SH
+R4*D*K*12493*VANCOUVER (BC)*CA***BC
+LX*1
+N7*GLDU*528058*16928*N*2220***********A*K*5*HH***2200
+M7*SH323603
+L0*1***16928*N***16*DRM**K
+L5*1*CLETHODIM 37% MUP QTSHH01618 COMM03 CLASS 9 UN*2930900000*J**N/M
+L5*1* 3082 PGIII HS CODE: 293090 8000 CODE:8U64*2930900000*J
+H1*3082*9*I*CLETHODIM 37% MUP*+1 703-527-3887,SHAN****III
+LX*2
+N7*GLDU*528114*16928*N*2220***********A*K*9*HH***2200
+M7*SH323602
+L0*2***16928*N***16*DRM**K
+L5*2*CLETHODIM 37% MUP QTSHH01618 COMM03 CLASS 9 UN*2930900000*J**N/M
+L5*2* 3082 PGIII HS CODE: 293090 8000 CODE:8U64*2930900000*J
+H1*3082*9*I*CLETHODIM 37% MUP*+1 703-527-3887,SHAN****III
+L3*33856*N*******44*X*32*K
+SE*37*000000001
+GE*1*1
+IEA*1*000000001
+```
+
+
+
+
+
+## Simple Pricing
+
+<Row>
+<Column colMd={5} colLg={8}>
+
+It is more important than ever that we own our own  our own data and even more so own
+the commitment we make to our customers. That is why we have a simple pricing benchmark:
+
+> Simple Pricing means a Flat Rate per Trading Channel (unique sender/receiver ID pair) that has traffic for the month,
+> regardless of number of transactions or communication path (e.g. VAN Interconnect, AS2, X.400, etc.).
+> If a Trading Chnanel has no activity in the month, then you don't pay for it.
+> Every plan has a max monthly bill cap, no seasonal upcharges or congestion fees, period.
+>
+> <cite>– Sam Bacha, Founder</cite>
+
+The principles governing our pricing define how we do business. That
+outward transparency is a core value of how we do business.
+
+</Column>
+
+## Code
+
+<Title>Group</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Row className="resource-card-group">
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Carbon Design System"
+      href="https://www.carbondesignsystem.com">
+
+![Github icon](/images/github-icon.png)
+
+    </ResourceCard>
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Carbon Design System"
+      href="https://www.carbondesignsystem.com">
+
+![Github icon](/images/github-icon.png)
+
+    </ResourceCard>
+
+  </Column>
+</Row>
+```
+
+<Title>With title</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Column colMd={4} colLg={4} noGutterSm>
+  <ResourceCard
+    subTitle="With subtitle"
+    title="Title"
+    aspectRatio="2:1"
+    actionIcon="arrowRight"
+    href="https://gatsby-theme-carbon.now.sh">
+
+![Github icon](/images/github-icon.png)
+
+  </ResourceCard>
+</Column>
+```
+
+<Title>Only subtitle</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Column colMd={4} colLg={4} noGutterSm>
+  <ResourceCard
+    subTitle="Only subtitle"
+    actionIcon="download"
+    aspectRatio="2:1"
+    href="https://gatsby-theme-carbon.now.sh">
+
+![Github icon](/images/github-icon.png)
+
+  </ResourceCard>
+</Column>
+```
+
+<Title>Dark</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Column colMd={4} colLg={4} noGutterSm>
+  <ResourceCard
+    subTitle="Alternate color"
+    title="Dark"
+    aspectRatio="2:1"
+    color="dark"
+    actionIcon="email"
+    href="https://gatsby-theme-carbon.now.sh">
+
+![Sketch icon](/images/sketch-icon.png)
+
+  </ResourceCard>
+</Column>
+```
+
+<Title>Disabled</Title>
+
+```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
+<Column colMd={4} colLg={4} noGutterSm>
+  <ResourceCard
+    title="Disabled card"
+    aspectRatio="2:1"
+    disabled
+    href="https://gatsby-theme-carbon.now.sh"
+  />
+</Column>
+```

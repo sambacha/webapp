@@ -1,3 +1,21 @@
+/**
+ *   SPDX-License-Identifier: Apache-2.0
+ *   SPDXVersion: SPDX-2.2
+ *   SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
 module.exports = {
   siteMetadata: {
     title: 'Freight Trust & Clearing Corporation',
@@ -17,6 +35,7 @@ module.exports = {
     //       },
     //        },
     {
+<<<<<<< HEAD
       resolve: 'gatsby-plugin-fathom',
       options: {
         /* trackingUrl is only necessary if you're self-hosting Fathom, 
@@ -27,6 +46,8 @@ module.exports = {
       },
     },
     {
+=======
+>>>>>>> master
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Freight Trust Network',
@@ -136,5 +157,43 @@ module.exports = {
           ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
+<<<<<<< HEAD
+=======
+    {
+      resolve: 'gatsby-plugin-iubenda-cookie-footer',
+      options: {
+        iubendaOptions: {
+          countryDetection: true,
+          consentOnContinuedBrowsing: false,
+          ccpaAcknowledgeOnDisplay: true,
+          whitelabel: false,
+          lang: 'en',
+          siteId: 1967509,
+          preferenceCookie: { expireAfter: 365 },
+          enableCcpa: true,
+          cookiePolicyId: 55466554,
+          banner: {
+            acceptButtonDisplay: true,
+            customizeButtonDisplay: true,
+            rejectButtonDisplay: true,
+            position: 'bottom',
+            rejectButtonCaption: 'Decline',
+          },
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+        allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        mergeSecurityHeaders: true, // boolean to turn off the default security headers
+        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+        mergeCachingHeaders: true, // boolean to turn off the default caching headers
+        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+      },
+    },
+>>>>>>> master
   ],
 }

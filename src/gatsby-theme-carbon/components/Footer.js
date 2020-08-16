@@ -1,3 +1,20 @@
+/**
+ *   SPDX-License-Identifier: Apache-2.0
+ *   SPDXVersion: SPDX-2.2
+ *   SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
 import React from 'react'
 import {
   footerContent,
@@ -19,11 +36,18 @@ import cx from 'classnames'
 const ProductFooter = (
   <div>
     <h5>Quick Links</h5>
+<<<<<<< HEAD
     <a href="https://drewry.co.uk">Partners</a>
     <a href="https://freight.page.link/request-information">Integrations</a>
     <a href="https://ft-docs.netlify.app">API</a>
     <a href="https://ft-docs.netlify.app">ABI</a>
     <a href="https://ft-docs.netlify.appn">Rulebook</a>
+=======
+    <a href="https://drewry.co.uk">Drewry Freight Index</a>
+    <a href="https://freight.page.link/request-information">Integrations</a>
+    <a href="https://ft-docs.netlify.app">API</a>
+    <a href="https://ft-docs.netlify.app">Rulebook</a>
+>>>>>>> master
     <a href="https://ft-docs.netlify.app">Omnibus</a>
   </div>
 )
@@ -53,8 +77,13 @@ const ResourcesFooter = (
     <h5>Resources</h5>
     <a href="https://ft-docs.netlify.app">Documentation</a>
     <a href="https://github.com/freight-trust">Open Source</a>
+<<<<<<< HEAD
     <a href="https://github.com/freight-trust">Developers</a>
     <a href="https://github.com/freight-trust">Engineering</a>
+=======
+    <a href="https://github.com/freight-chain">Community</a>
+    <a href="https://github.com/freight-trust/editoken">$EDI Token</a>
+>>>>>>> master
     <a href="https://github.com/freight-trust/security">Security</a>
   </div>
 )
@@ -140,8 +169,14 @@ const CustomFooter = ({ homepage }) => {
         <Column colMd={2} colLg={2}>
           <a href="https://github.com/freight-trust">GitHub</a>
           <a href="https://github.com/freight-trust/releases">Releases</a>
+<<<<<<< HEAD
           <a href="https://hub.docker.com/r/freightcorp">Docker</a>
           <a href="https://hub.docker.com/r/freightcorp">RSS</a>
+=======
+          <a href="https://quay.io/organization/freight">Quay.io</a>
+          <a href="https://raw.githubusercontent.com/freight-trust/rss/master/corporate.atom">RSS</a>
+
+>>>>>>> master
         </Column>
       </Row>
 
