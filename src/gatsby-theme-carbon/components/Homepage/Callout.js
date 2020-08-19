@@ -15,11 +15,11 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react'
-import styled from '@emotion/styled'
-import { Grid, Column, Row } from 'gatsby-theme-carbon'
+import React from "react";
+import styled from "@emotion/styled";
+import { Grid, Column, Row } from "gatsby-theme-carbon";
 
-import { grid, row, firstColumn, secondColumn } from './Callout.module.scss'
+import { grid, row, firstColumn, secondColumn } from "./Callout.module.scss";
 
 const StyledGrid = styled(Grid)`
   background-color: ${(props) =>
@@ -32,7 +32,7 @@ const StyledGrid = styled(Grid)`
     props.theme.colors.inverse01}};
   width: 100%;
   max-width: 100%;
-`
+`;
 
 const HomepageCallout = ({ leftText, rightText, ...rest }) => (
   <StyledGrid className={grid} {...rest}>
@@ -48,7 +48,7 @@ const HomepageCallout = ({ leftText, rightText, ...rest }) => (
       <Column colLg={1} colMd={1}></Column>
     </Row>
   </StyledGrid>
-)
+);
 
 HomepageCallout.defaultProps = {
   leftText: function renderLeftText() {
@@ -56,7 +56,7 @@ HomepageCallout.defaultProps = {
       <>
         Freight <strong>Trust & Clearing</strong>
       </>
-    )
+    );
   },
   rightText: function renderRightText() {
     return (
@@ -64,8 +64,8 @@ HomepageCallout.defaultProps = {
         <strong>Freight Trust Network</strong>
         <br />
       </p>
-    )
+    );
   },
-}
+};
 
-export default HomepageCallout
+export default HomepageCallout;

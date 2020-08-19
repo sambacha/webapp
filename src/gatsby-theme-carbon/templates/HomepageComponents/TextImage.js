@@ -15,14 +15,14 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react'
-import { Row, Column } from 'gatsby-theme-carbon'
-import { Button } from 'carbon-components-react'
+import React from "react";
+import { Row, Column } from "gatsby-theme-carbon";
+import { Button } from "carbon-components-react";
 import {
   textContainer,
   textImageContainer,
   imageContainer,
-} from './TextImage.module.scss'
+} from "./TextImage.module.scss";
 
 const TextContainer = ({ title, content, buttonLabel }) => (
   <div className={textContainer}>
@@ -32,7 +32,7 @@ const TextContainer = ({ title, content, buttonLabel }) => (
       {buttonLabel}
     </Button>
   </div>
-)
+);
 
 export const TextImage = ({
   children,
@@ -66,10 +66,9 @@ export const TextImage = ({
           />
         </Column>
         <Column colSm={12} colMd={6} colLg={6}>
-          <div className={imageContainer}>
-          </div>
+          <div className={imageContainer}></div>
         </Column>
       </Row>
     )}
   </div>
-)
+);

@@ -1,4 +1,4 @@
-@import '@carbon/themes/scss/themes';
+@import "@carbon/themes/scss/themes";
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -12,11 +12,11 @@ $carbon--theme: $carbon--theme--g90;
   color: $text-04;
   position: relative;
 
-  @include carbon--breakpoint('md') {
+  @include carbon--breakpoint("md") {
     padding: 0 $layout-06;
   }
 
-  @include carbon--breakpoint('lg') {
+  @include carbon--breakpoint("lg") {
     padding: 0 $layout-06;
   }
 }
@@ -34,12 +34,12 @@ $carbon--theme: $carbon--theme--g90;
 }
 
 .banner h1 {
-  @include carbon--type-style('productive-heading-07');
+  @include carbon--type-style("productive-heading-07");
   color: $interactive-04;
 }
 
 .banner p {
-  @include carbon--type-style('productive-heading-03');
+  @include carbon--type-style("productive-heading-03");
 
   margin-top: $spacing-09;
   margin-bottom: $spacing-06;
@@ -49,7 +49,7 @@ $carbon--theme: $carbon--theme--g90;
   margin-top: $spacing-09;
   margin-bottom: $spacing-08;
 
-  @include carbon--breakpoint('lg') {
+  @include carbon--breakpoint("lg") {
     margin-bottom: 0px;
   }
 }
@@ -60,15 +60,15 @@ $carbon--theme: $carbon--theme--g90;
   right: 0;
   opacity: 0.6;
 
-  @include carbon--breakpoint('lg') {
+  @include carbon--breakpoint("lg") {
     width: 80vw;
   }
 
-  @include carbon--breakpoint('xlg') {
+  @include carbon--breakpoint("xlg") {
     width: 80vw;
   }
 
-  @include carbon--breakpoint('max') {
+  @include carbon--breakpoint("max") {
     width: 70vw;
   }
 }

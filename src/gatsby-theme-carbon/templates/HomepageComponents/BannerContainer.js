@@ -15,10 +15,10 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react'
-import { Row, Column } from 'gatsby-theme-carbon'
-import { Button } from 'carbon-components-react'
-import './BannerContainer.scss'
+import React from "react";
+import { Row, Column } from "gatsby-theme-carbon";
+import { Button } from "carbon-components-react";
+import "./BannerContainer.scss";
 
 const BannerText = ({
   title,
@@ -44,7 +44,7 @@ const BannerText = ({
       )}
     </div>
   </div>
-)
+);
 
 export const BannerContainer = ({
   title,
@@ -56,7 +56,7 @@ export const BannerContainer = ({
 }) => {
   return (
     <div
-      className={`bannerContainer ${noBgImage ? '' : 'bannerContainerWithBg'}`}
+      className={`bannerContainer ${noBgImage ? "" : "bannerContainerWithBg"}`}
     >
       <Row className="bannerRow">
         <Column colSm={12} colMd={7} colLg={7}>
@@ -71,5 +71,5 @@ export const BannerContainer = ({
         <Column colSm={12} colMd={5} colLg={5}></Column>
       </Row>
     </div>
-  )
-}
+  );
+};

@@ -1,4 +1,4 @@
-@import '@carbon/themes/scss/themes';
+@import "@carbon/themes/scss/themes";
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -8,12 +8,12 @@ $carbon--theme: $carbon--theme--g90;
   padding: 10%;
   h1 {
     text-align: center;
-    @include carbon--type-style('productive-heading-04');
+    @include carbon--type-style("productive-heading-04");
   }
 
   h2 {
     text-align: center;
-    @include carbon--type-style('productive-heading-03');
+    @include carbon--type-style("productive-heading-03");
     color: $interactive-04;
   }
 
