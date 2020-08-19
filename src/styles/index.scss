@@ -34,3 +34,19 @@ $carbon--theme: $carbon--theme--g90;
 .bx--btn {
   padding-right: 12px;
 }
+
+.bx--copy-btn {
+  font-size: 0;
+}
+
+.bx--feature-card {
+  max-width: 1152px;
+}
+
+.bx--row {
+  overflow: hidden;
+}
+
+#gatsby-focus-wrapper {
+  overflow-x: hidden;
+}

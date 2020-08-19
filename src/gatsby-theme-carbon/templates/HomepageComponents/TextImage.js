@@ -66,7 +66,8 @@ export const TextImage = ({
           />
         </Column>
         <Column colSm={12} colMd={6} colLg={6}>
-          <div className={imageContainer}>{children}</div>
+          <div className={imageContainer}>
+          </div>
         </Column>
       </Row>
     )}

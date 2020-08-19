@@ -18,11 +18,10 @@ $carbon--theme: $carbon--theme--g90;
   }
 
   .imageContainer {
-    background: $interactive-04;
+    background: url(../../../images/static/data-table-placeholder.svg);
+    background-size: cover;
+    background-position-y: center;
     height: 100%;
-  }
-
-  .bx--row > div {
   }
 }
 
