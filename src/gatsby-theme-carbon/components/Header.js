@@ -117,7 +117,7 @@ const Header = ({ children }) => {
           })}
           aria-label="Switch"
           onClick={() => {
-            toggleNavState('switcherIsOpen')
+            toggleNavState('switcherIsOpen', 'close')
             toggleNavState('searchIsOpen', 'close')
             toggleNavState('leftNavIsOpen', 'close')
           }}

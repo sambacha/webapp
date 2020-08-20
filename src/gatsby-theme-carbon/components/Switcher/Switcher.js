@@ -59,7 +59,7 @@ export const SwitcherLink = ({
         role="button"
         tabIndex={switcherIsOpen ? 0 : '-1'}
         className={className}
-        href={href}
+        href="https://freight.page.link/request-information"
         {...rest}
       >
         {children}
@@ -73,12 +73,12 @@ export const SwitcherLink = ({
 const DefaultChildren = () => {
   return (
     <>
-      <SwitcherLink href="#top">Marketplace</SwitcherLink>
-      <SwitcherLink href="#top">Solutions</SwitcherLink>
-      <SwitcherLink href="#top">Blockchain</SwitcherLink>
-      <SwitcherLink href="#top">Corporate</SwitcherLink>
-      <SwitcherLink href="#top">Blog</SwitcherLink>
-      <SwitcherLink href="#top">Contact</SwitcherLink>
+      <SwitcherLink href="https://freighttrust.com">Marketplace</SwitcherLink>
+      <SwitcherLink href="https://freighttrust.com">Solutions</SwitcherLink>
+      <SwitcherLink href="https://freighttrust.com">Blockchain</SwitcherLink>
+      <SwitcherLink href="https://freighttrust.com">Corporate</SwitcherLink>
+      <SwitcherLink href="https://freighttrust.com">Blog</SwitcherLink>
+      <SwitcherLink href="https://freighttrust.com">Contact</SwitcherLink>
     </>
   )
 }
