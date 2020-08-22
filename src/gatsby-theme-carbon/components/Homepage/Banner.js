@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -15,8 +17,14 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
+<<<<<<< HEAD
 import React from "react";
 import { Row, Column } from "gatsby-theme-carbon";
+=======
+>>>>>>> master
+import React from 'react'
+import { Row, Column } from 'gatsby-theme-carbon'
+>>>>>>> netlify-patch2
 
 import { column, row, grid } from "./Banner.module.scss";
 

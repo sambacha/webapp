@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -15,7 +17,12 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
+<<<<<<< HEAD
 import { useStaticQuery, graphql } from "gatsby";
+=======
+>>>>>>> master
+import { useStaticQuery, graphql } from 'gatsby'
+>>>>>>> netlify-patch2
 
 export function themeUseNavItems() {
   const {

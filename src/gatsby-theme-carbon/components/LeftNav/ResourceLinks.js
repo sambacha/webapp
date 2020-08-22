@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -15,8 +17,14 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
+<<<<<<< HEAD
 import React from "react";
 import ResourceLinks from "gatsby-theme-carbon/src/components/LeftNav/ResourceLinks";
+=======
+>>>>>>> master
+import React from 'react'
+import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLinks'
+>>>>>>> netlify-patch2
 
 const links = [
   {
@@ -24,8 +32,13 @@ const links = [
     href: "https://twitter.com/freighttrustnet",
   },
   {
+<<<<<<< HEAD
     title: "Github",
     href: "https://github.com/freight-trust",
+=======
+    title: 'Github',
+    href: 'https://github.com/freight-trust',
+>>>>>>> netlify-patch2
   },
   {
     title: "Contact",

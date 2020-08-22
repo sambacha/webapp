@@ -35,7 +35,24 @@ module.exports = {
     //       },
     //        },
     {
+<<<<<<< HEAD
       resolve: "gatsby-plugin-manifest",
+=======
+<<<<<<< HEAD
+      resolve: 'gatsby-plugin-fathom',
+      options: {
+        /* trackingUrl is only necessary if you're self-hosting Fathom, 
+                otherwise this defaults to the hosted version of Fathom */
+        trackingUrl: 'dog.freighttrust.com',
+        /* the Tracking ID you copied earlier */
+        siteId: 'KRZBORKB',
+      },
+    },
+    {
+=======
+>>>>>>> master
+      resolve: 'gatsby-plugin-manifest',
+>>>>>>> netlify-patch2
       options: {
         name: "Freight Trust Network",
         short_name: "Freight Trust",
@@ -160,6 +177,8 @@ module.exports = {
           ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
+<<<<<<< HEAD
+=======
     {
       resolve: "gatsby-plugin-iubenda-cookie-footer",
       options: {
@@ -195,5 +214,6 @@ module.exports = {
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
       },
     },
+>>>>>>> master
   ],
 };

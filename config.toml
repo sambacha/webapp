@@ -1,6 +1,10 @@
 [build]
   command = "yarn && yarn build:clean"
   base = "."
+<<<<<<< HEAD
+  command = "npm install && gatsby clean && gatsby build"
+=======
+>>>>>>> master
   publish = "public"
   environment = {  NODE_VERSION = "12" }
  
@@ -13,6 +17,11 @@
 [context.testing]
     command = "yarn && yarn run pretest"
 
+<<<<<<< HEAD
+[build]
+    command = "npm run build"
+=======
+>>>>>>> master
 
 [build.processing]
   skip_processing = false
@@ -26,3 +35,12 @@
   pretty_urls = true
 [build.processing.images]
   compress = true
+<<<<<<< HEAD
+   
+[context.staging]
+  command = "npm run build"
+
+[serve]
+  command = "gatsby serve"
+=======
+>>>>>>> master
