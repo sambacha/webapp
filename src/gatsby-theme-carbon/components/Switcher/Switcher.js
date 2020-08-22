@@ -73,21 +73,12 @@ export const SwitcherLink = ({
 const DefaultChildren = () => {
   return (
     <>
-<<<<<<< HEAD
-      <SwitcherLink href="https://freighttrust.com">Marketplace</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Solutions</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Blockchain</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Corporate</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Blog</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Contact</SwitcherLink>
-=======
       <SwitcherLink href="#top">Trade Compliance</SwitcherLink>
       <SwitcherLink href="#top">Trade Messages</SwitcherLink>
       <SwitcherLink href="#top">Trade Finance</SwitcherLink>
       <SwitcherLink href="#top">Corporate</SwitcherLink>
       <SwitcherLink href="#top">Support</SwitcherLink>
       <SwitcherLink href="#top">Contact</SwitcherLink>
->>>>>>> netlify-patch2
     </>
   );
 };
