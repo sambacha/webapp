@@ -1,11 +1,5 @@
-<<<<<<< HEAD
+
 <!--
-=======
-<<<<<<< HEAD
-# Freight Trust Corporate
-=======
-<!-- 
->>>>>>> netlify-patch2
 SPDX-License-Identifier: Apache-2.0
 SPDXVersion: SPDX-2.2
 SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
@@ -43,7 +37,7 @@ If you set the `NODE_ENV` to production, any `devDependencies` in your `package.
 
 ## License
 
-<<<<<<< HEAD
+
 Apache 2.0
 =======
 SPDX-License-Identifier: Apache 2.0
