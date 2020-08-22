@@ -576,18 +576,18 @@ handler. To do that, we'll need to shadow the `FeedbackDialog` component.
 2. Copy the following snippet into your new file
 
 ```jsx
-import React from 'react'
-import ThemeFeedbackDialog from 'gatsby-theme-carbon/src/components/FeedbackDialog/FeedbackDialog'
+import React from "react";
+import ThemeFeedbackDialog from "gatsby-theme-carbon/src/components/FeedbackDialog/FeedbackDialog";
 
 const FeedbackDialog = ({ props }) => {
   const onSubmit = (data) => {
-    console.log({ ...data })
-  }
+    console.log({ ...data });
+  };
 
-  return <ThemeFeedbackDialog {...props} onSubmit={onSubmit} />
-}
+  return <ThemeFeedbackDialog {...props} onSubmit={onSubmit} />;
+};
 
-export default FeedbackDialog
+export default FeedbackDialog;
 ```
 
 ## Creating a handler
@@ -1255,20 +1255,21 @@ non vel quam.
 
   <MiniCard title="26 characters per MiniCard" href="/demo">
 
-  ![Github icon](/images/github-icon.png)
+![Github icon](/images/github-icon.png)
 
   </MiniCard>
   <MiniCard title="Use the default icon" href="/demo" />
 
-  <MiniCard
-    title="Choose from other icons"
-    href="/demo"
-    actionIcon="arrowRight"
-  />
+{" "}
+<MiniCard
+  title="Choose from other icons"
+  href="/demo"
+  actionIcon="arrowRight"
+/>
 
   <MiniCard title="Or bring your own" href="/demo">
 
-  ![Github icon](/images/sketch-icon.png)
+![Github icon](/images/sketch-icon.png)
 
   </MiniCard>
 

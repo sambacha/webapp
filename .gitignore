@@ -1,6 +1,13 @@
+
+# build 
 .cache
 public/
 .cache/
+
+# nodejs
 node_modules
+
+# dev
+_dev/
 .vscode/
 .idea/

@@ -15,7 +15,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react'
+import React from "react";
 import {
   footerContent,
   footerContentDefault,
@@ -27,11 +27,11 @@ import {
   footerFollowSection,
   footerLinkColMobile,
   hideOnMobile,
-} from './Footer.module.scss'
-import { Button } from 'carbon-components-react'
-import { Row, Column } from 'gatsby-theme-carbon'
-import { useAuth } from 'react-use-auth'
-import cx from 'classnames'
+} from "./Footer.module.scss";
+import { Button } from "carbon-components-react";
+import { Row, Column } from "gatsby-theme-carbon";
+import { useAuth } from "react-use-auth";
+import cx from "classnames";
 
 const ProductFooter = (
   <div>
@@ -42,7 +42,7 @@ const ProductFooter = (
     <a href="https://ft-docs.netlify.app">Rulebook</a>
     <a href="https://ft-docs.netlify.app">Omnibus</a>
   </div>
-)
+);
 
 const CoporateFooter = (
   <div>
@@ -52,7 +52,7 @@ const CoporateFooter = (
     <a href="https://github.com/freight-trust/branding">Branding</a>
     <a href="https://freight.page.link/request-information">Compliance</a>
   </div>
-)
+);
 
 const SolutionsFooter = (
   <div>
@@ -62,7 +62,7 @@ const SolutionsFooter = (
     <a href="https://freight.page.link/request-information">For Intermodal</a>
     <a href="https://freight.page.link/request-information">For Finance</a>
   </div>
-)
+);
 
 const ResourcesFooter = (
   <div>
@@ -73,10 +73,10 @@ const ResourcesFooter = (
     <a href="https://github.com/freight-trust/editoken">$EDI Token</a>
     <a href="https://github.com/freight-trust/security">Security</a>
   </div>
-)
+);
 
 const CustomFooter = ({ homepage }) => {
-  const { isAuthenticated, login, logout } = useAuth()
+  const { isAuthenticated, login, logout } = useAuth();
   return (
     <div className={cx(footerContent, { [footerContentDefault]: !homepage })}>
       <Row className={footerRow}>
@@ -157,8 +157,9 @@ const CustomFooter = ({ homepage }) => {
           <a href="https://github.com/freight-trust">GitHub</a>
           <a href="https://github.com/freight-trust/releases">Releases</a>
           <a href="https://quay.io/organization/freight">Quay.io</a>
-          <a href="https://raw.githubusercontent.com/freight-trust/rss/master/corporate.atom">RSS</a>
-
+          <a href="https://raw.githubusercontent.com/freight-trust/rss/master/corporate.atom">
+            RSS
+          </a>
         </Column>
       </Row>
 
@@ -178,7 +179,7 @@ const CustomFooter = ({ homepage }) => {
         </Column>
       </Row>
     </div>
-  )
-}
+  );
+};
 
-export default CustomFooter
+export default CustomFooter;

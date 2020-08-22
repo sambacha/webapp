@@ -3,11 +3,11 @@
   base = "."
   publish = "public"
 
-# [headers]
+ [headers]
 # Define which paths this specific [[headers]] block will cover.
- # for = "/*"
- # [headers.values]
- #   Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
 [context.testing]
     command = "yarn && yarn run pretest"

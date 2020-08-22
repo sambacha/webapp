@@ -15,18 +15,18 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React, { Component } from 'react'
-import { Modal, Button, TextInput, Loading } from 'carbon-components-react'
-import { ChevronLeft20, CheckmarkOutline32 } from '@carbon/icons-react'
-import { BannerContainer } from 'gatsby-theme-carbon/src/templates/HomepageComponents'
-import './styles.scss'
+import React, { Component } from "react";
+import { Modal, Button, TextInput, Loading } from "carbon-components-react";
+import { ChevronLeft20, CheckmarkOutline32 } from "@carbon/icons-react";
+import { BannerContainer } from "gatsby-theme-carbon/src/templates/HomepageComponents";
+import "./styles.scss";
 
 const modalProps = [
   // Step 0
   {
-    modalLabel: 'Trading Channel',
-    headerLabel: 'Trading Channel',
-    buttonText: 'Submit',
+    modalLabel: "Trading Channel",
+    headerLabel: "Trading Channel",
+    buttonText: "Submit",
     helperText: null,
     renderContent: () => (
       <div>
@@ -46,9 +46,9 @@ const modalProps = [
   },
   // Step 1
   {
-    modalLabel: 'Verify Connection',
-    headerLabel: 'Verify Connection',
-    buttonText: 'Submit',
+    modalLabel: "Verify Connection",
+    headerLabel: "Verify Connection",
+    buttonText: "Submit",
     renderContent: () => (
       <div>
         <TextInput labelText="AS2 ID" placeholder="AS2 ID" id="as2ID" />
@@ -63,11 +63,11 @@ const modalProps = [
   },
   // Step 2
   {
-    modalLabel: 'Verify Information',
+    modalLabel: "Verify Information",
     contentTexts: [
-      'Verifying as2 id...',
-      'Resolving as2 url...',
-      'Authenticated',
+      "Verifying as2 id...",
+      "Resolving as2 url...",
+      "Authenticated",
     ],
     renderContent: () => (
       <div>
@@ -77,78 +77,78 @@ const modalProps = [
   },
   // Step 3
   {
-    modalLabel: 'Success',
-    headerLabel: 'Success',
-    buttonText: 'Redirect',
+    modalLabel: "Success",
+    headerLabel: "Success",
+    buttonText: "Redirect",
     renderContent: () => (
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ textAlign: "center" }}>
         <CheckmarkOutline32 style={{ width: 60, height: 60 }} />
         <h4>Corporate Authentication Confirmed</h4>
       </div>
     ),
   },
-]
+];
 
 class TradingSignUpContainer extends Component {
   state = {
     modalVisible: false,
     currentStep: 0,
     currentContentStep: 0,
-  }
+  };
 
   showModal = (visible = true) => {
     this.setState({
       modalVisible: visible,
       currentStep: 0,
       currentContentStep: 0,
-    })
-  }
+    });
+  };
 
   goToNextContentStep = () => {
-    const { currentContentStep, currentStep } = this.state
+    const { currentContentStep, currentStep } = this.state;
 
     if (currentContentStep === 2) {
-      this.setState({ currentStep: currentStep + 1 })
-      return
+      this.setState({ currentStep: currentStep + 1 });
+      return;
     }
 
-    const _this = this
+    const _this = this;
     setTimeout(() => {
-      _this.goToNextContentStep()
-    }, 2000)
+      _this.goToNextContentStep();
+    }, 2000);
 
-    this.setState({ currentContentStep: currentContentStep + 1 })
-  }
+    this.setState({ currentContentStep: currentContentStep + 1 });
+  };
 
   goToNextStep = () => {
-    const { currentStep } = this.state
+    const { currentStep } = this.state;
 
     if (currentStep === 3) {
-      this.setState({ modalVisible: false })
-      return
+      this.setState({ modalVisible: false });
+      return;
     }
 
     if (currentStep === 1) {
-      const _this = this
+      const _this = this;
       setTimeout(() => {
-        _this.goToNextContentStep()
-      }, 2000)
+        _this.goToNextContentStep();
+      }, 2000);
     }
-    this.setState({ currentStep: currentStep + 1 })
-  }
+    this.setState({ currentStep: currentStep + 1 });
+  };
 
   goToPrevStep = () => {
-    const { currentStep } = this.state
+    const { currentStep } = this.state;
     if (currentStep === 5) {
-      this.setState({ currentStep: 3 })
-      return
+      this.setState({ currentStep: 3 });
+      return;
     }
 
-    if (currentStep > 0) this.setState({ currentStep: currentStep - 1 })
-  }
+    if (currentStep > 0) this.setState({ currentStep: currentStep - 1 });
+  };
 
   render() {
-    const { modalVisible, currentStep, currentContentStep } = this.state
+    const { modalVisible, currentStep, currentContentStep } = this.state;
 
     const {
       modalLabel,
@@ -158,7 +158,7 @@ class TradingSignUpContainer extends Component {
       helperText,
       contentText,
       contentTexts,
-    } = modalProps[currentStep] ? modalProps[currentStep] : {}
+    } = modalProps[currentStep] ? modalProps[currentStep] : {};
 
     const tradingSignUpModal = (
       <Modal
@@ -191,7 +191,7 @@ class TradingSignUpContainer extends Component {
           <ChevronLeft20 />
         </Button>
       </Modal>
-    )
+    );
 
     return (
       <div>
@@ -204,8 +204,8 @@ class TradingSignUpContainer extends Component {
         />
         {tradingSignUpModal}
       </div>
-    )
+    );
   }
 }
 
-export default TradingSignUpContainer
+export default TradingSignUpContainer;

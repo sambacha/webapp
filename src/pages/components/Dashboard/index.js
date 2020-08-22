@@ -15,7 +15,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import {
   DataTable,
   TableContainer,
@@ -38,81 +38,81 @@ import {
   Tag,
   OverflowMenu,
   OverflowMenuItem,
-} from 'carbon-components-react'
+} from "carbon-components-react";
 import {
   Delete16 as Delete,
   Save16 as Save,
   Download16 as Download,
-} from '@carbon/icons-react'
+} from "@carbon/icons-react";
 
-import './style.scss'
+import "./style.scss";
 
 const customRowData = [
   {
-    id: 'KLEINSCHMIDT',
-    name: 'KLEINSCHDMIT',
-    entityCode: 'D-U-N-S Number, Dun & Boradcast',
-    entityID: '124215133',
-    testMode: 'true',
-    status: 'pending',
+    id: "KLEINSCHMIDT",
+    name: "KLEINSCHDMIT",
+    entityCode: "D-U-N-S Number, Dun & Boradcast",
+    entityID: "124215133",
+    testMode: "true",
+    status: "pending",
   },
   {
-    id: 'BLUJAYSOLUTIONS',
-    name: 'BLUJAYSOLUTIONSAMER',
-    entityCode: 'D-U-N-S Number, Dun & Boradcast',
-    entityID: '124215133',
-    testMode: 'true',
-    status: 'pending',
+    id: "BLUJAYSOLUTIONS",
+    name: "BLUJAYSOLUTIONSAMER",
+    entityCode: "D-U-N-S Number, Dun & Boradcast",
+    entityID: "124215133",
+    testMode: "true",
+    status: "pending",
   },
   {
-    id: 'BLUJAYSOLUTIONS2411',
-    name: 'BLUJAYSOLUTIONSAMER',
-    entityCode: 'D-U-N-S Number, Dun & Boradcast',
-    entityID: '124215133',
-    testMode: 'true',
-    status: 'pending',
+    id: "BLUJAYSOLUTIONS2411",
+    name: "BLUJAYSOLUTIONSAMER",
+    entityCode: "D-U-N-S Number, Dun & Boradcast",
+    entityID: "124215133",
+    testMode: "true",
+    status: "pending",
   },
   {
-    id: 'BLUJAYSOLUTIONSAMER4',
-    name: 'BLUJAYSOLUTIONSAMER',
-    entityCode: 'D-U-N-S Number, Dun & Boradcast',
-    entityID: '124215133',
-    testMode: 'true',
-    status: 'pending',
+    id: "BLUJAYSOLUTIONSAMER4",
+    name: "BLUJAYSOLUTIONSAMER",
+    entityCode: "D-U-N-S Number, Dun & Boradcast",
+    entityID: "124215133",
+    testMode: "true",
+    status: "pending",
   },
-]
+];
 
 const customHeaderData = [
   {
-    header: 'Name',
-    key: 'name',
+    header: "Name",
+    key: "name",
   },
   {
-    header: 'Entity Code',
-    key: 'entityCode',
+    header: "Entity Code",
+    key: "entityCode",
   },
   {
-    header: 'Entity Identifier',
-    key: 'entityID',
+    header: "Entity Identifier",
+    key: "entityID",
   },
   {
-    header: 'Test Mode',
-    key: 'testMode',
+    header: "Test Mode",
+    key: "testMode",
   },
   {
-    header: 'Status',
-    key: 'status',
+    header: "Status",
+    key: "status",
   },
   {
-    header: '',
-    key: 'config',
+    header: "",
+    key: "config",
   },
-]
+];
 
 class Dashboard extends Component {
   render() {
-    const rowData = customRowData
-    const headerData = customHeaderData
+    const rowData = customRowData;
+    const headerData = customHeaderData;
 
     return (
       <div className="dashboard-container">
@@ -130,7 +130,7 @@ class Dashboard extends Component {
             onInputChange,
             selectedRows,
           }) => {
-            rows = rows ? rows : []
+            rows = rows ? rows : [];
 
             return (
               <TableContainer title={null}>
@@ -141,7 +141,7 @@ class Dashboard extends Component {
                         getBatchActionProps().shouldShowBatchActions ? 0 : -1
                       }
                       renderIcon={Delete}
-                      onClick={() => console.log('clicked')}
+                      onClick={() => console.log("clicked")}
                     >
                       Delete
                     </TableBatchAction>
@@ -150,7 +150,7 @@ class Dashboard extends Component {
                         getBatchActionProps().shouldShowBatchActions ? 0 : -1
                       }
                       renderIcon={Save}
-                      onClick={() => console.log('clicked')}
+                      onClick={() => console.log("clicked")}
                     >
                       Save
                     </TableBatchAction>
@@ -159,7 +159,7 @@ class Dashboard extends Component {
                         getBatchActionProps().shouldShowBatchActions ? 0 : -1
                       }
                       renderIcon={Download}
-                      onClick={() => console.log('clicked')}
+                      onClick={() => console.log("clicked")}
                     >
                       Download
                     </TableBatchAction>
@@ -178,12 +178,12 @@ class Dashboard extends Component {
                     >
                       <TableToolbarAction
                         primaryFocus
-                        onClick={() => console.log('Alert 1')}
+                        onClick={() => console.log("Alert 1")}
                       >
                         Show Details
                       </TableToolbarAction>
                       <TableToolbarAction
-                        onClick={() => console.log('Alert 2')}
+                        onClick={() => console.log("Alert 2")}
                       >
                         Clear all
                       </TableToolbarAction>
@@ -192,7 +192,7 @@ class Dashboard extends Component {
                       tabIndex={
                         getBatchActionProps().shouldShowBatchActions ? -1 : 0
                       }
-                      onClick={() => console.log('clicked')}
+                      onClick={() => console.log("clicked")}
                       size="small"
                       kind="primary"
                     >
@@ -221,17 +221,17 @@ class Dashboard extends Component {
                           <TableSelectRow {...getSelectionProps({ row })} />
                           {row.cells.map((cell) => {
                             try {
-                              if (cell.info.header === 'status') {
+                              if (cell.info.header === "status") {
                                 return (
                                   <TableCell key={cell.id}>
                                     <Tag type="blue" title="Clear Filter">
                                       {cell.value}
                                     </Tag>
                                   </TableCell>
-                                )
+                                );
                               }
 
-                              if (cell.info.header === 'config') {
+                              if (cell.info.header === "config") {
                                 return (
                                   <TableCell key={cell.id}>
                                     <OverflowMenu>
@@ -241,28 +241,28 @@ class Dashboard extends Component {
                                       />
                                     </OverflowMenu>
                                   </TableCell>
-                                )
+                                );
                               }
                             } catch (e) {
-                              console.log(e)
+                              console.log(e);
                             }
 
                             return (
                               <TableCell key={cell.id}>{cell.value}</TableCell>
-                            )
+                            );
                           })}
                         </TableRow>
-                      )
+                      );
                     })}
                   </TableBody>
                 </Table>
               </TableContainer>
-            )
+            );
           }}
         />
       </div>
-    )
+    );
   }
 }
 
-export default Dashboard
+export default Dashboard;
