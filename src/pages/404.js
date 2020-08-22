@@ -19,24 +19,10 @@ import React from "react";
 import { FourOhFour } from "gatsby-theme-carbon";
 
 const links = [
-<<<<<<< HEAD
   { href: "https://freighttrust.com", text: "Homepage" },
   { href: "mailto:support@freight.zendesk.com", text: "Support" },
   { href: "https://github.com/freight-trust", text: "GitHub" },
 ];
-=======
-  { href: 'https://freighttrust.com', text: 'Homepage' },
-<<<<<<< HEAD
-  { href: '', text: '' },
-  { href: '', text: '' },
-  { href: 'https://freighttrust.com', text: 'Homepage' },
-  { href: 'https://freighttrust.com', text: 'Status Trace' },
-=======
-  { href: 'mailto:support@freight.zendesk.com', text: 'Support' },
-  { href: 'https://github.com/freight-trust', text: 'GitHub' },
->>>>>>> master
-]
->>>>>>> netlify-patch2
 
 const Custom404 = () => <FourOhFour links={links} />;
 
