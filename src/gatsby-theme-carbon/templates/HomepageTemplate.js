@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -17,12 +16,9 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-<<<<<<< HEAD
 import React from "react";
 import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
 import Carbon from "../../images/carbon.jpg";
-=======
->>>>>>> master
 import React from 'react'
 import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon'
 import Carbon from '../../images/carbon.jpg'

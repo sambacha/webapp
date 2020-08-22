@@ -4,13 +4,10 @@
 - title: Solutions
   pages:
     - path: https://freight.page.link/request-information
-<<<<<<< HEAD
-=======
 - title: Marketplace
   pages:
     - title: Marketplace Integrations
       path: /marketplace
->>>>>>> master
 - title: Corporate
   pages:
     - title: Corporate Information

@@ -57,8 +57,6 @@ const Header = ({ children }) => {
     <ShellHeader aria-label="Header" className={header}>
       <SkipToContent href="#main-content" className={skipToContent} />
 
-<<<<<<< HEAD
-=======
       <HeaderMenuButton
         className={cx("bx--header__action--menu", headerButton)}
         aria-label="Open menu"
@@ -69,7 +67,6 @@ const Header = ({ children }) => {
         isActive={leftNavIsOpen}
       />
 
->>>>>>> master
       <Link
         className={headerName}
         to="https://freight.page.link/request-information"
@@ -79,27 +76,13 @@ const Header = ({ children }) => {
 
       <div className={navLists}>
         <div className={navLeftBorder}></div>
-<<<<<<< HEAD
         <Link className={navLink} to="/features">
-=======
-        <Link
-          className={navLink}
-          to="https://freight.page.link/request-information"
-        >
-          Products
-        </Link>
-        <Link
-          className={navLink}
-          to="https://freight.page.link/request-information"
-        >
->>>>>>> master
           Solutions
         </Link>
         <Link
           className={navLink}
           to="https://freight.page.link/request-information"
         >
-<<<<<<< HEAD
           Vehicles
         </Link>
         <Link
@@ -113,26 +96,10 @@ const Header = ({ children }) => {
         </Link>
         <Link className={navLink} to="/trading">
           Protocol
-=======
-          Partners
-        </Link>
-        <Link
-          className={navLink}
-          to="https://freight.page.link/request-information"
-        >
-          Marketplace
-        </Link>
-        <Link
-          className={navLink}
-          to="https://freight.page.link/request-information"
-        >
-          Pricing
->>>>>>> master
         </Link>
       </div>
 
       {navigationStyle && <HeaderNav />}
-<<<<<<< HEAD
 
       <HeaderGlobalBar className={globalBar}>
         <HeaderGlobalAction
@@ -149,8 +116,6 @@ const Header = ({ children }) => {
           {switcherIsOpen ? <Close20 /> : <AppSwitcher20 />}
         </HeaderGlobalAction>
       </HeaderGlobalBar>
-=======
->>>>>>> netlify-patch2
     </ShellHeader>
   );
 };
