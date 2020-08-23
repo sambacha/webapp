@@ -8,6 +8,7 @@ const Auth0CallbackPage = () => {
     handleAuthentication();
   }, [handleAuthentication]);
 
+  // eslint-disable-next-line react/jsx-filename-extension
   return <div />;
 };
 

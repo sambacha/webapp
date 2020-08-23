@@ -14,7 +14,7 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
 
 ### Nodejs Version
 
-`node-version=12.13.0`
+`node-version=12.16.2`
 
 ### Package Manager
 
