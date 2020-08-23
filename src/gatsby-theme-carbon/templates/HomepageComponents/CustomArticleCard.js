@@ -20,10 +20,10 @@ import React from 'react'
 import {
   customArticleCardContainer,
   articleCardImage,
-} from "./CustomArticleCard.module.scss";
+} from './CustomArticleCard.module.scss'
 
 export const CustomArticleCard = (props) => {
-  const { imgSrc, title, subTitle } = props;
+  const { imgSrc, title, subTitle } = props
   return (
     <div className={customArticleCardContainer}>
       <div className={articleCardImage}>
@@ -32,5 +32,5 @@ export const CustomArticleCard = (props) => {
       <h1>{title}</h1>
       <h2>{subTitle}</h2>
     </div>
-  );
-};
+  )
+}

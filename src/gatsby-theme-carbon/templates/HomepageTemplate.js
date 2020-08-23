@@ -1,4 +1,3 @@
-
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -16,21 +15,20 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from "react";
-import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
-import Carbon from "../../images/carbon.jpg";
+import React from 'react'
+import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon'
+import Carbon from '../../images/carbon.jpg'
 
+import Layout from 'gatsby-theme-carbon/src/components/Layout'
+import Main from 'gatsby-theme-carbon/src/components/Main'
 
-import Layout from "gatsby-theme-carbon/src/components/Layout";
-import Main from "gatsby-theme-carbon/src/components/Main";
+import BackToTopBtn from 'gatsby-theme-carbon/src/components/BackToTopBtn'
 
-import BackToTopBtn from "gatsby-theme-carbon/src/components/BackToTopBtn";
-
-import { mainContent } from "./Homepage.module.scss";
+import { mainContent } from './Homepage.module.scss'
 
 const Homepage = ({ pageContext, children, _frontmatter }) => {
-  const { titleType } = pageContext;
-  const { title, description, keywords } = _frontmatter;
+  const { titleType } = pageContext
+  const { title, description, keywords } = _frontmatter
   return (
     <Layout
       pageTitle={title}
@@ -45,8 +43,8 @@ const Homepage = ({ pageContext, children, _frontmatter }) => {
 
       <BackToTopBtn />
     </Layout>
-  );
-};
+  )
+}
 Homepage.defaultProps = {
   Banner: (
     <HomepageBanner
@@ -64,6 +62,6 @@ Homepage.defaultProps = {
   SecondCallout: (
     <HomepageCallout color="inverse01" backgroundColor="#061f80" />
   ),
-};
+}
 
-export default Homepage;
+export default Homepage

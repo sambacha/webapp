@@ -21,9 +21,9 @@ import {
   signupContent,
   signupForm,
   signupRow,
-} from "./SignUpContainer.module.scss";
-import { Row, Column } from "gatsby-theme-carbon";
-import { Button, TextInput } from "carbon-components-react";
+} from './SignUpContainer.module.scss'
+import { Row, Column } from 'gatsby-theme-carbon'
+import { Button, TextInput } from 'carbon-components-react'
 
 export const SignUpContainer = ({ title, subTitle }) => (
   <div className={signupContent}>
@@ -54,4 +54,4 @@ export const SignUpContainer = ({ title, subTitle }) => (
       </Row>
     </div>
   </div>
-);
+)

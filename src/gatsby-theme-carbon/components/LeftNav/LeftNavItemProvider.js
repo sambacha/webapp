@@ -1,4 +1,3 @@
-
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -16,7 +15,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from 'gatsby'
 
 export function themeUseNavItems() {
   const {
@@ -36,15 +35,15 @@ export function themeUseNavItems() {
         }
       }
     }
-  `);
+  `)
 
-  const navItems = edges.map(({ node }) => node);
-  return navItems;
+  const navItems = edges.map(({ node }) => node)
+  return navItems
 }
 
 // add nav items
 export function useNavItems() {
-  const navItems = themeUseNavItems();
+  const navItems = themeUseNavItems()
   // return navItems.concat({
   //   title: 'Additional Nav Item',
   //   pages: [
@@ -52,5 +51,5 @@ export function useNavItems() {
   //     { path: '/page2', title: 'New Page 2' },
   //   ],
   // });
-  return navItems;
+  return navItems
 }

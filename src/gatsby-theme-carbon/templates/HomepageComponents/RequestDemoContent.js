@@ -22,7 +22,7 @@ import {
   requestDemoContent,
   requestDemoRow,
   requestDemoActions,
-} from "./RequestDemoContent.module.scss";
+} from './RequestDemoContent.module.scss'
 
 export const RequestDemoContent = ({ title, subTitle, children }) => (
   <div className={requestDemoContent}>
@@ -36,4 +36,4 @@ export const RequestDemoContent = ({ title, subTitle, children }) => (
       </Column>
     </Row>
   </div>
-);
+)
