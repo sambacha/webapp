@@ -67,6 +67,7 @@
     "d3": "5.14.2",
     "emotion-theming": "^10.0.10",
     "eslint-config-carbon-base": "^1.0.1",
+    "eslint-config-wesbos": "^0.0.22",
     "eslint-plugin-mdx": "^1.7.1",
     "gatsby": "^2.24.14",
     "gatsby-plugin-catch-links": "^2.2.1",
