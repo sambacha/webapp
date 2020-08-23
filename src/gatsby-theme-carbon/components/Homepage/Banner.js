@@ -17,9 +17,6 @@
  */
 import React from "react";
 import { Row, Column } from "gatsby-theme-carbon";
-import React from 'react'
-import { Row, Column } from 'gatsby-theme-carbon'
->>>>>>> netlify-patch2
 
 import { column, row, grid } from "./Banner.module.scss";
 

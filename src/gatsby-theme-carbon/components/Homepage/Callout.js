@@ -18,10 +18,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Grid, Column, Row } from "gatsby-theme-carbon";
-import React from 'react'
-import styled from '@emotion/styled'
-import { Grid, Column, Row } from 'gatsby-theme-carbon'
->>>>>>> netlify-patch2
+
 
 import { grid, row, firstColumn, secondColumn } from "./Callout.module.scss";
 

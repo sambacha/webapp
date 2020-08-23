@@ -19,10 +19,7 @@
 import React from "react";
 import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
 import Carbon from "../../images/carbon.jpg";
-import React from 'react'
-import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon'
-import Carbon from '../../images/carbon.jpg'
->>>>>>> netlify-patch2
+
 
 import Layout from "gatsby-theme-carbon/src/components/Layout";
 import Main from "gatsby-theme-carbon/src/components/Main";
