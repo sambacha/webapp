@@ -27,7 +27,6 @@ If any of the build scripts start with yarn, you must have a `yarn.lock` file.
 ### Dependencies and production
 
 If you set the `NODE_ENV` to production, any `devDependencies` in your `package.json` file will not be installed for the build.
->>>>>>> master
 
 ### Overview
 
@@ -37,9 +36,7 @@ If you set the `NODE_ENV` to production, any `devDependencies` in your `package.
 
 ## License
 
-
 Apache 2.0
-=======
+
 SPDX-License-Identifier: Apache 2.0
 (C) 2020 FreightTrust and Clearing Corporation. All Rights Reserved.
->>>>>>> master
