@@ -22,7 +22,8 @@
     "gh": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/freight-trust/webapp.git",
     "format": "prettier --write \"**/*.{css,scss,json,html,yaml,mdx}\"",
     "lint:js": "eslint . --fix",
-    "lint:scss": "stylelint \"packages/**/*.scss\" --fix"
+    "lint:scss": "stylelint \"packages/**/*.scss\" --fix",
+    "codecov": "./node_modules/.bin/codecov"
   },
   "eslintIgnore": [
     "**/node_modules/",
@@ -118,6 +119,7 @@
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.0.0",
     "babel-eslint": "10",
+    "codecov": "^3.7.2",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",

@@ -90,7 +90,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.freighttrust.com',
-        sitemap: 'https://www.example.com/sitemap.xml',
+        sitemap: 'https://www.freighttrust.com/sitemap.xml',
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {
