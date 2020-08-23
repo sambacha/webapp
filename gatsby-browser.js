@@ -16,11 +16,10 @@
  *  limitations under the License.
  */
 
-import "./src/styles/index.scss";
-import React from "react";
-import { navigate } from "gatsby";
-
-import { AuthProvider } from "react-use-auth";
+import React from 'react';
+import { navigate } from 'gatsby';
+import { AuthProvider } from 'react-use-auth';
+import './src/styles/index.scss';
 
 export const wrapRootElement = ({ element }) => (
   <AuthProvider

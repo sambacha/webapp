@@ -15,14 +15,15 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from "react";
+import React from 'react';
+
+import { Row, Column } from 'gatsby-theme-carbon';
+import { Button, TextInput } from 'carbon-components-react';
 import {
   signupContent,
   signupForm,
   signupRow,
-} from "./SignUpContainer.module.scss";
-import { Row, Column } from "gatsby-theme-carbon";
-import { Button, TextInput } from "carbon-components-react";
+} from './SignUpContainer.module.scss';
 
 export const SignUpContainer = ({ title, subTitle }) => (
   <div className={signupContent}>

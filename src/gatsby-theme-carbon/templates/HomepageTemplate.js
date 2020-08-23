@@ -15,16 +15,16 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from "react";
-import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
-import Carbon from "../../images/carbon.jpg";
+import React from 'react';
+import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 
-import Layout from "gatsby-theme-carbon/src/components/Layout";
-import Main from "gatsby-theme-carbon/src/components/Main";
+import Layout from 'gatsby-theme-carbon/src/components/Layout';
+import Main from 'gatsby-theme-carbon/src/components/Main';
 
-import BackToTopBtn from "gatsby-theme-carbon/src/components/BackToTopBtn";
+import BackToTopBtn from 'gatsby-theme-carbon/src/components/BackToTopBtn';
+import Carbon from '../../images/carbon.jpg';
 
-import { mainContent } from "./Homepage.module.scss";
+import { mainContent } from './Homepage.module.scss';
 
 const Homepage = ({ pageContext, children, _frontmatter }) => {
   const { titleType } = pageContext;

@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/jsx-filename-extension */
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -15,8 +17,9 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from "react";
-import HomepageTemplate from "./HomepageTemplate";
+
+import React from 'react';
+import HomepageTemplate from './HomepageTemplate';
 
 // spreading the original props gives us props.children (mdx content)
 function ShadowedHomepage(props) {

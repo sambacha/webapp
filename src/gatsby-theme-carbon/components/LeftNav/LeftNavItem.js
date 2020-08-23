@@ -15,26 +15,28 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React, { useContext } from "react";
-import { Link } from "gatsby";
-import { Location } from "@reach/router";
-import cx from "classnames";
+import React, { useContext } from 'react';
+import { Link } from 'gatsby';
+import { Location } from '@reach/router';
+import cx from 'classnames';
 import {
   SideNavLink,
   SideNavMenu,
   SideNavMenuItem,
-} from "carbon-components-react";
+} from 'carbon-components-react';
 
-import styles from "gatsby-theme-carbon/src/components/LeftNav/LeftNav.module.scss";
+import styles from 'gatsby-theme-carbon/src/components/LeftNav/LeftNav.module.scss';
 
-import NavContext from "gatsby-theme-carbon/src/util/context/NavContext";
-import usePathprefix from "gatsby-theme-carbon/src/util/hooks/usePathprefix";
+import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
+import usePathprefix from 'gatsby-theme-carbon/src/util/hooks/usePathprefix';
 
 const LeftNavItem = (props) => {
-  const { items, category, hasDivider, isSpace } = props;
+  const {
+    items, category, hasDivider, isSpace,
+  } = props;
   const { toggleNavState } = useContext(NavContext);
   const closeLeftNav = () => {
-    toggleNavState("leftNavIsOpen", "close");
+    toggleNavState('leftNavIsOpen', 'close');
   };
   const pathPrefix = usePathprefix();
 
@@ -45,11 +47,11 @@ const LeftNavItem = (props) => {
           return <hr className={styles.divider} />;
         }
         const pathname = pathPrefix
-          ? location.pathname.replace(pathPrefix, "")
+          ? location.pathname.replace(pathPrefix, '')
           : location.pathname;
 
         const isActive = items.some(
-          (item) => item.path.split("/")[1] === pathname.split("/")[1]
+          (item) => item.path.split('/')[1] === pathname.split('/')[1],
         );
 
         if (items.length === 1) {
@@ -93,31 +95,29 @@ const LeftNavItem = (props) => {
   );
 };
 
-const SubNavItems = ({ items, pathname, onClick }) =>
-  items.map((item, i) => {
-    const hasActiveTab =
-      `${item.path.split("/")[1]}/${item.path.split("/")[2]}` ===
-      `${pathname.split("/")[1]}/${pathname.split("/")[2]}`;
-    return (
-      <SideNavMenuItem
-        to={`${item.path}`}
-        className={cx({
-          [styles.linkText__dark]: pathname === "/",
+const SubNavItems = ({ items, pathname, onClick }) => items.map((item, i) => {
+  const hasActiveTab = `${item.path.split('/')[1]}/${item.path.split('/')[2]}`
+      === `${pathname.split('/')[1]}/${pathname.split('/')[2]}`;
+  return (
+    <SideNavMenuItem
+      to={`${item.path}`}
+      className={cx({
+        [styles.linkText__dark]: pathname === '/',
+      })}
+      onClick={onClick}
+      element={Link}
+      isActive={hasActiveTab}
+      key={i}
+    >
+      <span
+        className={cx(styles.linkText, {
+          [styles.linkText__active]: hasActiveTab,
         })}
-        onClick={onClick}
-        element={Link}
-        isActive={hasActiveTab}
-        key={i}
       >
-        <span
-          className={cx(styles.linkText, {
-            [styles.linkText__active]: hasActiveTab,
-          })}
-        >
-          {item.title}
-        </span>
-      </SideNavMenuItem>
-    );
-  });
+        {item.title}
+      </span>
+    </SideNavMenuItem>
+  );
+});
 
 export default LeftNavItem;

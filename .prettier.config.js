@@ -1,2 +1,14 @@
-// TODO: Switch to our prettier-config https://github.com/freight-trust/prettier
-module.exports = require("prettier-config-carbon");
+/**
+ * SPDX-License-Identifier: Apache-2.0
+ * Copyright  FreightTrust and Clearing Corporation
+ *
+ * This source code is licensed under the Apache-2.0 license
+ */
+
+module.exports = {
+  jsxBracketSameLine: true,
+  printWidth: 80,
+  singleQuote: true,
+  trailingComma: "es5",
+  proseWrap: "always",
+};

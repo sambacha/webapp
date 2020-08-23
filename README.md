@@ -14,7 +14,7 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
 
 ### Nodejs Version
 
-`node-version=12.13.0`
+`node-version=12.16.2`
 
 ### Package Manager
 
@@ -34,6 +34,8 @@ If you set the `NODE_ENV` to production, any `devDependencies` in your `package.
 - Fathom
 
 ## License
+
+Apache 2.0
 
 SPDX-License-Identifier: Apache 2.0
 (C) 2020 FreightTrust and Clearing Corporation. All Rights Reserved.

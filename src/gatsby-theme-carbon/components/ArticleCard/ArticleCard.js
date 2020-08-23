@@ -1,15 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classnames from "classnames";
-import { Link } from "gatsby";
+import React from 'react';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
+import { Link } from 'gatsby';
 import {
   Launch20,
   Download20,
   ArrowRight20,
   Error20,
   Email20,
-} from "@carbon/icons-react";
-import { settings } from "carbon-components";
+} from '@carbon/icons-react';
+import { settings } from 'carbon-components';
 
 const { prefix } = settings;
 
@@ -32,23 +32,23 @@ export default class ArticleCard extends React.Component {
 
     let isLink;
     if (href !== undefined) {
-      isLink = href.charAt(0) === "/";
+      isLink = href.charAt(0) === '/';
     }
 
     const ArticleCardClassNames = classnames([`${prefix}--article-card`], {
       [className]: className,
       [`${prefix}--article-card--disabled`]: disabled,
-      [`${prefix}--article-card--dark`]: color === "dark",
+      [`${prefix}--article-card--dark`]: color === 'dark',
     });
 
     const aspectRatioClassNames = classnames(
       [`${prefix}--aspect-ratio`],
-      [`${prefix}--aspect-ratio--2x1`]
+      [`${prefix}--aspect-ratio--2x1`],
     );
 
     const carbonTileclassNames = classnames(
       [`${prefix}--tile`],
-      [`${prefix}--tile--clickable`]
+      [`${prefix}--tile--clickable`],
     );
 
     const cardContent = (
@@ -80,19 +80,19 @@ export default class ArticleCard extends React.Component {
               ) : null}
             </div>
             <div className={`${prefix}--article-card__icon--action`}>
-              {actionIcon === "launch" && !disabled ? (
+              {actionIcon === 'launch' && !disabled ? (
                 <Launch20 aria-label="Open" />
               ) : null}
-              {actionIcon === "arrowRight" && !disabled ? (
+              {actionIcon === 'arrowRight' && !disabled ? (
                 <ArrowRight20 aria-label="Open" />
               ) : null}
-              {actionIcon === "download" && !disabled ? (
+              {actionIcon === 'download' && !disabled ? (
                 <Download20 aria-label="Download" />
               ) : null}
-              {actionIcon === "email" && !disabled ? (
+              {actionIcon === 'email' && !disabled ? (
                 <Email20 aria-label="Email" />
               ) : null}
-              {actionIcon === "disabled" || disabled === true ? (
+              {actionIcon === 'disabled' || disabled === true ? (
                 <Error20 aria-label="disabled" />
               ) : null}
             </div>
@@ -183,7 +183,7 @@ ArticleCard.propTypes = {
 };
 
 ArticleCard.defaultProps = {
-  color: "light",
+  color: 'light',
   disabled: false,
-  actionIcon: "",
+  actionIcon: '',
 };

@@ -15,10 +15,12 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React, { useContext } from "react";
-import cx from "classnames";
-import NavContext from "gatsby-theme-carbon/src/util/context/NavContext";
-import { nav, open, divider, link, linkDisabled } from "./Switcher.module.scss";
+import React, { useContext } from 'react';
+import cx from 'classnames';
+import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
+import {
+  nav, open, divider, link, linkDisabled,
+} from './Switcher.module.scss';
 
 const Switcher = ({ children }) => {
   const { switcherIsOpen } = useContext(NavContext);
@@ -57,7 +59,7 @@ export const SwitcherLink = ({
       <a
         aria-disabled={disabled}
         role="button"
-        tabIndex={switcherIsOpen ? 0 : "-1"}
+        tabIndex={switcherIsOpen ? 0 : '-1'}
         className={className}
         href="https://freight.page.link/request-information"
         {...rest}
@@ -70,18 +72,16 @@ export const SwitcherLink = ({
 
 // https://css-tricks.com/using-css-transitions-auto-dimensions/
 // Note: if you change this, update the max-height in the switcher stylesheet
-const DefaultChildren = () => {
-  return (
-    <>
-      <SwitcherLink href="https://freighttrust.com">Marketplace</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Solutions</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Blockchain</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Corporate</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Blog</SwitcherLink>
-      <SwitcherLink href="https://freighttrust.com">Contact</SwitcherLink>
-    </>
-  );
-};
+const DefaultChildren = () => (
+  <>
+    <SwitcherLink href="#top">Trade Compliance</SwitcherLink>
+    <SwitcherLink href="#top">Trade Messages</SwitcherLink>
+    <SwitcherLink href="#top">Trade Finance</SwitcherLink>
+    <SwitcherLink href="#top">Corporate</SwitcherLink>
+    <SwitcherLink href="#top">Support</SwitcherLink>
+    <SwitcherLink href="#top">Contact</SwitcherLink>
+  </>
+);
 
 Switcher.defaultProps = {
   children: <DefaultChildren />,

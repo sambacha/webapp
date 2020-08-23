@@ -15,7 +15,11 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from "react";
+import React from 'react';
+import { Button } from 'carbon-components-react';
+import { Row, Column } from 'gatsby-theme-carbon';
+import { useAuth } from 'react-use-auth';
+import cx from 'classnames';
 import {
   footerContent,
   footerContentDefault,
@@ -27,19 +31,16 @@ import {
   footerFollowSection,
   footerLinkColMobile,
   hideOnMobile,
-} from "./Footer.module.scss";
-import { Button } from "carbon-components-react";
-import { Row, Column } from "gatsby-theme-carbon";
-import { useAuth } from "react-use-auth";
-import cx from "classnames";
+} from './Footer.module.scss';
 
 const ProductFooter = (
   <div>
     <h5>Quick Links</h5>
-    <a href="https://drewry.co.uk">Drewry Freight Index</a>
+    <a href="https://drewry.co.uk">Partners</a>
     <a href="https://freight.page.link/request-information">Integrations</a>
     <a href="https://ft-docs.netlify.app">API</a>
-    <a href="https://ft-docs.netlify.app">Rulebook</a>
+    <a href="https://ft-docs.netlify.app">ABI</a>
+    <a href="https://ft-docs.netlify.appn">Rulebook</a>
     <a href="https://ft-docs.netlify.app">Omnibus</a>
   </div>
 );
@@ -138,13 +139,13 @@ const CustomFooter = ({ homepage }) => {
 
       <Row className={footerDiectoryRow}>
         <Column colMd={6} colLg={6}>
-          <p></p>
+          <p />
           <p>LEI: 254900C9UJMDGJ0ILK56</p>
           <p>support@freight.zendesk.com</p>
-          <p></p>
+          <p />
         </Column>
 
-        <Column colMd={2} colLg={2}></Column>
+        <Column colMd={2} colLg={2} />
 
         <Column colMd={2} colLg={2}>
           <a href="https://twitter.com/freighttrustnet">Twitter</a>
@@ -156,10 +157,8 @@ const CustomFooter = ({ homepage }) => {
         <Column colMd={2} colLg={2}>
           <a href="https://github.com/freight-trust">GitHub</a>
           <a href="https://github.com/freight-trust/releases">Releases</a>
-          <a href="https://quay.io/organization/freight">Quay.io</a>
-          <a href="https://raw.githubusercontent.com/freight-trust/rss/master/corporate.atom">
-            RSS
-          </a>
+          <a href="https://hub.docker.com/r/freightcorp">Docker</a>
+          <a href="https://hub.docker.com/r/freightcorp">RSS</a>
         </Column>
       </Row>
 
