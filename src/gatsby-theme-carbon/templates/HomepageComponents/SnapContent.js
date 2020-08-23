@@ -15,10 +15,10 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react'
-import { snapCard, snapContent } from './SnapContent.module.scss'
-import { Button } from 'carbon-components-react'
-import { Row, Column } from 'gatsby-theme-carbon'
+import React from 'react';
+import { Button } from 'carbon-components-react';
+import { Row, Column } from 'gatsby-theme-carbon';
+import { snapCard, snapContent } from './SnapContent.module.scss';
 
 export const SnapCard = (props) => (
   <div className={snapCard}>
@@ -28,7 +28,7 @@ export const SnapCard = (props) => (
       {props.buttonLabel}
     </Button>
   </div>
-)
+);
 
 export const SnapContent = ({ title, children }) => (
   <div className={snapContent}>
@@ -36,8 +36,8 @@ export const SnapContent = ({ title, children }) => (
       <Column colSm={12} colMd={6} colLg={6}>
         <h1>{title}</h1>
       </Column>
-      <Column colSm={12} colMd={6} colLg={6}></Column>
+      <Column colSm={12} colMd={6} colLg={6} />
     </Row>
     {children}
   </div>
-)
+);

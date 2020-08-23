@@ -15,8 +15,8 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react'
-import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLinks'
+import React from 'react';
+import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLinks';
 
 const links = [
   {
@@ -31,9 +31,9 @@ const links = [
     title: 'Contact',
     href: 'https://freight.page.link/request-information',
   },
-]
+];
 
 // shouldOpenNewTabs: true if outbound links should open in a new tab
-const CustomResources = () => <ResourceLinks shouldOpenNewTabs links={links} />
+const CustomResources = () => <ResourceLinks shouldOpenNewTabs links={links} />;
 
-export default CustomResources
+export default CustomResources;

@@ -22,4 +22,4 @@ module.exports = {
   ],
   sitemap: 'http://freighttrust.com/sitemap.xml',
   host: 'http://freighttrust.com',
-}
+};

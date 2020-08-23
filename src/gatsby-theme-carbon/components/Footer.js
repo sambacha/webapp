@@ -15,7 +15,11 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react'
+import React from 'react';
+import { Button } from 'carbon-components-react';
+import { Row, Column } from 'gatsby-theme-carbon';
+import { useAuth } from 'react-use-auth';
+import cx from 'classnames';
 import {
   footerContent,
   footerContentDefault,
@@ -27,11 +31,7 @@ import {
   footerFollowSection,
   footerLinkColMobile,
   hideOnMobile,
-} from './Footer.module.scss'
-import { Button } from 'carbon-components-react'
-import { Row, Column } from 'gatsby-theme-carbon'
-import { useAuth } from 'react-use-auth'
-import cx from 'classnames'
+} from './Footer.module.scss';
 
 const ProductFooter = (
   <div>
@@ -43,7 +43,7 @@ const ProductFooter = (
     <a href="https://ft-docs.netlify.appn">Rulebook</a>
     <a href="https://ft-docs.netlify.app">Omnibus</a>
   </div>
-)
+);
 
 const CoporateFooter = (
   <div>
@@ -53,7 +53,7 @@ const CoporateFooter = (
     <a href="https://github.com/freight-trust/branding">Branding</a>
     <a href="https://freight.page.link/request-information">Compliance</a>
   </div>
-)
+);
 
 const SolutionsFooter = (
   <div>
@@ -63,7 +63,7 @@ const SolutionsFooter = (
     <a href="https://freight.page.link/request-information">For Intermodal</a>
     <a href="https://freight.page.link/request-information">For Finance</a>
   </div>
-)
+);
 
 const ResourcesFooter = (
   <div>
@@ -74,10 +74,10 @@ const ResourcesFooter = (
     <a href="https://github.com/freight-trust/editoken">$EDI Token</a>
     <a href="https://github.com/freight-trust/security">Security</a>
   </div>
-)
+);
 
 const CustomFooter = ({ homepage }) => {
-  const { isAuthenticated, login, logout } = useAuth()
+  const { isAuthenticated, login, logout } = useAuth();
   return (
     <div className={cx(footerContent, { [footerContentDefault]: !homepage })}>
       <Row className={footerRow}>
@@ -139,13 +139,13 @@ const CustomFooter = ({ homepage }) => {
 
       <Row className={footerDiectoryRow}>
         <Column colMd={6} colLg={6}>
-          <p></p>
+          <p />
           <p>LEI: 254900C9UJMDGJ0ILK56</p>
           <p>support@freight.zendesk.com</p>
-          <p></p>
+          <p />
         </Column>
 
-        <Column colMd={2} colLg={2}></Column>
+        <Column colMd={2} colLg={2} />
 
         <Column colMd={2} colLg={2}>
           <a href="https://twitter.com/freighttrustnet">Twitter</a>
@@ -178,7 +178,7 @@ const CustomFooter = ({ homepage }) => {
         </Column>
       </Row>
     </div>
-  )
-}
+  );
+};
 
-export default CustomFooter
+export default CustomFooter;

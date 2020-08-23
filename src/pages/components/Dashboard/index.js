@@ -15,7 +15,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {
   DataTable,
   TableContainer,
@@ -38,14 +38,14 @@ import {
   Tag,
   OverflowMenu,
   OverflowMenuItem,
-} from 'carbon-components-react'
+} from 'carbon-components-react';
 import {
   Delete16 as Delete,
   Save16 as Save,
   Download16 as Download,
-} from '@carbon/icons-react'
+} from '@carbon/icons-react';
 
-import './style.scss'
+import './style.scss';
 
 const customRowData = [
   {
@@ -80,7 +80,7 @@ const customRowData = [
     testMode: 'true',
     status: 'pending',
   },
-]
+];
 
 const customHeaderData = [
   {
@@ -107,12 +107,12 @@ const customHeaderData = [
     header: '',
     key: 'config',
   },
-]
+];
 
 class Dashboard extends Component {
   render() {
-    const rowData = customRowData
-    const headerData = customHeaderData
+    const rowData = customRowData;
+    const headerData = customHeaderData;
 
     return (
       <div className="dashboard-container">
@@ -130,7 +130,7 @@ class Dashboard extends Component {
             onInputChange,
             selectedRows,
           }) => {
-            rows = rows ? rows : []
+            rows = rows || [];
 
             return (
               <TableContainer title={null}>
@@ -215,54 +215,52 @@ class Dashboard extends Component {
                     </TableRow>
                   </TableHead>
                   <TableBody>
-                    {rows.map((row) => {
-                      return (
-                        <TableRow {...getRowProps({ row })}>
-                          <TableSelectRow {...getSelectionProps({ row })} />
-                          {row.cells.map((cell) => {
-                            try {
-                              if (cell.info.header === 'status') {
-                                return (
-                                  <TableCell key={cell.id}>
-                                    <Tag type="blue" title="Clear Filter">
-                                      {cell.value}
-                                    </Tag>
-                                  </TableCell>
-                                )
-                              }
-
-                              if (cell.info.header === 'config') {
-                                return (
-                                  <TableCell key={cell.id}>
-                                    <OverflowMenu>
-                                      <OverflowMenuItem
-                                        itemText="Show details"
-                                        hasDivider
-                                      />
-                                    </OverflowMenu>
-                                  </TableCell>
-                                )
-                              }
-                            } catch (e) {
-                              console.log(e)
+                    {rows.map((row) => (
+                      <TableRow {...getRowProps({ row })}>
+                        <TableSelectRow {...getSelectionProps({ row })} />
+                        {row.cells.map((cell) => {
+                          try {
+                            if (cell.info.header === 'status') {
+                              return (
+                                <TableCell key={cell.id}>
+                                  <Tag type="blue" title="Clear Filter">
+                                    {cell.value}
+                                  </Tag>
+                                </TableCell>
+                              );
                             }
 
-                            return (
-                              <TableCell key={cell.id}>{cell.value}</TableCell>
-                            )
-                          })}
-                        </TableRow>
-                      )
-                    })}
+                            if (cell.info.header === 'config') {
+                              return (
+                                <TableCell key={cell.id}>
+                                  <OverflowMenu>
+                                    <OverflowMenuItem
+                                      itemText="Show details"
+                                      hasDivider
+                                    />
+                                  </OverflowMenu>
+                                </TableCell>
+                              );
+                            }
+                          } catch (e) {
+                            console.log(e);
+                          }
+
+                          return (
+                            <TableCell key={cell.id}>{cell.value}</TableCell>
+                          );
+                        })}
+                      </TableRow>
+                    ))}
                   </TableBody>
                 </Table>
               </TableContainer>
-            )
+            );
           }}
         />
       </div>
-    )
+    );
   }
 }
 
-export default Dashboard
+export default Dashboard;

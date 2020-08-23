@@ -22,9 +22,9 @@ module.exports = {
     description:
       'Blockchain Powered EDI for Supply Chain, Trade Finance & Logistics',
     keywords: 'edi,logistics,supply chain,customs,trade,freight',
-    siteUrl: `https://www.freighttrust.com`,
+    siteUrl: 'https://www.freighttrust.com',
   },
-  pathPrefix: `/gtc`,
+  pathPrefix: '/gtc',
   plugins: [
     'gatsby-plugin-eslint',
     //     {
@@ -46,7 +46,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: 'UA-153576120-2',
@@ -132,18 +132,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
+        name: 'GatsbyJS',
+        short_name: 'GatsbyJS',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'standalone',
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: 'gatsby-plugin-sitemap',
       options: {
         sitemapSize: 5000,
       },
@@ -156,8 +156,7 @@ module.exports = {
         // TODO: Enable React SDK , see gitlab.com/fr8/ft-gatsby#issues
         // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
         environment: process.env.NODE_ENV,
-        enabled: (() =>
-          ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
+        enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
 
@@ -185,7 +184,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-netlify`,
+      resolve: 'gatsby-plugin-netlify',
       options: {
         headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
@@ -197,4 +196,4 @@ module.exports = {
       },
     },
   ],
-}
+};
