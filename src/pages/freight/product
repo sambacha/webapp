@@ -85,3 +85,4 @@ new RadarChart(chartHolder, {
 	data,
 	options
 });
+
