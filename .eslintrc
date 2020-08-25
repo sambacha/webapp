@@ -1,6 +1,5 @@
-
 {
-  "extends": ["wesbos","plugin:mdx/recommended"],
+  "extends": ["wesbos", "plugin:mdx/recommended"],
   "rules": {
     "react/prop-types": 0,
     "react/destructuring-assignment": 0,

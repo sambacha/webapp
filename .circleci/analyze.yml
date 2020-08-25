@@ -1,5 +1,5 @@
 orbs: # declare what orbs we are going to use
-  node: circleci/node@2.0.2 # the node orb provides common node-related configuration 
+  node: circleci/node@2.0.2 # the node orb provides common node-related configuration
 
 version: 2.1 # using 2.1 provides access to orbs and other features
 
@@ -16,7 +16,7 @@ commands:
             - v4-yarn-cache-{{ arch }}-{{ checksum "yarn.lock" }}
             - v4-yarn-cache-{{ arch }}
       - run:
-          name: "Yarn: Install Dependencies"
+          name: 'Yarn: Install Dependencies'
           command: |
             # Skip yarn install on metro bump commits as the package is not yet
             # available on npm
@@ -30,20 +30,22 @@ commands:
 jobs:
   setup:
     parameters:
-        executor:
-          type: executor
-          default: nodelts
-        checkout_type:
-          type: string
-          default: node
+      executor:
+        type: executor
+        default: nodelts
+      checkout_type:
+        type: string
+        default: node
     executor: << parameters.executor >>
     steps:
       - checkout
       - save_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}-<< parameters.checkout_type >>
+          key:
+            v1-repo-{{ .Environment.CIRCLE_SHA1 }}-<< parameters.checkout_type
+            >>
           paths:
             - ~/react-native
-# ANALYZE 
+  # ANALYZE
   analyze_code:
     executor: nodelts
     steps:
@@ -54,5 +56,7 @@ jobs:
 
       - run:
           name: Lint code
-          command: scripts/circleci/exec_swallow_error.sh yarn lint --format junit -o ./reports/junit/eslint/results.xml
+          command:
+            scripts/circleci/exec_swallow_error.sh yarn lint --format junit -o
+            ./reports/junit/eslint/results.xml
           when: always

@@ -6,9 +6,11 @@
  */
 
 module.exports = {
-  jsxBracketSameLine: true,
-  printWidth: 80,
+  jsxBracketSameLine: false,
+  jsxSingleQuote: true,
+  printWidth: 100,
   singleQuote: true,
-  trailingComma: "es5",
-  proseWrap: "always",
+  trailingComma: 'es5',
+  proseWrap: 'always',
+  enOfLine: 'lf',
 };

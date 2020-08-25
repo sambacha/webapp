@@ -1,4 +1,3 @@
-
 name: Telegram
 on:
   pull_request:
@@ -9,12 +8,12 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: send custom message with args
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: |
-          😍 The Website Has Been Updated!
-          Commit Message: ${{ github.event.head_commit.message }}
-          Commited Actor: ${{ github.actor }}
+      - name: send custom message with args
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            😍 The Website Has Been Updated!
+            Commit Message: ${{ github.event.head_commit.message }}
+            Commited Actor: ${{ github.actor }}

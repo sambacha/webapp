@@ -9,9 +9,11 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation -->
 
 <PageDescription>
 
+
 Boilerplate of all the components of the carbon theme
 
 </PageDescription>
+
 
 ## Activating the dialog
 
@@ -25,8 +27,8 @@ handler. To do that, we'll need to shadow the `FeedbackDialog` component.
 2. Copy the following snippet into your new file
 
 ```jsx
-import React from "react";
-import ThemeFeedbackDialog from "gatsby-theme-carbon/src/components/FeedbackDialog/FeedbackDialog";
+import React from 'react';
+import ThemeFeedbackDialog from 'gatsby-theme-carbon/src/components/FeedbackDialog/FeedbackDialog';
 
 const FeedbackDialog = ({ props }) => {
   const onSubmit = (data) => {
@@ -71,9 +73,11 @@ const FeedbackDialog = ({ props }) => {
 <Row>
 <Column colLg='4'>
 
+
 <Title>Light</Title>
 
 <GifPlayer>
+
 
 ![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif)
 
@@ -83,12 +87,15 @@ const FeedbackDialog = ({ props }) => {
 </Column>
 </Row>
 
+
 <Row>
 <Column colLg='8'>
+
 
 <Title>Dark</Title>
 
 <GifPlayer color='dark'>
+
 
 ![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif)
 
@@ -97,6 +104,7 @@ const FeedbackDialog = ({ props }) => {
 </GifPlayer>
 </Column>
 </Row>
+
 
 ## Code
 
@@ -111,6 +119,7 @@ the component.
 <Column colLg='4'>
 <GifPlayer>
 
+
 ![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif) // must be gif
 
 ![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.jpg) // must be static
@@ -118,6 +127,7 @@ image
 
 </GifPlayer>
 </Column>
+
 ```
 
 <Title>Dark</Title>
@@ -125,6 +135,7 @@ image
 ```mdx path=components/GifPlayer/GifPlayer.js src= https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/GifPlayer
 <Column colLg='8'>
 <GifPlayer color='dark'>
+
 
 ![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif) //
 must be gif
@@ -134,6 +145,7 @@ be static image
 
 </GifPlayer>
 </Column>
+
 ```
 
 ## Row
@@ -169,75 +181,90 @@ can set the rules at different breakpoints with the props.
 <Row>
 <Column colMd={4} colLg={4}>
 
-![Grid Example](images/Article_05.jpg)
-
-</Column>
-<Column colMd={4} colLg={4}>
 
 ![Grid Example](images/Article_05.jpg)
 
 </Column>
 <Column colMd={4} colLg={4}>
+
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4}>
+
 
 ![Grid Example](images/Article_05.jpg)
 
 </Column>
 </Row>
+
 
 <Title>No gutter left</Title>
 
 <Row>
 <Column colMd={4} colLg={4} noGutterMdLeft>
 
-![Grid Example](images/Article_05.jpg)
-
-</Column>
-<Column colMd={4} colLg={4} noGutterMdLeft>
 
 ![Grid Example](images/Article_05.jpg)
 
 </Column>
 <Column colMd={4} colLg={4} noGutterMdLeft>
+
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
 
 ![Grid Example](images/Article_05.jpg)
 
 </Column>
 </Row>
+
 
 <Title>No gutter</Title>
 
 <Row>
 <Column colMd={4} colLg={4} noGutterSm>
 
-![Grid Example](images/Article_05.jpg)
-
-</Column>
-<Column colMd={4} colLg={4} noGutterSm>
 
 ![Grid Example](images/Article_05.jpg)
 
 </Column>
 <Column colMd={4} colLg={4} noGutterSm>
+
+
+![Grid Example](images/Article_05.jpg)
+
+</Column>
+<Column colMd={4} colLg={4} noGutterSm>
+
 
 ![Grid Example](images/Article_05.jpg)
 
 </Column>
 </Row>
+
 
 <Title>Offset</Title>
 
 <Row>
 <Column colMd={4} colLg={4} offsetLg={4}>
 
+
 ![Grid Example](images/Article_05.jpg)
 
 </Column>
 <Column colMd={4} colLg={4}>
 
+
 ![Grid Example](images/Article_05.jpg)
 
 </Column>
 </Row>
+
 
 ### Code
 
@@ -245,20 +272,24 @@ can set the rules at different breakpoints with the props.
 <Row>
   <Column colMd={4} colLg={4}>
 
-![Grid Example](images/Article_05.jpg)
-
-  </Column>
-  <Column colMd={4} colLg={4}>
 
 ![Grid Example](images/Article_05.jpg)
 
   </Column>
   <Column colMd={4} colLg={4}>
+
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4}>
+
 
 ![Grid Example](images/Article_05.jpg)
 
   </Column>
 </Row>
+
 ```
 
 <Title>No gutter left</Title>
@@ -267,20 +298,24 @@ can set the rules at different breakpoints with the props.
 <Row>
   <Column colMd={4} colLg={4} noGutterMdLeft>
 
-![Grid Example](images/Article_05.jpg)
-
-  </Column>
-  <Column colMd={4} colLg={4} noGutterMdLeft>
 
 ![Grid Example](images/Article_05.jpg)
 
   </Column>
   <Column colMd={4} colLg={4} noGutterMdLeft>
+
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterMdLeft>
+
 
 ![Grid Example](images/Article_05.jpg)
 
   </Column>
 </Row>
+
 ```
 
 <Title>No gutter</Title>
@@ -289,20 +324,24 @@ can set the rules at different breakpoints with the props.
 <Row>
   <Column colMd={4} colLg={4} noGutterSm>
 
-![Grid Example](images/Article_05.jpg)
-
-  </Column>
-  <Column colMd={4} colLg={4} noGutterSm>
 
 ![Grid Example](images/Article_05.jpg)
 
   </Column>
   <Column colMd={4} colLg={4} noGutterSm>
+
+
+![Grid Example](images/Article_05.jpg)
+
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+
 
 ![Grid Example](images/Article_05.jpg)
 
   </Column>
 </Row>
+
 ```
 
 <Title>Offset</Title>
@@ -311,15 +350,18 @@ can set the rules at different breakpoints with the props.
 <Row>
   <Column colMd={4} colLg={4} offsetLg={4}>
 
+
 ![Grid Example](images/Article_05.jpg)
 
   </Column>
   <Column colMd={4} colLg={4}>
 
+
 ![Grid Example](images/Article_05.jpg)
 
   </Column>
 </Row>
+
 ```
 
 ## ImageCard
@@ -330,6 +372,7 @@ can set the rules at different breakpoints with the props.
       title="Title"
       href="/"
       >
+
 
 ![Square](/images/square.jpg)
 
@@ -343,6 +386,7 @@ can set the rules at different breakpoints with the props.
       subTitleColor="dark"
       subTitle="Dark subtitle"
       >
+
 
 ![Light dark](./images/light-dark.jpg)
 
@@ -359,6 +403,7 @@ can set the rules at different breakpoints with the props.
       subTitleColor="light"
       >
 
+
 ![Plane image](./images/plane.jpg)
 
   </ImageCard>
@@ -369,6 +414,7 @@ can set the rules at different breakpoints with the props.
       href="/"
       hoverColor="dark"
       >
+
 
 ![color pallete array](/images/color-grid.svg)
 
@@ -381,11 +427,13 @@ can set the rules at different breakpoints with the props.
       href="/"
       >
 
+
 ![IBM Cloud Server](/images/IBM_Cloud_Server.jpg)
 
   </ImageCard>
 </Column>
 </Row>
+
 
 ## Code
 
@@ -395,6 +443,7 @@ can set the rules at different breakpoints with the props.
     <ImageCard title="Title" subTitle="Subtitle" href="/">
       
 ![Square](/images/square.jpg)
+
 
     </ImageCard>
     <ImageCard
@@ -423,6 +472,7 @@ can set the rules at different breakpoints with the props.
       
 ![Plane image](./images/plane.jpg)
 
+
     </ImageCard>
 
   </Column>
@@ -430,6 +480,7 @@ can set the rules at different breakpoints with the props.
     <ImageCard aspectRatio="1:1" href="/" hoverColor="dark">
       
 ![color pallete array](/images/color-grid.svg)
+
 
     </ImageCard>
     <ImageCard disabled aspectRatio="1:1" href="/">
@@ -440,6 +491,7 @@ can set the rules at different breakpoints with the props.
 
   </Column>
 </Row>
+
 ```
 
 ## ImageGallery
@@ -448,63 +500,79 @@ Click on an image to open the gallery.
 
 <ImageGallery>
 
+
 <ImageGalleryImage alt="IBM Design" title="IBM Design" col={4}>
+
 
 ![IBM Design](/images/IBM_Design_landing.jpg)
 
 </ImageGalleryImage>
 
+
 <ImageGalleryImage  alt="IBM Cloud Logo" title="IBM Cloud" col={4}>
+
 
 ![IBM Cloud Logo](/images/IBM_Cloud_Logo.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Developers" title="IBM Cloud Developers" col={4}>
 
+
 ![IBM Cloud Developers](/images/IBM_Cloud_Developers.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Data Center" title="IBM Cloud Data Center" col={8}>
+
 
 ![IBM Cloud Data Center](/images/IBM_Cloud_Data_Center.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Interconnect" title="IBM Cloud Interconnect" col={4}>
 
+
 ![IBM Cloud Interconnect](/images/IBM_Cloud_Interconnect.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Notebook" title="IBM Cloud Notebook" col={4}>
+
 
 ![IBM Cloud Notebook](/images/IBM_Cloud_Notebook.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Platform Prototype" title="IBM Cloud Platform" col={8}>
 
+
 <GifPlayer color='dark'>
+
 
 ![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif)
 ![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.jpg)
 
 </GifPlayer>
 
+
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Pictograms" title="IBM Cloud Pictograms" col={4}>
 
+
 <GifPlayer>
+
 
 ![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif)
 ![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.jpg)
 
 </GifPlayer>
 
+
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Server" title="IBM Cloud Server" col={4}>
+
 
 ![IBM Cloud Server](/images/IBM_Cloud_Server.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Platform Prototype" title="IBM Cloud Platform" col={4}>
+
 
 <Video src="/videos/hero-video.mp4" poster="/images/poster.jpg">
   <track default src="/videos/vtt/hero-video.vtt" srcLang="en" />
@@ -513,11 +581,14 @@ Click on an image to open the gallery.
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Think" title="IBM Cloud Think" col={4}>
 
+
 ![IBM Cloud Think](/images/IBM_Cloud_Think_Keynote.jpg)
 
 </ImageGalleryImage>
 
+
 </ImageGallery>
+
 
 ## Code
 
@@ -534,56 +605,68 @@ components in markdown.
 <ImageGallery>
 <ImageGalleryImage alt="IBM Design" title="IBM Design" col={4}>
 
+
 ![IBM Design](/images/IBM_Design_landing.jpg)
 
 </ImageGalleryImage>
 
+
 <ImageGalleryImage  alt="IBM Cloud Logo" title="IBM Cloud" col={4}>
+
 
 ![IBM Cloud Logo](/images/IBM_Cloud_Logo.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Developers" title="IBM Cloud Developers" col={4}>
 
+
 ![IBM Cloud Developers](/images/IBM_Cloud_Developers.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Data Center" title="IBM Cloud Data Center" col={8}>
+
 
 ![IBM Cloud Data Center](/images/IBM_Cloud_Data_Center.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Interconnect" title="IBM Cloud Interconnect" col={4}>
 
+
 ![IBM Cloud Interconnect](/images/IBM_Cloud_Interconnect.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Notebook" title="IBM Cloud Notebook" col={4}>
+
 
 ![IBM Cloud Notebook](/images/IBM_Cloud_Notebook.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Platform Prototype" title="IBM Cloud Platform" col={8}>
 
+
 ![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Pictograms" title="IBM Cloud Pictograms" col={4}>
+
 
 ![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Server" title="IBM Cloud Server" col={4}>
 
+
 ![IBM Cloud Server](/images/IBM_Cloud_Server.jpg)
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud Think" title="IBM Cloud Think" col={4}>
 
+
 ![IBM Cloud Think](/images/IBM_Cloud_Think_Keynote.jpg)
 
 </ImageGalleryImage>
 </ImageGallery>
+
 ```
 
 ## InlineNotification
@@ -592,6 +675,7 @@ components in markdown.
 
 <InlineNotification>
 
+
 **Lorem ipsum:** dolor sit amet,
 [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
 arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
@@ -601,9 +685,11 @@ non vel quam.
 
 </InlineNotification>
 
+
 <Title>Error</Title>
 
 <InlineNotification kind="error">
+
 
 **Error:** dolor sit amet,
 [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
@@ -614,9 +700,11 @@ non vel quam.
 
 </InlineNotification>
 
+
 <Title>Success</Title>
 
 <InlineNotification kind="success">
+
 
 **Success:** dolor sit amet,
 [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
@@ -627,9 +715,11 @@ non vel quam.
 
 </InlineNotification>
 
+
 <Title>Warning</Title>
 
 <InlineNotification kind="warning">
+
 
 **Warning:** dolor sit amet,
 [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
@@ -639,6 +729,7 @@ dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
 non vel quam.
 
 </InlineNotification>
+
 
 ## Code
 
@@ -647,6 +738,7 @@ non vel quam.
 
 <InlineNotification>
 
+
 **Lorem ipsum:** dolor sit amet,
 [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
 arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
@@ -656,9 +748,11 @@ non vel quam.
 
 </InlineNotification>
 
+
 // Error
 
 <InlineNotification kind="error">
+
 
 **Error:** dolor sit amet,
 [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
@@ -669,9 +763,11 @@ non vel quam.
 
 </InlineNotification>
 
+
 // Success
 
 <InlineNotification kind="success">
+
 
 **Success:** dolor sit amet,
 [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
@@ -682,9 +778,11 @@ non vel quam.
 
 </InlineNotification>
 
+
 // Warning
 
 <InlineNotification kind="warning">
+
 
 **Warning:** dolor sit amet,
 [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
@@ -694,6 +792,7 @@ dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
 non vel quam.
 
 </InlineNotification>
+
 ```
 
 ## MiniCard
@@ -702,14 +801,18 @@ non vel quam.
 
 <CardGroup>
 
+
   <MiniCard title="26 characters per MiniCard" href="/demo">
+
 
 ![Github icon](/images/github-icon.png)
 
   </MiniCard>
   <MiniCard title="Use the default icon" href="/demo" />
 
+
 {" "}
+
 <MiniCard
   title="Choose from other icons"
   href="/demo"
@@ -718,16 +821,20 @@ non vel quam.
 
   <MiniCard title="Or bring your own" href="/demo">
 
+
 ![Github icon](/images/sketch-icon.png)
 
   </MiniCard>
 
+
 </CardGroup>
+
 
 <Title>Aside</Title>
 
 <Row>
 <Column colLg={8}>
+
 
 When you have the mini resource card sitting aside the main content, be sure to
 add the `gutterLg`, properties to the `<MiniCard>`. This will ensure the
@@ -740,10 +847,12 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
   href="https://gatsby-theme-carbon.now.sh"
   >
 
+
 ![Sketch icon](/images/sketch-icon.png)
 
 </MiniCard>
 </Row>
+
 
 ## Code
 
@@ -772,6 +881,7 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
 <Row>
 <Column colLg={8}>
 
+
 When you have the mini resource card sitting aside the main content, be sure to
 add the `gutterLg`, properties to the `<MiniCard>`. This will ensure the
 MiniCard has the appropriate gutters at the approriate breakpoints.
@@ -783,10 +893,12 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
   href="https://gatsby-theme-carbon.now.sh"
   >
 
+
 ![Sketch icon](/images/sketch-icon.png)
 
 </MiniCard>
 </Row>
+
 ```
 
 ## ResourceCard
@@ -801,6 +913,7 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
       href="https://gatsby-theme-carbon.now.sh"
       >
 
+
 ![IBM Rebus](/images/rebus.svg)
 
   </ResourceCard>
@@ -812,6 +925,7 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
       aspectRatio="2:1"
       href="https://gatsby-theme-carbon.now.sh"
       >
+
 
 ![Github icon](/images/github-icon.png)
 
@@ -827,6 +941,7 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
       href="https://gatsby-theme-carbon.now.sh"
       >
 
+
 ![Sketch icon](/images/sketch-icon.png)
 
   </ResourceCard>
@@ -839,11 +954,13 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
       href="https://gatsby-theme-carbon.now.sh"
       >
 
+
 ![Sketch icon](/images/sketch-icon.png)
 
   </ResourceCard>
 </Column>
 </Row>
+
 
 ## Code
 
@@ -856,6 +973,7 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
       subTitle="Carbon Design System"
       href="https://www.carbondesignsystem.com">
 
+
 ![Github icon](/images/github-icon.png)
 
     </ResourceCard>
@@ -866,12 +984,14 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
       subTitle="Carbon Design System"
       href="https://www.carbondesignsystem.com">
 
+
 ![Github icon](/images/github-icon.png)
 
     </ResourceCard>
 
   </Column>
 </Row>
+
 ```
 
 <Title>With title</Title>
@@ -885,10 +1005,12 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
     actionIcon="arrowRight"
     href="https://gatsby-theme-carbon.now.sh">
 
+
 ![Github icon](/images/github-icon.png)
 
   </ResourceCard>
 </Column>
+
 ```
 
 <Title>Only subtitle</Title>
@@ -901,10 +1023,12 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
     aspectRatio="2:1"
     href="https://gatsby-theme-carbon.now.sh">
 
+
 ![Github icon](/images/github-icon.png)
 
   </ResourceCard>
 </Column>
+
 ```
 
 <Title>Dark</Title>
@@ -919,10 +1043,12 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
     actionIcon="email"
     href="https://gatsby-theme-carbon.now.sh">
 
+
 ![Sketch icon](/images/sketch-icon.png)
 
   </ResourceCard>
 </Column>
+
 ```
 
 <Title>Disabled</Title>
@@ -942,7 +1068,9 @@ MiniCard has the appropriate gutters at the approriate breakpoints.
 
 <Tabs>
 
+
 <Tab label="Just text">
+
 
 The tab component can be used for a variety of content. From text, to images, to
 columns. If you want to have multiple columns, you’ll need to use our `Row` and
@@ -950,7 +1078,9 @@ columns. If you want to have multiple columns, you’ll need to use our `Row` an
 
 </Tab>
 
+
 <Tab label="Single image">
+
 
 If your content is full width, you don’t need `Row` and `Column`
 
@@ -958,10 +1088,13 @@ If your content is full width, you don’t need `Row` and `Column`
 
 </Tab>
 
+
 <Tab label="Two images">
+
 
 <Row>
 <Column colSm={6} colLg={6}>
+
 
 Column one
 
@@ -970,6 +1103,7 @@ Column one
 </Column>
 <Column colSm={6} colLg={6}>
 
+
 Column two
 
 ![color array](images/colors.jpg)
@@ -977,9 +1111,12 @@ Column two
 </Column>
 </Row>
 
+
 </Tab>
 
+
 </Tabs>
+
 
 ## Code
 
@@ -990,13 +1127,16 @@ Column two
 
 <Tabs>
 
+
 <Tab label="Text">
+
 
 The tab component can be used for a variety of content. From text, to images, to
 columns. If you want to have multiple columns, you’ll need to use our `Row` and
 `Column` helpers as demonstrated in the "Two images" tab.
 
 </Tab>
+
 ```
 
 <Title>Single image</Title>
@@ -1013,8 +1153,10 @@ columns. If you want to have multiple columns, you’ll need to use our `Row` an
 ```mdx path=components/Tabs/Tabs.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Tabs
 <Tab label="Two images">
 
+
 <Row>
 <Column colSm={6} colLg={6}>
+
 
 Column one
 
@@ -1023,6 +1165,7 @@ Column one
 </Column>
 <Column colSm={6} colLg={6}>
 
+
 Column two
 
 ![color array](images/colors.jpg)
@@ -1030,9 +1173,12 @@ Column two
 </Column>
 </Row>
 
+
 </Tab>
+
 
 // Make sure you close the wrapper component
 
 </Tabs>
+
 ```
