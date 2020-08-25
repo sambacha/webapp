@@ -37,8 +37,7 @@ const Homepage = ({ pageContext, children, _frontmatter }) => {
       titleType={titleType}
       homepage
       theme="dark"
-      href="https://freight.page.link/request-information"
-    >
+      href="https://freight.page.link/request-information">
       <Main className={mainContent}>{children}</Main>
 
       <BackToTopBtn />

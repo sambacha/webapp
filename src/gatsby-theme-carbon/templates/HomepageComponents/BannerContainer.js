@@ -35,8 +35,7 @@ const BannerText = ({
         <Button
           href="#top"
           kind="primary"
-          onClick={buttonAction ? () => buttonAction() : () => {}}
-        >
+          onClick={buttonAction ? () => buttonAction() : () => {}}>
           {buttonLabel}
         </Button>
       )}
@@ -53,8 +52,7 @@ export const BannerContainer = ({
   noBgImage,
 }) => (
   <div
-    className={`bannerContainer ${noBgImage ? '' : 'bannerContainerWithBg'}`}
-  >
+    className={`bannerContainer ${noBgImage ? '' : 'bannerContainerWithBg'}`}>
     <Row className="bannerRow">
       <Column colSm={12} colMd={7} colLg={7}>
         <BannerText

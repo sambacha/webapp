@@ -22,9 +22,7 @@ import { mainContent } from '../Default.module.scss';
 
 const DashboardTemplate = ({ pageContext, children, customNavItems }) => {
   const { frontmatter = {}, titleType } = pageContext;
-  const {
-    tabs, title, theme, description, keywords,
-  } = frontmatter;
+  const { tabs, title, theme, description, keywords } = frontmatter;
 
   return (
     <Layout
@@ -36,8 +34,7 @@ const DashboardTemplate = ({ pageContext, children, customNavItems }) => {
       pageKeywords={keywords}
       titleType={titleType}
       customNavItems={customNavItems}
-      noResourceLinks
-    >
+      noResourceLinks>
       <Main className={mainContent}>{children}</Main>
     </Layout>
   );

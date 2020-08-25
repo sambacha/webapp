@@ -1,4 +1,18 @@
 
+.vscode
+.idea
+
+# artifacts
+*.tar.gz
+*.zip
+*.tar
+*.tar.bz
+
+# dotenv environment variables file
+.env
+
+
+
 # build 
 .cache
 public/
@@ -11,8 +25,6 @@ node_modules
 _dev/
 .vscode/
 .idea/
-
-.env
 
 # Logs
 logs
@@ -67,8 +79,6 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variables file
-.env
 
 # gatsby files
 .cache/

@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+// TODO: FIX ESLINT RULE FOR NO UN-RESOLVED
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -50,8 +52,7 @@ const LeftNav = (props) => {
             props.theme === 'dark' || props.homepage,
           'bx--side-nav--website--light':
             props.theme !== 'dark' && !props.homepage,
-        })}
-      >
+        })}>
         <SideNavItems>
           {navItems.map((item, i) => (
             <LeftNavItem

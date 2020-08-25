@@ -22,13 +22,10 @@ import PageHeader from 'gatsby-theme-carbon/src/components/PageHeader';
 import Main from 'gatsby-theme-carbon/src/components/Main';
 import { mainContent } from './Default.module.scss';
 
-const Default = ({
-  pageContext, children, location, Title,
-}) => {
+// eslint-disable-next-line no-unused-vars
+const Default = ({ pageContext, children, location, Title }) => {
   const { frontmatter = {}, titleType } = pageContext;
-  const {
-    tabs, title, theme, description, keywords,
-  } = frontmatter;
+  const { tabs, title, theme, description, keywords } = frontmatter;
 
   return (
     <Layout
@@ -38,8 +35,7 @@ const Default = ({
       pageTitle={title}
       pageDescription={description}
       pageKeywords={keywords}
-      titleType={titleType}
-    >
+      titleType={titleType}>
       <PageHeader title={Title ? <Title /> : title} label="label" tabs={tabs} />
       <Main className={mainContent}>{children}</Main>
     </Layout>

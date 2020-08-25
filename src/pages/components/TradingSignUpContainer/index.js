@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable react/display-name */
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -15,18 +17,18 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React, { Component } from "react";
-import { Modal, Button, TextInput, Loading } from "carbon-components-react";
-import { ChevronLeft20, CheckmarkOutline32 } from "@carbon/icons-react";
-import { BannerContainer } from "gatsby-theme-carbon/src/templates/HomepageComponents";
-import "./styles.scss";
+import React, { Component } from 'react';
+import { Modal, Button, TextInput, Loading } from 'carbon-components-react';
+import { ChevronLeft20, CheckmarkOutline32 } from '@carbon/icons-react';
+import { BannerContainer } from 'gatsby-theme-carbon/src/templates/HomepageComponents';
+import './styles.scss';
 
 const modalProps = [
   // Step 0
   {
-    modalLabel: "Trading Channel",
-    headerLabel: "Trading Channel",
-    buttonText: "Submit",
+    modalLabel: 'Trading Channel',
+    headerLabel: 'Trading Channel',
+    buttonText: 'Submit',
     helperText: null,
     renderContent: () => (
       <div>
@@ -46,9 +48,9 @@ const modalProps = [
   },
   // Step 1
   {
-    modalLabel: "Verify Connection",
-    headerLabel: "Verify Connection",
-    buttonText: "Submit",
+    modalLabel: 'Verify Connection',
+    headerLabel: 'Verify Connection',
+    buttonText: 'Submit',
     renderContent: () => (
       <div>
         <TextInput labelText="AS2 ID" placeholder="AS2 ID" id="as2ID" />
@@ -63,11 +65,11 @@ const modalProps = [
   },
   // Step 2
   {
-    modalLabel: "Verify Information",
+    modalLabel: 'Verify Information',
     contentTexts: [
-      "Verifying as2 id...",
-      "Resolving as2 url...",
-      "Authenticated",
+      'Verifying as2 id...',
+      'Resolving as2 url...',
+      'Authenticated',
     ],
     renderContent: () => (
       <div>
@@ -77,11 +79,11 @@ const modalProps = [
   },
   // Step 3
   {
-    modalLabel: "Success",
-    headerLabel: "Success",
-    buttonText: "Redirect",
+    modalLabel: 'Success',
+    headerLabel: 'Success',
+    buttonText: 'Redirect',
     renderContent: () => (
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: 'center' }}>
         <CheckmarkOutline32 style={{ width: 60, height: 60 }} />
         <h4>Corporate Authentication Confirmed</h4>
       </div>
@@ -89,7 +91,9 @@ const modalProps = [
   },
 ];
 
+// TODO: Fix State in CONSTRUCTOR ISSUE HERE
 class TradingSignUpContainer extends Component {
+  // eslint-disable-next-line react/state-in-constructor
   state = {
     modalVisible: false,
     currentStep: 0,
@@ -167,8 +171,7 @@ class TradingSignUpContainer extends Component {
         modalLabel={modalLabel}
         className="trading-signup-modal"
         open={modalVisible}
-        onRequestClose={() => this.showModal(false)}
-      >
+        onRequestClose={() => this.showModal(false)}>
         <h2>{headerLabel}</h2>
         {contentText && <h5>{contentText}</h5>}
         {contentTexts && <h5>{contentTexts[currentContentStep]}</h5>}
@@ -177,8 +180,7 @@ class TradingSignUpContainer extends Component {
           <Button
             size="field"
             className="submit-btn"
-            onClick={() => this.goToNextStep()}
-          >
+            onClick={() => this.goToNextStep()}>
             {buttonText}
           </Button>
         )}
@@ -186,8 +188,7 @@ class TradingSignUpContainer extends Component {
         <Button
           kind="ghost"
           className="back-btn"
-          onClick={() => this.goToPrevStep()}
-        >
+          onClick={() => this.goToPrevStep()}>
           <ChevronLeft20 />
         </Button>
       </Modal>

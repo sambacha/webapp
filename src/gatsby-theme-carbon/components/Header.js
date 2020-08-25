@@ -49,13 +49,19 @@ import {
 // href="https://freight.page.link/request-information"
 const Header = ({ children }) => {
   const { leftNavIsOpen, toggleNavState, switcherIsOpen } = useContext(
-    NavContext,
+    NavContext
   );
   const { navigationStyle } = useMetadata();
 
   return (
-    <ShellHeader aria-label="Header" className={header}>
-      <SkipToContent href="#main-content" className={skipToContent} />
+    <ShellHeader
+      href="https://freight.page.link/request-information"
+      aria-label="Header"
+      className={header}>
+      <SkipToContent
+        href="https://freight.page.link/request-information"
+        className={skipToContent}
+      />
 
       <HeaderMenuButton
         className={cx('bx--header__action--menu', headerButton)}
@@ -66,11 +72,12 @@ const Header = ({ children }) => {
         }}
         isActive={leftNavIsOpen}
       />
-
+      {/** 
+TODO: Fix NAVIGATION ITEMS HERE 
+*/}
       <Link
         className={headerName}
-        to="https://freight.page.link/request-information"
-      >
+        to="https://freight.page.link/request-information">
         Freight Trust
       </Link>
 
@@ -81,14 +88,12 @@ const Header = ({ children }) => {
         </Link>
         <Link
           className={navLink}
-          to="https://freight.page.link/request-information"
-        >
+          to="https://freight.page.link/request-information">
           Vehicles
         </Link>
         <Link
           className={navLink}
-          to="https://freight.page.link/request-information"
-        >
+          to="https://freight.page.link/request-information">
           Trade Finance
         </Link>
         <Link className={navLink} to="/dashboard">
@@ -111,8 +116,7 @@ const Header = ({ children }) => {
             toggleNavState('switcherIsOpen', 'close');
             toggleNavState('searchIsOpen', 'close');
             toggleNavState('leftNavIsOpen', 'close');
-          }}
-        >
+          }}>
           {switcherIsOpen ? <Close20 /> : <AppSwitcher20 />}
         </HeaderGlobalAction>
       </HeaderGlobalBar>

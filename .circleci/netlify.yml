@@ -1,13 +1,13 @@
 orbs: # declare what orbs we are going to use
   node: circleci/node@2.0.2 # the node orb provides common node-related configuration 
-
+  codecov: codecov/codecov@1.0.2
 version: 2.1 # using 2.1 provides access to orbs and other features
 
 workflows:
   matrix-tests:
     jobs:
       - node/test:
-          version: 12.16.0
+          version: 12.16.2
 commands:
   run_yarn:
     steps:
@@ -39,6 +39,8 @@ jobs:
     executor: << parameters.executor >>
     steps:
       - checkout
+      - codecov/upload:
+          file: {{ coverage_report_filepath }}
       - save_cache:
           key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}-<< parameters.checkout_type >>
           paths:
@@ -51,6 +53,7 @@ jobs:
           checkout_type: node
       - setup_artifacts
       - run_yarn
+
       - run:
           name: Lint code
           command: scripts/circleci/exec_swallow_error.sh yarn lint --format junit -o ./reports/junit/eslint/results.xml

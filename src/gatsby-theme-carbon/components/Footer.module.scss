@@ -1,6 +1,7 @@
 @import '@carbon/themes/scss/themes';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;600;700&display=swap');
 
+// TODO: Documentation here contradicts actual usage 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
@@ -145,7 +146,7 @@ $carbon--theme: $carbon--theme--g90;
   width: 100%;
   display: inline-block;
 }
-
+// TODO: Misspelling ? 'footerDiectoryRow'
 .footerDiectoryRow {
   padding-top: $layout-01;
 }

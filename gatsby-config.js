@@ -156,10 +156,35 @@ module.exports = {
         // TODO: Enable React SDK , see gitlab.com/fr8/ft-gatsby#issues
         // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
         environment: process.env.NODE_ENV,
-        enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
+        enabled: (() =>
+          ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
-
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-autolink-headers',
+          'gatsby-remark-check-links',
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-next-seo',
+      options: {
+        openGraph: {
+          type: 'website',
+          locale: 'en_IE',
+          url: 'https://www.freighttrust.com',
+          site_name: 'EDI Blockchain VAN Network for Supply Chain & Logistics',
+        },
+        twitter: {
+          handle: '@freighttrustnet',
+          site: '@freighttrust.com',
+          cardType: 'app',
+        },
+      },
+    },
     {
       resolve: 'gatsby-plugin-iubenda-cookie-footer',
       options: {
@@ -181,6 +206,7 @@ module.exports = {
             rejectButtonCaption: 'Decline',
           },
         },
+        googleTagManagerOptions: true,
       },
     },
     {

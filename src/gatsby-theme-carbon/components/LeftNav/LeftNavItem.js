@@ -31,9 +31,7 @@ import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
 import usePathprefix from 'gatsby-theme-carbon/src/util/hooks/usePathprefix';
 
 const LeftNavItem = (props) => {
-  const {
-    items, category, hasDivider, isSpace,
-  } = props;
+  const { items, category, hasDivider, isSpace } = props;
   const { toggleNavState } = useContext(NavContext);
   const closeLeftNav = () => {
     toggleNavState('leftNavIsOpen', 'close');
@@ -51,7 +49,7 @@ const LeftNavItem = (props) => {
           : location.pathname;
 
         const isActive = items.some(
-          (item) => item.path.split('/')[1] === pathname.split('/')[1],
+          (item) => item.path.split('/')[1] === pathname.split('/')[1]
         );
 
         if (items.length === 1) {
@@ -65,8 +63,7 @@ const LeftNavItem = (props) => {
                   [styles.currentItem]: isActive,
                 })}
                 isActive={isActive}
-                to={`${items[0].path}`}
-              >
+                to={`${items[0].path}`}>
                 {category}
               </SideNavLink>
               {hasDivider && <hr className={styles.divider} />}
@@ -79,8 +76,7 @@ const LeftNavItem = (props) => {
               icon={<span>dummy icon</span>}
               isActive={isActive} // TODO similar categories
               defaultExpanded={isActive}
-              title={category}
-            >
+              title={category}>
               <SubNavItems
                 onClick={closeLeftNav}
                 items={items}
@@ -95,29 +91,29 @@ const LeftNavItem = (props) => {
   );
 };
 
-const SubNavItems = ({ items, pathname, onClick }) => items.map((item, i) => {
-  const hasActiveTab = `${item.path.split('/')[1]}/${item.path.split('/')[2]}`
-      === `${pathname.split('/')[1]}/${pathname.split('/')[2]}`;
-  return (
-    <SideNavMenuItem
-      to={`${item.path}`}
-      className={cx({
-        [styles.linkText__dark]: pathname === '/',
-      })}
-      onClick={onClick}
-      element={Link}
-      isActive={hasActiveTab}
-      key={i}
-    >
-      <span
-        className={cx(styles.linkText, {
-          [styles.linkText__active]: hasActiveTab,
+const SubNavItems = ({ items, pathname, onClick }) =>
+  items.map((item, i) => {
+    const hasActiveTab =
+      `${item.path.split('/')[1]}/${item.path.split('/')[2]}` ===
+      `${pathname.split('/')[1]}/${pathname.split('/')[2]}`;
+    return (
+      <SideNavMenuItem
+        to={`${item.path}`}
+        className={cx({
+          [styles.linkText__dark]: pathname === '/',
         })}
-      >
-        {item.title}
-      </span>
-    </SideNavMenuItem>
-  );
-});
+        onClick={onClick}
+        element={Link}
+        isActive={hasActiveTab}
+        key={i}>
+        <span
+          className={cx(styles.linkText, {
+            [styles.linkText__active]: hasActiveTab,
+          })}>
+          {item.title}
+        </span>
+      </SideNavMenuItem>
+    );
+  });
 
 export default LeftNavItem;
