@@ -54,8 +54,8 @@ const Header = ({ children }) => {
   const { navigationStyle } = useMetadata();
 
   return (
-    <ShellHeader aria-label="Header" className={header}>
-      <SkipToContent href="#main-content" className={skipToContent} />
+    <ShellHeader href="https://freight.page.link/request-information" aria-label="Header" className={header}>
+      <SkipToContent href="https://freight.page.link/request-information" className={skipToContent} />
 
       <HeaderMenuButton
         className={cx('bx--header__action--menu', headerButton)}

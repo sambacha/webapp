@@ -27,6 +27,7 @@ import {
   footerLinkCol,
   footerButtonCol,
   footerLastRow,
+  // TODO: Misspelling? '  footerDiectoryRow, ' 
   footerDiectoryRow,
   footerFollowSection,
   footerLinkColMobile,
@@ -40,7 +41,7 @@ const ProductFooter = (
     <a href="https://freight.page.link/request-information">Integrations</a>
     <a href="https://ft-docs.netlify.app">API</a>
     <a href="https://ft-docs.netlify.app">ABI</a>
-    <a href="https://ft-docs.netlify.appn">Rulebook</a>
+    <a href="https://ft-docs.netlify.app">Rulebook</a>
     <a href="https://ft-docs.netlify.app">Omnibus</a>
   </div>
 );
@@ -157,7 +158,7 @@ const CustomFooter = ({ homepage }) => {
         <Column colMd={2} colLg={2}>
           <a href="https://github.com/freight-trust">GitHub</a>
           <a href="https://github.com/freight-trust/releases">Releases</a>
-          <a href="https://hub.docker.com/r/freightcorp">Docker</a>
+          <a href="https://github.com/freight-trust/core">Hyperleder</a>
           <a href="https://hub.docker.com/r/freightcorp">RSS</a>
         </Column>
       </Row>
@@ -165,9 +166,9 @@ const CustomFooter = ({ homepage }) => {
       <Row className={footerLastRow}>
         <Column colMd={6} colLg={6}>
           <div className={footerFollowSection}>
-            <span>Terms of Service</span>
-            <span>Privacy Policy</span>
-            <span> Security </span>
+            <span><a href="https://github.com/freight-trust/legal/blob/master/src/terms-of-service.md">Terms of Service </a></span>
+            <span><a href="https://github.com/freight-trust/legal/blob/master/src/privacy-policy.md">Privacy Policy </a></span>
+            <span><a href="https://github.com/freight-trust/legal/blob/master/src/data-breach-response-policy.md">Security</a></span>
           </div>
         </Column>
 
