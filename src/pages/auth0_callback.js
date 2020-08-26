@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import { useAuth } from 'react-use-auth';
+import { useAuth } from "react-use-auth";
 
 const Auth0CallbackPage = () => {
   const { handleAuthentication } = useAuth();

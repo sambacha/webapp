@@ -15,16 +15,16 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react';
-import { Button } from 'carbon-components-react';
-import { Row, Column } from 'gatsby-theme-carbon';
-import { snapCard, snapContent } from './SnapContent.module.scss';
+import React from "react";
+import { Button } from "carbon-components-react";
+import { Row, Column } from "gatsby-theme-carbon";
+import { snapCard, snapContent } from "./SnapContent.module.scss";
 
-export const SnapCard = (props) => (
+export const SnapCard = props => (
   <div className={snapCard}>
     <h2>{props.title}</h2>
     <p>{props.content}</p>
-    <Button href="a" kind="tertiary">
+    <Button href='a' kind='tertiary'>
       {props.buttonLabel}
     </Button>
   </div>

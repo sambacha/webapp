@@ -18,12 +18,12 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react';
-import { Row, Column } from 'gatsby-theme-carbon';
-import { articleContent } from './ArticleContainer.module.scss';
+import React from "react";
+import { Row, Column } from "gatsby-theme-carbon";
+import { articleContent } from "./ArticleContainer.module.scss";
 
 export const ArticleContainer = ({ title, subTitle, children }) => (
-  <div className={articleContent} id="article-content">
+  <div className={articleContent} id='article-content'>
     <Row>
       <Column colMd={6} colLg={6}>
         <h1>{title}</h1>

@@ -3,7 +3,7 @@ name: Build and Deploy to Gatsby every two hours
 on:
   # 1. Trigger the workflow every 2 hours
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: "0 */2 * * *"
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       # 3. https://github.com/actions/setup-node#usage
       - uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: "12.x"
       - run: yarn
       # This triggers `gatsby build` script in "package.json"
       - run: yarn clean && gatsby build"

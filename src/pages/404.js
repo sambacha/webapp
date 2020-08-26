@@ -15,13 +15,13 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react';
-import { FourOhFour } from 'gatsby-theme-carbon';
+import React from "react";
+import { FourOhFour } from "gatsby-theme-carbon";
 
 const links = [
-  { href: 'https://freighttrust.com', text: 'Homepage' },
-  { href: 'mailto:support@freight.zendesk.com', text: 'Support' },
-  { href: 'https://github.com/freight-trust', text: 'GitHub' },
+  { href: `https://freighttrust.com`, text: `Homepage` },
+  { href: `mailto:support@freight.zendesk.com`, text: `Support` },
+  { href: `https://github.com/freight-trust`, text: `GitHub` },
 ];
 
 const Custom404 = () => <FourOhFour links={links} />;

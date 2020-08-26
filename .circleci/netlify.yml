@@ -16,7 +16,7 @@ commands:
             - v4-yarn-cache-{{ arch }}-{{ checksum "yarn.lock" }}
             - v4-yarn-cache-{{ arch }}
       - run:
-          name: 'Yarn: Install Dependencies'
+          name: "Yarn: Install Dependencies"
           command: |
             # Skip yarn install on metro bump commits as the package is not yet
             # available on npm

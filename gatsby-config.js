@@ -18,15 +18,15 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Freight Trust & Clearing Corporation',
+    title: "Freight Trust & Clearing Corporation",
     description:
-      'Blockchain Powered EDI for Supply Chain, Trade Finance & Logistics',
-    keywords: 'edi,logistics,supply chain,customs,trade,freight',
-    siteUrl: 'https://www.freighttrust.com',
+      "Blockchain Powered EDI for Supply Chain, Trade Finance & Logistics",
+    keywords: "edi,logistics,supply chain,customs,trade,freight",
+    siteUrl: "https://www.freighttrust.com",
   },
-  pathPrefix: '/gtc',
+  pathPrefix: "/gtc",
   plugins: [
-    'gatsby-plugin-eslint',
+    "gatsby-plugin-eslint",
     //     {
     //      resolve: 'gatsby-plugin-mailchimp',
     //       options: {
@@ -35,21 +35,21 @@ module.exports = {
     //       },
     //        },
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: 'Freight Trust Network',
-        short_name: 'Freight Trust',
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#0062ff',
-        display: 'browser',
+        name: "Freight Trust Network",
+        short_name: "Freight Trust",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#0062ff",
+        display: "browser",
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: 'UA-153576120-2',
+        trackingId: "UA-153576120-2",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
@@ -57,7 +57,7 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ['/preview/**', '/do-not-track/me/too/'],
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
         // Enables Google Optimize using your container Id
@@ -71,41 +71,41 @@ module.exports = {
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: 'freighttrust.com',
+        cookieDomain: "freighttrust.com",
       },
     },
     {
-      resolve: 'gatsby-theme-carbon',
+      resolve: "gatsby-theme-carbon",
       options: {
         repository: {
           baseUrl:
-            'https://github.com/carbon-design-system/gatsby-theme-carbon',
+            "https://github.com/carbon-design-system/gatsby-theme-carbon",
           // TODO: fix gatsby theme to not use example...
-          subDirectory: '/packages/example',
+          subDirectory: "/packages/example",
         },
-        iconPath: './src/images/favicon.png',
+        iconPath: "./src/images/favicon.png",
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://www.freighttrust.com',
-        sitemap: 'https://www.freighttrust.com/sitemap.xml',
+        host: "https://www.freighttrust.com",
+        sitemap: "https://www.freighttrust.com/sitemap.xml",
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
+            policy: [{ userAgent: "*", disallow: ["/"] }],
           },
           production: {
-            policy: [{ userAgent: '*', allow: '/' }],
+            policy: [{ userAgent: "*", allow: "/" }],
           },
         },
       },
     },
     {
-      resolve: 'gatsby-plugin-google-tagmanager',
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: 'GTM-T7S3HWV',
+        id: "GTM-T7S3HWV",
 
         // Include GTM in development.
         //
@@ -116,7 +116,7 @@ module.exports = {
         // should be an object or a function that is executed in the browser
         //
         // Defaults to null
-        defaultDataLayer: { platform: 'gatsby' },
+        defaultDataLayer: { platform: "gatsby" },
 
         // Specify optional GTM environment details.
         // TODO: Fix Optional Settings
@@ -128,72 +128,72 @@ module.exports = {
         // on every Gatsby route change.
         //
         // Defaults to gatsby-route-change
-        routeChangeEventName: 'YOUR_ROUTE_CHANGE_EVENT_NAME',
+        routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
       },
     },
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: 'GatsbyJS',
-        short_name: 'GatsbyJS',
-        start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
-        display: 'standalone',
+        name: "GatsbyJS",
+        short_name: "GatsbyJS",
+        start_url: "/",
+        background_color: "#f7f0eb",
+        theme_color: "#a2466c",
+        display: "standalone",
       },
     },
     {
-      resolve: 'gatsby-plugin-sitemap',
+      resolve: "gatsby-plugin-sitemap",
       options: {
         sitemapSize: 5000,
       },
     },
     {
-      resolve: 'gatsby-plugin-sentry',
+      resolve: "gatsby-plugin-sentry",
       options: {
         dsn:
-          'https://da062102387d49a398de9497332e059c@o418752.ingest.sentry.io/5324296',
+          "https://da062102387d49a398de9497332e059c@o418752.ingest.sentry.io/5324296",
         // TODO: Enable React SDK , see gitlab.com/fr8/ft-gatsby#issues
         // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
         environment: process.env.NODE_ENV,
         enabled: (() =>
-          ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
+          ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          'gatsby-remark-autolink-headers',
-          'gatsby-remark-check-links',
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-check-links",
         ],
       },
     },
     {
-      resolve: 'gatsby-plugin-next-seo',
+      resolve: "gatsby-plugin-next-seo",
       options: {
         openGraph: {
-          type: 'website',
-          locale: 'en_IE',
-          url: 'https://www.freighttrust.com',
-          site_name: 'EDI Blockchain VAN Network for Supply Chain & Logistics',
+          type: "website",
+          locale: "en_IE",
+          url: "https://www.freighttrust.com",
+          site_name: "EDI Blockchain VAN Network for Supply Chain & Logistics",
         },
         twitter: {
-          handle: '@freighttrustnet',
-          site: '@freighttrust.com',
-          cardType: 'app',
+          handle: "@freighttrustnet",
+          site: "@freighttrust.com",
+          cardType: "app",
         },
       },
     },
     {
-      resolve: 'gatsby-plugin-iubenda-cookie-footer',
+      resolve: "gatsby-plugin-iubenda-cookie-footer",
       options: {
         iubendaOptions: {
           countryDetection: true,
           consentOnContinuedBrowsing: false,
           ccpaAcknowledgeOnDisplay: true,
           whitelabel: false,
-          lang: 'en',
+          lang: "en",
           siteId: 1967509,
           preferenceCookie: { expireAfter: 365 },
           enableCcpa: true,
@@ -202,15 +202,15 @@ module.exports = {
             acceptButtonDisplay: true,
             customizeButtonDisplay: true,
             rejectButtonDisplay: true,
-            position: 'bottom',
-            rejectButtonCaption: 'Decline',
+            position: "bottom",
+            rejectButtonCaption: "Decline",
           },
         },
         googleTagManagerOptions: true,
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify',
+      resolve: "gatsby-plugin-netlify",
       options: {
         headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria

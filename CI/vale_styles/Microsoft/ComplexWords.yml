@@ -4,7 +4,7 @@ link: https://docs.microsoft.com/en-us/style-guide/word-choice/use-simple-words-
 ignorecase: true
 level: suggestion
 swap:
-  'approximate(?:ly)?': "'about'"
+  "approximate(?:ly)?": "'about'"
   abundance: "'plenty'"
   accelerate: "'speed up'"
   accentuate: "'stress'"

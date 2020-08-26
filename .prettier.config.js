@@ -9,8 +9,9 @@ module.exports = {
   jsxBracketSameLine: false,
   jsxSingleQuote: true,
   printWidth: 100,
-  singleQuote: true,
-  trailingComma: 'es5',
-  proseWrap: 'always',
-  enOfLine: 'lf',
+  singleQuote: false,
+  trailingComma: "es5",
+  proseWrap: "never",
+  enOfLine: "lf",
+  embeddedLanguageFormatting: "off"
 };

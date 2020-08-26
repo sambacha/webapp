@@ -15,10 +15,10 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react';
-import Layout from 'gatsby-theme-carbon/src/components/Layout';
-import Main from 'gatsby-theme-carbon/src/components/Main';
-import { mainContent } from '../Default.module.scss';
+import React from "react";
+import Layout from "gatsby-theme-carbon/src/components/Layout";
+import Main from "gatsby-theme-carbon/src/components/Main";
+import { mainContent } from "../Default.module.scss";
 
 const DashboardTemplate = ({ pageContext, children, customNavItems }) => {
   const { frontmatter = {}, titleType } = pageContext;
@@ -34,7 +34,8 @@ const DashboardTemplate = ({ pageContext, children, customNavItems }) => {
       pageKeywords={keywords}
       titleType={titleType}
       customNavItems={customNavItems}
-      noResourceLinks>
+      noResourceLinks
+    >
       <Main className={mainContent}>{children}</Main>
     </Layout>
   );

@@ -15,15 +15,11 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react';
+import React from "react";
 
-import { Row, Column } from 'gatsby-theme-carbon';
-import { Button, TextInput } from 'carbon-components-react';
-import {
-  signupContent,
-  signupForm,
-  signupRow,
-} from './SignUpContainer.module.scss';
+import { Row, Column } from "gatsby-theme-carbon";
+import { Button, TextInput } from "carbon-components-react";
+import { signupContent, signupForm, signupRow } from "./SignUpContainer.module.scss";
 
 export const SignUpContainer = ({ title, subTitle }) => (
   <div className={signupContent}>
@@ -34,18 +30,18 @@ export const SignUpContainer = ({ title, subTitle }) => (
       <h3>Special Pricing Available</h3>
       <Row>
         <Column colMd={12} colLg={6} className={signupRow}>
-          <TextInput placeholder="First Name" labelText="" id="first-name" />
+          <TextInput placeholder='First Name' labelText='' id='first-name' />
         </Column>
         <Column colMd={12} colLg={6} className={signupRow}>
-          <TextInput placeholder="Last Name" labelText="" id="last-name" />
+          <TextInput placeholder='Last Name' labelText='' id='last-name' />
         </Column>
 
         <Column colMd={12} colLg={12} className={signupRow}>
-          <TextInput placeholder="Email address" labelText="" id="email" />
+          <TextInput placeholder='Email address' labelText='' id='email' />
         </Column>
 
         <Column colMd={12} colLg={12} className={signupRow}>
-          <TextInput placeholder="Create password" labelText="" id="password" />
+          <TextInput placeholder='Create password' labelText='' id='password' />
         </Column>
 
         <Column colMd={12} colLg={12} className={signupRow}>

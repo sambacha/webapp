@@ -15,21 +15,21 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react';
-import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLinks';
+import React from "react";
+import ResourceLinks from "gatsby-theme-carbon/src/components/LeftNav/ResourceLinks";
 
 const links = [
   {
-    title: 'Twitter',
-    href: 'https://twitter.com/freighttrustnet',
+    title: `Twitter`,
+    href: `https://twitter.com/freighttrustnet`,
   },
   {
-    title: 'Github',
-    href: 'https://github.com/freight-trust',
+    title: `Github`,
+    href: `https://github.com/freight-trust`,
   },
   {
-    title: 'Contact',
-    href: 'https://freight.page.link/request-information',
+    title: `Contact`,
+    href: `https://freight.page.link/request-information`,
   },
 ];
 
