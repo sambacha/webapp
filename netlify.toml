@@ -1,7 +1,7 @@
 [build]
   base = "."
   publish = "public/"
-  command = "yarn && gatsby build"
+  command = "yarn && echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build"
 #  functions = "project/functions/" // TODO: LAMBDA FUNCTIONS
 
   [build.processing]
