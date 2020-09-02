@@ -94,24 +94,19 @@
   color: $disabled-03;
 }
 
-.#{$prefix}--article-card--disabled
-  .#{$prefix}--article-card__icon--action
-  svg {
+.#{$prefix}--article-card--disabled .#{$prefix}--article-card__icon--action svg {
   fill: $disabled-02;
 }
 
 // Disabled dark
-.#{$prefix}--article-card--disabled.#{$prefix}--article-card--dark
-  .#{$prefix}--tile:hover {
+.#{$prefix}--article-card--disabled.#{$prefix}--article-card--dark .#{$prefix}--tile:hover {
   background: $carbon--gray-90; //$ui-background for gray 90 theme
 }
 
-.#{$prefix}--article-card--disabled.#{$prefix}--article-card--dark
-  .#{$prefix}--article-card__title,
+.#{$prefix}--article-card--disabled.#{$prefix}--article-card--dark .#{$prefix}--article-card__title,
 .#{$prefix}--article-card--disabled.#{$prefix}--article-card--dark
   .#{$prefix}--article-card__subtitle,
-.#{$prefix}--article-card--disabled.#{$prefix}--article-card--dark
-  .#{$prefix}--article-card__info {
+.#{$prefix}--article-card--disabled.#{$prefix}--article-card--dark .#{$prefix}--article-card__info {
   color: $carbon--gray-50; //$disabled-03 for gray 90
 }
 

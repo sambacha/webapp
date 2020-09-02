@@ -55,6 +55,7 @@ export const BannerContainer = ({
           buttonLabel={buttonLabel}
           buttonComponent={buttonComponent}
           buttonAction={buttonAction}
+          href='https://freight.page.link/request-information'
         />
       </Column>
       <Column colSm={12} colMd={5} colLg={5} />

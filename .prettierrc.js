@@ -12,7 +12,6 @@ module.exports = {
   singleQuote: false,
   trailingComma: "es5",
   proseWrap: "never",
-  enOfLine: "lf",
-  embeddedLanguageFormatting: "off"
+  endOfLine: "lf",
 
 };
