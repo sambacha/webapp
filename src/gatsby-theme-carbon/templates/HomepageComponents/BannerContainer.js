@@ -26,7 +26,11 @@ const BannerText = ({ title, content, buttonLabel, buttonComponent, buttonAction
     <p>{content}</p>
     <div className='buttonContainer'>
       {buttonComponent || (
-        <Button href='https://freight.page.link/request-information' kind='primary' onClick={buttonAction ? () => buttonAction() : () => {}}>
+        <Button
+          href='https://freight.page.link/request-information'
+          kind='primary'
+          onClick={buttonAction ? () => buttonAction() : () => {}}
+        >
           {buttonLabel}
         </Button>
       )}

@@ -44,10 +44,15 @@ export const TextImage = ({ children, title, content, buttonLabel, leftText, rig
     ) : (
       <Row>
         <Column colSm={12} colMd={6} colLg={6}>
-          <TextContainer title={title} content={content} buttonLabel={buttonLabel} />
+          <TextContainer
+            title={title}
+            content={content}
+            href='https://freight.page.link/request-information'
+            buttonLabel={buttonLabel}
+          />
         </Column>
         <Column colSm={12} colMd={6} colLg={6}>
-          <div className={imageContainer} />
+          <div className={imageContainer} href='https://freight.page.link/request-information' />
         </Column>
       </Row>
     )}
