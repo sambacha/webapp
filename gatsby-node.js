@@ -1,9 +1,10 @@
-const path = require(`path`)
-const remark = require(`remark`)
-const html = require(`remark-html`)
-const dateformat = require(`dateformat`)
-const { createRemoteFileNode } = require(`gatsby-source-filesystem`)
-const { makeBlogPath } = require(`./src/utils`)
+/* eslint-disable no-unused-vars */
+const path = require(`path`);
+const remark = require(`remark`);
+const html = require(`remark-html`);
+const dateformat = require(`dateformat`);
+const { createRemoteFileNode } = require(`gatsby-source-filesystem`);
+// const { makeBlogPath } = require(`./src/utils`);
 
 exports.createPages = async ({ actions, graphql }) => {
   const { data } = await graphql(`
@@ -16,8 +17,8 @@ exports.createPages = async ({ actions, graphql }) => {
         }
       }
     }
-  `)
-
+  `);
+  /** 
   data.cms.blogPosts.forEach(blog => {
     actions.createPage({
       path: makeBlogPath(blog),
@@ -25,30 +26,26 @@ exports.createPages = async ({ actions, graphql }) => {
       context: {
         blogId: blog.id,
       },
-    })
-  })
-}
+    });
+  });
+  */
+};
 
-exports.createResolvers = ({
-  actions,
-  cache,
-  createNodeId,
-  createResolvers,
-  store,
-  reporter,
-}) => {
-  const { createNode } = actions
+exports.createResolvers = ({ actions, cache, createNodeId, createResolvers, store, reporter }) => {
+  const { createNode } = actions;
   createResolvers({
     GraphCMS_BlogPost: {
       createdAt: {
         type: `String`,
         resolve(source, args, context, info) {
-          return dateformat(source.date, `fullDate`)
+          return dateformat(source.date, `fullDate`);
         },
       },
       post: {
         resolve(source, args, context, info) {
-          return remark().use(html).processSync(source.post).contents
+          return remark()
+            .use(html)
+            .processSync(source.post).contents;
         },
       },
     },
@@ -64,9 +61,9 @@ exports.createResolvers = ({
             createNode,
             createNodeId,
             reporter,
-          })
+          });
         },
       },
     },
-  })
-}
+  });
+};
