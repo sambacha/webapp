@@ -40,16 +40,13 @@ const ProductFooter = (
     <a href='https://drewry.co.uk'>Partners</a>
     <a href='https://freight.page.link/request-information'>Integrations</a>
     <a href='https://ft-docs.netlify.app'>API</a>
-    <a href='https://ft-docs.netlify.app'>ABI</a>
     <a href='https://ft-docs.netlify.app'>Rulebook</a>
-    <a href='https://ft-docs.netlify.app'>Omnibus</a>
   </div>
 );
 
 const CoporateFooter = (
   <div>
     <h5>Corporate</h5>
-    <a href='https://ft-docs.netlify.app'>About Us</a>
     <a href='https://freight.page.link/request-information'>Press</a>
     <a href='https://github.com/freight-trust/branding'>Branding</a>
     <a href='https://freight.page.link/request-information'>Compliance</a>
@@ -71,9 +68,8 @@ const ResourcesFooter = (
     <h5>Resources</h5>
     <a href='https://ft-docs.netlify.app'>Documentation</a>
     <a href='https://github.com/freight-trust'>Open Source</a>
-    <a href='https://github.com/freight-chain'>Community</a>
     <a href='https://github.com/freight-trust/editoken'>$EDI Token</a>
-    <a href='https://github.com/freight-trust/security'>Security</a>
+    <a href='https://github.com/freight-trust/pki'>PGP/PKI</a>
   </div>
 );
 
@@ -132,7 +128,7 @@ const CustomFooter = ({ homepage }) => {
 
         <Column colMd={2} colLg={2}>
           <a href='https://twitter.com/freighttrustnet'>Twitter</a>
-          <a href='#top'>Instagram</a>
+          <a href='https://www.instagram.com/freight_Trust/'>Instagram</a>
           <a href='https://medium.com/freighttrust'>Medium</a>
           <a href='https://t.me/freighttrust'>Telegram</a>
         </Column>
@@ -140,8 +136,7 @@ const CustomFooter = ({ homepage }) => {
         <Column colMd={2} colLg={2}>
           <a href='https://github.com/freight-trust'>GitHub</a>
           <a href='https://github.com/freight-trust/releases'>Releases</a>
-          <a href='https://github.com/freight-trust/core'>Hyperledger</a>
-          <a href='https://hub.docker.com/r/freightcorp'>RSS</a>
+          <a href='https://hub.docker.com/r/freightnetwork'>Docker</a>
         </Column>
       </Row>
 
@@ -160,7 +155,7 @@ const CustomFooter = ({ homepage }) => {
             </span>
             <span>
               <a href='https://github.com/freight-trust/legal/blob/master/src/data-breach-response-policy.md'>
-                Security
+                Security{` `}
               </a>
             </span>
           </div>

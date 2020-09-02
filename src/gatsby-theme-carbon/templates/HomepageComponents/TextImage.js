@@ -38,7 +38,12 @@ export const TextImage = ({ children, title, content, buttonLabel, leftText, rig
           <div className={imageContainer}>{children}</div>
         </Column>
         <Column colSm={12} colMd={6} colLg={6}>
-          <TextContainer title={title} content={content} buttonLabel={buttonLabel} />
+          <TextContainer
+            title={title}
+            content={content}
+            href='https://freight.page.link/request-information'
+            buttonLabel={buttonLabel}
+          />
         </Column>
       </Row>
     ) : (

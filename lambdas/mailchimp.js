@@ -1,4 +1,4 @@
-const request = require("request");
+const request = require(`request`);
 
 const mailChimpAPI = process.env.MAILCHIMP_API_KEY;
 const mailChimpListID = process.env.MAILCHIMP_LIST_ID;
@@ -10,40 +10,40 @@ module.exports.handler = (event, context, callback) => {
   let errorMessage = null;
 
   if (!formData) {
-    errorMessage = "No form data supplied";
+    errorMessage = `No form data supplied`;
     console.log(errorMessage);
     callback(errorMessage);
   }
 
   if (!email) {
-    errorMessage = "No EMAIL supplied";
+    errorMessage = `No EMAIL supplied`;
     console.log(errorMessage);
     callback(errorMessage);
   }
 
   if (!mailChimpListID) {
-    errorMessage = "No LIST_ID supplied";
+    errorMessage = `No LIST_ID supplied`;
     console.log(errorMessage);
     callback(errorMessage);
   }
 
   const data = {
     email_address: email,
-    status: "subscribed",
+    status: `subscribed`,
     merge_fields: {},
   };
 
   const subscriber = JSON.stringify(data);
-  console.log("Sending data to mailchimp", subscriber);
+  console.log(`Sending data to mailchimp`, subscriber);
 
   request(
     {
-      method: "POST",
+      method: `POST`,
       url: `https://${mcRegion}.api.mailchimp.com/3.0/lists/${mailChimpListID}/members`,
       body: subscriber,
       headers: {
         Authorization: `apikey ${mailChimpAPI}`,
-        "Content-Type": "application/json",
+        "Content-Type": `application/json`,
       },
     },
     (error, response, body) => {
@@ -57,22 +57,22 @@ module.exports.handler = (event, context, callback) => {
 
       if (
         response.statusCode < 300 ||
-        (bodyObj.status === 400 && bodyObj.title === "Member Exists")
+        (bodyObj.status === 400 && bodyObj.title === `Member Exists`)
       ) {
-        console.log("Added to list in Mailchimp subscriber list");
+        console.log(`Added to list in Mailchimp subscriber list`);
         callback(null, {
           statusCode: 201,
           headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Credentials": "true",
+            "Content-Type": `application/json`,
+            "Access-Control-Allow-Origin": `*`,
+            "Access-Control-Allow-Credentials": `true`,
           },
           body: JSON.stringify({
-            status: "saved email",
+            status: `saved email`,
           }),
         });
       } else {
-        console.log("Error from mailchimp", bodyObj.detail);
+        console.log(`Error from mailchimp`, bodyObj.detail);
         callback(bodyObj.detail, null);
       }
     }
