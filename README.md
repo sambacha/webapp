@@ -7,13 +7,14 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
 # Freight Trust & Clearing
 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/freight-trust/webapp.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freight-trust/webapp/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/freight-trust/webapp.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freight-trust/webapp/context:javascript)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/80d4f2dd-3ac9-4292-80b9-2acdc2b8c3a8/deploy-status)](https://app.netlify.com/sites/freighttrust/deploys)
-[![Freight-Trust](https://circleci.com/gh/freight-trust/webapp.svg?style=shield)](https://app.circleci.com/pipelines/github/freight-trust/webapp)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/freight-trust/webapp.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freight-trust/webapp/context:javascript)[![Netlify Status](https://api.netlify.com/api/v1/badges/80d4f2dd-3ac9-4292-80b9-2acdc2b8c3a8/deploy-status)](https://app.netlify.com/sites/freighttrust/deploys) 
+<br />
 
-[![Build Status](https://travis-ci.com/freight-trust/webapp.svg?branch=master)](https://travis-ci.com/freight-trust/webapp)
+[![Freight-Trust](https://circleci.com/gh/freight-trust/webapp.svg?style=shield)](https://app.circleci.com/pipelines/github/freight-trust/webapp) [![Build Status](https://travis-ci.com/freight-trust/webapp.svg?branch=master)](https://travis-ci.com/freight-trust/webapp) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
+
+
 
 
 > Front End and Web application
