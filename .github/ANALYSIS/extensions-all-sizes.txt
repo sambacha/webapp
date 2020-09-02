@@ -1,0 +1,33 @@
+=== All extensions by reverse size ===
+Format: unpacked size, packed size, date deleted, extension name
+    18929330   18307902 <present>  .png
+     7624815    7099472 <present>  .jpg
+     3849271    3839751 2020-06-10 .mp4
+    27326240     989074 <present>  .json
+      759937     756054 2020-08-06 .gif
+    22385299     637572 <present>  .lock
+     1309518     182844 <present>  .js
+     1048799     168728 <present>  .svg
+     1069374      95231 <present>  .mdx
+      559545      54162 <present>  .code-snippets
+       36778      36802 <present>  .webp
+      273651      36268 <present>  .md
+      181187      24972 <present>  .scss
+       55368      18934 <present>  .yml
+       86912      13703 <present>  <no extension>
+        8353       7483 <present>  .ico
+       20647       4185 <present>  .toml
+        9352       1745 <present>  .yaml
+        4454       1250 <present>  .adoc
+        2695       1007 2020-08-04 .xml
+        1419        607 <present>  .rb
+        2148        600 <present>  .txt
+        1130        560 <present>  .sh
+        1016        555 <present>  .ini
+        1019        515 <present>  .bak
+         882        410 <present>  .tmpl
+         458        231 2020-08-04 .iml
+         587        196 <present>  .env
+         491        162 <present>  .out
+         162        131 2020-06-10 .vtt
+       22149        105 <present>  .0

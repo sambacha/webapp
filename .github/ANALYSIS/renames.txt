@@ -1,0 +1,7 @@
+.stylelintrc ->
+    .stylelintrc.json
+LICENSE ->
+    LICENSE.md
+    APACHE-2.0
+src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.module.scss ->
+    src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.scss

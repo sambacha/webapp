@@ -1,0 +1,1546 @@
+=== Files by sha and associated pathnames in reverse size ===
+Format: sha, unpacked size, packed size, filename(s) object stored as
+  d9760331da2c0ba89811e10c6adee69731250b1e    6077637    6060088 src/pages/components/images/smart-work.png
+  db77a93cc826dd926654f0c56f9755f49ea3f68e    3849271    3839751 static/videos/hero-video.mp4
+  310f17a84355fae92fd18dc0308f6285120495f9    3591566    3592568 src/pages/gallery/ide.png
+  bc325bdfa866e2ea9cffad8ccc2dbb26cf2e3765    2613858    2582490 src/pages/components/images/light-dark.jpg
+  46ba4abd5781892ebd548420feb2b609bdbdb43e    2522519    2523286 src/pages/gallery/idr.png
+  152a148d67b1f3132d042e144f23c5b628158ea3    1117951    1115385 src/pages/gallery/idl.png
+  680636ecf69b08d13dbdb131e0ec2b9250d19f4a    1043033    1041845 static/images/poster.png
+  61598cb058177e53e239e454693c3ec25b97485f    1153282     943026 src/pages/components/images/plane.jpg
+  8ebb04ad236144b2af0538713575c2fb49685fa5     935389     935284 src/pages/gallery/cds.png
+  96c87767e41cbac27e2f05318c32cf90f6222d21     787655     787164 src/pages/components/images/square.png
+  623c1036f6a8d5357705a7885106a51128792f95     583306     558786 src/pages/gallery/ai.png
+  3c3927d149ed29edfab7feae5a3c8663771897ad     559087     558276 src/pages/components/images/IBM_Cloud_Interconnect.jpg
+  33cc50cfd72f5d695998cb694682e17587d87b71    2275480     553447 package-lock.json
+  051850857f6dc0141fcdf1c9b51cbbb2963b1ed2     550035     549345 src/pages/components/images/IBM_Cloud_Developers.jpg
+  8e19f47bdd035a238e2d1f52172947411426d5fa     333986     328798 src/pages/components/images/IBM_Cloud_Server.png
+  4fd967cbc730dbdd1736119c3e70a374b739e1d6     851282     325007 yarn.lock
+  559dd577efc8d1c4513f83118910a95b6f432db5     267149     265608 src/pages/components/images/IBM_Cloud_Platform_Prototype.gif
+  6237d357e0a8fe21cef0889089fc5df620ccc21a     260008     259861 src/pages/components/images/IBM_Cloud_Think_Keynote.jpg
+  ae54963cafeb99a3cef3e625f8f095eecbe756bf     229117     212429 src/pages/components/images/IBM_Cloud_Data_Center.jpg
+  3d93b25f05220161a86d61b1ff5a3a40bae12f29     210752     210241 src/pages/images/IBM_Cloud_Platform_Prototype.gif
+  70cf69a926c72dacb3936ac463ede744fdea3b19     206903     204452 src/images/freight1.png
+  cddab5f856bc0359f839cd3196a4a0144ebad7f1     187735     186889 src/pages/components/images/quantum.png
+  ab744fa1632f3f84495e7ba4f35d2126b01f9107     175551     174925 src/pages/components/images/IBM_Cloud_Pictograms.gif
+  13abfb0fab51cfaa13552f237fe3bb97a08c1308     154149     147697 src/images/freight1.png
+  29abcc9992bc61d95843e9f4a1dfeb1bef77384b     153158     132771 src/pages/components/images/IBM_Design_landing.jpg
+  9c7577cc9147c1f0f43f58d41368f04e17da09b4     148492     127757 src/images/home-bgrnd.jpg
+  2025bfad92dc6f9069b94c0188b01b0109b47558     122716     121676 src/pages/images/IBM_Cloud_Developers.jpg
+  3623a858169e10bd5a385e9b762a1788f92e25a6     115897     114349 src/images/home-bgrnd.jpg
+  c79b223e90cceef14883e708b95375c9cc4907af     113323     112215 src/pages/images/square.jpg
+  1a7fcf1e829a4cc9a6d9470281923d78bda13dc4     122224     107755 src/images/home-bgrnd.jpg
+  9f9f4abe9d12dcf50dc0e2187bcc981a35c7846a     106485     105280 src/pages/images/IBM_Cloud_Pictograms.gif
+  ead0fc43866e8536694c729e277cf6e87457d0df     109799     104554 src/pages/components/images/IBM_Cloud_Platform_Prototype.png
+  b2f78fe09e2e296ca916b00174ac1c613a69be23      94421      93674 src/pages/images/IBM_Cloud_Think_Keynote.jpg
+  bf2528d003fa7f4ecb8dd09ce5b585b2b18dd8f7      87178      86708 src/pages/components/images/square.jpg
+  4a8f896abba71b46b1e60abd53e21bab58fe0ad1      86191      84114 src/pages/images/IBM_Cloud_Interconnect.jpg
+  2f24271e6b7923a6f71a08842c3e49a6d70bbe0e    1235558      81794 package-lock.json
+  1d10b71c665536800d575dd0fca25ff8b5a0b0fc      74033      72654 src/images/carbon.jpg
+  156731e5f4378c44abb77fa4fd4a20a6fe3a71d5     740967      72460 yarn.lock
+  fa4c30c9100cb0909fb425a36514bd10912faacf     230118      70089 netlify-identity-widget.js
+  dc7f79981d17b292427fea6142b28eb08eb44396     976010      69752 package-lock.json
+  d8be61e8ed00889b25b38d12e3c60a14d1600a55      73013      68552 src/images/carbon.jpg
+  74f3903ad0cd59fcda8ff7b5eb8a57e7e14ebac1      67939      64159 src/pages/components/images/colors.png
+  c7e3374c9ae778bd19dcb29837798f5680ad6b3e      66390      63420 src/pages/images/light-dark.jpg
+  abc1f3873cc2c8b906aa7262f7ee0704f0320cea      62423      62452 src/pages/components/images/featured.png
+  328a8432e99bacdcc3d6b6b9097c6f9c151864a2     638016      54489 yarn.lock
+  ef11a33e85904aa441018ec55c0f621333f7eaab     277399      54082 .vscode/snipsnap.code-snippets
+  abc3a03d3f24bfc48e7354df571a2efb3d29edcf      54211      53579 src/images/bg.jpg
+  e0773f52275ec71b5760bb3255abea6dc0ec26ce      71413      52525 [src/pages/components/images/Article_05.png, src/pages/demo/images/article.png, static/images/image.png]
+  2a6017e99ed0b5faa41f1a96d4a0b8552cf1a6c7      51976      50936 src/images/bg.jpg
+  06b8946b98ff266645a524dfb20de227d60c27f7      51808      49058 src/pages/images/IBM_Cloud_Server.jpg
+  6a9623c0ededa652bb01507eb118b8eee7927866      55957      47136 src/pages/images/IBM_Design_landing.jpg
+  33ebcfba66bf232a43f241177a228fb9d4686e10      51403      46975 src/pages/images/IBM_Cloud_Data_Center.jpg
+  18cfe0e12fd40cd0e54962f98d2c0b03a6cb5639      49283      46418 src/images/carbon.jpg
+  cba90ad633366c7ac3a0b082f0417b9f6dd745af     612958      45337 yarn.lock
+  be4d0cda5b23852f0004fe51997f5e9ef66eddb9     871125      45237 package-lock.json
+  c49d440666ef8702036d954e18169438da3b4c7e      46779      44944 src/pages/images/plane.jpg
+  879c078a268d982f475eb0e2bae9d71fc999a597      45450      37844 src/pages/components/images/smart-work.jpg
+  734fb2363e6b5a4456b9045c4d6e8fcb546795c8      43667      37230 [src/images/large-image.png, src/pages/components/images/large-image.png]
+  6d099f2f8e38321ae2022d1d6472d5c49592fa1e      36778      36802 src/images/Illustration_freight_shippers.webp
+  91ab18f9479974f0917d329432fe5534ff0a0dfc      39829      36522 src/pages/components/images/IBM_Cloud_Pictograms.png
+  859f0203af44f587e7d7f54defa8d68217fb789c      38862      36400 src/pages/gallery/idl.jpg
+  2c76fe711f648579b527a38ae6e781a8804b05a7      45895      35883 src/pages/images/IBM_Cloud_Platform_Prototype.jpg
+  3e916592a9407b3550fb449de24099616809b7bb     866040      35594 package-lock.json
+  796bc228977834e9e703c33a71dd7b6a07f33b97     640810      33404 yarn.lock
+  25c414801156d6e593e36d6ec9c291eb41301b31      33555      31901 src/pages/images/quantum.jpg
+  53790ad13ec98e1679d9cdc46720952c87df3dae      32668      31682 src/pages/guides/analyzer.jpg
+  3c81aa2e73a48970c5fe5b07f234761da962c654      49842      29763 src/pages/components/images/light-theme.png
+  fdda21165baa8af6c602a5e2e5e5b43d120cb630     847229      27746 yarn.lock
+  660dca3de022a90ac0475b9d2c5bf36cfa51e41e      35692      27725 src/pages/components/images/Article_05.png
+  3f87a2bd1f2ea0f77152a296337f07231e39f86f    1136805      27653 package-lock.json
+  40834365172b895d51af8ed44208b0facd1e48db    1067670      27590 package-lock.json
+  b8dacd66671fa6bb2e34b071f95613fd2d94f3fd      42505      26709 cannonical/logo.png
+  cbab73a2ecb2c64aa2061b8e054901ee60f45dd1      27332      26684 src/pages/images/featured.jpg
+  04db15b187353be649e4cc50591365230e29de5f    1118849      26324 package-lock.json
+  ba2c35dd4b09df63177a79d37be638300d762d73    1381074      25671 package-lock.json
+  e187f52f6d96342b39fa8ab385087b62ed1e09f4      45720      25141 src/pages/components/images/IBM_Cloud_Notebook.jpg
+  a9c1c073b9158d1af656533e5dcfbb7518c5b73a      25163      23258 src/pages/images/smart-work.jpg
+  a6fb61fd479b34dfe9cc066d11135ec4ebab6b91      29686      22757 src/pages/images/IBM_Cloud_Logo.jpg
+  2c0e1a101b0e8fa7686bd5eef34899593516ec2b      33152      22233 src/pages/images/Article_05.jpg
+  e2449eaf47603301ce5ba3186c66b0e38d680dc7     818438      20816 yarn.lock
+  b275f04d34e0b7b8be994f18d94a491988dabcb5      22050      20814 src/pages/components/images/IBM_Cloud_Logo.png
+  5cc366dd4f12d43b080a8166ec0c68525e3b76c3      49075      19841 TERMS_OF_SERVICE.md
+  f4db30338a95d724245433a8e47dc90d2a172c09      19479      18769 src/pages/components/images/colors.png
+  9fc949935a131e0ad0537ec6149a6609ccb51f2d      23172      18213 src/pages/images/large-image.jpg
+  0c341bd84494173884aa480315f352988b9c1997     783053      14961 yarn.lock
+  8bd4659aa52a214d17c91e31f917f13a53b5ba75      27784      14955 src/pages/components/images/file-uploader.jpg
+  c76ca5deb1fbd4394aa0213300b7eddb279f8229    1135612      14174 package-lock.json
+  e1ceae48b75c4ab21d71b9cfd818cf3519e1554f      16737      14167 src/images/large-image.png
+  485eedcbf21e77a674246398a1d65a53a7cb915d      25456      13587 src/pages/images/light-theme.jpg
+  c25c366728ef4be0cf37d7329ffe960a33fe44d6      24098      13271 src/pages/images/IBM_Cloud_Notebook.jpg
+  eb3bd153aaf110dd6ef30e55665017da2bbfae03      18976      13031 src/pages/components/ArtDirection/desktop.png
+  373af92c2d24ae74a3589155921d3feff0373457      13479      12914 src/images/bg.jpg
+  b875f82158b2c5d05d32ad1bb402c83520d2559f      13522      12711 src/pages/components/images/sketch-icon.png
+  9abc77efde9cf465eaf44aa401349f5cf000a03a      17547      12700 src/pages/images/colors.jpg
+  b2a6186c55ba62131327f386d679bdc8264b9bc5      18197      12517 src/pages/components/images/file-uploader.jpg
+  a35645762533654b07837076a9bb575fd108cd2e     860268      12405 package-lock.json
+  405c42501c65c20789c0a7edc4e353e3aadce1b3      16873      12342 [cannonical/_logo.png, cannonical/edi_token_logo.png, cannonical/logo_guide.png]
+  ab50c076b5fb0ed714153e3d23e251338830aa15    1091282      12142 package-lock.json
+  c626c56752bd8284baa154fecf58ea604ae5ca52      12545      11450 src/pages/images/IBM_Cloud_Pictograms.jpg
+  23bbb0df82b9697c68410ff44f954b2f9e5619c8    1143094      11205 package-lock.json
+  a57ac7234968f54e15c4e70481b314d5aa40328f     862942      10766 package-lock.json
+  74146221042d970e5ac3cb95bd71daa4771fab4c      10632      10646 src/pages/images/sketch-icon.png
+  cafdef66d9e616f166b25f69b03d8d2229695132     802644       9781 yarn.lock
+  95b15b749888160efb9b055899bccd5ab44d6da4      15626       9753 src/pages/components/ArtDirection/mobile.png
+  775ee4262c277c7a8ccdb1b1df45d6f2d9f9a4ca      12431       9588 src/static/freight-chain-github_repo_card.png
+  f8c7afc56311a432f731b36ba9e140d1351a41d2      16761       8653 src/pages/components/images/static/snippet-placeholder.svg
+  c5642380681959c921511e719852c6b2c8b9d169    1186827       8478 package-lock.json
+  06a1e5f57baab63ee83a06e2a5c83a12cbb6d3f0    1042127       8399 package-lock.json
+  002f80088fc295cc6e4d23e44d2dde10d48a20a5      27670       8331 src/pages/components/images/list.jpg
+  999eb3bf74d0fc7123317d14cfa7bc060015b65b      13947       8190 src/pages/components/ArtDirection/tablet.png
+  8a6462231812c88e332db5712f9986e92656d716      15835       7621 src/pages/components/images/list.jpg
+  136d83e3fa4d8827b888ddcc882f9a513487606d       8520       7586 src/images/developers.png
+  5beb270c3a0cf01246e09f545ddcfafd7471b6ae       8353       7483 [src/static/favicon.ico, src/static/logo.png]
+  b062c884ea13590e429d448ae0e5b763dceb657a       8330       7204 src/images/developers.png
+  b867041e7e63bb761376e98cddb90378404e96f7       7579       6271 cannonical/reduced_logo.png
+  6316d77ab081d5878cd290c6a8284ca9009155aa       6813       6173 src/pages/components/images/github-icon.png
+  cac7f0c6ce2593d2ae474e5bf4044f64c4ba19fa      39276       6169 src/pages/boilerplate.mdx
+  c63b07a6c711d2e0ea46a506dcda7683159d4b2d       9193       6023 src/images/data-table.jpg
+  70559d438372f3b949af8c59495f891ad08cb72c     786575       5877 yarn.lock
+  c4a5e23877495335d339147c1d5d5d8530cafc21     809243       5751 yarn.lock
+  70c64d433273cfac1a2a605a82e9a94bd045f26d       6802       5304 src/images/data-table.jpg
+  ffb3b20f78510d31580ab9b2f74f767b688b3201     809818       5299 yarn.lock
+  ceca756b8eb3a6454469c602d9f5453757a43a90       5553       5241 src/images/modal.png
+  dfaed7ad8cb6db1271793142b3aa82e8a355feed       7245       4680 [src/images/notification.jpg, src/pages/components/images/notification.jpg]
+  bb0f5e7f0ca93e80e485c6fa1f4b08179d3175a3      19873       4654 src/images/blue-stripes.png
+  dacfbe3d84987ee4a1cc3fe9e3651ea469c438cc      21583       4412 src/images/blue-stripes.png
+  583395d12fb5df9c7e240031107de2314bc374bd      18443       4348 src/images/banner-background.svg
+  81a2391f3ce85d95856d6ffe07f873f477cd6259       6604       4235 src/pages/components/images/file-uploader.jpg
+  76fc0d62c935d9ab8faf743a73b096b96293743d       5621       4034 [src/images/notification.jpg, src/pages/components/images/notification.jpg]
+  26b9400f6afe09a0c528b97de9250e8d21f4e29f       4288       3991 src/pages/components/images/github-icon.png
+  78c7314e67b8fd7db13aabd655d9bd8b9e5d2d0d    1079956       3916 package-lock.json
+  c17779152eba5bfc187500dd2e34440ab4c2119c       8300       3888 src/pages/components/images/tabs.jpg
+  6584ee0902a0f2b07bbf574843bb7a4fa403a879       3856       3870 src/images/favicon.png
+  efa3436fde1dfd6d9ccb89d5669d04aacba0f9d3      10375       3715 LICENSE.md
+  57bc700c043437e8e9ee85e7b051cb3971f2f930       7359       3667 src/pages/components/images/list.jpg
+  6144f26fdbe9c19622dd553475fa49b66ff1c037     787963       3641 yarn.lock
+  d9534ed105e3c08b3c53c544ac9e2f662ab31841     647642       3306 yarn.lock
+  337224db6e7fffbde3623a2b882682840e85ae4e     723778       3242 yarn.lock
+  be5fb53fbe87720d219b2622982f0b0479d56b91     811915       3168 yarn.lock
+  89da811a4cb3fac917442605832422a06bf3ce7d       7789       3140 src/pages/contributions.mdx
+  420844877e3fdb5d18a89fdfc3531eee463f0871      22117       3090 src/images/static/date-picker-placeholder.svg
+  f8cc8ea39db639b4f4a97de11d292ce2dcd25e25       4971       3012 src/pages/components/images/tabs.jpg
+  f5aa46e945ebb1e0c2f9ba62bfabf18f810adb31       3293       2995 src/images/modal.png
+  66010aaa638cce47082a087c7b3dddb4fcfb8588       7679       2987 gatsby-config.js
+  d2acc17b415f0458b3dab6b4e1ca190f7e34e358       2864       2878 src/images/favicon.png
+  7c4c71cfe243776dc548cce6e3ddd578a490508d       7765       2741 src/pages/guides/configuration.mdx
+  02bdde57f345c43f688d10998f3d139e6b38dda4       6973       2671 src/pages/pricing
+  72044b8cacdd54f017b6845edbf825b870c90d38       3372       2573 src/images/static-notification.png
+  92f01e5341463f62e4af7b86d06fc698cb6838c0       9708       2557 src/pages/index.mdx
+  f2f79787ad0d5493792c8b36a4d883176dc2b629       9013       2340 src/pages/components/markdown.mdx
+  38f443baf8076900b1e203a36bd2080cd82766d9      11242       2315 package.json
+  8e51e2a9556f65964b6d7ad39d2ae48846483d45       8179       2304 src/pages/components/images/rebus.svg
+  ae9afb68164a9322a8b2e9584e0dea720dcdd288       2572       2242 src/pages/components/images/file-uploader.png
+  aed3def73ee16d2f6d4de13e3ab8fcf5e5fb1b23       2724       2090 src/images/data-table.jpg
+  76567882fe5b9f344fde6de10dc469a52112ff4b      20001       2076 src/images/static/structured-list-placeholder.svg
+  6fc334f268cc83dc843cd0c87845e856e68c86b0    1082198       2068 package-lock.json
+  6e8e3d6d1fd29886d258d5a1aa4eb779ef3715bb      10098       1911 src/images/static/pagination-placeholder.svg
+  6e991a3f03f6b58d686dc0ae564b99392067e38f       9098       1904 src/images/static/content-switcher-placeholder.svg
+  ec86eb89ddf1f9d341acf74e50f18b1571f0acc0      10652       1873 src/images/static/tabs-placeholder.svg
+  33203bba06e7feefac392a0c2baa9e33de4b5259       5444       1836 src/pages/index.mdx
+  b930dc687cf5defdf0846d3b26eee87429070ca2       8200       1817 src/pages/components/Dashboard/index.js
+  be5be1c15c5f8867bb12287faf4c6e1341f07b59       3873       1816 DISCLAIMER.md
+  e0b29d2be54bf8efb6c0a293e2e7306d13e62896       5530       1815 src/gatsby-theme-carbon/templates/Homepage.js
+  6fbd6c9e968b2170c3467bd8630adbdc6eb1622f       5639       1813 src/base.mdx
+  e818b92050a7319659e04455a4773bf440b66d4f       6511       1783 src/gatsby-theme-carbon/components/Footer.js
+  2ff5dfab0fe0bc45ee1bbe82e0c0fa4123548305       6905       1761 src/pages/components/TradingSignUpContainer/index.js
+  8a645e3b1c7ca50dc7f173f392c04943fd85eba6       7335       1716 CHANGELOG.md
+  9e0552bfbaa23dc2cb191b483ad125d55901c8ea       3665       1706 src/pages/components/images/tabs.png
+  2d0e0e76952148a3cfd658b1b5de296c5b3f7921      12727       1670 src/images/static/breadcrumb-placeholder.svg
+  e74bc0ac86d09876f0dba9efea53e16f889fae1f      14946       1664 src/pages/test/spacing-audit.mdx
+  cb43baea977298a36ee2a6a87639ace8e12f1d39       6009       1648 src/images/static/text-input-placeholder.svg
+  e1ee6e5214f32be65bc5363411437e92b5bed351       4825       1641 [src/images/static/content-switcher-placeholder.svg, src/pages/components/images/static/content-switcher-placeholder.svg]
+  2c9e10810f4ec25822928e7b5a4d5306c97d3fd0       4868       1604 src/pages/solutions
+  90eae17e020f66598cb5ae5c45a3121667029a32       5199       1594 src/gatsby-theme-carbon/components/ArticleCard/ArticleCard.js
+  18bd30fcb4e3e87f00a563ae4ccac68687e20fb6       1878       1576 src/pages/components/images/list.png
+  d392a4ebaba5b1f9a1435e1e7df52461e215bbac       6038       1535 [src/images/static/pagination-placeholder.svg, src/pages/components/images/static/pagination-placeholder.svg]
+  9f2a23328f291466145b41391303719ed5c24c13       5938       1535 [src/images/static/tabs-placeholder.svg, src/pages/components/images/static/tabs-placeholder.svg]
+  9eca9ca4ea23bdcf845bf7b02710b928d8846af6       6949       1527 src/images/static/overflow-menu-placeholder.svg
+  ad10526c9a90990aad581c954a176f0b829bc7f8      11048       1526 src/pages/components/FreightChart/index.js
+  43d20b5a5a766dd373dee0ec5915793b271faf67       2250       1505 src/pages/components/images/tabs.jpg
+  9956fd32fc8e22a87917d7bb0c6795ffd50bfc5a       7700       1498 src/images/static/data-table-placeholder.svg
+  f3dbbc2618cd5bc04e176d7ec800b0c46ce0c5cc       3163       1478 [src/images/static/text-input-placeholder.svg, src/pages/components/images/static/text-input-placeholder.svg]
+  cc7c2b4e5ff438b3e70eecd99225fffd41eb7dd9       3277       1478 src/pages/getting-started/index.mdx
+  a975f1c0c528afc46a66ca92f22bb132b3541a26       5756       1464 src/pages/components/TradingSignUpContainer/index.js
+  83011a5b09f4ae660a42e1f227a8b093f1c4f1a0       3442       1463 CI/vale_styles/Microsoft/Wordiness.yml
+  b430dbf49fc7c77ca9b1d5b12799fa9ac0493fa3       9151       1433 src/pages/index.mdx
+  d7a894a2087c831ce9a98e399f7ddcf58dd45507       1887       1430 [src/images/notification.jpg, src/pages/components/images/notification.jpg]
+  42e3962ab452ec6a8df62428c66693dce8868705       1533       1420 src/pages/components/images/file-uploader.png
+  1cf40463e6c31f299ed82eff41af180b9a8b7a80       6781       1414 [src/images/static/breadcrumb-placeholder.svg, src/pages/components/images/static/breadcrumb-placeholder.svg]
+  6d2620b9d5d8a1a5aefc9e64187bbddc0202c088       4190       1410 src/pages/guides/shadowing.mdx
+  8f1376d8bf033e78906f353fdbd588d33ec198ad       1441       1399 src/images/favicon.png
+  ac8dcadd02a72f891263ba47bb6d4b65c05e9435       5495       1398 src/pages/components/TradingSignUpContainer/index.js
+  c7aec2c0640f0ad856bf6c3b6c266b96ae97d9f2       5083       1386 src/pages/freight/drewry
+  9e89d08cc0e83c9523ac729d21177aefa4866974       4391       1382 src/gatsby-theme-carbon/components/Header.js
+  0ab4d99ec61ce373eee0d58c0a8246c33a67960d       9422       1365 [src/images/static/date-picker-placeholder.svg, src/pages/components/images/static/date-picker-placeholder.svg]
+  eab18ed4a00f67418be3c43e5eac2a2359a2259e       3688       1342 src/gatsby-theme-carbon/components/LeftNav/LeftNavItem.js
+  f85cd7ae4d8000eaf3a5b2566be58689405ffd3b       5721       1312 src/pages/components/TradingSignUpContainer/index.js
+  d3b314aaa222f25606eabb7296634617578b3a88       4324       1292 src/pages/demo/index.mdx
+  04da1ff4ab3ec58c1fc13535d8d114d4312f5a30       2991       1291 netlify.toml
+  f6b180f4bf2a77a8055c325f5f8a5d9ff18fd513       9524       1286 src/pages/index.mdx
+  771a09c7c9a98a6dc67637f034f062dbdba7ba89       3078       1273 CI/vale_styles/Microsoft/ComplexWords.yml
+  ffd4e8d8ae424720f7ca8e388fb43ba1de670783       3816       1270 CI/vale_styles/Microsoft/Adverbs.yml
+  f05fe031b0ab6b2be0cb755b704aebdf19f7bd0d       9641       1265 src/pages/components/FreightChart/index.js
+  310acb556a4ff5eea7a7b8a19d015d2dd474b4dc       8876       1265 src/pages/index.mdx
+  d684547e532150951c388f5c26918e82b37ba685      10584       1262 src/images/static/placeholder-img.svg
+  ee324ea667aac41bc77b7eefbef384df88bf0576       1785       1260 src/images/notification.png
+  6f010f8e7454cb802851151699e6862150c87811       4023       1260 src/pages/components/images/static/pagination-placeholder.svg
+  62666ed7699cdceb253ad35392deaba5ef3e4d61       5214       1246 src/images/static/tooltip-placeholder.svg
+  17a90fdf3999ec0f31146a8bd2fc1600a26b6ac3       9606       1242 src/pages/components/FreightChart/index.js
+  a51f7ec9fce5ba99f9b71e4376c87a5ef595fb4f       5543       1241 src/pages/components/TradingSignUpContainer/index.js
+  a768367967f82a9f0d25ba4f07c192bead13b3ec       3152       1240 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  cc4960d9c7f5cdf365a27571ce2594a52516e7c1       3495       1234 src/gatsby-theme-carbon/components/Header.module.scss
+  caefc9237e056813b4350d41733e1606d4d24c4d      10211       1234 src/images/static/checkbox-placeholder.svg
+  00d61f534d916afe6a3da37eb0d3e3e8657519a8       1394       1231 src/images/static-notification.png
+  cff6273f5fae06c4fcab6afd2bfea383d14bfc8b       7637       1210 src/images/static/radio-btn-placeholder.svg
+  ad1fabaa1b42d918eef26325bba341a89b221594       8219       1205 [src/images/static/form-placeholder.svg, src/pages/components/images/static/form-placeholder.svg]
+  431066e124f79048f96a00b1f0142e58c50cb156       5515       1191 src/images/static/tag-placeholder.svg
+  dbe952ef0aebcbd409547cd853ca8c004fa500e6    1275079       1156 package-lock.json
+  4061a9b642e31e54c983ff1551b6ea5d343291eb       8266       1147 src/images/blue-stripes-mobile.png
+  307e5829ccbea7aaf62daa803d1a9cd575254a95       9738       1142 src/pages/components/FreightChart/index.js
+  d1adc799befda0dec43da2669cf011d850f623da       6103       1131 src/pages/components/images/static/form-placeholder.svg
+  ae14f724c2ed1d6098481042b5d811b6fbe2f6ba       6104       1131 src/pages/components/images/static/form-placeholder.svg
+  7fd516bd098c164b63bc8a9fcb14307e439b8ae1       6321       1131 src/images/static/progress-placeholder.svg
+  c0af8eecc3d485bed1ab5937c98128a22bbd1af1       1974       1125 src/pages/components/images/tabs.png
+  3c8e8ca52f6554dc5c52f36026ee2f84d3c25056       2155       1122 CCPA.adoc
+  ea7dd955736f6c61dced7df1933775b86ee9613e       6283       1118 src/pages/index.mdx
+  28e72a2de7af60b7907f6bcc613a55a7337f2871       5437       1116 src/pages/index.mdx
+  88ae695ddc797d4dadae186289d85b73a92d20b0       4392       1112 src/pages/solutions.mdx
+  202d299f115473ba131bd201d52dd3dad2ee5bfb    1080304       1111 package-lock.json
+  2933021a6ff0061db59bd230e7d8da34078bc2d6       4389       1098 src/pages/solutions.mdx
+  d62439f01fbe7e4bf69bcc64d567d5ca19f51b4c      11310       1093 LICENSE
+  4006d7d48e99c42dda3400e824ab4d547aac8d73       3626       1087 src/pages/freight/table.mdx
+  f01f7188a432209d2083e37ab46953db6375ef20       9613       1085 src/pages/components/FreightChart/index.js
+  b52b4f3b72e8bcaac6637001580c1b24ed8f071d       3546       1068 src/pages/components/Accordion.mdx
+  c117d7cc6ea74a2288f57ba20a67c155076fcf39       6337       1061 src/images/static/notification-placeholder.svg
+  cc19e4e04b90bc09f3f1ef11453b473e6750b404       6269       1051 src/pages/index.mdx
+  6c90ee89271e524f40e78d45f07e60956240fb53       7475       1051 CHANGELOG.md
+  30c084bf7dde3c8907629160d4f6ad26f67da539       2630       1045 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  172f68214c15299461f6bdc4de67f1082f5e958a       4145       1039 src/images/static/inline-loading-placeholder.svg
+  6abd9608b49675ebfdc9487af00e95c4089e7858       3395       1030 src/gatsby-theme-carbon/components/Footer.module.scss
+  77314731c723d33922ab7511bd5b41da9398c1b8       2229       1027 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  394e1b6d2fb3bdff2922ae36cffa7cede634e5be       1425       1027 [src/images/data-table.png, src/pages/components/images/data-table.png]
+  03bb1b5240b2b9ef6e7316c684f7e676d5a2ed5d     811660       1020 yarn.lock
+  c60c1b3cb95f7bb0551bd90902e232216c69e764       3808       1019 src/gatsby-theme-carbon/components/ArticleCard/article-card.scss
+  02f908cbd62f3dd3d24230861f8187db68437a86       5582       1014 src/pages/components/DoDontRow.mdx
+  c2d2fc9511adf4d83d88b12e7f172454e31c5cc2       7832       1013 src/images/blue-stripes-tablet.png
+  6f0d03e53bb1c25b38e8dd76c5276f7aa4ea7382       4187       1000 src/pages/solutions.mdx
+  da2db5bdaba21ce064b854d24159a26ff100d993       4217        996 [src/images/static/radio-btn-placeholder.svg, src/pages/components/images/static/radio-btn-placeholder.svg]
+  3a64cda0f036a2ece6324a1b8a9c2912667465a5       2306        992 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  bee04780e8999d722961bb3dc7a7ae87afa2c6dd       5735        990 src/images/static/search-placeholder.svg
+  f6cb3a121554462817f426251c873b920c013eff       2867        989 src/pages/components/images/static/overflow-menu-placeholder.svg
+  29764d8f0ea9ab16eb3457061b056a5ebbe397bb       1868        988 src/pages/guides/styling.mdx
+  f7f74dfb84231a490315a0e7e9e8103cbea3bb5b       2710        975 src/pages/components/images/static/dropdown-placeholder.svg
+  171148601b46ff78053d9b0bec6cec38ebdbfb53       5724        968 src/pages/features.mdx
+  ca56bc0d8d86ba1f933fabbccb6cd037232d7b14       6363        967 src/pages/index.mdx
+  7626195b82d4f10585a991d98055ad798e6999ce       4638        959 src/pages/components/Video.mdx
+  0fd17c7b23d008e126d81c82a14781dabf618819       1173        958 src/images/notification.png
+  023c131d2fc4e6742e460336bec6952937839ef5       6506        949 src/pages/index.mdx
+  2b89fb4dd2d2465e3e9bd046e8d400c37791e963       1949        943 src/pages/guides/navigation/sidebar.mdx
+  2cf255d2492449393ff8a531ffbb177755e4670e       6611        939 src/images/static/dropdown-placeholder.svg
+  6c086fbc3f7387fdf9d995a92883aca962eb3a4c       2498        936 src/pages/components/images/static/progress-placeholder.svg
+  f86b45cab80c4106de2e3ce11aa07efa5d0db5c3       1958        933 src/pages/components/FeedbackDialog.mdx
+  544decedd9de59618620a8776c72c82e4ea6f08c       3023        925 [src/images/static/tag-placeholder.svg, src/pages/components/images/static/tag-placeholder.svg]
+  9390d77435c03bf7056e293ca2c8367962877caa       4804        920 src/pages/index.mdx
+  6bcb2e7ce33686a1e221c48ea1f00ca629006f0a       1018        905 src/pages/components/images/list.png
+  891f25a1c55f375812eb4ca9165ed1fc1c4651a3       2561        901 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  97daee1567e73ca850e1f2f6110266e4e9a0d2b1       3253        900 src/pages/components/images/static/data-table-placeholder.svg
+  476c35223b7290e1ef97f61dcebfc1e5b3262971       2240        896 src/pages/components/images/static/tooltip-placeholder.svg
+  153e74816fa2baf59ee1ef8caa4e610062651b2c       3786        893 [src/images/static/progress-placeholder.svg, src/pages/components/images/static/progress-placeholder.svg]
+  bc8b2cf8515b44736465ba9636a13bf10e3330da       4571        889 src/pages/components/ImageGallery.mdx
+  76a7e127e95cba8ab414ed9061720937cb69471f       2008        884 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  b93cd0f28394471331475c72ef927ab2cfe5e9cc       5556        880 src/images/static/modal-placeholder.svg
+  14492c8c089e64d6d7eb8abbc7f6d4202f9394c0       2076        880 src/pages/components/images/static/file-uploader-placeholder.svg
+  e8bac0faeb0bdc21d0fcd926c495e70512908df1       3524        872 src/pages/components/Aside.mdx
+  152017ee94dc54097424e08f8a533d2cb140dd9a       2079        867 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  8d0945078d0d71a2bf10ba3328f590dbe7973542       3972        865 src/images/static/checkbox-placeholder.svg
+  b5c12130efc2d1159a5f36a9d8ecfff3075efaa9       6055        860 src/pages/components/ResourceCard.mdx
+  256b801198268dd1e87c6dc321c6d9c7015736e5       2432        859 [src/images/static/inline-loading-placeholder.svg, src/pages/components/images/static/inline-loading-placeholder.svg]
+  d586de0c664c3751d801cb1d65ff50631c0906fd       6026        858 src/pages/images/rebus.svg
+  3f9cafaf56953b67ffa05198f703e5bd5e1faabb       1758        849 [cannonical/edi_logo.svg, cannonical/logo.svg]
+  23a7702491aaa71c34107fb010702dc75db5c2fc       1678        849 src/pages/guides/MDX.mdx
+  bb1d4966c522469690d9f40a3418dd3314850f5a       4902        846 src/pages/components/ImageCard.mdx
+  98110bfb58a473d13cd7cb58a73126268913452a       2842        846 src/images/static/progress-step-invalid-icon.svg
+  621ac5d4dd8e83077ff60355ab294c12a137f869       3110        844 .circleci/config.yml
+  cefe8a18ad2ece1c44a6eade182809e3dbe28ec7       4817        843 src/pages/components/TradingSignUpContainer/index.js
+  dd428c6c1ca2a7f0f71cb1721add56238629c03d       3152        840 src/images/static/tooltip-icon.svg
+  be8344a7272b2f6d5d74fe152d007574127dd761       6201        840 [src/images/static/checkbox-placeholder.svg, src/pages/components/images/static/checkbox-placeholder.svg]
+  0fa41a4d650b940fcc05eff579ed6676f80acdaf       3008        840 src/images/static/tile-placeholder.svg
+  bb967bd0be3fabb1ae36905c9b86723f825f1194       1691        835 src/gatsby-theme-carbon/templates/Default.js
+  8a95304f6eded324eaf81c7e01abf70c8c6deb4c       4614        835 src/pages/components/DoDontExample.mdx
+  0897c6ddc0f08bf6d0c35939a277e43cfd3fe5c9       7167        835 src/pages/index.mdx
+  e78063bec83918d367230b5509f0f7586cf3bef4       6056        833 src/pages/components/ArticleCard.mdx
+  a5ef3b97a525eb535bbdc2b314274a1bc67f232e       1581        823 DATA_BREACH_RESPONSE.md
+  4a2be3f015eeab8a6dcb540479e086907ff61c19       3025        823 src/images/static/save-icon.svg
+  2b07a7783ac4b61af408fd0d91614223e15287de       3029        822 src/images/static/loading-placeholder.svg
+  2977a96f6089fa77a8c311bf3cf460d4a9580098       1933        820 src/gatsby-theme-carbon/components/Switcher/Switcher.module.scss
+  276ab0665d3060e4c7a2e76540d52ba476630e0a       2072        818 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.js
+  185a68a96789dd9930b590a6bb60c47fbc695c5b       2760        817 src/images/static/search-icon.svg
+  8dbc99e9a7b09c123dcc52e491438a0890b8a8bc       2455        815 src/pages/components/images/static/tag-placeholder.svg
+  ea2acefddd33defe83ee4bb60ffe11dc05081b6e       2509        809 src/pages/components/images/static/notification-placeholder.svg
+  6473046caa92828c0bb06abac96862688cd00d3d       1676        808 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  82ef4f65d42f601d8ed285eb8a9a955a851976a2       4958        807 src/pages/index.mdx
+  df06b31995d0c173a9b90c4f39ec12d6ba39f664       8879        801 src/pages/components/FreightChart/index.js
+  ec93d695f1068c71011d0747f16fbaab36f62223       2741        799 src/images/static/slider-placeholder.svg
+  a1c4b56a7a1cd109d83d3603c2698ccec5eeda78       5245        796 src/pages/index.mdx
+  a0972e83046b2a6182f062ceec4df9f8d55f37ad      49049        791 TERMS_OF_SERVICE.md
+  75c989c3c191ab93dbe697b63ab5fd893fc2159b       4795        789 src/pages/components/TradingSignUpContainer/index.js
+  5ac29369827fab79f06e678eee106137071b0df4       1518        782 src/gatsby-theme-carbon/templates/Dashboard/index.js
+  4672357df4078c74c428aee741a069e101279fce       4045        782 [src/images/static/overflow-menu-placeholder.svg, src/pages/components/images/static/overflow-menu-placeholder.svg]
+  f074b4c6a4b1bacc3aecb453819613d2d27263a4       6616        780 src/pages/components/Grid.mdx
+  b1018ec4e3a6085e3d4a959ddff012f564000af6       4457        773 src/pages/components/InlineNotification.mdx
+  e35785afe4a606b7d3896fa38deffd16207bb8a0       1730        771 src/pages/guides/npm-scripts.mdx
+  cbf8bfd967308dafaf42be882703ec35ba4669f7      10173        770 CHANGELOG.md
+  6184596237579579ed84b1364599c1fb26898f8e       1399        770 .github/SUPPORT.md
+  e27e27383af469c2739d575078bc987ba0927d39       2441        767 src/pages/components/GifPlayer.mdx
+  745e6482b1ea4e459b1df0fec003bafdc6727c2a       1868        762 src/gatsby-theme-carbon/components/Layout.js
+  89f0af14efb7cecf340744f4caab6eab8e6c0617       3834        760 src/images/static/list-placeholder.svg
+  7f73fb9f84b155c178c5cc07b4c0192994b3fc03       1516        760 README.md
+  0252436903728fb73d12efb1cdd91f2acdeed99d       1860        757 src/gatsby-theme-carbon/components/Default.js
+  d6b28d53b05c63744fee724981e2fd1cb109a36b       4279        752 src/pages/components/MiniCard.mdx
+  1b6c14d563ddea5d53fe66dd5dbd01629912766d       5064        741 gatsby-config.js
+  88a8282340ea73d328bd91a8aec32755aecf3184       1694        736 [.circleci/analyze.yml, .circleci/config.yml]
+  ca29fb49b8598e5d1f563de41b19f4cbceadfdee       3864        733 [src/images/static/dropdown-placeholder.svg, src/pages/components/images/static/dropdown-placeholder.svg]
+  f0be3fb0c0131837fa4f0590d34090484282f67a       4418        730 src/pages/components/MiniCard.mdx
+  aa9c39792d9cd32f048023ab1f3a423ceb0ca768       2436        728 .eslintrc.js
+  c1b3e6f8b634467ae838f8348d46e73837b1d707       2937        724 [src/images/static/tooltip-placeholder.svg, src/pages/components/images/static/tooltip-placeholder.svg]
+  fdac82f20ebc4d78382191b62cdca93cf9ca2d62       1401        723 src/pages/components/PageDescription.mdx
+  dce71901affda1fb924b9ef0e09aab3e55506b2f       2776        723 src/gatsby-theme-carbon/components/Header.js
+  ab44e1728bc4049f679630c5885e68bff10d8be6       1620        722 src/pages/guides/navigation/tabs.mdx
+  0a75b76bb9cdb32e2164082230bcb8979f35b4d3       4029        721 src/pages/solutions.mdx
+  f6f0f2c7af92e051e6d0f87eee464faa54e37ae2       8699        720 [src/images/static/structured-list-placeholder.svg, src/pages/components/images/static/structured-list-placeholder.svg]
+  db27ab0238c9b72dc93163c552229f5ebd5a73a6       2420        717 src/images/static/inline-notification__warning.svg
+  9c8a980e03a44067615a67aa121482133047fe56       1537        717 src/pages/404.js
+  4154f365a17c47ab238540bae3777390359f9e04       2605        717 src/gatsby-theme-carbon/components/Header.js
+  f228a3944dca8b07ada50a77f9b1226e303f4bcd        876        712 src/images/data-table.png
+  d330845d8a973be292c0e66ea86e186e32efad90       1957        712 src/pages/components/FreightChart/FreightChart.module.scss
+  42184ac08371e23e07e092164dfe814ef9437436       4909        710 src/pages/index.mdx
+  456d70553f6250e01d49e2d6324448234681d556       5323        709 gatsby-config.js
+  2850db3b18382d1b2d29f3a60da3e350f0944378       2844        708 src/pages/components/AnchorLinks.mdx
+  3f131bc126093f91ed135ff6b4ca2e384d2b1d7f       3415        706 [src/images/static/search-placeholder.svg, src/pages/components/images/static/search-placeholder.svg]
+  8dea82230f6ac024c0b50deea06fce41508c5d89    1042232        703 package-lock.json
+  6bc44efe75abfbc17c55dfe1dbc3ac4fbe38c829       1686        700 .netlify/functions/edi-token-information.js
+  76d37c82d27b36cc1c0ccda4353cf880f25ed51f       1958        699 src/pages/components/TradingSignUpContainer/styles.scss
+  1f8fbb604148233db47ff84776d0c9838e0de0b1       3791        698 [src/images/static/notification-placeholder.svg, src/pages/components/images/static/notification-placeholder.svg]
+  a470cccef1f47a46ed248693b4c2f36a7f5a9a8a       2468        677 src/pages/components/code-blocks.mdx
+  9de50855ed926eda23ddcf694087c7718e9e5e37       1309        675 .github/SECURITY.md
+  6c8cf9c5b3b9e0509eb1271cd69563586ff769d8       2812        675 src/images/static/app-switcher-icon.svg
+  9cb22e92762d22451b62e26eff0498a940872a5a       2122        674 src/images/static/inline-notification__success.svg
+  46f48c68fef42e852003389f4aa65a5dec12fd56       4850        673 gatsby-config.js
+  3a9bd5bef5f50e104a6cc53634b1f211ea8ebfda       1271        668 CI/scripts/README.md
+  b4e8e974b0a7c8e42db656e32f6e72c1116b023f       8225        667 src/pages/index.mdx
+  8d4f9e3eb831407f22186ef0c620c28cd022ec4d       4022        666 [src/images/static/pagination-placeholder.svg, src/pages/components/images/static/pagination-placeholder.svg]
+  84a7902777274ac74f8fbff0477d5f59d1b10066       2322        665 src/images/static/copy-icon.svg
+  eba4f4a0b41b74626d47a5c93887aaf4a29beedf       2274        661 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  8b85541f870fb80035cdd8dbb21f244b7272a371    1083229        659 package-lock.json
+  9113c77bbf46455a90387d03be7d4a97a912379a       4958        657 package.json
+  102d377cac81fc9cbb9cdcf6004bfd107caf49c1       1940        655 CI/vale_styles/Microsoft/Passive.yml
+  5a197255b4b554b54d89a1b8f6be316123df22f6       6373        653 src/pages/products.mdx
+  a0a9b2fec266a9d832728f22bb209b9093452d8e       2610        648 src/pages/components/FeatureCard.mdx
+  34818a1b26b9807fb74552e866fa0b224421baa9        633        646 src/images/favicon.png
+  691b445e9276d237c63c76f165e4ac96b761c3d5       1186        644 src/pages/components/images/static/text-link-placeholder.svg
+  ece6c6078ce3e1a992b8b13b735258e312d342af       1344        643 netlify.toml
+  7f68bc459d0f3542c94c748e1de206f7c7fe2a0e       1075        642 CI/vale_styles/Microsoft/LICENSE
+  2f532e25ab62478031c679b797a95300bfde6159       3458        642 src/pages/freight/table.mdx
+  ba6ce55b84efe224430549e5cd3b193bdedd0ee0       6873        641 src/pages/components/TradingSignUpContainer/index.js
+  8d00561cd03e5e2c54a071d374b21afc49132611       4472        639 src/gatsby-theme-carbon/components/Footer.js
+  8a2e13c5e07fba1e6f0c61d880d165170f6ef60d       1172        635 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  d05480124ca0c9c25b705d68dd63eb23f9e474df       2700        634 ERRORS
+  9dc975ea0c5ea6dad544ae43f80555e45a8d3153       3967        628 src/gatsby-theme-carbon/components/Footer.js
+  65ef3cdfddb8fa49bb79d63da73dc9c6ba30a105       6377        628 src/pages/products.mdx
+  68f57025a507d62340d74495475a1d951cd05b7f       1266        627 README.md
+  bded78671e257e655b57c0ba6f9b7555bcb79e7b     782431        626 yarn.lock
+  5eb9b7637fb72acd3f995a0a4855c89f8436e8d2       3515        624 src/images/static/select-placeholder.svg
+  5c71f6324ae4000819122e2124807fcc4fc011e5       2283        623 src/pages/components/images/static/search-placeholder.svg
+  7fbcbc8caabb05600fc7b6d51f453bd84810923b       1772        622 src/pages/components/Caption.mdx
+  4dbc14cc046832f4f1385bd529227f4dcce0560b       2282        622 [src/images/static/search-placeholder.svg, src/pages/components/images/static/search-placeholder.svg]
+  4b73fa5081db5e857950d6416fec2e0d05eb7381       1815        614 CI/vale_styles/Microsoft/GenderBias.yml
+  6900e8d2371a883c6d60e9ffe1444caad6a5c3be       1565        612 src/pages/components/Login/index.js
+  290d906980573303d2dcdc5de4cc2fe63db61183       4046        612 src/pages/table.mdx
+  b6f02f819195688c8c05db8c1849ad084005058b       5790        611 src/pages/products.mdx
+  c8136c036a7c221d9dc0d77311bd849db96bd53c       8072        610 src/pages/components/Dashboard/index.js
+  31f4774f108fd52d179bc912713ee13273718bff       1431        606 src/pages/components/MediumPosts.mdx
+  ddca261f6460f6d0930de0a940efe7d01a98b929       4484        604 src/images/static/number-input-placeholder.svg
+  cbc6f6192e41bed25eb0be55a674c6cb0905450a       4676        604 [src/images/static/tabs-placeholder.svg, src/pages/components/images/static/tabs-placeholder.svg]
+  77598be4a7d302db678b95121b9d42aa33209026       4677        604 src/pages/components/images/static/tabs-placeholder.svg
+  2481e5a2805c753c0500d7cec3bbdcd86b7b9a4a       7179        604 gatsby-config.js
+  64c4f7222af9501d6fdd645cb8dcc3286b2b696e       1132        599 .gitignore
+  92c8c7795389f4b10b9d1aa8ccb0704b11517b97       3811        596 src/gatsby-theme-carbon/components/Header.js
+  6444b44cc9b76b7e6b344fc3f989c429f4911376       1713        594 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  b6b27a162b606e068f49afcd9dc399afa4d1f565       4616        593 src/pages/components/FreightChart/index.js
+  b45a7bb53c39cda09763301c91a02747bb43ab6f       3275        593 [src/images/static/modal-placeholder.svg, src/pages/components/images/static/modal-placeholder.svg]
+  aa3744314f3b7c707f109b373d3389c7087a06b1       2515        592 src/data/nav-items copy.yaml
+  6cf466b25373264efd3ad0a9e2f783c27bdf02e1       4014        591 src/pages/table.mdx
+  ba0417763e21becd015587f6168299a847c98985       4014        583 src/pages/table.mdx
+  e2d548af066cbfc00ed2d22ad729b5effc354d7e       7168        579 gatsby-config.js
+  51c4ad448c95c30306c3b877512baa3f8ef9447d       5238        577 src/pages/index.mdx
+  10a33ce1056d6f2e54afce363ea58fcf6cf4c43a        977        572 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  4e484577f3973dded453055f6ac2e315ed5ceb6b       1628        567 src/images/static/loader-icon.svg
+  941410a9bd4d6e162f60cd2c26832dc3bb6feb25       1204        560 src/pages/components/images/static/slider-placeholder.svg
+  a9c99d21c96680081a84096c36fd90b88f43a27e       4410        557 [src/images/static/data-table-placeholder.svg, src/pages/components/images/static/data-table-placeholder.svg]
+  d512becf5c27c69e7c54327cbd0466c0e05948a6       1016        555 CI/vale_styles/.vale.ini
+  81dd541b38e4bd80a089e482bcd4790034702b4c       1458        555 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.scss
+  cf24ee627b48c94ab9bab28b4ae94ff12933d9c0       2304        546 src/pages/components/images/color-grid.svg
+  36fbc240061b0ee22c784d9975eb020bde451e1a       4127        546 [src/images/static/placeholder-img.svg, src/pages/components/images/static/placeholder-img.svg]
+  cddc6560211d79015487aace2137ed012021acfb       1074        545 static/images/npm.svg
+  be4d903c134e657a70a0104c9f68dc58a59785dd       5979        545 src/gatsby-theme-carbon/components/Footer.js
+  a129dddc12853d7d2b25d5947771744c5f7219ce       1339        545 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  80319b0724bf592c3ec65551fa9a46f8b1001de7       1228        540 src/pages/components/images/static/loading-placeholder.svg
+  680890ba5c5b67dc2fce7c693f7f7c05de1066cd       8183        537 src/pages/components/Dashboard/index.js
+  47da41dc323532f1017bb7c3dc545c2a64a0c9dd       1632        533 src/gatsby-theme-carbon/components/Footer.js
+  7ffef9ed16b98b1fcf07445c1df0461dfe0e6e31       1196        532 src/pages/index.mdx
+  a1a2e4853a3bedd60b403d8bdbe48aa82f8515e9       1559        528 src/images/static/progress-step-current-icon.svg
+  0e5fa38f9111d6b5a8846a4b8d5b30fa2600a548       4979        526 src/pages/index.mdx
+  e3151dbfcf259446f7ec7f171a9c42c6bdfcfad1       1126        522 src/pages/components/ArtDirection/index.mdx
+  b87495ee1d063c3e58d1d4141e4d6f76f15999cc       1025        520 CI/vale_styles/Microsoft/Terms.yml
+  85c4f15edc10a3ef62d43ac4346c631b066ba880       4603        517 src/pages/index.mdx
+  3fe5a4bac59459d28602240ee828f566a2feff1f       2132        516 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  52accd432717064efaffdfca26bb76d1be2036f1       6726        515 gatsby-config.js
+  d75b1d7a240dd3e48c9da6eeef4544aa36572474      18345        513 src/images/banner-background.svg
+  dd3e645987b6b5ae0c61d9a26c72cc5e42040ff8       1360        511 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  06bc652b7caddb07926ecf4b12fdd87db68d09d7      18344        510 src/images/banner-background.svg
+  809f5e8752fd0061b6eed614f883b257238275bc       3252        509 [src/images/static/data-table-placeholder.svg, src/pages/components/images/static/data-table-placeholder.svg]
+  cd35342b442d9ebff83e6a16a8deb93d25452a27       2365        503 src/gatsby-theme-carbon/templates/Homepage.js
+  1df95b095855a7c1cce29fd6ed9dbe7e2f8359d2        992        503 .github/workflows/action.yml
+  c556dbf4f84ab0608884a93b020eb4f0c1a56325       2454        502 src/gatsby-theme-carbon/components/Footer.js
+  be1d37823b484e17a54842aeb716d09a3bcf1ef0       1119        502 .editorconfig
+  aee688fd4d90a612047c473643985b8aa5fdbae1       2493        501 src/images/static/error-icon__filled-red.svg
+  f54f91795b3c132ce4b9c3783afb81908ff388ef        916        498 src/gatsby-theme-carbon/components/Homepage/Banner.module.scss
+  da50534229662ced9e8c1ff57e17dcce2253295f       2244        497 src/pages/components/images/static/modal-placeholder.svg
+  89a17d652acbe143f519c5b831c9e3e30a197308       7338        497 src/images/blue-stripes-tablet.png
+  a92fc45a1f48c88005013ab51aafed4da7fb8b68       2036        496 [src/images/static/select-placeholder.svg, src/pages/components/images/static/select-placeholder.svg]
+  2c6dc16e93942b65b416378fce5b8790d4c83786       2243        495 [src/images/static/modal-placeholder.svg, src/pages/components/images/static/modal-placeholder.svg]
+  574783597a319aa5773a59d45d6df5471a0b8fd3       3387        494 src/pages/freight/table.mdx
+  cf89677f20f668c020cc1b771ce96fbafc9668e7       2454        489 [src/images/static/tag-placeholder.svg, src/pages/components/images/static/tag-placeholder.svg]
+  4d42a24993ea31dfa586ef0a43202e07cf26c3e8       3454        489 src/pages/freight/table.mdx
+  03762b73429be5a5ef2cbffc08bb880e37b7aab8     814894        489 yarn.lock
+  436282bb64563e238198c5fd6e0f1c46739364f7       1317        483 src/pages/freight/product
+  b3c2866af883c11e3a27fc2b2fb3c39347ccdb21       1665        482 src/pages/components/images/static/list-placeholder.svg
+  b7f67b26809715d9c8b6ab00a25dfc2bd2fbe907       5326        480 src/gatsby-theme-carbon/components/Footer.js
+  0869de18c48bd5ef7659936bf21bd08ad8a23d04       1405        474 src/gatsby-theme-carbon/templates/BlogContent.module.scss
+  af14c5497873a614389fd56de1039b83dfa57974        874        473 src/styles/index.scss
+  6fb61b1740cb97cc39daf3aa9bf62a3698c49809       2366        473 src/pages/components/Tabs.mdx
+  67467c408bdeed79c5f1a02e9152882b4c6a062d       1335        473 src/gatsby-theme-carbon/components/Footer.js
+  23a0d8c4e4f7608e9b11d180245d79d8f8ca29a7       1700        473 src/pages/dashboard.mdx
+  7cd18aaff0b4ede38565800aa2692a870dfe5f96       1005        469 src/pages/components/images/static/overflow-icon.svg
+  3b01bde627af974880d14e865c84e7598081e65a        956        468 src/pages/components/images/static/delete-icon.svg
+  6559ab6acd973745c7514d5d56a8891a78a72753        699        467 TODO
+  645bfffa82ef4e2f626a92472c9b7a28a0a38fe9       3777        463 src/gatsby-theme-carbon/components/Header.js
+  5e484033ab093330e3c9f2bbabe020f4682d3bf7       1933        461 src/gatsby-theme-carbon/components/Footer.js
+  8ab6d52f29ea62b7c51cf7e3fa07e4d22140724d       2643        460 src/gatsby-theme-carbon/components/Header.js
+  39753eb60f4cf1977b0d05d7438f47d957d528a8       2613        460 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  1851605429bbafcedc962cb9b585430bddc4b870       5669        460 package.json
+  f5d1b052d5a3529049406db8adc9be0e35b1c791       3960        459 src/pages/table.mdx
+  cd71a433f6265570ebbeee8702e2d5dfd8074bc6       1402        459 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  a727400de16eb29274a0afcf085299725ed859a0       1574        459 src/gatsby-theme-carbon/templates/Default.js
+  9b5f30a466e54fb5c3da94a3ae1ea31e8df38832       2575        459 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  13c8aabe7049a195d9ec45c4f59cded81f3984ed       2065        459 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.js
+  0cbe770cdac0c0be2b367308c5fed3e97a87ffba       1994        459 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  cf1ace4f5b3db90c87d6d5ae1acc0b5e2a0c4e02       1967        458 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  9df5e48ef386f72b8a4ef9374370128ef2c8753c       5460        458 src/pages/components/TradingSignUpContainer/index.js
+  88a7e9421e598145bdbe84494a8cfa463306c579       3663        458 src/gatsby-theme-carbon/components/LeftNav/LeftNavItem.js
+  7d7ecee15c11995909cfbf4b93565689feeb1751       2000        458 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  eaa325ead0cf290ee904d19d4c097922e7e87c0a        840        457 src/pages/components/images/static/progress-step-complete-icon.svg
+  0639e30d6e3f50a8d8d3ce45f3047fdcb471301f       2096        456 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  e875ad909d5c6ce34682c5d12fddcc07d292be4a       7073        455 gatsby-config.js
+  91350cbc038d562e3d2ef9e2d7abe998a32241d6       9605        455 src/pages/components/FreightChart/index.js
+  633b104d65771a3f8ac4bca85fa415a1bc85906f       1342        455 src/pages/gallery/index.mdx
+  1e122744686b39156d10c00a26829c3bc6a12e6b       5679        449 src/gatsby-theme-carbon/components/Footer.js
+  76ac67eb05c1993c8a1f1947ba61330db02e5109       7200        448 src/gatsby-theme-carbon/components/Footer.js
+  0a68b4f1cd70bd716e58a7fc3116b1bd92cff1fc        891        444 .editorconfig
+  993c9ca864a7e9e289e7bfe75824a485d0f2d616       3644        443 src/gatsby-theme-carbon/components/LeftNav/LeftNavItem.js
+  a048aa0e608a6a7e6a9a95512bf4b7310741d8ce        797        441 CI/vale_styles/Microsoft/Acronyms.yml
+  4dd231d0eef95b220c8bb4dad8372bf7c23182bd       4848        437 src/pages/solutions.mdx
+  d97dac225e1bc91d4be3850e16053f180e3bf861        820        434 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.module.scss
+  b10196a7d2a8926da6a4949dde6ffcfdf2afad10       1318        432 src/gatsby-theme-carbon/templates/QuoteContent.module.scss
+  033ac1b7b0555038eb17ee90e1c097132e32254d       1764        429 [src/images/static/loading-placeholder.svg, src/pages/components/images/static/loading-placeholder.svg]
+  4be2fc364874e1c3277eb2fe9901495a4c7cc200       5729        428 [src/base.mdx, src/pages/features.mdx, src/pages/index.mdx]
+  6e46f2e031005320d95ef5d4acc62c3de749e564       5486        427 src/gatsby-theme-carbon/templates/Homepage.js
+  de94a5e90eefe44d8db7366f1a1d0943f4b82335       4709        417 src/pages/solutions.mdx
+  17b9d137557037a4540eb1ae7a460d500916d511       1929        414 .idea/codeStyles/Project.xml
+  6a56226e023878901e7c341a1f9cc13ae6755b6d       5188        412 src/pages/index.mdx
+  31ae493da768f15653f54f47f194426bc0d53d82       4853        411 src/pages/solutions.mdx
+  a73a75a8dedc72c29bb9de85273a7de96f3cc8dc        809        410 src/gatsby-theme-carbon/components/Homepage/Callout.module.scss
+  194a1027e5d76f24ce22e45276567eeda40582c1        882        410 netlify.tmpl
+  caa863faa45441f7d7ff210944f293af25ff00db       2669        407 [src/images/static/number-input-placeholder.svg, src/pages/components/images/static/number-input-placeholder.svg]
+  85c9aa00ebd43bb34dd56a7404a272f19515fdec        722        402 src/pages/components/images/static/arrow__down.svg
+  6fcdc88b02e03393fa08ac8f91cd3fc0bc2f1a5f       4113        402 src/pages/products.mdx
+  c11abdcf0752796a740452a054b60e30deb8badc       6320        400 src/pages/products.mdx
+  86dc0b847e53aaaf8c1c79250c8635087c512f6f       1820        400 src/images/static/arrow__down.svg
+  532338bf916fa3da917ba992bb245af0dabca02c       1511        397 src/gatsby-theme-carbon/templates/Dashboard/index.js
+  28c23280eed8cca66ff4b0f2e8c36e8d9d51e585       1501        396 src/gatsby-theme-carbon/templates/Dashboard/index.js
+  1f5e063358ec4405417dded14013b8ec432b33ae       1604        396 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  240636cdb4c371a0a7c96d0479ba300fff138787       4235        392 src/images/static/content-switcher-placeholder.svg
+  f952969a56ba3db8e6e0a7d89bbf6e64fe2d569e        667        391 CI/markdownlint/info_style.rb
+  8fc75c72bfd0eeea234e23528bd7e55d32a608c9        664        391 src/pages/components/images/static/toggle-placeholder.svg
+  cccbd0bedcc40812293b343faa23f95a69ad28cc       1168        390 src/gatsby-theme-carbon/components/Footer.module.scss
+  caacaeff6cc6c0688882892dd90a3bd2259973c9       1274        389 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  b0f04cf1cc78bdb80aedcf54d159216baf7cccdb       6354        389 src/pages/index.mdx
+  6d15c1a157cde51e87c7a81a90028df1d8eb4678       1476        387 [src/images/static/error-icon__filled-red.svg, src/pages/components/images/static/error-icon__filled-red.svg]
+  55aa2db9c684e3586b573ee76c81ee70e63fd41f        917        387 robot-config.txt
+  ea3b1ff42c2b2e6891b27f2228d9af8be638f3b2       5679        385 src/pages/index.mdx
+  a9c618dbcc1419cd4efe6ff0fd4faf8231aa0289       3383        385 src/pages/components/images/static/radio-btn-placeholder.svg
+  51f264115c3a9363dce0e2c4235142f177088c6e        998        385 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.module.scss
+  b785890ebf832d331ba2256521205b78554248e0       3012        384 src/gatsby-theme-carbon/components/LeftNav/LeftNavItem.js
+  aab6fe2a83603481ec140044b803ecd37c8a6fbb       3382        384 [src/images/static/radio-btn-placeholder.svg, src/pages/components/images/static/radio-btn-placeholder.svg]
+  224194375e2f64a6cdec12c7a077f122cef5d155       1777        382 [src/images/static/number-input-placeholder.svg, src/pages/components/images/static/number-input-placeholder.svg]
+  3273f09446cf77a8875a6ee17eb087295d0cbba5       1193        381 .circleci/config.yml
+  e2dde1fd233bb4d3b7c4d2a3d033f8de765c7dd8        825        380 src/pages/trading.mdx
+  1ab04b3596b7c51926cc36d044bc019183ad59ae       5221        379 src/gatsby-theme-carbon/templates/Homepage.js
+  9ada9364fed44de22008e983c06022d991d881e7       2000        376 src/images/static/progress-step-complete-icon.svg
+  cdcc85192d2a30a3e51ab2283a8b1564884ad8b7        929        374 .prettierignore
+  c372d042d2ef4c6a13c8a7f9f5e7a497b39d2855       5514        371 src/pages/index.mdx
+  f5f38c04612978b7849f11557b05054b9f949c87       1676        369 src/pages/components/images/static/inline-loading-placeholder.svg
+  8f4ad2ee981f102e4f5c908095fb2af32426634a       1764        369 [src/images/static/tile-placeholder.svg, src/pages/components/images/static/tile-placeholder.svg]
+  d816dca4e82538aa19b58cfa6a0dbb287572c010       1592        368 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  a19f90114bbcb3ac097d998de902b26933532b2e       1675        368 [src/images/static/inline-loading-placeholder.svg, src/pages/components/images/static/inline-loading-placeholder.svg]
+  75bf2b678a2da7de3cfc981cf54fec644a38362b        927        368 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.module.scss
+  2aea4dd204be6986b983565424f170b60d4325ae       1442        365 src/pages/components/images/static/select-placeholder.svg
+  48b320db250a65150b687cb6c6e09a849b718b09       1441        363 [src/images/static/select-placeholder.svg, src/pages/components/images/static/select-placeholder.svg]
+  418f2122d21a7212c84ce8ee56ea53fd89ae2bca       1778        363 src/pages/components/images/static/number-input-placeholder.svg
+  e233aeb3af86c2c8263df6eb210b5f9c2bfe5279        755        362 netlify.toml.bak
+  f9862844edbac671e4952d4324d23a501a9c40a6        668        360 CI/vale_styles/Besu/Acronyms.yml
+  87c791ecec2cdfc4d17b2e1295f16a602866f3e5       2806        358 table.mdx
+  7ed2c270f8db09275235a2185ac09eac37d674a1        665        358 src/pages/components/Title.mdx
+  c34b4c2982bb3c4300344ac0bcccf7d0c8516e8d       4495        356 src/gatsby-theme-carbon/components/ArticleCard/ArticleCard.js
+  85c7e4136da92fd6b993f40b8aa192b96dcc53b8       5909        356 src/pages/components/images/static/breadcrumb-placeholder.svg
+  b8e5de47c7f0af0593ca6526dc67aae410e9f8ee       5908        355 [src/images/static/breadcrumb-placeholder.svg, src/pages/components/images/static/breadcrumb-placeholder.svg]
+  2b038a8cbb01b45619ecfd22536218d98052707a       1397        354 gatsby-browser.js
+  7e4fd2d6d9e4949dca2f45cd9c74b89dd5567fcb       1689        353 src/pages/dashboard.mdx
+  98f28bcd86b51bb75da940e1b7e106fe7ca1c2af       4295        352 package.json
+  5075ef06b197fe8f34f91f3782f06860b5c176d2       3650        349 src/gatsby-theme-carbon/components/Header.js
+  04a40b1b6d3a6525664782e8499e81ce556e54c8       4979        349 package.json
+  b29f8fcd0bea09c320d96db3aec9734b1684db8e       2288        342 src/images/static/inline-notification__error.svg
+  1f557276c37cdf2bc58eb30cd33512b8e3f3dd24       2183        342 src/pages/components/images/color-grid.svg
+  6bb544204491622ec09113cc7f2db14517605bfd       2182        340 [src/pages/components/images/color-grid.svg, src/pages/images/color-grid.svg]
+  d4fbbaceba02be17399d8f28acea5f18ab07ce2a       1443        339 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  364c12c3a07aae5f6339a6415140d48e32ea2880       2330        336 src/images/static/overflow-icon.svg
+  443a430058de622654239f04c626cade51e8f12a       4977        335 src/gatsby-theme-carbon/components/Footer.js
+  a934a33b055a720df459a8c6cb26fa60c23bd70b       1346        334 src/gatsby-theme-carbon/templates/BlogContent.module.scss
+  722e65f82498bd3836dee447cb3f2bc5b4f03261       2917        333 src/gatsby-theme-carbon/components/Header.js
+  4377bf3c63d5040eb70733d0ece50050db70686c        952        333 src/gatsby-theme-carbon/templates/QuoteContent.module.scss
+  c1615e2148456073c55172c3a57d6cded29c2347        643        331 CI/vale_styles/Microsoft/meta.json
+  72d8f1e9d9ebf2fc6f342e4b47ef305253830ab5     809878        331 yarn.lock
+  6028799a439982d26a1b64612e9c3551859ef5c1       1255        331 gatsby-browser.js
+  0c9ecbe41bdf21403ae9528ffcdfeea86374a7d1       7127        331 [src/images/blue-stripes-mobile.png, src/images/blue-stripes-tablet.png]
+  1f0452abae34ef50c3f544f0552b9c85f847fb9b       1203        329 [src/images/static/slider-placeholder.svg, src/pages/components/images/static/slider-placeholder.svg]
+  60df992365fab32edc1f5e3e86138b8adc4c1aea       1648        326 src/images/static/toggle-placeholder.svg
+  1be55730c389c11844955ceeeebd5d99a75ed323       1957        322 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  d076ed625d186539a3892c5eb5ecd3f64328ebef        496        321 src/pages/components/images/static/checkmark-icon.svg
+  4d66ef14242abd2e20934261a9de07d3de9d64b6        535        321 CI/vale_styles/Microsoft/Accessibility.yml
+  2c2a20db35357f1eb68662b82d2982a37c94aa9c       1543        320 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  247b390bcef302768816cc8377e4edbd7a068829       1724        320 src/images/static/close-icon__white.svg
+  c8685e8120647a5cd18c239108373eecfeef18e7        980        319 src/pages/components/images/static/error-icon__filled-red.svg
+  616aa4b051bd92cf6ebb2250089456c786760914       3820        317 src/gatsby-theme-carbon/components/Header.js
+  77d936977900254f5dabd17312e199c539ef0228        979        316 [src/images/static/error-icon__filled-red.svg, src/pages/components/images/static/error-icon__filled-red.svg]
+  ef86769108051ef10d0d85e67fea628f6ceb37cf       5177        315 src/pages/index.mdx
+  2c6aa5381dd9de8742368c7302dc5b037c25ce6a       1358        315 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  edc258a6d5c9452096eda943a7cb398de9bf6af5       1277        314 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.module.scss
+  75aa86423e36ed33086445a68c57bab58e0a4e40       2132        314 [src/images/static/list-placeholder.svg, src/pages/components/images/static/list-placeholder.svg]
+  ad2b6949b2413cf917d349390800eb37a32ea50c       1680        313 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  9880700c688558b37166727a5d03561078904d6d        934        313 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.module.scss
+  c53993a29e8e27802383f9c215ed149f2dafbb4e       1133        312 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.module.scss
+  a731e5c1ed648cfb9e841cebcb6e815e0825f373       1206        311 [src/images/static/tile-placeholder.svg, src/pages/components/images/static/tile-placeholder.svg]
+  1f50cf0b15e2ed7b994ff6ed30c03de8640c52c6       3444        308 src/pages/freight/table.mdx
+  ee2d1732813fe43462d7c68f701e6be0da6b9000       1277        306 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  44f02029dc252ba46b4a2ea8869037b0d68569ea       1472        306 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  e0dff8bb78239fbe30669dd1ec6c8f5a7e83b489       4856        305 src/pages/index.mdx
+  a11529d590aa707ed3e20dd8df87b0b539b0b4a2       1207        305 src/pages/components/images/static/tile-placeholder.svg
+  54ac08ff42f6f63aabee40dc0f097d395f11c485      39229        304 src/pages/boilerplate.mdx
+  6435a2d40d796363ec8330569e28792ae0da32b1       1293        300 README.md
+  08d05ef21f226bd237928e290ca33b31a739bc8e       5464        299 src/gatsby-theme-carbon/components/Footer.js
+  9e04da1e3acc6557b3830f6f1ec2d7ce2673456a       1402        298 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  0f802a4438e2e55f93f4d49b039af8d42694d44a        661        298 [.circleci/config.yml, .circleci/gatsby.yml]
+  e61082c7884f406b64ac6ec411c0a7454b371ff3       1409        297 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  5458a7dbf481b150bac6b90edee1c600a17ddf80       1439        297 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  f67424411c40b6a97a761ca4b142437556ec9ab7       1284        296 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  921d9839258f5a673fe653c05a2166e29777f177       2235        296 src/images/static/delete-icon.svg
+  1dfacc03273c27a9c38cfe495e0ec1beeb6379d9       1290        296 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  9ccbbbdadb9e17dffc6683fc47d0892647c69f46       1321        295 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  e36910bfe64d453d65e372b3c55abe5928ab0e9c       5421        294 package.json
+  56588772cb65eba71a605ff10a0f613043fde306        546        294 gatsby-ssr.js
+  170592675876a330328e9868ffb38138cd02da77      10817        294 src/pages/components/FreightChart/index.js
+  3aae810ae0465be32f3ed15bf16a97da468b62ce       1290        293 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  dc8814e1001cb1b1b94e4c6315ce440eec5587b2       1288        292 [src/images/static/overflow-icon.svg, src/pages/components/images/static/overflow-icon.svg]
+  b14841cc17978cf98abd530aa94649eb899a84ef       1550        292 src/pages/components/Login/index.js
+  2db66348a22b733f2344c7ad72bf59e65bb23336       2122        292 src/images/static/tile-selectable-icon.svg
+  20351b2f73d647e453ead38e235c3a2423bd04b3        513        292 .circleci/config.yml
+  fe7574aef262dedc5130b36a84d5a077d3bacc75       1277        290 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  973e816f3512e2984b9aa8b54b2aa03a9179a3bc       1061        290 [src/images/static/arrow__down.svg, src/pages/components/images/static/arrow__down.svg]
+  8ed2b39860d924318bb5fc92c354dd87dc0f03af       7145        290 gatsby-config.js
+  319bab2c6692fd32ba6edad06f7b00e011f2f6c1       1321        290 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  a18f93d4f008b61ad3261f6281d1d7d3e0cdd42e       1203        289 src/images/static/checkmark-icon.svg
+  3029b294a6942ebaf6897675491f275d4f66c92a       1838        289 src/gatsby-theme-carbon/components/Footer.module.scss
+  c6debdb5b7ed4a4bbe4c7656e3bd1a0b3cc37a36       1123        288 [src/images/static/progress-step-complete-icon.svg, src/pages/components/images/static/progress-step-complete-icon.svg]
+  14ecd3a80207fb890434701499e7ee252f50e438       1297        288 src/pages/404.js
+  30147cbb81a3c9ef5dea49a94f8c0eeb11dd0f98       2809        286 src/pages/components/images/static/text-input-placeholder.svg
+  753de2058c3ad9db235d3b60d3745921b29eaeb6       2808        285 [src/images/static/text-input-placeholder.svg, src/pages/components/images/static/text-input-placeholder.svg]
+  e55620f695307124d70d3ff7a05fa91b0c0a3b5a       1376        284 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  05e7d713048c60b1493a5e64c36d5c300c709720       1184        284 [src/images/static/tile-selectable-icon.svg, src/pages/components/images/static/tile-selectable-icon.svg]
+  c5f0ecf3f0bace3af63da8e8874c2846fd25c308        982        283 netlify.toml
+  8c0605b7a6b9d72ecb8a4c311932671d627fd874        576        283 CI/vale_styles/Microsoft/Contractions.yml
+  0b3795a712c2d2cf8264d760a424bce1b3ef1333       5080        283 src/gatsby-theme-carbon/components/Footer.js
+  4cbe2dc259ff6e748e6e2a35de91a79439ef9f89       6030        282 src/gatsby-theme-carbon/components/Footer.js
+  9b9b45f5ecb2907c64b5eb310b9d0e15a2496772        532        281 src/pages/auth0_callback.js
+  b15ae081d52ad55874c461bd4ef12fc2b2817073       1292        280 [src/images/static/inline-notification__error.svg, src/pages/components/images/static/inline-notification__error.svg]
+  a6cc7fb9c10464f10aa2f64499861704290c27cc       1402        280 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  08855a6ac460041f2e8e16bb118df5877f01a125       1247        280 netlify.toml
+  07b964144aa586f3e2a319183b5248adcd94794e        947        280 [src/images/static/toggle-placeholder.svg, src/pages/components/images/static/toggle-placeholder.svg]
+  ea1df771752423cb9bb03fc5f53e8eef3da2f90b        940        279 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  d7ea6aef8174877d13ce45f4f7b8a951f8c80713       1316        279 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  5eb1855bdfa738401e7a92773de9f8634417e37d       1317        279 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  4b2dc92a38eabf50eb43ee82f7f1f15c8d215499        958        275 [src/images/static/inline-notification__error.svg, src/pages/components/images/static/inline-notification__error.svg]
+  289d0173c3501f8f9724623b725422173a676a77       1311        275 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  f4facebcbd943c5aad938a6636ae37f25466d9b4       1187        274 src/images/static/radio-circle.svg
+  9cb2c4d2e5cb83518496acfb7d9fd70679a5a9e1       1713        273 src/images/static/close-icon.svg
+  7b683636a7965f69daf4088889de4dd09aa17264        434        273 CI/vale_styles/Microsoft/Headings.yml
+  f8510ab562832c2b6ac97423c384ba993716d13a       6030        271 src/pages/index.mdx
+  8645a8f42e035ff17f11b5a58c5b780b14ad1eae        878        271 netlify.toml
+  4a9bd9b9170756152d9a84b55654a3c6516d2703       5717        271 src/gatsby-theme-carbon/components/Footer.js
+  ce6a89acd670e4382f1c6fcf82f776989d806a93      39229        270 src/pages/boilerplate.mdx
+  9d35974710a20ddf158d2886d99cd2fc359c5776        959        270 src/pages/components/images/static/inline-notification__error.svg
+  40021680259194cc7a5975ade095e16b99998043       1098        269 gatsby-browser.js
+  d3530e390c03882d23bb5c1008bc635aa50d2268       1348        267 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  990cc38851c885a38d47b2b1be977ebeae48ae39        891        267 src/gatsby-theme-carbon/templates/Default.js
+  ec41d4514348b1d4a777be5bac9d2ead8f13c0c0        850        266 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.module.scss
+  1b07326650ebf964d4197206015a2410ad764eb6       1098        266 gatsby-ssr.js
+  12fb2ec7f27c1fc6ef1987de227a5c5a1c31d865        845        266 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  e42681752b0d52222adf03445f4bab22f8a86112       1165        265 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  8a1b88edf2134b475381b4baa8e40dda35872381       1098        265 gatsby-ssr.js
+  9c1571a7fe9f581586158f7dbd044d3aace2777a       1084        264 gatsby-ssr.js
+  650866ead234885ee125f833edb3fb292b3ba412       1101        261 src/pages/404.js
+  d1bd2eea50784ca13b60cde47945246f263488eb      39229        260 src/pages/boilerplate.mdx
+  190c61f90478ca4a5831d54556d1b21f385f8ffe       2630        258 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  3c05a586fb7b29e4e79e4553ae6181f4b5eb136c        940        256 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  981c79c02ccfa7b6ff4394e842dd05542162ff8f       4513        255 src/gatsby-theme-carbon/components/Footer.js
+  79f487737791bbb6064071a37e8f410180f57320       5860        255 src/pages/index.mdx
+  64f4bdf5b4002f5595afb50a38c4265929759bcc       1234        254 [src/images/static/download-icon.svg, src/pages/components/images/static/download-icon.svg]
+  f60ca098c08126f0db91ae7752eaabf75f5e9e41        643        253 src/data/nav-items.yaml
+  70d9cb66f9ce90bd86690943d58fa25f1237d1cf       1140        253 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  5df9eaa2f74d96310c14860da9d0e974a06f688e       1753        253 src/images/static/carrot-icon.svg
+  fc8d85f01008b256ffd1986d71c2b4f437b9ec6f       1465        252 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  f844bca83204a354343d7129b3129417ffb186b9        396        252 CI/vale_styles/Microsoft/Backend.yml
+  f5ed0c62c5e19b3c3de37a39fb64d9c4127638a1        907        252 [src/images/static/loader-icon.svg, src/pages/components/images/static/loader-icon.svg]
+  8473b27c7b1aba5b20b73bb00113e948403b417f       1242        252 [src/images/static/delete-icon.svg, src/pages/components/images/static/delete-icon.svg]
+  e8f773bb2e1c7a037340b9feac9b80f6a97d9955        383        249 .gitlab-ci.yml
+  8b290b2ff01724fe1b4b4f39b8501c0f2c4f543a       1171        249 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  374b19906ceb3909266b5b8c35d8c08f12356069        732        249 src/pages/trading.mdx
+  146134533e07027a762b4ad8660b45133e7965ba        849        249 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.module.scss
+  c791201c0d17ab50902fcace38e5d1feb580e42d        334        248 CI/vale_styles/Microsoft/DateNumbers.yml
+  01f31962f4f8cccb79d2d14ce178ca3149748fb0       1986        248 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  503cac3c9e6f60fd929c55cb91e0dfb4fe7eb634       2085        247 src/gatsby-theme-carbon/components/Header.js
+  c739c0da70e5a69e8b180c0a6f89893fe0cce9ae       1202        246 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  d0db75d36a50d619cc286a8eff1cd746edb0c3c5        453        244 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  0ac8bfc00d2d4e5e3bc851bf389c66f91cdd66a6       3185        244 CHANGELOG.md
+  a7dbda412d61bd4550b71ae31810874073e99fed       1252        243 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  f6e6a975af35af41c868cf8c1a80c4d73c5865d0       2548        242 src/gatsby-theme-carbon/components/Header.js
+  f062418ee0d357803be11ffa255683a13652aca7        372        242 CI/vale_styles/Microsoft/Units.yml
+  9a2c5d56daf2761a61757dbda6a2347b7b2a0cda        358        241 src/pages/login.mdx
+  c46fdc91f4f4175819f480329efb14cc48ac107a        383        240 CI/vale_styles/Microsoft/Vocab.yml
+  83c7a26d78627a5831100d398d4950ad820a0525       1089        240 src/gatsby-theme-carbon/templates/Homepage.js
+  a7e9c20c167994fb09b4efbdab632b431f1dd5b8        431        239 .github/workflow/main.yaml
+  42ad36a3688f0a0a8fd1e083d92dd7646b212303       1738        239 src/gatsby-theme-carbon/components/Layout.js
+  f26b232ca0e0f9cf64de2f1fc4fa0796cf56bd2b        900        237 [src/images/static/tile-selectable-icon.svg, src/pages/components/images/static/tile-selectable-icon.svg]
+  827b7536e93401e767966c23bdc3fc7c7916a0ed       1610        237 src/images/static/plus-icon.svg
+  31e4a4343d98990bfb4858b193e410ae4fe67d65       2219        237 src/images/static/download-icon.svg
+  27e4418fcdcf047d2f4d21224e6b67ca4dad7067       4521        237 src/gatsby-theme-carbon/components/Footer.js
+  eec3e22a361b6c2966e9a5b40b01e92e00253cb0       5029        236 src/pages/components/TradingSignUpContainer/index.js
+  2e68fba9b7c3a21cb14038c5ab729a652cbee419       3094        235 CHANGELOG.md
+  8604a001588e42cca5659d5767af5f478bb58d99       1918        233 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  7175f19bea95569f5bbd3c85b77c229fb7d79c48        670        233 src/pages/trading.mdx
+  dfaa23f7f37935ca524be29c0d9869a31b2b9279        324        232 bin/coverage.sh
+  5a8ccff36dd60e10c84164b1219ff9108a2b1d8b        416        232 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  0f71941b354251000d1f8a8436e363238e6e19e6        900        232 [src/images/static/inline-notification__success.svg, src/pages/components/images/static/inline-notification__success.svg]
+  b4099cf86a927d1b8013ddde28422bcf5f6c5e58        901        231 src/pages/components/images/static/tile-selectable-icon.svg
+  24643cc37449b4bde54411a80b8ed61258225e34        458        231 .idea/ft-gatsby.iml
+  3a8733e8c2f0bc06ccd516124ad3a6ff153f6f6c       1613        230 src/images/static/plus-icon-disable.svg
+  d5f272ab1693c52ea22f391616850c0208115f2d        386        229 src/pages/auth0_callback.js
+  9fa64c532ac94ca77cc5d38ab8fd953ebdf68503        670        229 [src/images/static/checkmark-icon.svg, src/pages/components/images/static/checkmark-icon.svg]
+  811c37f52163fe8d50b6664b4d7d8fc922e85ee4        879        228 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.module.scss
+  26da03c3d5b6436bacd9f14466ea55eabc1ca14b        866        228 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  7514c8408bd479319a4187bbb535eb2cd3f62ef0       3704        227 src/pages/table.mdx
+  6b6ffe46682d0fb192d740af3dcde7d172fcf5fb       4732        227 package.json
+  11f5521483048090a426ed1be9949f8227f985e0       1670        227 src/images/static/number-input-icon.svg
+  67313b8702772b9974a539b8af83e46479bae0a5        630        226 src/gatsby-theme-carbon/components/Header.module.scss
+  ec6c262bfe9589d98ed4b0f8317abd95fa98eecf        880        225 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.module.scss
+  bbb1b2b6a99527b12ada09b8e29f3d1c86aef00a       1024        225 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.module.scss
+  0ad36d3ac37cfea54f007f4acafedc179f8dfb70        300        225 prettier.config.js
+  a6100eb446a2b869f931d6585b84088c54f073b7       5683        224 src/gatsby-theme-carbon/components/Footer.js
+  5534af7543572130d8fdda8dd039e4266e997bfd       1078        224 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.module.scss
+  082087f4156c1bb0a45aa868e7bd097fc817d2f2        933        223 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.module.scss
+  cf400dcc39cfa65cf222a94cc18a23fb819c154e        993        222 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.module.scss
+  4b71169188dcb3fcaca44d63fcf7180f47e06209       1094        222 src/pages/404.js
+  57f953937afcbbeec098d4a951b49c23d4fa85bd        934        221 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.module.scss
+  2b30a9968f74a00062782ebd32a8cb660187cebe       1049        221 [src/images/static/inline-notification__warning.svg, src/pages/components/images/static/inline-notification__warning.svg]
+  b11defb43af4eccdc2d784099613337fefe56e0a        587        220 robots-txt.config.js
+  6f86edc8cb98e6f3413998f0a4d64908d7eba03b        587        220 robots-txt.config.js
+  54b9f0803aa80b084dad6886c322afdce0b4abc0       5039        220 src/gatsby-theme-carbon/templates/Homepage.js
+  f36a167f161f0a8976c156b4cbac812d14eab686       3251        218 src/gatsby-theme-carbon/components/Footer.module.scss
+  9e1c436207907f704579e43b7eeebce2d0700390        617        218 gatsby-ssr.js
+  ce98ef0d5286ccb42493c4c51eb09c705c37c205       1933        216 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  1aca3b0a06af9c641e8193806258c3973d56cafb        752        216 CI/markdownlint/style.rb
+  30637cf042f1adddc14035099d78e89a209807a5       2931        215 src/gatsby-theme-carbon/components/Footer.js
+  df57306bdcb34f4f78a7599f9196232e27f4ae10       2592        213 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  afbe35b4e639398dd75c45aabebefd0bed2296f2       2822        213 table.mdx
+  47899dfe268a57cf1cb457f62a9eda7663311a03        285        213 CI/vale_styles/Microsoft/Foreign.yml
+  381c92889f19217c6f74f7a12b7e326dca37a7ee        338        213 .github/workflows/action.yml
+  1b8d6a001caaadf4b2ed6938b4995da4cf7b6aea       1611        213 src/gatsby-theme-carbon/templates/Default.js
+  ad23186b7d18a4206eea3103839e2f4c10cf5b13       4811        212 src/pages/solutions
+  a415827693abf1a8d90cd80817f94e4234631236       5635        212 src/base.mdx
+  9d3b7c5f4883ae5499d34ef8a2f4ed903fff1d61       1144        212 src/gatsby-theme-carbon/templates/Homepage.js
+  48a82d8489b3ac0719f40759962ae3fb30ea6051       1003        212 [src/images/static/carrot-icon.svg, src/pages/components/images/static/carrot-icon.svg]
+  ba52a5f02389521d61d47a204527bbebee5cfe52     783052        211 yarn.lock
+  8b9fed162ab724b73bb59782b92fd4691c35a8d6        288        210 CI/vale_styles/Microsoft/AMPM.yml
+  6cd8d7f37907c2ca0bdf7b89a76c6f4aa48ddc36        947        210 [src/images/static/download-icon.svg, src/pages/components/images/static/download-icon.svg]
+  3d618807afa444b697cfcf97676da0a08c53407b        948        210 src/pages/components/images/static/download-icon.svg
+  ee311b4aed732a7498b3c8cab8f7efd2d97113e8       6162        209 src/pages/index.mdx
+  c1c5eb68b40f295ff50883ffd502e65f9f144620       5670        209 src/pages/index.mdx
+  9e6b54f633753f038fb7203c30eb76845ed7fee3       1350        208 [src/images/static/save-icon.svg, src/pages/components/images/static/save-icon.svg]
+  727a7a491a2bc67bf992dac66cdf58ec72be6264        330        208 .github/workflows/files-changed.yml
+  3e6a6fdeaf76d2302187e88008a70226acb4a74c       1219        208 [src/images/static/search-icon.svg, src/pages/components/images/static/search-icon.svg]
+  16855ab2eae945391be91550b1cd82313de6dbf6       1290        206 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  9e81531c395dce83c4a4669122c3a9157906db75       1333        205 [src/images/static/inline-notification__warning.svg, src/pages/components/images/static/inline-notification__warning.svg]
+  5ecc48b742cf44b9ca818e49c66f3ccac2a9be7a        757        204 package.json
+  31d48a62c5a7cb2af2266530209dc5c8f70c460f       1240        204 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  78391925860b4c59fe52eb8fa591c4a2fa095423       2008        203 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  685b4fa790a9be01ca13734c9a867fb5d43e253a       2818        203 table.mdx
+  188182233800834e303d6017ff57733a29ddfa09       1731        203 src/images/static/blue-plus-icon.svg
+  8e06584431aca225cd246fc69cf0c4172bf64a97       1057        202 src/pages/navigation.mdx
+  ca4089f54dfab702ca06acf8f5e531b16e376512       4136        201 src/gatsby-theme-carbon/components/Footer.js
+  b76089b9c769e08aed9e1d9a7700243f33f719cd        907        201 config.toml
+  992db7963cca5e24275946cbcd5f9fd473418dcd       5720        201 src/pages/features.mdx
+  7e1840fa97ffad30ebe693630d25864f9e5e7ba9       4497        201 src/gatsby-theme-carbon/components/ArticleCard/ArticleCard.js
+  6f172ba3abb9640e2a89ee125cb287f02968c935       1565        201 src/gatsby-theme-carbon/components/Layout.js
+  40c34387836278863d829f88199f9957519bd5d5       3951        201 src/pages/table.mdx
+  818f3850628d957a1cd3b06caf984d45742c723f        697        200 src/pages/components/images/static/close-icon__white.svg
+  80c132c559305d6ae0d9ade345af08f0f3f7b2d6       1266        200 [src/images/static/app-switcher-icon.svg, src/pages/components/images/static/app-switcher-icon.svg]
+  60d32ed57abc4f1650ae8ee6894e75297942688c        696        200 [src/images/static/close-icon__white.svg, src/pages/components/images/static/close-icon__white.svg]
+  4c9a911065e120c7e06b0b6b2a93d2ab5beddcee        990        200 [src/images/static/close-icon__white.svg, src/pages/components/images/static/close-icon__white.svg]
+  08b33c636d789c552e76c095d37600c95f4180f9        956        200 src/data/nav-items.yaml
+  45c3f0e356537b85181a4c23b55ec34f5ec0ec93        675        199 [src/images/static/radio-circle.svg, src/pages/components/images/static/radio-circle.svg]
+  47ce185d59f3ebf722604f39bf38d4ffd36e2fc1       1390        198 [src/images/static/tooltip-icon.svg, src/pages/components/images/static/tooltip-icon.svg]
+  c4d6c8103633ee9995347c3d46582203c5be272d       1260        197 [src/images/static/progress-step-invalid-icon.svg, src/pages/components/images/static/progress-step-invalid-icon.svg]
+  f89633d006dec42c55d7f318c60817b9dbc5b53f       6315        196 src/pages/products.mdx
+  4cbd5ed48712b19979ebc2343534205042ff33f6        327        196 src/pages/404.js
+  66d191d1c6998c33845cf9f74699c36e344edb85        335        195 src/gatsby-theme-carbon/components/FeedbackDialog/FeedbackDialog.js
+  198eaea8c90eac3ed01d1718f9ee6357f31db7f8       4495        195 src/gatsby-theme-carbon/components/ArticleCard/ArticleCard.js
+  3dea25df8110a4acf3f59a5caf69c5f873b41d8c        712        194 src/images/static/carrot-icon.svg
+  003e385ddd8ca23dc43e4315a5b15e688d6a8acd       1918        194 src/gatsby-theme-carbon/components/Header.js
+  afa38323570f5d615566c669483987bc19ce0d3e       2103        193 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  010d62e1b6544114da98849c2c4a40d4c652f492       6345        193 src/pages/index.mdx
+  28967e68abe8f5d5e57da26f325c4e158fd136a1        328        192 CI/vale_styles/Microsoft/Avoid.yml
+  f9f50173a29b0394a87c5552fbff3511d513ba13       1018        191 src/pages/auth0_callback.js
+  43e8ad58fd8345e460132f3e2597181ae6e75924       1000        191 [src/images/static/copy-icon.svg, src/pages/components/images/static/copy-icon.svg]
+  bc9bddcffebfe6e3dc2a3eb925276e3457ec4b3f       7170        190 gatsby-config.js
+  7d125964eb028b887599d0a3fdc858f561b77140        973        190 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  5b155594d4782f89054b7d88b6f755fd5a83ff25        896        190 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  0dbca2077b2c533334f3a86b13b525f3c6bfa348        238        189 CI/vale_styles/Microsoft/DateOrder.yml
+  67d9702b0fe57d1db9a0dfae40b66284c2acbdc9        228        188 CI/vale_styles/Microsoft/Ranges.yml
+  091930a3014cd84fec6cb114b1ca8e5bf572a7d9        721        188 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.module.scss
+  62c58cfc591ab23a73678769762255a47549cb90        315        186 CI/requirements.txt
+  5450d195977f6b3f9b3e908f87d97715f3dcc662        712        186 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.module.scss
+  32b07a9498a8c5baa04e072d46af48593ec7c805        693        186 src/pages/components/images/static/close-icon.svg
+  c9f2949c79b83aad81f2769ea80e275d3d05b655        977        185 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  94ee9b4915c76525404ba7c0c990421be1b4cff9        958        185 [src/images/static/number-input-icon.svg, src/pages/components/images/static/number-input-icon.svg]
+  6979043c4601862b4a110313b2f3a59530fd6f8e       1853        185 src/pages/dashboard.mdx
+  3c86cb723cb1428fe5b8e02fdc729be867c05e58        222        185 CI/vale_styles/Microsoft/HeadingPunctuation.yml
+  af2812590387579830172e2af6ccba3f0b4abace       1010        184 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  14e43983e3c826be81784ab069556cd0998af6df       1313        184 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  c79a90d521755102565ce78ddcf284979afb30b4       4948        183 src/gatsby-theme-carbon/components/Footer.js
+  99cae3ec292daf43b8d394c3c3bb2d2f86ea1f86        359        183 .eslintrc.json
+  3ed32e2ee079e4ec409bb7f33c7d08641dfcff67       6229        183 src/pages/index.mdx
+  c72bc7b5434b6b4383ca26d2467b714d12185868       6327        182 src/gatsby-theme-carbon/components/Footer.js
+  e0645d97ed61b9a85f5684d6c79306423304c1c7        353        180 [.stylelintrc, .stylelintrc.json]
+  aaa0a37a17c151c0ac4effc5e2db88770e39afc9       1053        180 src/gatsby-theme-carbon/components/FeedbackDialog/FeedbackDialog.js
+  612645499e261ea6d96b6400e5a91cb51b6e6460        270        180 .idea/modules.xml
+  59ddfa8dbbdb76bce1815da4331867c09863208e        235        180 CI/vale_styles/Microsoft/HeadingAcronyms.yml
+  41c43b65ff63f28a96326a8e2c7ea1a137754bc6       3924        180 src/gatsby-theme-carbon/components/Footer.js
+  08e125e2633e4b6c35f326ab9e29250f0dd16907        215        180 CI/vale_styles/Microsoft/Dashes.yml
+  bfacec2435a00842138428cdadacfe4c5e54f041        352        179 .stylelintrc
+  38f497606197e7e1840665e695cf144769ee9f72        219        179 CI/vale_styles/Microsoft/Quotes.yml
+  dcab8ae123264313277cfde2825a815e7274aad1        214        178 CI/vale_styles/Microsoft/FirstPerson.yml
+  bd9abe045b80c50c9de95170e86f645be7c988fc        210        178 CI/vale_styles/Microsoft/Auto.yml
+  423db3b9e17f8d520686d49e3858d2334da80c5f       1805        178 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  f98b44858f52871b97f998fa336daad018bf0b76        202        177 CI/vale_styles/Microsoft/OxfordComma.yml
+  731c866ce8c9eb35de9f5fb2fb75f1bfbe0e9b3e       6279        177 src/pages/index.mdx
+  21e63962b8f322292873fffdfc3fd1c82a910502        234        177 CI/vale_styles/Microsoft/Gender.yml
+  f646d3cef10424bae379ac95199f47eabf21f405       5565        175 src/gatsby-theme-carbon/templates/Homepage.js
+  2cd6a1c38f2f814aaf86fb9b148dfe83398ca02f        201        175 CI/vale_styles/Microsoft/RangeTime.yml
+  f637d98fa0c217db0230eb7c0aee501cc3158fab        623        174 config.toml
+  efa4dafd159b768adf914cb0550f8ec37e76a5bc       1212        174 src/images/static/blue-check-icon.svg
+  de7b64a65e93b4da4e7ea2020f3eeee22bb4de25        218        174 CI/vale_styles/Microsoft/Hyphens.yml
+  798703f321d8d3a73c13198296a52609d06f2556        249        174 src/pages/freight/index.mdx
+  71381bf92472de8f26da4caa1ee4b520e3fcebb8        702        174 src/pages/components/images/static/blue-plus-icon.svg
+  eb32bf3346ab815b621b64c291666122f108a3e8        983        173 src/gatsby-theme-carbon/templates/Homepage.js
+  bbd10e51df71350f0d0a83abe7bd29815c4836f8        213        173 CI/vale_styles/Microsoft/Spacing.yml
+  174959cc449c878131a7609da62ebd5d985217c2        983        173 [src/images/static/close-icon.svg, src/pages/components/images/static/close-icon.svg]
+  e56d3aebc7843330259e137ec66fd33966534cdf       6273        172 src/pages/index.mdx
+  8a18304986e52e05f07d9805110a278566caf7ed       2633        172 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  654e95d9b528f0135482b75ea352ab3fa72a5a92       4462        172 src/gatsby-theme-carbon/components/Footer.js
+  7282e9c9cf5da0ba60115b722fee2f8a0e2a2ff3        216        171 CI/vale_styles/Microsoft/Suspended.yml
+  5a95bb86aa24e50fc4fadd31622a82d65e38bf90        255        170 jest-preprocess.js
+  b5f3c92209ebf42cdbec67c3a2739810d4bda864        475        169 src/pages/components/images/static/radio-circle.svg
+  1afe0fbca537a8853ff77912cb25e4cb230a5afb        474        169 [src/images/static/radio-circle.svg, src/pages/components/images/static/radio-circle.svg]
+  9911e1bb103d054a6fff3c542b586551652b62b2       1655        168 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  74e47bb1d0f4e10ccedef32a7ee95a4351a0946d        248        168 src/pages/freight/index.mdx
+  fbe05890c54e5910722393349fd153bd7e78afe4        571        167 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.module.scss
+  993fd072071e3c3a53e674051f6e62651512b037        561        167 CI/linkchecker/link_check_conf.json
+  1811d9162f2b2facb83f343f762b3a9c3272dc66        628        167 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  c20f843446b2264b0215c26bbf1b4a68210c1dda       4328        166 src/pages/solutions.mdx
+  b938474111bc1306b8ec0221457d46d2602456b1        675        166 src/pages/components/images/static/number-input-icon.svg
+  b6ea1839e90e9b936eb11ddf5513aba70f70ba1c        661        166 [src/images/static/progress-step-current-icon.svg, src/pages/components/images/static/progress-step-current-icon.svg]
+  97388d1c403abf87ba2ea2e7f3c3cf4771b96d5f        674        166 [src/images/static/number-input-icon.svg, src/pages/components/images/static/number-input-icon.svg]
+  48fd1310a8ed7cf71ee1d494e76f878dee5697af       1595        166 src/gatsby-theme-carbon/templates/Default.js
+  a5515f03d1d5490c89083922f69fbee85f74975c        910        165 [src/images/static/plus-icon.svg, src/pages/components/images/static/plus-icon.svg]
+  e18edf4628562ac0aed3fd7a888dbbad3fa465b0        217        164 CI/vale_styles/Microsoft/We.yml
+  aa8d78fc1ee44ef6d4071699491f716bf69458c4       1242        164 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  8373610e5e80381e2f2310168065b1b230660558        394        164 @dev-images-list.md
+  5ff64eea765d2527899a08941481e826a9e0c7c5        910        162 [src/images/static/plus-icon-disable.svg, src/pages/components/images/static/plus-icon-disable.svg]
+  2cbbc2e77043d11455156775d42dc6ff8116aa21       2107        162 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  530b190c02b1218895e1b6b59a8245373d2a5fd1       4296        161 package.json
+  a37ec1b894b73f1fbd94cdada3bfce7e4cd672d9       1809        160 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  0e0eecc72aa2df7456465726dc24ae98d74d1fc5       6177        159 src/pages/index.mdx
+  f8ca20e414dac218558cd03450c1cb178de76749       1314        158 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.scss
+  edf82bdb818a6ab872580a23853fddd15a379015       5304        158 src/gatsby-theme-carbon/components/Footer.js
+  c5a9674e1330ac3237e1e295bdbfe0115975e809        189        158 CI/vale_styles/Microsoft/Ellipses.yml
+  4e45997d13847234c2d06c72932b6f97270c8d9f        757        157 gatsby-config.js
+  778d75251b0823d34042a44ebb0ad89f23c408b8       3633        156 src/gatsby-theme-carbon/components/Header.js
+  4d905467dd262a8e56c763b58282524518ba6908        199        156 CI/vale_styles/Microsoft/Semicolon.yml
+  01aaad30a45490016d5f1463223633e5eeb8d33d        191        156 CI/vale_styles/Microsoft/Negative.yml
+  efcbe8a0f12ec914ba6a59e045c1c008f0a04e46        186        154 CI/vale_styles/Microsoft/GeneralURL.yml
+  b88294a95445d4fa70283aca484d3e53862041bd        209        154 src/gatsby-theme-carbon/components/Header.js
+  313838aafee390ac24ec091fb8a221fdf46f7a4d        186        154 CI/vale_styles/Microsoft/RangeFormat.yml
+  f3c51a182c03bd1d80be01b8ef75c36c3830d31d       2621        153 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  b82eef18226f530c322a1d2aedd26b17eaa2e44d        491        153 linkchecker.out
+  08643e8f4986b60399f1e0fe60876d099bf5b572        264        153 [.eslintrc, .eslintrc.bak]
+  024a97ed3347f2d27d205e7641a0c60e07c5cff7       2737        153 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  fd79a150ba2642601df34e61c9f6ba0658d82667        880        152 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.module.scss
+  c07f530be0edfb41ec04edd757e7420e76d20173        992        152 [src/images/static/blue-plus-icon.svg, src/pages/components/images/static/blue-plus-icon.svg]
+  a56f2b22bc8e81451e80e9cb59d854ef7e856178        692        152 [src/images/static/close-icon.svg, src/pages/components/images/static/close-icon.svg]
+  9441759ce0aed2e6e72b91716ea388eb9e0240f4        264        152 .eslintrc
+  2b48717302329bc62aab45f70dbc606a240d0ca4       1399        152 src/gatsby-theme-carbon/components/Footer.module.scss
+  d8099b50b006c2493191c9547e0b017672ebf9fc       6052        151 package.json
+  bee198c2cf0538e8eb2299dc14273ef65652e762        845        151 gatsby-config.js
+  2944d67e224a6b6d2b88693a6589dba6aa5c44f6        181        151 CI/vale_styles/Microsoft/HeadingColons.yml
+  288f98c04b0bdf9249d85636a36e0197326d68db        586        151 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  94a25f7f4cb416c083d265558da75d457237d671        180        149 .idea/vcs.xml
+  7583d13ee5f5d389d30b54959c477ec12d86423f       1117        149 .gitignore
+  315234202cd3d778266e5db052b2a7287c6a86b5        591        149 src/pages/trading.mdx
+  c66a6788c13a94fb567c730895cda7add4e428b5       4580        148 src/pages/index.mdx
+  a9853a6dd665e656ff4cf23338619ab8c9199369       5371        148 package.json
+  81cad6815f0ae39b0f41b392ab6428dbd8de993f        663        148 src/pages/components/images/static/plus-icon.svg
+  3cb9ecde94b82043c2d616e787879c07a022ba59        183        148 CI/vale_styles/Microsoft/Ordinal.yml
+  eb085b6dd1e309b9de18792bcca5509cbc8ce7ca       3972        147 src/pages/table.mdx
+  cec44d9bb42b3decc69a0b42bdadcc0d0f44d22f        616        147 netlify.toml
+  e2e0576e5cc7a94a93e13e3298010dce8df8e737        666        146 src/pages/components/images/static/plus-icon-disable.svg
+  d66589f5faae0239d65a2931b68cdaf116e9d015        171        146 example.env
+  e3328b0f832c826da4a238eb2641c672174fb873        677        145 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  c9fa2ac6a7979ebaee4733240751bd5aac2624e0        665        145 [src/images/static/plus-icon-disable.svg, src/pages/components/images/static/plus-icon-disable.svg]
+  e740b2f4936ef8973b8116e41f6ca64afc328a46        701        144 [src/images/static/blue-plus-icon.svg, src/pages/components/images/static/blue-plus-icon.svg]
+  295b6f138a392c1652d7c556d24c67d15da38a9e       2031        143 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  196531394ac749e179bd09956747c7a94e2dfcd5        393        143 CI/vale_styles/Microsoft/DateFormat.yml
+  a6ad49fdf2b8a6a4815dc2666bd1fa70fb17f263     810527        142 yarn.lock
+  19e702cb219815cdd7b06977f86455ecec1bf630       6484        142 src/pages/index.mdx
+  f69b357c3eb39139839d830553a6a1e73c4ad31c       1190        141 src/data/nav-items.yaml
+  ec06b8298af084c10df8117dd6fea86c15c6f201        886        141 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.module.scss
+  c3a913e95bf200ba00b57af3c3d21f7261e37cb9       1725        141 src/gatsby-theme-carbon/components/Layout.js
+  9ba37312e371cd2ce931cd7a06c166720a68a2fe        663        141 src/pages/trading.mdx
+  631e68cca6e1ce8e81ba7e5a525594fb769b8e88       1585        141 src/gatsby-theme-carbon/templates/Default.js
+  1965876b8f01575cc31456fbef794bcbdef6408e       2331        141 src/gatsby-theme-carbon/components/Header.js
+  f0a705cc9cea7756f92f6a833c95d555b3d3b08c        594        139 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  5e0fd9606ee036c130e1d9b3917761aa8102562c       4009        139 src/pages/table.mdx
+  f5c0236d22ec6271dd9beebb0540736bcfb7dc8e       1142        138 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.module.scss
+  dc404b9049bbd579f1f307009cfea472d79db84d        873        138 src/styles/index.scss
+  b96459fca4b08ddd302eadfb93614afc6f85b6a5        559        138 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  24eb271ab350b6328449cb6bdbfcfadb5d1521ee        174        138 .idea/misc.xml
+  e59039e0d998585beafe01c4221ee915d241c6cb        824        137 src/styles/index.scss
+  1713e7074c1318788044ee9ed0b0a6e6b6db3dba        866        137 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  02ccac7192c06e1ed8f0f556bda41aead2b738f3       1958        137 src/pages/components/TradingSignUpContainer/styles.scss
+  d6664c1082cb51ed27529f5435c7e8e3898d8664        988        136 src/gatsby-theme-carbon/templates/HomepageComponents/index.js
+  c254e50a1477b6ac79e702b55ab88dbc5928e648        956        136 src/gatsby-theme-carbon/templates/Default.js
+  6dc6e292e5a0c475d9437e21e5632d7a35ee0a6e       1934        136 src/gatsby-theme-carbon/components/Footer.module.scss
+  191d55861343a85a385b0cc0c264c15bf7dd256f        395        136 gatsby-ssr.js
+  7cb8a6e0d906fc95dd50d32e6b153d9ae9e2530b        405        135 src/pages/auth0_callback.js
+  6807988a636235a7a2981136f588aad27e8d82d6        804        135 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  d07ff740b01aa7b378b3be87f8950ab6643f2702        849        133 src/gatsby-theme-carbon/templates/Default.js
+  2de8735e224d762b902032caa5ae70b0ee22f300        927        133 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.module.scss
+  2580ee4b3b0758baf02876b2abed00fd4c4ffd1e        502        133 src/pages/components/images/static/blue-check-icon.svg
+  7c7205f3e7f700cbe681b4540c173c77d015a91d       2099        132 package.json
+  34011144bf4ba57c83c59d9e0d4932529f398e93        501        132 [src/images/static/blue-check-icon.svg, src/pages/components/images/static/blue-check-icon.svg]
+  daef09807348e05eef01e56185d0155e4dbb7413       5680        131 src/gatsby-theme-carbon/components/Footer.js
+  b318431ee49b5f80e9c4bdcae095521043194971       4938        131 src/pages/index.mdx
+  11798a9993c5d3a8ad9248dc0070c49b2fbb0ed5        162        131 static/videos/vtt/hero-video.vtt
+  7b7064ce72234f975409b98b916d37724f86ae1e        486        129 src/gatsby-theme-carbon/components/Header.module.scss
+  c2924e7723909edd9fd72474782be5fef0718b5a        523        128 src/pages/trading.mdx
+  485657c7d4ff458a1aa5a2fc51cd25bd9e45e839       1982        128 src/gatsby-theme-carbon/components/Header.js
+  0761e0132cf3f8a5f386561954994751bef44b21       2299        128 CCPA.adoc
+  ed7e4c660f0ccc22f0ca0f2eeff57fd6fef2b5e3       2008        127 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  f3eb59d584f6887a21037e87ff87e4d90cc3e4b8        150        126 src/pages/components/Login/styles.scss
+  79ee123c2b23e069e35ed634d687e17f731cc702        142        126 .idea/codeStyles/codeStyleConfig.xml
+  6d1b8d930d129c7b5fc9eaae17da6c98dbd0f19d        176        126 src/pages/node.json
+  6b8c83a002701667189499b83243abcfcefb42c9        854        126 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  4d5997aa82f804f4d47aaa7b4d9b014e6b86e196       1245        126 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  16d46fa12985c99d52aaa818ca0cea1f6998cbd4        673        126 [src/images/static/blue-check-icon.svg, src/pages/components/images/static/blue-check-icon.svg]
+  1028c2d3cd90ed4f61b376f63c554103f3a68f81        683        126 netlify.toml
+  47a32fd970a9de3fc4a7cb9c182672177edb1f0c       1789        125 src/gatsby-theme-carbon/components/Switcher/Switcher.module.scss
+  e501b2a8b234e27b4d8e091aef380fcfb6409345       1144        124 src/pages/404.js
+  ce8c41567a92630fa585dced84e3038f92ca3724       5955        124 package.json
+  accbce852f3896bfd9dddaa6008ca4f1c81674eb        861        124 gatsby-config.js
+  a3e5b3c55ebdd4bfe0464e47ba8e342bc77d7b94        525        124 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  c533fded62b510ac5fdf60d63823f4c5257b5285       1621        123 src/gatsby-theme-carbon/components/Footer.js
+  6b9f774031ff185969abeff028bce475e354adce       1133        123 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.module.scss
+  463de4908afbfdcfcfe9b7b78b16349afeee5ee9       2941        123 src/gatsby-theme-carbon/components/Header.module.scss
+  06815629f883affb59f7086593f94b441d988a75        138        123 src/pages/freight/drewry.mdx
+  ea2542e569a90d5f696746598b7bd14c1730fc11        271        122 src/gatsby-theme-carbon/templates/HomepageComponents/index.js
+  bf26885faadc048d40df8985554f0d16cc78d993        271        122 src/gatsby-theme-carbon/templates/HomepageComponents/index.js
+  56cdf71fd022fecfd01099cca6e28e9974e7847f       2074        121 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  06caf3d07ee7846795a090383d318d5d1f02c268        360        121 src/pages/auth0_callback.js
+  d6f2bf4f168c138628b071d62b4b3ec5f0849d47      49221        119 TERMS_OF_SERVICE.md
+  bd9fc2a4a12b69d9b86b8da75f376865831875c1       2058        119 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.js
+  a282f395af3d7934fe4cd6b7b59cff15ecafb8e9        436        119 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  5ba54a4a8b86ef9d970bcba4ae02a3bb825f7f13       3226        119 src/gatsby-theme-carbon/components/Header.module.scss
+  4502bf52a4e8173fa91ded619b949aa605e26128        131        119 CI/vale_styles/Microsoft/SentenceLength.yml
+  d5c1ad8eac26c28ac7c0479472ad419617bc305d        662        118 [src/images/static/plus-icon.svg, src/pages/components/images/static/plus-icon.svg]
+  b690194a8be4a5f3b4dfec8060a5cd13d9a35249       2262        118 src/gatsby-theme-carbon/components/Footer.module.scss
+  bbc1d34d863b76cd40f7040945ebc7d14638576c       1340        117 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.js
+  ac217807081f6769dd3a537f0c14323d45950eb3        851        117 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  e01015449cef167ab3f195acb6be5a92e7e993fd        133        116 .prettier.config.js
+  4e512c9f8c8a0624a4de2933765b5e95877ca714        366        116 src/pages/404.js
+  d4e6118a2237f7f1a43b6acc43273093777418b6        520        115 src/pages/trading.mdx
+  5fc6f2cc11431ef1065adf0666c0e2037b769a10       3666        115 [src/pages/freight/table.mdx, src/pages/table.mdx]
+  d22f7573ffd1b53731308037fd88262698d6b832        440        114 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  6820e43acdade37e8842825fe6ff4d86441be8cb       5644        113 src/base.mdx
+  5d6e5c14ad06b9244ac15fe5288a5f64eec908b5        998        113 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.module.scss
+  0ecd0ac7f30323b6c75fcfe3b3b1290661315082       1218        113 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  ca99b1328493362cfc8b0ca6c5dd3aa2811068a1       1973        112 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  efa32d50c23b88daef0c672eb20d08aee9f8219e       1269        111 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  5e5fdbc19a9951ad13f46c7ac92c4f9c1d3a5cc9        128        111 CI/vale_styles/Microsoft/URLFormat.yml
+  5e506c131e55f979048440c2581b12d406d927e6        159        111 CI/scripts/test_lint.sh
+  52f297c5a3664ee086eecbb8f6308383449ae5eb       4385        109 src/pages/solutions.mdx
+  989f000dc4a743bd7a9529fdd6255fef7083b142       4385        108 src/pages/solutions.mdx
+  b142d91446ea143a1dadd1ad5ededda81c9ed89b        474        107 config.toml
+  374ecb06db53575690592b1a979c1945c66f027d       4870        107 src/pages/index.mdx
+  fe0d9d004c6f67f74d207e160b949ba17decd2ec        301        106 src/pages/auth0_callback.js
+  85841e108f0c64c84a414dd95149596f5e67c388       1745        106 src/pages/components/TradingSignUpContainer/styles.scss
+  797a19f6cc8cca59af5ab4e44abd82885f6a4030       1402        106 README.md
+  4fa5bddf3e018fb1ab21d3f6a32796d6160baf5c        515        106 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  8eff49ef5ea3c201f9200f3b57815f62de802615       1081        105 src/gatsby-theme-carbon/templates/QuoteContent.module.scss
+  2a3fa82b60b6666341017cbf9a4a2e65fc515302       4269        104 package.json
+  d0383f5fab9618d24e8e5ba8a57e83f51fef5919        355        103 src/pages/login.mdx
+  c8ddb9d2e22d24f8b1f0db65b959c45cb8d89403       1285        103 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  cf724e310c748a1f35672dfa0e3205c3c7bbe944        448        102 src/pages/trading.mdx
+  c3e70e53036faedf0534993513895292229db7a8       1754        102 src/gatsby-theme-carbon/components/Header.js
+  98827dc80a843e244c83a9be7db037e6c46fb0b1        740        102 .circleci/config.yml
+  80d64952763b587c848c76d1cf3f7adc054a6baf       1974        102 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  93b2a5e5e1db66c773919187589c0d36cdb45d5f        596        100 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  7238bb203a331f73e653af947144bde06b77d187       2927        100 src/gatsby-theme-carbon/components/Footer.module.scss
+  4b121ce5774deaa24696df8c26aba9f539b00d21       1377        100 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  ef1382eeeaa58f3749c6c2948cf80723f3aa837d        727         99 config.toml
+  bcd6e37e2ce0e0f761996b9130dfe7c4b733e55d       2325         99 src/gatsby-theme-carbon/components/Header.js
+  b58b603fea78041071d125a30db58d79b3d49217         98         99 .idea/.gitignore
+  7e636bc9d63a2978330846abcc1b6cf4e9e1c938       1813         99 src/pages/components/FreightChart/FreightChart.module.scss
+  2e0eaccd8e91045e3f43c525ef7768821792f5c0       1260         98 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  da7d2ba6b7df8b2579532b9c3d99e54ac9fa91b5       1686         97 src/pages/dashboard.mdx
+  3ce76abd8c1b865f206afb2eef057f1149eb0913         92         97 README.md
+  ef2e818df76dc6c5c0e7a81cab959dc1dfca8131       4735         96 src/pages/components/TradingSignUpContainer/index.js
+  c5529c3125bdbd755371784f5359904c5d23af6c       4759         96 package.json
+  f9213234297b53a31b02e2b800f65e128dd0b442        498         94 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  8db7155c65fe8d92cefe824df2fe6836923a2ec4       6281         94 src/pages/index.mdx
+  15d092a7d1e33604f7ccd7663dd7ab9ecc3a7983        744         94 .circleci/config.yml
+  0f019047feed9f1cc0ad281874839266fce509f4        396         94 link_check_conf.json
+  ee543ad12737265b3ae95bc5521639b04f6e9b5a       1641         93 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  8c3c9234b6b9abd49e7962e38c98cb0327557d4a        772         93 src/gatsby-theme-carbon/components/Homepage/Banner.module.scss
+  60cf70f949a9bf3dd8205d7b8907f4476b98355c        326         93 .github/workflows/action.yml
+  3d97eb2ba30f1c742fc84ea0f51816d7f0e0acab       4059         93 package.json
+  2a58c82a17f1be59803da6e903bad0574f806e34       5068         93 src/pages/index.mdx
+  25018b429d17c5ac0b29d31b2c7f8b1543cbdb3e         91         93 .eslintrc.js
+  1f901b067fd33ea2a7750258edecbd0e288e4d12       6334         93 src/pages/products.mdx
+  fac83f0852cdbf0a95cc5df100088fb1c91761a3        923         92 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.module.scss
+  9da6e05dee2ce0ca44b45702884ef142079efcba       1569         92 src/gatsby-theme-carbon/components/Footer.js
+  194d47da1143b2da3e4c92627898ed63433b5fd2       5446         92 package.json
+  d1654cb8e70c5808666e5c05a654db82c11f7aab        748         91 src/gatsby-theme-carbon/components/Homepage/Banner.module.scss
+  7aa5de6b68451cb7a0117cc15753124211f452f1       2071         91 .circleci/config.yml
+  5e8904b93754e62842476e33229314ba030fde6f       7527         91 src/pages/components/Dashboard/index.js
+  5d4acfe7920d32f82fb6fef93e1624d124f1ede2       4775         90 src/pages/components/TradingSignUpContainer/index.js
+  4c4c9f42ac24ab97d648e0a14960a524fa4b9b63       3589         90 src/pages/table.mdx
+  cef9351a3bf10a553f91d5a468406797d78d37bb        649         89 src/pages/components/FreightChart/FreightChart.module.scss
+  4ca6069d3e97520d02a69b90654e7e0c839e236c        676         89 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.module.scss
+  9d182adda25726f6f2df39f0262eb4e085db06c9       6372         88 src/pages/products.mdx
+  9550ae4c59b16d8966c372de723f2e5b4eb4c380       1509         88 package.json
+  7889e62ea78d2bc7c7e333502c90dd67f14adefe        571         88 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  642fdeffbf7a7d8bfc61546bf1bbb0e5e3933f54       1242         88 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  2b4b9bbfb8870e4f4d128002d90cd967d60695e3        493         88 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  1a763afccd794840c12f95355e3b24d3e76b1ad1       1457         88 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  75d27fef61399b80390a6df604815323b0e045ca        483         87 src/gatsby-theme-carbon/components/Homepage/Banner.module.scss
+  7000787cd5a49e8996ca6372736479cd416e6510        700         87 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  0f883e0d47bc1d77ed0a36076ce42ce12e9d218f        101         87 .circleci/config.yml
+  d215d47df75c49d21dc6b27d0eb07bd0c5b45c29       7457         86 src/pages/components/Dashboard/index.js
+  8f30b21a5dc9d30a560ddca6b4a6a1e27534578b       2133         86 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  6bbae7714416c074c58a3dcbc12519b0ded82a93      39268         86 src/pages/boilerplate.mdx
+  6b5bcb7869ba31dd0a19d873cb98bcb668094ce4       2090         86 src/gatsby-theme-carbon/components/Header.js
+  0b5787afc93c1a4c6abedb102512f9e0342a060b       1384         86 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  c491a439d2ca3279ea3e4a5cc7e05559f58e46ed       4722         85 package.json
+  94062adf0b2539913c0883a9e98f49eff4ca02fb       5908         85 gatsby-config.js
+  7cdacbaf67a70a205ff400d83c41364edfc8cfac       2064         85 src/gatsby-theme-carbon/components/Header.js
+  159d92cafdf729b32d4225f2315e953606c66076       5694         85 src/gatsby-theme-carbon/components/Footer.js
+  08f2b38170d6d7559e06670cc6a207bb02f562b4       1371         85 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  fc13f58c927cafef38abcf222582a7dce8291374       5636         84 src/base.mdx
+  f5fb543cf8e570dc898a9e61faed319285afaaaa        272         84 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  f15d78cd48e0f2a004f021c3b13f70d566d675b7        988         84 src/gatsby-theme-carbon/templates/Homepage.js
+  205e2fa1d35888e6aec22620353181f2a76fea85        580         84 src/data/nav-items.yaml
+  0869ba5bcb23d29b5d9e21f9b2499959eaed39b2        564         84 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  027f010427c3518eef302ab8f2fa0b5dde51782c       1441         84 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  a981f1dc69dda1c42b889c168bdd985a79ec6095       4268         83 package.json
+  5f54a32137be18fd95a8db10b76fb8b941413ddb       6225         83 src/pages/index.mdx
+  47f2370de0228c18d2d750b045f21e5a6c649944       1027         83 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  3dd241aeb1ffa6a34e4542b0f94d8aa0ff9f4acd        220         83 src/gatsby-theme-carbon/templates/Default.module.scss
+  209c940c7700005f5e0f6e75f942ac354c46997f      11367         83 [APACHE-2.0, LICENSE, LICENSE.md]
+  a4d87ea2c746011636fa81341ac3df4559c8f003       1874         82 src/images/static/progress-step-disabled-icon.svg
+  9d4f42ba10a860ef3fbd4f3dacaf824510cb4ab7       1874         82 src/images/static/progress-step-incomplete-icon.svg
+  8da3fb892ba27adc9bfef7e2c5da34410431b710        893         82 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.module.scss
+  e833ce291ccea83fb4487a4ab48506900452eb06       1814         81 src/pages/components/TradingSignUpContainer/styles.scss
+  e62945b7b2e255da6839c875e92b786ba155cb57        576         81 src/styles/index.scss
+  9e6d5641d234ccdcfa16670da84bd0d8859725d1       3085         81 src/gatsby-theme-carbon/components/Header.js
+  636af9aac45b577e5850ae4e33c436413f9c0419        665         81 src/gatsby-theme-carbon/components/Homepage/Callout.module.scss
+  242763eb157b05cbc6a349009947ad523cba6280       1075         81 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.module.scss
+  da5a5d000d5651cae82cd0d075fc06155d9b939d       3083         80 src/gatsby-theme-carbon/components/ArticleCard/article-card.scss
+  d7d6e458ae27959b717bd5eb89fdb55a6a4c4166       1257         80 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.module.scss
+  d7c55e0fb106acf0d9abe3f0db5c996fe240aed2       4471         80 src/gatsby-theme-carbon/components/Footer.js
+  420ba1b369206e5e5fb2b5da9fd4b1bd9bfa24d8       1547         80 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  c73c27c22d474e431d83dbacdb21e2b1162c029b        582         79 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.module.scss
+  be0697b4c8bcf477e4e30730b24e15fb9bae2ebc        774         79 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.module.scss
+  b542cdcedef546aaa01f6e121890d02795246fc2        377         79 .gitlab-ci.yml
+  a0c9bd9b463dfb362974928cf706536ad35de5f4       2004         79 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  7224a984f6a275387d772e37edf46a14c81736e9        258         79 README.md
+  497e30ae155bf0f1c81034d3f274168eb5c5ea95         88         79 bin/mdspell
+  e5e29018ce9e1d741ab2861e38ea92e883bc33e8       1801         78 src/gatsby-theme-carbon/components/Layout.js
+  a4c4ff7b14552b30bb3532d5b078f24bb99a6d73       4672         78 src/pages/components/FreightChart/index.js
+  9a20590380a309315da185980b1e3f038a5a1b85      39222         78 src/pages/boilerplate.mdx
+  377747906d3a8aea4948bdd850efc3df760106f7        357         78 gatsby-ssr.js
+  1a90f0417e16eae20668dd2013528939251124d4       1448         78 README.md
+  1524921cdea54432b1779f9d0011e994807809db       2119         78 src/gatsby-theme-carbon/components/Footer.module.scss
+  a2967829281bcfca5bfb11051110b27eaf20c476     639298         77 yarn.lock
+  9ffd22d67d95fa02840e4b66f2fda1d49786aad7        630         77 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.module.scss
+  9abe9fa581fdbfb652a41d352e60fa1838f3e3e9        358         77 gatsby-browser.js
+  2e6d082a556000b8fa43fd794787e91ad69394f2        629         77 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.module.scss
+  06b76477bef8fdcdbae6a4b25e9eed66a433fa95        712         77 src/styles/index.scss
+  013a62725a511af8700f3bbc549a5f31cba81ae0        630         77 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.module.scss
+  eaf152bf1061be1e6a3baedef750bf8d14d5003d     783071         76 yarn.lock
+  95042869156f3bbfe8d255a79c87e9a6b478e7f6       2593         76 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  6d90c8f1c6c4d962e8b00a9a8a2730e163b18b64       2905         76 src/gatsby-theme-carbon/components/Footer.module.scss
+  1b5cab048e5a7562f4afa4696d15d3980c4c65b7       3653         76 src/gatsby-theme-carbon/components/Header.js
+  a9adc6b5036f3a6beb7b9d1861cafc06536599d3        797         75 removed-plugin
+  8651ea4eb963066f1acb9b2888682d93fc1b24ff     786593         75 yarn.lock
+  7de95824242df392b6f170b3cbdd5a605a32fc1f       1093         75 gatsby-ssr.js
+  6df4b85c1bc96d981f86c5e59eb966030b97f8f4         68         75 .kodiak.toml
+  372e8d08bafbb2354c0021749c8a4be774d01b19       5325         75 package.json
+  ff9fe345c428a43a1730c4ac4d76775e53b8e117        549         74 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  eba16cd4c05d923d92c39d5337eca3a19e1fa10f        687         74 netlify.toml
+  e8175e4c00e4f1c95711ee613fbbd1cf68e2d6b7         84         74 .imgbotconfig
+  73f455cda0d4ef4ad9db9aeca63a052d13db9750        124         74 CI/scripts/test_all.sh
+  30dd332683d4a1310dcb42557513650c8f2be109       1850         74 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  cf2900da8ca33d9e339b08b98dd69cbb9aeff97a        404         73 src/pages/404.js
+  ce3c2e9e6dea5684c2fd0fbf4adecf5630ccd353    1118848         73 package-lock.json
+  bedb5a3266498d79997508269a427d4a4fddd551        680         73 src/styles/index.scss
+  9698c500b548feafc7aed77e024ea4eb028a5e19       6277         73 src/pages/index.mdx
+  69181698d90e2427db6d0bd8c09d69367709020b       3178         73 src/static/logo.png
+  4cb1107dadcfb65c5092c6966f65270a6c88184d        414         73 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.module.scss
+  2823d1a8dd5a5a3e5907253635245f84254a670e    1118565         73 package-lock.json
+  26850e6ce73687aa703c0bd47e26dc57044b0b3e       1643         73 src/pages/components/FreightChart/FreightChart.module.scss
+  107f09897cad7e7f81d17448c4a16f7bd0305e5e       7506         73 src/pages/components/Dashboard/index.js
+  91b44262c443cca61b48e10ff42533f11226cf8b       5721         72 src/pages/features.mdx
+  eff176c1e2b1d5c104a9cee65c0ae8198242f84f       1134         71 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  c1c9ab344a365c4b30c32af61307cc86e3d3abdb        821         71 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  4ba0f5e51b51d9ff0265b7003db127217000c52f        258         71 src/gatsby-theme-carbon/templates/Homepage.js
+  48973877abf1cc991046e941faecafc674748192         77         71 .prettierrc.json
+  dac0374af68ad83e54a8be7d320cda72e986ee57        467         70 config.toml
+  bb93561cc4ca3018b3f4b474906723f859a813d6       3840         70 src/gatsby-theme-carbon/components/Header.js
+  9d98c14527d26cec83284f42edf033b8fedac9b4       2500         70 src/gatsby-theme-carbon/components/Footer.js
+  f077033c82a67b68ec2f685a5b43f930962f1d75      11040         69 src/pages/components/FreightChart/index.js
+  95b29ca70293d7d7892283b48127d8216065163f       1064         69 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.module.scss
+  7013df86f3860e0fc0a5be68a4cbc8178f1ba234        194         69 src/pages/components/Dashboard/style.scss
+  1c7e35ea693015241ef928838f3cbdf80dbba94f        853         69 gatsby-config.js
+  eb1ffa8a081fa958ca3b3f7ed7fae67eb0b345d9        100         68 src/pages/freight/index.mdx
+  bfa1a525c9d4a4179f17f6c19a97de0f2a7e76c6       1302         68 README.md
+  5edc4ce2058080f643117de366cbdf1ef6c2407d       1551         68 package.json
+  26874b5476d60b4820ebc35fd0c2f2c51c6502f4        369         68 src/gatsby-theme-carbon/templates/Default.module.scss
+  a11b1cbc93a248744872ea1de72450baafdf936f        793         67 src/gatsby-theme-carbon/components/Switcher/index.js
+  9bba9b3642d98caa360c23569c9fd465ce885c00       6346         67 gatsby-config.js
+  855d087d99935850ce320ff0a88354dfe812f80b        181         67 CI/vale_styles/Microsoft/Percentages.yml
+  61a9de6f0851f469e3bfdb91396fbc749d6d9d75        225         67 src/gatsby-theme-carbon/templates/Default.module.scss
+  53e8bf2eb64e742f9c7c7013ba46f91f6f8277af       1226         67 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  30525a291e13ab34929e8632f4f78a50b3dff885        333         67 src/gatsby-theme-carbon/components/FeedbackDialog/FeedbackDialog.js
+  17b1d52ed37b43d6404b6a639acbf5ea0e210812         68         67 .prettierrc
+  c9f27fa13dc57e022aad915a126c1ea47bc68202        254         66 src/gatsby-theme-carbon/templates/Default.module.scss
+  7bc7cb2ce60d4172f3b47ab3e927eca9bd03d3aa        615         66 netlify.toml
+  37f279d08c33d80355abf66f2a6ade98a5604fd2         62         66 bin/prettier.sh
+  379f0072226487d9c09c41431197b7c56f66e04b        793         66 src/gatsby-theme-carbon/components/ArticleCard/index.js
+  3e4a7931fe176f12741c37aa6941a12ae0616455       1149         65 .gitignore
+  344d215f9fe0d17530c1dab686d65cdf3dbaf2be        351         65 src/data/nav-items.yaml
+  2c6b5dfe6c37068f5bf1ac0a23aaf2669062bc19        384         65 gatsby-ssr.js
+  2406608872b4c215b63a787f0b812d3af3c46ed8       1802         65 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  f158a027b62fd30d6185eeeb0fc83769fd88603f        803         64 gatsby-config.js
+  acf581d1885c6776b93f6fa95b638bfd13391c12        998         64 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.module.scss
+  878ec62caf36817c0bc977b8854165de2616a248         69         64 src/gatsby-theme-carbon/components/Switcher/index.js
+  55af6aa12914e55d998fa4cdc16c50e52b356895         69         64 src/gatsby-theme-carbon/components/Switcher/index.js
+  4b13b3eafd472abbe18570a5270fc8e7716d0c51        559         64 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  073c2a7aa607b944a64f6c47f2cf575c6627727b       1577         64 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  fbffdc6d6f6304cc42a2af351384df56fde3c618       1060         63 [src/images/static/progress-step-incomplete-icon.svg, src/pages/components/images/static/progress-step-incomplete-icon.svg]
+  ada7f96d3b709f7eade44603a39ce54eb3ff0d8c       1237         63 src/data/nav-items.yaml
+  5ac72dd8076231bae4d53659e96c828f7c5691e8        642         63 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  3032de40c214d1888f6e112e3756d2d51a39cf3d       5333         63 package.json
+  f3af0801abb80bc30a978156fbf857b7a18c96ca        835         62 gatsby-config.js
+  c95bf436ef2bcca44141bf358c8e6d207c85242f     814340         62 yarn.lock
+  bffa850840a572f897368567eae990a26ca4b913        725         62 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.module.scss
+  4f51f4e05df3bd463b3dd35d231a306171dec692        245         62 [src/pages/freight/index.mdx, src/pages/freight/product.mdx]
+  439222aa1a58f272be447f8f06448d08bd80eff1        670         62 src/pages/trading.mdx
+  3a9ae7f30724e5ee37f583a4e56b8d9f79c97f45        381         62 gatsby-browser.js
+  1b62b7fbde3b85eac189e5fbfe24a939e5470ea0         52         62 [.prettier.config.js, prettier.config.js]
+  f1d96e2dcd9239c7d4d088a7b96ed4cb0d3f64b4        575         61 src/styles/index.scss
+  ecf76e66daddd119455a84cbbe30b99486241e52       1689         61 src/pages/dashboard.mdx
+  dec82bed835e52a2ce795dbf1454e532821f1169     809541         61 yarn.lock
+  de2e5613deefb150dc3e647fa102de841b8edbc5        552         61 package.json
+  9e01536fb15b54e29f39e379d0e8585a45173bc9       1299         61 src/gatsby-theme-carbon/components/Footer.module.scss
+  99d9d48c25f9cf47ad80f52d42bfabadefb670c3       1497         61 package.json
+  9732ada7c60a95a301290008172fc5f3a7d6ab9e         51         61 [.prettier.config.js, prettier.config.js]
+  7a3bc5ddeb62cce259ca21b54e0e444f32078e1a       1791         61 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  4cb373dfc18f4b1311a1d08e0449d9ad621349be        815         61 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  25038953e1d85a3c9e50205061dfdea38207bb39       1825         61 package.json
+  1e5c1b1cb9be89c9a672fa54ee3ec1c9960fdae8     809541         61 yarn.lock
+  0ac7037172320762a054490b10b219580ed69b76       3916         61 src/pages/table.mdx
+  9f81a2c41b29c4f4dc502f919ae74363496a7f75        600         60 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  97294d399ce8d70fdb395c7b9216df9cc738245d         50         60 src/pages/components/Dashboard/style.scss
+  947cbe2e86a016ec94d4673fb932655050dff7ee       6725         60 gatsby-config.js
+  32124410ad35be2e50c310768e53f9eab0e09264       7174         60 gatsby-config.js
+  ee9a109062c31ecf4695547ca8a116997d5cc186       6964         59 [cannonical/_logo.png, cannonical/edi_token_logo.png, cannonical/logo_guide.png]
+  ab6834aab579c52bbdbbb233784373bd70b69479       3221         59 src/gatsby-theme-carbon/components/Header.module.scss
+  9fecfd444bc2e0c6cba5b534a286e3289de9be1e         72         59 .gitattributes
+  974d49dc6bc3eb6b3a1ef3a5fe4e7ff4cfc7a806      15981         59 cannonical/logo.png
+  513675d153718e58a290419e4205663b0adb5da0       3566         59 cannonical/reduced_logo.png
+  4274f1129ff7c168c209d9a6e8a7d911d0029ead        504         59 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  db075d6b0b18e86aa2432fde486e230669a8437e       2056         58 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.js
+  d4379cdecd5b2e32adeeb612b6c6dc9e1a86583c       2284         58 src/gatsby-theme-carbon/components/Footer.module.scss
+  28a2a95621bb07604d3b4604a66addfc93cf2807       5910         58 package.json
+  0539de5814657c569787d42ea01fb82396ba33e1       2598         58 src/gatsby-theme-carbon/components/Footer.module.scss
+  f4695e3418737c78898a6fb1cdc7be55e0cb812e       2066         57 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  e93a343b58e624927dd0e864804b639d24ac10bf         70         57 src/gatsby-theme-carbon/components/ArticleCard/index.js
+  e58a12db915da1dcebb4ac6b044e914ed26dfa32       1760         57 src/pages/components/images/tabs.png
+  d730790f12861be289d5bcc8f490dbdffc728739         70         57 src/gatsby-theme-carbon/components/ArticleCard/index.js
+  9d576b51b1ccc7ac90d2bc74c26ab3ec617cc116       1714         57 package.json
+  9305037d1c683163ab435204299300f9aac95418       3868         57 DISCLAIMER.md
+  5ddde12d5a5b3c9e5dab4f7c2d153e33f7479fdb       5565         57 src/gatsby-theme-carbon/templates/Homepage.js
+  5a459fff2fab3ee28b9cd242b857e5a38d52eb1b       1364         57 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  1fe2ac3780aa5627b470913a57d02ab2cbfaaba6       1327         57 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  0f9100f0636ba53675c7b3327ade0ea04d577978        773         57 src/gatsby-theme-carbon/components/Homepage/Banner.module.scss
+  d987ea35b40166cf86790e031db0c3be4592ef80     818142         56 yarn.lock
+  7c967779f663f4abb2e5b28afc9c6ef77093994f       4803         56 src/pages/index.mdx
+  469fc6954d9534fc01d9cf3826d7711d72331d3c         52         56 .gitignore
+  dfc9e63b994742520b9f8452eff35b54348a0b0b        674         55 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.module.scss
+  c9e8d5f74a1fee5eeba308164554a12f59daeb35       5375         55 package.json
+  b628553e421af8efc76b0f5f1b2d16681189d2d7       1580         55 DATA_BREACH_RESPONSE.md
+  a09ada45ef0bc872168abfa82dfc5df6336b3663        470         55 src/gatsby-theme-carbon/components/Homepage/Banner.module.scss
+  96a51c56cae1476e912ae3f0ef0386d7652e9dee       4914         55 src/pages/index.mdx
+  81e5a5b41afb8e7fac53df83e9cc1cf62bb14635         68         55 src/gatsby-theme-carbon/components/ArticleCard/index.js
+  2e24db332750ec55c88c317ecc4920dcae83f62a       2797         55 src/gatsby-theme-carbon/components/Header.module.scss
+  0dce388ca9f84d7d3f5ed83ff07fa2f58c47dfba       1133         55 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.module.scss
+  f6d4e0be285a49d602ba9cfc031e7e84dff8466b       5342         54 package.json
+  e7dac7d1cf7579b9f57750a7fbb8a0ed498ff506        510         54 src/styles/index.scss
+  7d99ec2eacb6106e981f4978edaa725d6832d274        246         54 src/pages/freight/index.mdx
+  2037cd8a2eb0e0968ec9a7f67087155f143bbe5d       1613         54 src/gatsby-theme-carbon/templates/Default.js
+  103bfb0735f5fba1a0b3b26427744100fbc7217c        203         54 .env
+  00f6ff547932966a2cc50716034c61ea5e034316        725         54 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.module.scss
+  ecd3a1e0cae3329f14f6d3da6f9c0389f92c7b91        722         53 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  9ef785f31b7ebccc809bc9b276f31b9fc8c4a053        730         53 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.module.scss
+  5b3b7ec03642aff405a83999ffa63dacaba1deeb       1087         53 src/gatsby-theme-carbon/templates/QuoteContent.module.scss
+  2db7baee968e0cfea2ef67d4b52b973790f41af4       1167         53 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  23329f04eb2471951e2d820d2ed8cf12295fcb8f        170         53 .env
+  227f72b0793b4d82d93d54a477b9905027766e97       1483         53 src/gatsby-theme-carbon/components/Header.js
+  dc5952f6d9853f26f59a2201923d89b54a5ea31c        335         52 src/gatsby-theme-carbon/components/FeedbackDialog/FeedbackDialog.js
+  24b6b857db1c2c8d8e67b9c288c2194b357eb44d        132         52 src/pages/freight/drewry.mdx
+  230ba9b0664b5cf273bf2e36f2db4e7f92993ab4        735         52 .circleci/config.yml
+  15ccf2d2a4a04233a413ba2712fdb910d8783126       5154         52 src/pages/index.mdx
+  1228fcb7af851f9b22920ca921444efefbda7d12       7176         52 gatsby-config.js
+  1151d761db612d2a6089f1daecfae87695e0910a        248         52 src/pages/freight/index.mdx
+  f6186d7f21b6ab11a85c4e76ac4078cde67d32d6        212         51 src/styles/index.scss
+  bbfc14c4d7d885c3fbcf635447e4a98d304fc1a8        299         51 [.prettier.config.js, prettier.config.js]
+  27c230bc037701d4bc193bb46f951137cd99a3b2        204         51 src/gatsby-theme-carbon/templates/HomepageComponents/index.js
+  1e924f7f2cd318a503172eecfe4481eeb14dd321        130         51 src/pages/freight/drewry.mdx
+  e344de60f1d6affae38f5fa29d60cadeec9af4f2        682         50 package.json
+  b3a0b21de2b435ef95ca0cc08d8a8f34af8e4154       1089         50 src/pages/404.js
+  a492ded716e15b6ae85ab7a02d44ae47807abb48       3079         50 src/images/modal.png
+  8763bd268458688408ae03b2feaca50ccd2b7de9        538         50 src/data/nav-items.yaml
+  777a48ba46cc9176d3e3dfd3b0da439705efadf7        874         50 src/styles/index.scss
+  01f32feab3cb9d4e42350743287d09aa619a2cc7       2327         50 src/gatsby-theme-carbon/components/Header.js
+  d46091fcf78afb26092824447e9e516d128eeb77       1340         49 README.md
+  adbb06dacb6de13f610a7dc89eaf7f6bd488cef1        578         49 package.json
+  9581503d3c06718ca822f21dd751b5f6287ed96f        687         49 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  85f3076f3fc2e81a7afd221d007ad1f2c95f064c       4074         49 [src/pages/components/images/github-icon.png, src/pages/images/github-icon.png]
+  52645ef08a3d8146499c3551c151c6268ac661f4      16876         49 src/pages/components/images/colors.png
+  7f5a82b020ce3dc8a2ef7ddd1c7dde0784de485b        959         48 src/images/notification.png
+  6de669fb75da3d071c7e4570344782b2ed0d9d90      16544         48 src/images/large-image.png
+  ebcd4874d551131d85d40cc76242fe5e149680b6       1227         47 src/images/favicon.png
+  e1df1259fc3a720f00c1a5fb87e1c3e134093794       1692         47 src/gatsby-theme-carbon/components/Header.js
+  e3df1036846e33ede3982e12fb522c72780966a4        895         46 .circleci/config.yml
+  d5e679a000e1dcaa7a72a3a75c5ae7106d650187        281         46 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  c96e22ba135cd3433c2bb2f45419fdc99a7d91a8        866         46 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  7bf9bdb858cbccc065362be875714abedf6b5b67       1766         46 .circleci/config.yml
+  669fec9101bfde9d416b72c707a4394b966a6374       1016         46 src/pages/navigation.mdx
+  363e4913f07b5fc337e7b5e5b4a20834c7c5516f        133         46 .prettier.config.js
+  025025660c7b263e0deb50e1bd7b4aaf3c599cf9         52         46 .nvmrc
+  e327b8654185bf26550ce69c5e0a0e1c9279fcc7       3648         45 [src/pages/table.mdx, table.mdx]
+  ddb8bc6d1215ac1a0d1be2d96446a60d5fb70892        776         45 [src/images/static/progress-step-incomplete-icon.svg, src/pages/components/images/static/progress-step-incomplete-icon.svg]
+  ab73e633cd24715a50c0e7fd31ea32e7dbff13f5      43171         45 .vscode/snipsnap.code-snippets
+  7c77c89014141a941487794e301e0ec32fc3994b        776         45 [src/images/static/progress-step-disabled-icon.svg, src/pages/components/images/static/progress-step-disabled-icon.svg]
+  6a4fcc01c06cf9a75b81ddcf0acbc77a9854fb97        777         45 src/pages/components/images/static/progress-step-disabled-icon.svg
+  618b9703a95dbbea6bdc2c79f3d99bebc15a7f75        777         45 src/pages/components/images/static/progress-step-incomplete-icon.svg
+  19d9c4a2a60e3d40eb5fd522620d345482fcecb9       4587         45 src/pages/index.mdx
+  edf846b2c099faa6c10278b24776d74a84b83c5d        132         44 .prettier.config.js
+  e848af3b2bee0d54078e88c49fbf964f8d93ae31         34         44 gatsby-browser.js
+  80d58e85e5c8f79da730acbed8627feedad93e2b        665         44 src/pages/trading.mdx
+  de8d55f2a6188acc0315c95b45efdca7664b2dfb       4900         43 package.json
+  a4d8a16bb7a192b0cd148858d11aeb1addcecdcf       1180         43 netlify.toml
+  92c4b0f90136e55ea3c0c729209cf7371703a90b       4268         43 package.json
+  3d2c8f119812963e11986093c337d7aad9e6e73c       1289         43 README.md
+  35aa218a630b3cfaf0c2e951d1ef6392fcc5f5fd        564         43 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  34057852d0024114e762c4012af4cfe8378564b5       2444         43 src/gatsby-theme-carbon/components/Header.js
+  d95753b3d78fd1239866fc918c35b1afe5f97c0f       4010         42 src/pages/table.mdx
+  3bc4237a9cc00acfaf400157d2a2d5e5bb104d57     153952         42 src/images/freight1.png
+  2a732129079b46410f2ecd7309ce05ca0dd0639b       1402         42 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  d1d53a278a54dd3ab7c4d67841df844b8e1455e0       1685         41 src/pages/dashboard.mdx
+  5fca0d518be7e27c35b6584d2f88b3f11ac4b6ca         31         41 .npmrc
+  1ce7eb3fc750e07e950bd2b2000ad6b3790b8418       1969         41 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  016b9029aca8f466fe40cc2b92ecdcd49e71aeab        219         41 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  43abecc9f7ae92b8da752dfea74016d4828c29c3        738         40 .circleci/config.yml
+  21b00a11c0c7f7792686667858928e44a6320a3f       1060         40 [src/images/static/progress-step-disabled-icon.svg, src/pages/components/images/static/progress-step-disabled-icon.svg]
+  ededbafeeed51ac7855478b2aad1d39a3839a801       2570         39 src/gatsby-theme-carbon/components/Header.module.scss
+  9cc3fd54000cee3be8d29f0e1a41a3173d55b29e       1301         39 README.md
+  34290c3c35b2ccdd00b29079100ec418197ac9b5       4674         39 package.json
+  9fc65bdc53ee67a0c65a86df7251e5bf4beb0a61       1290         38 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  3b21f1eb976a9cc56041ea04e2ca966177503541       1285         38 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  2bf1149c83cd6946803c60fe26d27e2306400fae         28         38 .prettierignore
+  2bdf0b4b6b795a4e1b8824718eea4550fd732f4f       5060         38 src/static/freight-chain-github_repo_card.png
+  242f1bca7109a79d2dccac8a5b1c257db8ac6612       1093         38 gatsby-browser.js
+  1c96eac5779906e4e2e674c594b514cc2e418bf3       1034         38 src/images/static-notification.png
+  fb18759fb3c1c4ed6f4860fcc76b48281706382d       3913         37 src/pages/table.mdx
+  ec66ebd8027a79599e428aab7f7efeb5276c32b1       1322         37 src/pages/components/images/file-uploader.png
+  e49abe0820a65b1d4393b745e0a57cb92a999521       1183         37 CHANGELOG.md
+  bd78d5ef6ae9aec36d2863ebcc7ad1ae0b52b508       1099         37 gatsby-browser.js
+  ada38d32a0b15fd2fd7f354fb0f5943b67b2f4d5       2439         37 src/gatsby-theme-carbon/components/Header.js
+  9736a203aad1d95cc639c38cf3c2a0b95f465a31        807         37 src/pages/components/images/list.png
+  8755e31f94291eeb63a2fdd6cc0cf25e719d0f35       5590         37 package.json
+  30bfd40dba690d5fd5a20e2e8780eb522286ded9       4391         37 src/pages/solutions.mdx
+  2f39ae88d17ede8c33eecf02610b69ee567c1f9b       4954         37 src/gatsby-theme-carbon/components/Footer.js
+  1329f22d46bb5775d504cb384f4048a970f4999f         29         37 .gitignore
+  0a8a4653093170b2827c5a9e712ee2c71f032d21        665         37 [src/images/data-table.png, src/pages/components/images/data-table.png]
+  0821797d4716fb3e91308586076fea037d0ee3dc       5089         37 CHANGELOG.md
+  9557b15c2a6ebea53d8ce33f3c74260482c1de96        860         36 package.json
+  65a861617a4301de00eabb90e57b762433a9aa24      35516         36 src/pages/components/images/Article_05.png
+  401cfd7ccbfaf733a9bd8e76befb37028b23bb1f        567         36 netlify.toml
+  fee62863e91d331c791931b31b10e1859fdb7915     238975         35 .vscode/snipsnap.code-snippets
+  fdadf0be1929567b0d85065487b9f09808233138        982         35 netlify.toml
+  f69628ee567ec8dd8b225e9d1c40eaf3375b9e44        545         35 gatsby-ssr.js
+  dc4a48746b7f5aa7c2bb4076f84b57c9208811a4      19676         35 src/images/blue-stripes.png
+  a1a2de397d2662bc41cd95f7a256007e57f9eff3        741         35 .circleci/config.yml
+  632bc17ff7126337ef4493ffec224be45d82bb6a        571         35 netlify.toml
+  5d290a71da4880dfec38ebe4d4d3b7575b78ab6b       1457         35 package.json
+  56763fd7c68a419aae7ddd92fe21707086d647fe        301         35 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  42db6c1d4865091d2b3222730744b2d7b43c074f       1313         35 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  d6fe6a268679ee36c187f2dc8e044a22fc5ceb82       1020         34 src/gatsby-theme-carbon/templates/Homepage.js
+  d4f3683c95be5b3c8d64186b4fe7b7f79276bc9d        322         34 src/pages/404.js
+  ad7c9720cb5e4d4b195d819d4333606be2df0a1f         91         34 README.md
+  4fd3fc13da86f480f9f264f88547b91cbbd5d37c       1386         34 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  ba0ae13fe572394ead98250812ac10adc21b33cf       2754         33 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  9e7f723a53ff142a4cbec8c54c5a425857410dcd       1548         33 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  6660449bf6891b53c3d8038fe0275ee3c2b8c9a8       2650         33 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  63ece805f8bbfefc06f90fb49ac47effdb35e939       4946         33 src/gatsby-theme-carbon/components/Footer.js
+  5d3369cfa04bfe6bb3cea805231de8ef33364a85         30         33 CHANGELOG
+  5a3a3ca53079dce83892e7c9902dccba503f0658       3101         33 src/gatsby-theme-carbon/components/Footer.js
+  a81c2ff6b439e42bfd8e849b9a7e13e2c444d932       3831         32 src/gatsby-theme-carbon/components/Header.js
+  77f7eb95b8fbe9ac809ae8ac280b15d6438daf27        844         32 .circleci/config.yml
+  68153537ecafec0bec993f49d060beaa70ef2585       1219         32 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  170c8c08102a9b46693ef5178a7ddae7b71cbf83       7174         32 gatsby-config.js
+  12ed268669d7719ccfb0260c939ebd71ac6ba1c0       1407         32 README.md
+  fb5e6086b81d4cd3bb5be59b02d9fe1322ce97e0       3090         31 CHANGELOG.md
+  d99035b712f92ec5abd8762cdec8bd3bb5396204       1304         31 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  a1ddfb1ab1ca4a627f01636a2fef93e8cfdd4ea8        158         31 CI/scripts/test_links.sh
+  6f59a5c1c8a56518fee2d07ad36affa7b982ffa7       2067         31 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.js
+  6afffab6ceff1b6f241846167eab367dd973b25e       1547         31 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  1b8318e11902f739fb2a1fd0bc6aa444c0141c06        522         31 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.module.scss
+  1982e1e751ea649f49741c9229235c37b2b67a1b      14949         31 src/pages/test/spacing-audit.mdx
+  0502b0164d796617ffd1b4fe2f6df263a4bcfd7b       5909         31 package.json
+  b7481813b12933c5865cb3eaa1569042b49308c2       1315         30 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  b45bb0fd041739d4254c4a10fc5455695d7af04b       1448         30 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  a815e6ce76140da3f4cacf84322720e7285efcb9        876         30 src/pages/components/images/data-table.png
+  86d6f4c83e52c51aeb70f792043016c03ab68660       2173         30 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  847d0bfc4a28ae2238ee33484ac93229943d9733       1171         30 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  7b555d6ac96a09d7e285aa226b5b405e7d0c25bd         34         30 README.md
+  68e04acde49e7a1257dc903444fd710fba75c1aa        972         30 .gitignore
+  63621bc515165f66cd79cdf18d183c0eb1b12dba       6099         30 src/pages/index.mdx
+  60ba2fa7b56931320483615821d7df2d529820ea       2010         30 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  5dcb0deddf32f536b16406cae7ca3cbe354c85a4       1406         30 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  56c4489643ed4d91227afbe5e3501840390fe2b1       7338         30 src/images/blue-stripes-mobile.png
+  552253eef27dddb268f8044a4c84544160bc3cd7        525         30 src/pages/trading.mdx
+  424b1c6aacbb6a54aad5aad1f6f4add4b626f3d1       1547         30 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  418ff837e7e1d7fcb11163ac79f80dff6b78b013       2108         30 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  0f3d0cbed46ffe40e9413bd3db58bf6a6b05b3df       1973         30 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  0e41c8a94d12fc7b136d4c3c1c138b4894e2be84        262         30 src/gatsby-theme-carbon/templates/Homepage.js
+  f932e160eff64875e30dbe36b8bc5adda96ff148       4755         29 package.json
+  dc3a53476fa25f6f8778af01a8797606c565dd0f        977         29 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  d6bead165174067ca5a451b2df770d02658753e1       2249         29 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  baab378c996914b1d9ca766fb148107fb5dbae83       3870         29 src/pages/table.mdx
+  854aab30b8891569d122266708b6995344bd846e       9614         29 src/pages/components/FreightChart/index.js
+  6ac38aabdd39926438dc2f82f0157b594904acc2        438         29 src/styles/index.scss
+  58cc0563442be42fec747ae8e9cbfa118405b498       4580         29 src/pages/index.mdx
+  54224421bf80700fd66ce04653e95bda0312e72e       5630         29 package.json
+  3041f74539a9515b8d05e5332229ef11a345d8bb       1301         29 README.md
+  27c4c2f92bcff015a8196c51707a3253ec6ee531        989         29 src/gatsby-theme-carbon/templates/Homepage.js
+  16452fd559443d1439a4e6772bdbe171bca9a4f8        711         29 src/styles/index.scss
+  09439f01d08ae7d00ced47d7fd4382e3c820da6f       3506         29 src/gatsby-theme-carbon/components/Footer.js
+  fde25263c6b163f4743eed00407cf5d82f1746e6        683         28 src/styles/index.scss
+  f2e4b1a9e808e7817c1fc258ae9a504623ae2886       2476         28 src/gatsby-theme-carbon/components/Footer.module.scss
+  e1ec796aaab3553714f4d9e2084bd25b33aedfdf       5460         28 src/pages/components/TradingSignUpContainer/index.js
+  dcd980938cad66b3a49034e5dae2aace2abb00eb       9605         28 src/pages/components/FreightChart/index.js
+  d0339ad16bf8f514739b0e72aed41b411cebfda8        614         28 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  c75c11a5cf8d12949b9504389996d2766a0280b2         18         28 .nvm
+  7a94585c0a6e600f62486964d37b45ce18c0e4d6       6418         28 src/pages/index.mdx
+  50198a00f1a8a99107b9d02cb0c51d75145a0f8e        486         28 .editorconfig
+  04abab6d26056a2a9512b32f80de7389159d8f19       2556         28 src/gatsby-theme-carbon/components/Footer.module.scss
+  014531fb3e7d75c1f0635c4379e653bf351bbc72       6176         28 src/pages/products.mdx
+  d90159a46f37d0817d926cbb598593ec77304d16       5578         27 src/pages/components/TradingSignUpContainer/index.js
+  c3400670154a590e88b16aa390a8c702862cefe5       2502         27 .circleci/config.yml
+  7e659c79551976b641985d2f22c7fdb5ae41b524       5761         27 CHANGELOG.md
+  71416e3fde69b2da92d7a62298ba87864e621837        248         27 src/pages/freight/index.mdx
+  34ff51604709929f1986097792ab8855a520373a       1736         27 package.json
+  0404c55cd54fcb96def06952de27496236f9c560        357         27 gatsby-ssr.js
+  7f2b9d9a516aaec797049bb219bc28cc021f1b4a       1540         26 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  74d79f2b56115d7dd552513d9056e7dbf64ab17c        769         26 README.md
+  22baec5b94051218b8d5dcfc4c0dde28983de67c        725         26 config.toml
+  10318394d2df81d8ea9e80144a9bf0e4368d4e49      39228         26 src/pages/boilerplate.mdx
+  08c3219e50a59d7cd6ab55227bbec158357f1cc4       8183         26 src/pages/components/Dashboard/index.js
+  d2bdab4cb98712bdd85baccaa8b86243f871bce3        131         25 src/pages/freight/drewry.mdx
+  c556ddf4bbc69151bdf7d071558e8af64a45970e       4059         25 package.json
+  4201d3fc50a617ee16cc4d57fff06d9540116dda        518         25 package.json
+  2c77e90d3bc7a296eaee9f116c0cc40965f18c10        485         25 .editorconfig
+  0eeda527be1608c418e6d28a5bc11cee0f91ad90       5245         25 src/pages/index.mdx
+  f3c31fa02f2e4c6109caacd38cda6a6f73abc602       3083         24 src/gatsby-theme-carbon/components/ArticleCard/article-card.scss
+  e600dd901974fcaea1c2ecf6c9429fe6c54d8287        626         24 TODO
+  e06181761efcedc58cbe12d655787ffc5158ee23        579         24 src/styles/index.scss
+  cf04512344fcabd464cfb837ecfe28a96c0f7873       5522         24 gatsby-config.js
+  cb6fffe91033aef659161042deaf67110d2077e2       1004         24 .gitignore
+  bca08a82ada2551ec8445f4ab414f67ff821b57f      39129         24 src/pages/boilerplate.mdx
+  96bf3f8653bbc814c1f3ef51f225581d1bbca6b8       1021         24 .gitignore
+  84e90d61cac67d688d06307aabd3e52d6a3e978f        988         24 src/gatsby-theme-carbon/templates/Homepage.js
+  f6dc0fa533b2b7223ca6a243984be1509b765107       2938         23 src/gatsby-theme-carbon/components/LeftNav/LeftNavItem.js
+  dbe8280e1bd2fe6ef7fb4a318dc3c14c5235ce8e       1099         23 gatsby-browser.js
+  cef4e2fa03ee53fe207c07405d8bed881514827d       6361         23 src/pages/index.mdx
+  cb930daa41f3eb105b2a3828941c57c185bb0397       4445         23 CHANGELOG.md
+  cb616955448407c4227698a9372a0f60dfce0821       3474         23 src/gatsby-theme-carbon/components/Header.module.scss
+  b1e3ef65de21bda84944047b711ac2e456549a58        386         23 gatsby-browser.js
+  af4b12ddbda8bb7046894af5fc777f788b01f580       1888         23 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  ab3a4e09aa458c35048fcecd972c38860ea24869       4332         23 src/pages/solutions.mdx
+  949dfc90446bd87af787de6afff6aaa03c8b597a        152         23 CI/scripts/test_build.sh
+  8c177e3273e374406dea2b61974e241cef750586       1231         23 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  82552044d2ecbeb1d987ab6a6f906240aa981f8f        483         23 .editorconfig
+  80ee607a3207fddd6802956b00d3e4e94c7380c7       5668         23 package.json
+  7dfcade58f44ed520edee6c927b492fe0e679bd9       6106         23 src/pages/index.mdx
+  7d029402518325d98d9ad0682573c7eb5af2a728       5378         23 package.json
+  686e270740e8b973241a3eb52b32a08bd6659c11       1193         23 .circleci/config.yml
+  5418d97d30e85064078eaf3c2e5805697bcde27b       4947         23 src/gatsby-theme-carbon/components/Footer.js
+  47cca31af037ba17ffb2fb2e1f3deedbc66531e9       1085         23 gatsby-browser.js
+  304727737baca649cc43d043db54a73dba526056        873         23 src/gatsby-theme-carbon/templates/Default.js
+  2f23dc517c82642406bd887144827431768162ae       1275         23 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  1eb54864d0ddae2fdee3e6bdf7e529d594d899ce        397         23 [gatsby-browser.js, gatsby-ssr.js]
+  0a31aa1277129e965b735eb0041000fcc7afed24       1530         23 package.json
+  08b5c7b149e4cee4213e1012080eeea479944882        151         23 CI/scripts/test_guidelines.sh
+  f81967e3b361e58843ceb5724cc084ea6dbf6a4f        974         22 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  f760353d6b88c7a94b2b8efba93debf8e38e87f4       2097         22 src/gatsby-theme-carbon/components/Homepage/Callout.js
+  eb1bece46896b3b596cf96bbb00f43cd36394d1e       2001         22 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.js
+  ea50d7f9f4a1e803737626d4b0fea6239ca57cf6        472         22 config.toml
+  e164576941917c8f450875adaa0fe2a37b72472e        664         22 src/pages/trading.mdx
+  d4a4a11279eeafa90fbbd9d0160ab9d223a1fb13        984         22 src/gatsby-theme-carbon/templates/Homepage.js
+  d1a2c228cbc3ec7bdbc116d3d6587d54414056ed       3664         22 src/gatsby-theme-carbon/components/LeftNav/LeftNavItem.js
+  d1009f7a373062004c366629d672abc3d8eabf6b        768         22 README.md
+  c0bbdff224fc78d1ce3e20964e3c48edd2c42ae7        829         22 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.module.scss
+  b3062cb3c79f8f1474dde738d6fcde4f32fce07b        810         22 src/gatsby-theme-carbon/templates/Default.js
+  9d4e042cd75664133fbe61e3dd6bbc1a48efa5e4        484         22 link_check_conf.json
+  9a17b70c8582be5311828c660c6bfe933bfa35a5       2062         22 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.js
+  994c1463a6e381f8b757f3ac81eb1e7eec95263f        447         22 src/pages/trading.mdx
+  990d3be87539a5435e98cccabc15ac201d35eba2       5680         22 src/gatsby-theme-carbon/components/Footer.js
+  9204e0bd791f45a4f09d162499e416c30a609fc3       1094         22 gatsby-browser.js
+  867db6e9cbf76d9ed48a22357a982a22671f1109      10782         22 [APACHE-2.0, LICENSE.md]
+  851e2f44ae46f36332f7dc97cbbc9cf3d7af42e6       8262         22 src/pages/components/FreightChart/index.js
+  78f73104d1da9be2882c595b4ab904b3ba6d232a       1312         22 src/gatsby-theme-carbon/templates/HomepageComponents/RequestDemoContent.js
+  765e38a9b90b0303bcca75c90dc6f7ec42c755bc       2576         22 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  75e56f890f74c6300c3ef3cbb4e1ea6ead206ca6       1575         22 src/gatsby-theme-carbon/templates/Default.js
+  6e08a472a94d98853274a1b87f25cccabc4314d8       1995         22 src/gatsby-theme-carbon/templates/HomepageTemplate.js
+  60baace86627bf4ce3281e2d7a4aacdbf4db8ca8       4754         22 src/pages/components/TradingSignUpContainer/index.js
+  5ae08f6f55b558a45cb342087f0800e5165ba524       2066         22 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.js
+  5a6d49599e77ab6a8fbd860861eba94e53928a64        986         22 netlify.toml
+  52d7ee5b465760625169dc33ce4c97f1b8313d43       2064         22 package.json
+  523ad3a9a2181c4b12650c4d464cd7919514f102       1403         22 src/gatsby-theme-carbon/templates/HomepageComponents/SnapContent.js
+  4b8de3823f9206df59896ca68825b5b74f43287c       1241         22 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  48c5091cf169bf16c984e3752cddfb238b9da34b       1968         22 src/gatsby-theme-carbon/templates/HomepageComponents/SignUpContainer.js
+  474157480d56cd9bbb6ca2e3d86cc66a7a1d03c7       1322         22 src/gatsby-theme-carbon/components/Homepage/Banner.js
+  2d356f0c8ee5ab752f091a2cd44d1292ff92ebf5       4734         22 src/pages/components/TradingSignUpContainer/index.js
+  2baffc938c768592568151c5e146c63fb62ce265        721         22 src/gatsby-theme-carbon/templates/Homepage.module.scss
+  2b4821d98ff0e438525d7c154e89d1b793e0bc2d       1502         22 src/gatsby-theme-carbon/templates/Dashboard/index.js
+  246495044873c6e507ed3226f93acadf7ba0f6f9       2614         22 src/gatsby-theme-carbon/components/LeftNav/LeftNav.js
+  17b975423a31ffd82ce2c5433b09ddb52be305b5       1166         22 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.js
+  0e75478a60026450d51346d4d7bf1c33815332ca        545         22 src/gatsby-theme-carbon/components/LeftNav/ResourceLinks.js
+  03be91c7107d5f18629deda26933e10dd857771e       2809         22 CHANGELOG.md
+  f24d2c23dc17f05ab6928f021524ee0a51c98422        666         21 netlify.toml
+  d3785cbfd57369b54ba71b9e9821598965d9f9d6        536         21 src/styles/index.scss
+  cacdfa20d2d4871869fb4d0768695a8698c14c1d       3105         21 .circleci/config.yml
+  c643f26d50bfdec04ea5fdbe359dd261bce56829       4010         21 src/pages/table.mdx
+  ba88fd874bf1367f6c79b0046d52f34fdcb924dd       1788         21 package.json
+  b512c09d476623ff4bf8d0d63c29b784925dbdf8         12         21 .gitignore
+  b4fda8edabb9b46873f3a61db204fada8a63b8c3       1541         21 src/gatsby-theme-carbon/components/LeftNav/LeftNavItemProvider.js
+  975f95a38cb274ed807dd3963988d23c2cec9d8d        767         21 src/gatsby-theme-carbon/components/Homepage/Banner.module.scss
+  834be3b6d6e5a137bdea4424fa421a14345b9ea5        614         21 package.json
+  62f6fe72f1fc62561263f9377336aec882594164       8700         21 src/pages/components/images/static/structured-list-placeholder.svg
+  4dc20a18d8b09955698c98c211a32c0878958e85       9423         21 src/pages/components/images/static/date-picker-placeholder.svg
+  4d0e72e5ff5487de93f76af2aefc9d9fa5a5f5cf        373         21 .gitlab-ci.yml
+  35d8f9781b2e3ec23ccaac4c113aafc262461447        294         21 src/pages/404.js
+  1249b2f81a5c36a2c4a677dc9c6b36cf3feeb001        409         21 src/data/nav-items.yaml
+  f4f9316c3266c133686b0d56d89b95081e7056d7        662         20 src/pages/components/images/static/progress-step-current-icon.svg
+  f46deda629e9be85372d3739f26ce969ec9f3cf9       1351         20 src/pages/components/images/static/save-icon.svg
+  d6f67fe725789d59152e2adc07bb6ce2f7845eb6        301         20 src/pages/auth0_callback.js
+  d5b1767a5cb4badbce23baeb3a9f1c0be6313b3f       1267         20 src/pages/components/images/static/app-switcher-icon.svg
+  cff03cea0becfd5364d348fe35703377d01961e6        659         20 src/gatsby-theme-carbon/components/Homepage/Banner.module.scss
+  c1d584dcc62afada369b6d8b74b0c4c81254c91b         70         20 .gitattributes
+  c1361e7401beee2c08aed9e9e518e177a1270e28       1050         20 src/pages/components/images/static/inline-notification__warning.svg
+  be4098aaf8775d72b9f3ef1266a4eb159b25c2c4      16760         20 [src/images/static/snippet-placeholder.svg, src/pages/components/images/static/snippet-placeholder.svg]
+  b737ecc3470537eb0cf82c8bfa385fbfd65a6541       1261         20 src/pages/components/images/static/progress-step-invalid-icon.svg
+  b6f0d43ec782b6cf3e0f337e2736b99cb37a132d       1049         20 .gitignore
+  adb9883d92a1f7fc6d9f761951163b171a188fca        586         20 robots-txt.config.js
+  a02fc8a777d01a691e69d44572881f03773bb0ae        663         20 [src/images/static/toggle-placeholder.svg, src/pages/components/images/static/toggle-placeholder.svg]
+  86d34894c0930bb84af087403dc350f349e3b47d        395         20 @dev-images-list.md
+  860e3d3e862cc0e2c8238ce7170a44a0d26bd084        776         20 src/gatsby-theme-carbon/templates/Dashboard/index.js
+  81a40f8025c9395760194619fd3062a150790af9        495         20 [src/images/static/checkmark-icon.svg, src/pages/components/images/static/checkmark-icon.svg]
+  80cb41202c173f315c6e30c3521fad7998bdb34f       1001         20 src/pages/components/images/static/copy-icon.svg
+  79f637aca5ba6676163634ad87c3b4944d47e1ec        684         20 src/pages/components/images/static/loader-icon.svg
+  709f252a140af11b680ef7c327d69dde2a7d39a5        263         20 src/gatsby-theme-carbon/templates/HomepageComponents/index.js
+  62a978fbd00ff08553a8594f2db644cd8fcfaa81        721         20 [src/images/static/arrow__down.svg, src/pages/components/images/static/arrow__down.svg]
+  5c7d60b6374e5345f879a0ca00c5b15f2c0a3f7e        877         20 .editorconfig
+  57a8c55ec941c90c5eaa20083aef595cc5a87671       4474         20 src/gatsby-theme-carbon/components/ArticleCard/ArticleCard.js
+  49175aaac10f3348650765db511c5864a6dace84       1004         20 [src/images/static/overflow-icon.svg, src/pages/components/images/static/overflow-icon.svg]
+  48f2e24d3f550159833e13a489c6706d840af75b        328         20 src/gatsby-theme-carbon/components/FeedbackDialog/FeedbackDialog.js
+  47f55a888c97e7052babf35ae3b0b8b30a142b42        179         20 src/styles/index.scss
+  41bfaee81d05b6e2295a57d37d39c99c85754631       1391         20 src/pages/components/images/static/tooltip-icon.svg
+  3b5cf59088b65539450feec2eb8a2873922a7c72        305         20 TODO
+  317c1c1b9458280ad40393f26b928aa2d21bfc3d        839         20 [src/images/static/progress-step-complete-icon.svg, src/pages/components/images/static/progress-step-complete-icon.svg]
+  315685a83c05dfa9c58f41f5c80332b7b66567ab        304         20 TODO
+  2999f6c8b12f3eba1b70548292aed1b017dedcac        955         20 [src/images/static/delete-icon.svg, src/pages/components/images/static/delete-icon.svg]
+  26659fd01a62d487b8b4021952d45496c81823e8        901         20 src/pages/components/images/static/inline-notification__success.svg
+  1a2ecb0f981ea8c9d0d8d0d674d5d06803f6de15        617         20 config.toml
+  196ea42e6dcc9f66054fac66544788453b657300        293         20 src/pages/auth0_callback.js
+  186ef85d9afd64e785e4f6faeecb78bbb5f6901a        683         20 [src/images/static/loader-icon.svg, src/pages/components/images/static/loader-icon.svg]
+  1688b7b52eca6a12991cab347ff66db9d8f5b980       4128         20 src/pages/components/images/static/placeholder-img.svg
+  11aa3b8428404c486c76d18519f606039aa81102       1866         20 src/gatsby-theme-carbon/components/Switcher/Switcher.js
+  0f305cdd2d9ca20e44c161acaff078a6d9d3b6e4       1220         20 src/pages/components/images/static/search-icon.svg
+  07982535ce9b6cee0a7e3ed0f351ac52dc0e27dd      12657         20 [src/images/static/date-picker-placeholder.svg, src/pages/components/images/static/date-picker-placeholder.svg]
+  fba2c3c898eea19963f24d3d8312a4cafa9898dd       1314         19 src/gatsby-theme-carbon/templates/HomepageComponents/BannerContainer.scss
+  f4ad5ac830ac581d6a4072377d0f5691dce693e7        502         19 src/data/nav-items.yaml
+  f1caa7644c5c49fd65a0ab07ca4e2f72aaf4fcbc        676         19 src/gatsby-theme-carbon/templates/HomepageComponents/CustomArticleCard.module.scss
+  df395c9432cce63e6fb08c322c7a68bbb4f93320       1284         19 [src/images/static/copy-icon.svg, src/pages/components/images/static/copy-icon.svg]
+  d973e3d317c4125d79c5637dc57f2c9458a2cbdd        865         19 .prettierignore
+  cc379df896366cb67d319868a6247106f5c0bcb7       1544         19 [src/images/static/progress-step-invalid-icon.svg, src/pages/components/images/static/progress-step-invalid-icon.svg]
+  caa2a6e0c21d813f93cd86be5963c25999ac0169        248         19 src/gatsby-theme-carbon/templates/HomepageComponents/BrandsList.js
+  b84207a00e4756718733149ca73cd4b18d7ec42c       1503         19 [src/images/static/search-icon.svg, src/pages/components/images/static/search-icon.svg]
+  b2559f0a07afabc83b30e83aefeb9526c085db39        371         19 .editorconfig
+  ab45e2fcab0001f29953ef20601f6107dc15a9f3        665         19 src/gatsby-theme-carbon/components/Homepage/Callout.module.scss
+  a6d9be7bcbab91c3f42b1208b2c6ff996571d45c       1723         19 src/gatsby-theme-carbon/components/Layout.js
+  998ee065b88ce3e1bf71177cc2221d82f7dca770       1508         19 [src/images/static/app-switcher-icon.svg, src/pages/components/images/static/app-switcher-icon.svg]
+  80f91d3d2495492de61e59e8065e552cf9628a97      11264         19 [src/images/static/structured-list-placeholder.svg, src/pages/components/images/static/structured-list-placeholder.svg]
+  7a0aeac367d6dcd6af36c210d0bfece880b9d8f9        860         19 [src/images/static/progress-step-current-icon.svg, src/pages/components/images/static/progress-step-current-icon.svg]
+  79c7f68e782bb00c51264ac1b041c6883a199ad8       1789         19 src/gatsby-theme-carbon/components/Switcher/Switcher.module.scss
+  63ba3395dd258c693b756ea337db924249c407e8       1102         19 .gitignore
+  5d3cb561dd95016e78759c626ed764512f9901df       3251         19 src/gatsby-theme-carbon/components/Footer.module.scss
+  55bbd2618413ebed18f5256065cd768a3c1face7       6419         19 [src/images/static/placeholder-img.svg, src/pages/components/images/static/placeholder-img.svg]
+  5456424a94c8764a588ff7980b3f0fba99848a6a       1500         19 [src/images/static/slider-placeholder.svg, src/pages/components/images/static/slider-placeholder.svg]
+  487c2a93b95c8985fca207fa4732b6aad0e39a67       1637         19 [src/images/static/save-icon.svg, src/pages/components/images/static/save-icon.svg]
+  34768290c2d3cf29ecd280b57a0d7f11f5568de4       1238         19 src/gatsby-theme-carbon/templates/HomepageComponents/ArticleContainer.js
+  27642f7c0eee4bc9d0fff2b405904b1cc8caed05       1813         19 src/pages/components/FreightChart/FreightChart.module.scss
+  1b4a74994e46f22e721b33af2866dd668e448564       1184         19 [src/images/static/inline-notification__success.svg, src/pages/components/images/static/inline-notification__success.svg]
+  1a5c80c20cd74ad6c728839d46d2151ec76de659       3726         19 DISCLAIMER.md
+  16bdff3f794026bfed0f0f1f374e2769a7179abe        486         19 src/gatsby-theme-carbon/components/Header.module.scss
+  0e9e1af44b908c92d2d3bc726d734e960b7192fe        772         19 src/gatsby-theme-carbon/components/Homepage/Banner.module.scss
+  0b211099a358603043ed09447c7645d3f43ab6fd       1724         19 [src/images/static/tooltip-icon.svg, src/pages/components/images/static/tooltip-icon.svg]
+  048973732dd531f81db52e6d9ebfc3ff2716eb1e        849         19 src/gatsby-theme-carbon/templates/HomepageComponents/TextImage.module.scss
+  ffaec2371596f09619a0618c4d981ee37e87d722       2508         18 [src/images/static/notification-placeholder.svg, src/pages/components/images/static/notification-placeholder.svg]
+  f614f3219dff5fc69455c68643a798e5119480d6        916         18 robot-config.txt
+  f0357fe940f62a0e92ace946fbbc4dac10abb0dd       5082         18 src/pages/freight/drewry
+  eb541fd1f3fd2be21e2adb4a6d3a2480e7a351fc        506         18 .circleci/config.yml
+  e6b528e602e44544a69e63133f92f62f7500008e       1227         18 [src/images/static/loading-placeholder.svg, src/pages/components/images/static/loading-placeholder.svg]
+  c260bcc335e0fd0592d87d9876c80409f01b0bdb       3870         18 DISCLAIMER.md
+  bea892c16a8031af62da70f57f1be95d56915a84       1316         18 src/pages/freight/product
+  aae644e9d7611cf05e194f0436a8bd951ce5f24e        379         18 gatsby-ssr.js
+  a0cddf20a52b10abfa59be97e39dab264e16c9d1       1548         18 src/pages/components/Login/index.js
+  9f990fbd62fef5876b3b2a788d7b8d044cc129d5       2699         18 ERRORS
+  96737645adc706aed56c82fe85a8388c0c5950a7       2497         18 [src/images/static/progress-placeholder.svg, src/pages/components/images/static/progress-placeholder.svg]
+  76bcc84e269056af039ca945c87395245e2cc046       1185         18 [src/images/static/text-link-placeholder.svg, src/pages/components/images/static/text-link-placeholder.svg]
+  6eb0617400d594dabba36be33840d95f7ce945a4       1664         18 [src/images/static/list-placeholder.svg, src/pages/components/images/static/list-placeholder.svg]
+  5f40bf7376ead58a1c66464596dda71a41bfff7a       2709         18 [src/images/static/dropdown-placeholder.svg, src/pages/components/images/static/dropdown-placeholder.svg]
+  54cc1643d275883be20e4c0f7827d7e1bb73eb6d       1094         18 src/pages/404.js
+  464fb964445fa8c07dea730bb69e056c880a0e3d        572         18 netlify.toml
+  360b97008e83ab63d16d7264286f8a3f8974f425          9         18 .nvmrc
+  2e9edfd3fe71d1d0384d5f84a8dcb258d946083e       4866         18 src/pages/solutions
+  281a05edc651aa6fc9e60d971477684b28a5684d       2075         18 [src/images/static/file-uploader-placeholder.svg, src/pages/components/images/static/file-uploader-placeholder.svg]
+  1e6964983f39b21b195229885850c74cf7cf62fe       2239         18 [src/images/static/tooltip-placeholder.svg, src/pages/components/images/static/tooltip-placeholder.svg]
+  15eae7c49083503f15d4b57c4d9eb73d5b3d0288       2866         18 [src/images/static/overflow-menu-placeholder.svg, src/pages/components/images/static/overflow-menu-placeholder.svg]
+  057de719b3df183f9f510012e41dc0c01bc096a4        225         18 src/gatsby-theme-carbon/templates/Default.module.scss
+  d99154fda4a61bcff84c1368f99524a415f6ac4a        139         17 example.env
+  b4e852d5e26161ff0ac34616bcb92db8bfdfcceb       1069         17 .gitignore
+  9cd25a1fec8eafb00179420065d798df4cc1af8f          8         17 .nvmrc
+  8db2c52b6f432141b40e2613146e46b10c2ee625        324         17 TODO
+  830ade54e98e289d539b5dff56144061fca7e934       1083         17 .gitignore
+  47c0a98a11314d27bd0664b4f113b855d9ec991e          8         17 [.node-version, .nvmrc]
+  3b03b23bbdd9695a24c0710875258265c16e50b5        629         17 src/styles/index.scss
+  39d495b5ba4d0179aa28f077661badb1cd70eeb1        138         17 example.env
+  3353177ccbb27bee5c0d3068ee9709ac30b56ea0        712         17 src/styles/index.scss
+  30975f83eb1f9d8e0acad5388a88b94c969efeb8        674         17 src/styles/index.scss
+  1158aec5cf87fcd778758818bea2c224b5db285d        270         17 src/gatsby-theme-carbon/templates/HomepageComponents/index.js
+  ed2f63af17d045b7a6a1607dfdc5a95686cb2cc6        149         16 src/pages/components/Login/styles.scss
+  d0426e72d86d1cb8758044449ba349984de7251f         68         16 src/gatsby-theme-carbon/components/Switcher/index.js
+  b3b057a5d8ce8667d04442131700eff59bdc16ce        131         16 src/gatsby-theme-carbon/templates/HomepageComponents/index.js
+  b1051fc5a56a8717530b099272bd3b56e0662cef          7         16 [.node-version, .nvmrc]
+  5316671a79e23f5ffdf7c49740faea1c1dcf24a1        139         16 [.env, example.env]
+  414d7380870a78ecc52efce1637a05b3bc95cbba          7         16 [.node-version, .nvmrc]
+  394fa71671637cc21f8fd8fd9ba5db9417273b52        233         16 src/gatsby-theme-carbon/templates/HomepageComponents/index.js
+  36301bc5cff6c8839372a27a7d60e8920334c32b         69         16 [.prettierrc, .prettierrc.json]
+  2778802ce54a76f0c93f0988e4bc638dc4b09224         90         16 .eslintrc.js
+  08619b53971cd62a77b1b069e70bbc1e0bf9f3c5         90         16 .gitignore
+  074356b16154e918ddb81205c6b74ab62633f418        171         16 .env
+  e6abf367e81e2e08bcb3e283fdb86832300c42cb         85         15 .gitignore
+  dbfd56f7ebfb13533662f5f1872220e2a7bb9a7e        100         14 .circleci/config.yml
+  9340c7c7998b66f20bb1b4f8b070da1ee7a99d92         89         14 .eslintrc.js
+  87156d3a86e720225c693c3da0810ddc15b9f715         71         14 .gitattributes
+  70944232ea2ffc582d6c6dd95ba8ecdee5fa6056         70         14 .gitattributes
+  5b72376ece60e027732c707778a81d47d5574d0f         87         14 bin/mdspell
+  48082f72f087ce7e6fa75b9c41d7387daecd447b          3         12 .nvmrc
+  0967ef424bce6791893e9a57bb952f80fd536e93          3         12 [.prettierrc.json, src/pages/sentry.json]
+  9e26dfeeb6e641a33dae4961196235bdb965b21b          2         11 src/pages/sentry.json
+  8b137891791fe96927ad78e64b0aad7bded08bdc          1         10 [.circleci/.gitkeep, src/gatsby-theme-carbon/templates/Dashboard/style.scss, src/pages/.spdx]
+  e69de29bb2d1d6434b8b29ae775ad8c2e48c5391          0          9 [.circleci/.gitkeep, .goodcheck.yaml, .restyler.yaml, CI/vale_styles/Microsoft/vocab.txt, TODO, linkchecker.out, src/gatsby-theme-carbon/templates/Dashboard/style.scss, src/gatsby-theme-carbon/templates/QuoteContent.module.scss, src/pages/.spdx]

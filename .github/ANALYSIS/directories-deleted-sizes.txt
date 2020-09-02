@@ -1,0 +1,17 @@
+=== Deleted directories by reverse size ===
+Format: unpacked size, packed size, date deleted, directory name
+     8790935    8762164 2020-05-22 src/pages/gallery
+     4964953    4934797 2020-07-15 static
+     3849433    3839882 2020-06-10 static/videos
+     1326740    1222563 2020-08-06 src/pages/images
+     1115520    1094915 2020-07-15 static/images
+       75737      53817 2020-05-22 src/pages/demo
+       71413      52525 2020-05-22 src/pages/demo/images
+       53468      40106 2020-05-22 src/pages/guides
+       49675      31496 2020-05-22 src/pages/components/ArtDirection
+       29895       1695 2020-05-22 src/pages/test
+        3569       1665 2020-05-22 src/pages/guides/navigation
+        3277       1478 2020-05-22 src/pages/getting-started
+        3251       1337 2020-08-04 .idea
+        2071        540 2020-08-04 .idea/codeStyles
+         162        131 2020-06-10 static/videos/vtt

@@ -24,7 +24,7 @@ const TextContainer = ({ title, content, buttonLabel }) => (
   <div className={textContainer}>
     <h1>{title}</h1>
     <p>{content}</p>
-    <Button href='#top' kind='secondary'>
+    <Button href='https://freight.page.link/request-information' kind='secondary'>
       {buttonLabel}
     </Button>
   </div>
