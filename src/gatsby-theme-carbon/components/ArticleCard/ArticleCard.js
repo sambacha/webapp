@@ -26,7 +26,7 @@ export default class ArticleCard extends React.Component {
 
     let isLink;
     if (href !== undefined) {
-      isLink = href.charAt(0) === `/`;
+      isLink = href.charAt(0) === `https://freight.page.link/request-information`;
     }
 
     const ArticleCardClassNames = classnames([`${prefix}--article-card`], {
@@ -73,7 +73,11 @@ export default class ArticleCard extends React.Component {
       cardContainer = <div className={carbonTileclassNames}>{cardContent}</div>;
     } else if (isLink === true) {
       cardContainer = (
-        <Link to={href} className={carbonTileclassNames} {...rest}>
+        <Link
+          to='https://freight.page.link/request-information'
+          className={carbonTileclassNames}
+          {...rest}
+        >
           {cardContent}
         </Link>
       );
@@ -82,7 +86,7 @@ export default class ArticleCard extends React.Component {
         <a
           target='_blank'
           rel='noopener noreferrer'
-          href={href}
+          href='https://freight.page.link/request-information'
           className={carbonTileclassNames}
           {...rest}
         >
