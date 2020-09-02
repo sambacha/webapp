@@ -15,51 +15,51 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from "react";
-import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
+import React from 'react';
+import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 
-import Layout from "gatsby-theme-carbon/src/components/Layout";
-import Main from "gatsby-theme-carbon/src/components/Main";
+import Layout from 'gatsby-theme-carbon/src/components/Layout';
+import Main from 'gatsby-theme-carbon/src/components/Main';
 
-import BackToTopBtn from "gatsby-theme-carbon/src/components/BackToTopBtn";
-import Carbon from "../../images/carbon.jpg";
+import BackToTopBtn from 'gatsby-theme-carbon/src/components/BackToTopBtn';
+import Carbon from '../../images/carbon.jpg';
 
-import { mainContent } from "./Homepage.module.scss";
+import { mainContent } from './Homepage.module.scss';
 
 const Homepage = ({ pageContext, children, _frontmatter }) => {
-  const { titleType } = pageContext;
-  const { title, description, keywords } = _frontmatter;
-  return (
-    <Layout
-      pageTitle={title}
-      pageDescription={description}
-      pageKeywords={keywords}
-      titleType={titleType}
-      homepage
-      theme='dark'
-      href='https://freight.page.link/request-information'
-    >
-      <Main className={mainContent}>{children}</Main>
+    const { titleType } = pageContext;
+    const { title, description, keywords } = _frontmatter;
+    return (
+        <Layout
+            pageTitle={title}
+            pageDescription={description}
+            pageKeywords={keywords}
+            titleType={titleType}
+            homepage
+            theme="dark"
+            href="https://freight.page.link/request-information"
+        >
+            <Main className={mainContent}>{children}</Main>
 
-      <BackToTopBtn />
-    </Layout>
-  );
+            <BackToTopBtn />
+        </Layout>
+    );
 };
 Homepage.defaultProps = {
-  Banner: (
-    <HomepageBanner
-      renderText={() => (
-        <h1>
-          Freight Trust
-          <br />
-          Distributed Systems
-        </h1>
-      )}
-      image={Carbon}
-    />
-  ),
-  FirstCallout: <HomepageCallout />,
-  SecondCallout: <HomepageCallout color='inverse01' backgroundColor='#061f80' />,
+    Banner: (
+        <HomepageBanner
+            renderText={() => (
+                <h1>
+                    Freight Trust
+                    <br />
+                    Distributed Systems
+                </h1>
+            )}
+            image={Carbon}
+        />
+    ),
+    FirstCallout: <HomepageCallout />,
+    SecondCallout: <HomepageCallout color="inverse01" backgroundColor="#061f80" />,
 };
 
 export default Homepage;
