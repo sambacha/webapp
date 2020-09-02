@@ -6,6 +6,8 @@ lib
 node_modules
 ts
 umd
+.cache
+public/
 
 # Components
 packages/components/demo/*.css
@@ -51,3 +53,4 @@ packages/components/docs/js
 
 # Generated files
 **/generated/**
+node_modules/
