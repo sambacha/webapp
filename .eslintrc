@@ -1,8 +1,8 @@
 {
-  "extends": ["wesbos", "plugin:mdx/recommended"],
+  "extends": ["wesbos"],
   "plugins": ["prettier"],
   "rules": {
-    "quotes": ["error", "backtick"],
+    "quotes": ["warn", "backtick"],
     "react/prop-types": 0,
     "react/destructuring-assignment": 0,
     "react/no-access-state-in-setstate": 0,
@@ -10,7 +10,7 @@
     "react/jsx-no-useless-fragment": 1,
     "no-useless-escape": 0,
     "prettier/prettier": [
-      "error",
+      "warn",
       {
         "endOfLine": "auto"
       }
