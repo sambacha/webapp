@@ -26,19 +26,12 @@
     "lint:scss": "stylelint \"packages/**/*.scss\" --fix",
     "lint:fix": "eslint --ext js,jsx src --fix",
     "format-lint": "prettier-eslint --write \"src/**/*.{js,jsx}\"",
-    "codecov": "./node_modules/.bin/codecov",
     "npm-lock": "npm i --package-lock-only",
     "prettier:diff": "prettier --check \"**/*.{scss,css,js,md}\"",
     "ci-check": "yarn prettier:diff && yarn lint && yarn test --runInBand && yarn test-ssr",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "standard": "standard index.js",
     "test": "nyc ./node_modules/.bin/ava -v"
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ]
   },
   "eslintIgnore": [
     "**/node_modules/",

@@ -21,4 +21,4 @@ jobs:
             - ./node_modules
       - run:
           name: Gatsby Build
-          command: npm run build
+          command: yarn run build
