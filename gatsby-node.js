@@ -5,19 +5,9 @@ const html = require(`remark-html`);
 const dateformat = require(`dateformat`);
 const { createRemoteFileNode } = require(`gatsby-source-filesystem`);
 // const { makeBlogPath } = require(`./src/utils`);
-
+/** */
 exports.createPages = async ({ actions, graphql }) => {
-  const { data } = await graphql(`
-    query {
-      cms {
-        blogPosts(where: { status: PUBLISHED }) {
-          id
-          createdAt
-          slug
-        }
-      }
-    }
-  `);
+  const { data } = await graphql(``);
   /** 
   data.cms.blogPosts.forEach(blog => {
     actions.createPage({
