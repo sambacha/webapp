@@ -12,6 +12,8 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
 
 [![Freight-Trust](https://circleci.com/gh/freight-trust/webapp.svg?style=shield)](https://app.circleci.com/pipelines/github/freight-trust/webapp) [![Build Status](https://travis-ci.com/freight-trust/webapp.svg?branch=master)](https://travis-ci.com/freight-trust/webapp) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
+[![Series Badge](https://seriesci.com/freight-trust/webapp/series/master/:series.svg)](https://seriesci.com/freight-trust/webapp/series/master/:series)
+
 
 
 
