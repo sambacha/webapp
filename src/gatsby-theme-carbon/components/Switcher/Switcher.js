@@ -67,12 +67,12 @@ export const SwitcherLink = ({ disabled, children, href: hrefProp, ...rest }) =>
 // Note: if you change this, update the max-height in the switcher stylesheet
 const DefaultChildren = () => (
     <>
-        <SwitcherLink href="https://freight.page.link/request-information">Trade Compliance</SwitcherLink>
-        <SwitcherLink href="https://freight.page.link/request-information">Trade Messages</SwitcherLink>
-        <SwitcherLink href="https://freight.page.link/request-information">Trade Finance</SwitcherLink>
-        <SwitcherLink href="https://freight.page.link/request-information">Corporate</SwitcherLink>
-        <SwitcherLink href="https://freight.page.link/request-information">Support</SwitcherLink>
-        <SwitcherLink href="https://freight.page.link/request-information">Contact</SwitcherLink>
+        <SwitcherLink href="/solutions">Trade Compliance</SwitcherLink>
+        <SwitcherLink href="/trading">Trade Messages</SwitcherLink>
+        <SwitcherLink href="/finance">Trade Finance</SwitcherLink>
+        <SwitcherLink href="/corporate">Corporate</SwitcherLink>
+        <SwitcherLink href="/support">Support</SwitcherLink>
+        <SwitcherLink href="/contact">Contact</SwitcherLink>
     </>
 );
 

@@ -26,11 +26,7 @@ const BannerText = ({ title, content, buttonLabel, buttonComponent, buttonAction
         <p>{content}</p>
         <div className="buttonContainer">
             {buttonComponent || (
-                <Button
-                    href="https://freight.page.link/request-information"
-                    kind="primary"
-                    onClick={buttonAction ? () => buttonAction() : () => {}}
-                >
+                <Button href="#top" kind="primary" onClick={buttonAction ? () => buttonAction() : () => {}}>
                     {buttonLabel}
                 </Button>
             )}
@@ -48,7 +44,6 @@ export const BannerContainer = ({ title, content, buttonLabel, buttonComponent, 
                     buttonLabel={buttonLabel}
                     buttonComponent={buttonComponent}
                     buttonAction={buttonAction}
-                    href="https://freight.page.link/request-information"
                 />
             </Column>
             <Column colSm={12} colMd={5} colLg={5} />

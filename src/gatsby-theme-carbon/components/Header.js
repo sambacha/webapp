@@ -56,26 +56,26 @@ const Header = ({ children }) => {
             {/** 
 TODO: Fix NAVIGATION ITEMS HERE 
 */}
-            <Link className={headerName} to="https://freight.page.link/request-information">
+            <Link className={headerName} to="https://freighttrust.com">
                 Freight Trust
             </Link>
 
             <div className={navLists}>
                 <div className={navLeftBorder} />
-                <Link className={navLink} to="/features">
+                <Link className={navLink} to="/solutions">
                     Solutions
                 </Link>
-                <Link className={navLink} to="https://freight.page.link/request-information">
-                    Vehicles
+                <Link className={navLink} to="/trading">
+                    EDI Protocol
                 </Link>
-                <Link className={navLink} to="https://freight.page.link/request-information">
+                <Link className={navLink} to="/finance">
                     Trade Finance
                 </Link>
                 <Link className={navLink} to="/dashboard">
                     Trade Network
                 </Link>
                 <Link className={navLink} to="/trading">
-                    Protocol
+                    Contact
                 </Link>
             </div>
 
