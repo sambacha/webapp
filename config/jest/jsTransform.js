@@ -1,6 +1,6 @@
 /* eslint-disable strict */
 
-"use strict";
+'use strict';
 
 const { createTransformer } = require(`babel-jest`);
 const packageJson = require(`../../package.json`);

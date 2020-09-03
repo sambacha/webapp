@@ -1,6 +1,6 @@
 /* eslint-disable strict */
 
-"use strict";
+'use strict';
 
 jest.unmock(`promise`);
 jest.unmock(`whatwg-fetch`);
