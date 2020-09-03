@@ -10,6 +10,7 @@ services:
 
 stages:
   - Test
+  - Build
 
 jobs:
   fast_finish: true
@@ -29,4 +30,15 @@ jobs:
         - npm i -g markdown-link-check
       script:
         - find . -name "*.md,*.mdx" | xargs -n 1 markdown-link-check 
+        - ./series-ci.sh
+
+  include:
+    - stage: Build
+      name: SeriesCI
+      language: node_js
+      node_js:
+        - 12.18.0
+      install:
+        - npm install
+      script:
         - ./series-ci.sh
