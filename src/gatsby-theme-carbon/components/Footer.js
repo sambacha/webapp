@@ -56,10 +56,10 @@ const CoporateFooter = (
 const SolutionsFooter = (
     <div>
         <h5>Solutions</h5>
-        <a href="https://freight.page.link/request-information">For Trucking</a>
-        <a href="https://freight.page.link/request-information">For Maritime</a>
-        <a href="https://freight.page.link/request-information">For Intermodal</a>
-        <a href="https://freight.page.link/request-information">For Finance</a>
+        <a href="/solutions">For Trucking</a>
+        <a href="/solutions">For Maritime</a>
+        <a href="/solutions">For Intermodal</a>
+        <a href="/finance">For Finance</a>
     </div>
 );
 
@@ -68,7 +68,7 @@ const ResourcesFooter = (
         <h5>Resources</h5>
         <a href="https://ft-docs.netlify.app">Documentation</a>
         <a href="https://github.com/freight-trust">Open Source</a>
-        <a href="https://github.com/freight-trust/editoken">$EDI Token</a>
+        <a href="https://github.com/freight-trust/spec">EDI Protocol</a>
         <a href="https://github.com/freight-trust/pki">PGP/PKI</a>
     </div>
 );
@@ -144,15 +144,13 @@ const CustomFooter = ({ homepage }) => {
                 <Column colMd={6} colLg={6}>
                     <div className={footerFollowSection}>
                         <span>
-                            <a href="https://github.com/freight-trust/legal/blob/master/src/terms-of-service.md">Terms of Service{` `}</a>
+                            <a href="/terms-of-service">Terms of Service{` `}</a>
                         </span>
                         <span>
-                            <a href="https://github.com/freight-trust/legal/blob/master/src/privacy-policy.md">Privacy Policy{` `}</a>
+                            <a href="/privacy-policy">Privacy Policy{` `}</a>
                         </span>
                         <span>
-                            <a href="https://github.com/freight-trust/legal/blob/master/src/data-breach-response-policy.md">
-                                Security{` `}
-                            </a>
+                            <a href="/security">Security{` `}</a>
                         </span>
                     </div>
                 </Column>
