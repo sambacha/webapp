@@ -14,9 +14,9 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
 
 [![Series Badge](https://seriesci.com/freight-trust/webapp/series/master/:series.svg)](https://seriesci.com/freight-trust/webapp/series/master/:series)
 
-<!-- [![badge](https://seriesci.com/seriesci/bench/series/master/benchmark.svg)](https://seriesci.com/seriesci/bench/series/master/benchmark) -->
-[![SeriesCI](https://seriesci.com/freight-trust/webapp/series/master/coverage.svg)](https://seriesci.com/freight-trust/webapp/series/master/coverage)
 
+
+[![Documentation](https://inch-ci.org/github/freight-trust/webapp.svg?branch=master)](https://inch-ci.org/github/freight-trust/webapp?branch=master&pending_build=598388)
 
 
 
