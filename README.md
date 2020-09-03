@@ -7,21 +7,25 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
 # Freight Trust & Clearing
 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/freight-trust/webapp.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freight-trust/webapp/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/freight-trust/webapp.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freight-trust/webapp/context:javascript)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/80d4f2dd-3ac9-4292-80b9-2acdc2b8c3a8/deploy-status)](https://app.netlify.com/sites/freighttrust/deploys)
-[![NPM version](https://img.shields.io/npm/v/webapp.svg?style=flat-square)](https://www.npmjs.com/package/webapp)
-[![Build](https://travis-ci.org/freight-trust/webapp.svg?branch=master)](https://travis-ci.org/freight-trust/webapp)
-[![codecov.io](https://codecov.io/github/freight-trust/webapp/coverage.svg?branch=master)](https://codecov.io/github/freight-trust/webapp?branch=master)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/freight-trust/webapp.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freight-trust/webapp/context:javascript)[![Netlify Status](https://api.netlify.com/api/v1/badges/80d4f2dd-3ac9-4292-80b9-2acdc2b8c3a8/deploy-status)](https://app.netlify.com/sites/freighttrust/deploys) 
+<br />
+
+[![Freight-Trust](https://circleci.com/gh/freight-trust/webapp.svg?style=shield)](https://app.circleci.com/pipelines/github/freight-trust/webapp) [![Build Status](https://travis-ci.com/freight-trust/webapp.svg?branch=master)](https://travis-ci.com/freight-trust/webapp) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
+
+
+
 
 
 > Front End and Web application
 
 ## Building
 
+`yarn` && `gatsby build`
+
 ### Nodejs Version
 
-`node-version=12.16.2`
+`node-version=12.18.0`
 
 ### Package Manager
 
@@ -37,9 +41,7 @@ If you set the `NODE_ENV` to production, any `devDependencies` in your
 
 ### Overview
 
-- React
-- Gatsby
-- Fathom
+SEE `package.json`
 
 ## License
 
