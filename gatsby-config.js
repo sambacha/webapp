@@ -27,6 +27,7 @@ module.exports = {
     pathPrefix: `/gtc`,
     plugins: [
         `gatsby-plugin-eslint`,
+        `gatsby-plugin-netlify-cms`,
         //     {
         //      resolve: 'gatsby-plugin-mailchimp',
         //       options: {
