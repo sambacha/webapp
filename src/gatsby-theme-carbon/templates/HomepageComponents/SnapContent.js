@@ -20,7 +20,7 @@ import { Button } from 'carbon-components-react';
 import { Row, Column } from 'gatsby-theme-carbon';
 import { snapCard, snapContent } from './SnapContent.module.scss';
 
-export const SnapCard = (props) => (
+export const SnapCard = props => (
     <div className={snapCard}>
         <h2>{props.title}</h2>
         <p>{props.content}</p>

@@ -183,7 +183,7 @@ class Dashboard extends Component {
                                     <TableHead>
                                         <TableRow>
                                             <TableSelectAll {...getSelectionProps()} />
-                                            {headers.map((header) => (
+                                            {headers.map(header => (
                                                 <TableHeader {...getHeaderProps({ header })} id={header.key}>
                                                     {header.header}
                                                 </TableHeader>
@@ -191,10 +191,10 @@ class Dashboard extends Component {
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
-                                        {rows.map((row) => (
+                                        {rows.map(row => (
                                             <TableRow {...getRowProps({ row })}>
                                                 <TableSelectRow {...getSelectionProps({ row })} />
-                                                {row.cells.map((cell) => {
+                                                {row.cells.map(cell => {
                                                     try {
                                                         if (cell.info.header === `status`) {
                                                             return (

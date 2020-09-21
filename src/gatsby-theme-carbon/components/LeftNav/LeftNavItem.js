@@ -26,7 +26,7 @@ import styles from 'gatsby-theme-carbon/src/components/LeftNav/LeftNav.module.sc
 import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
 import usePathprefix from 'gatsby-theme-carbon/src/util/hooks/usePathprefix';
 
-const LeftNavItem = (props) => {
+const LeftNavItem = props => {
     const { items, category, hasDivider, isSpace } = props;
     const { toggleNavState } = useContext(NavContext);
     const closeLeftNav = () => {
@@ -42,7 +42,7 @@ const LeftNavItem = (props) => {
                 }
                 const pathname = pathPrefix ? location.pathname.replace(pathPrefix, ``) : location.pathname;
 
-                const isActive = items.some((item) => item.path.split(`/`)[1] === pathname.split(`/`)[1]);
+                const isActive = items.some(item => item.path.split(`/`)[1] === pathname.split(`/`)[1]);
 
                 if (items.length === 1) {
                     return (

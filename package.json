@@ -108,6 +108,7 @@
         "lodash.throttle": "^4.1.1",
         "markdown-link-check": "3.7.3",
         "mkdirp": "^1.0.3",
+        "netlify-cms-backend-github": "^2.11.6",
         "netlify-identity-widget": "^1.9.1",
         "node-sass": "^4.11.0",
         "prism-react-renderer": "^1.0.2",

@@ -1,64 +1,55 @@
-import OktaSignIn from '@okta/okta-signin-widget'
+import OktaSignIn from '@okta/okta-signin-widget';
 
 const config = {
-    baseUrl: 'https://dev-629374.okta.com',
-    clientId: '0oaczs0htz5S0gIhN4x6',
-    logo: '/universal_music_group_logo__.png',
-    redirectUri: typeof window !== 'undefined' && window.location.origin + '/',
-    el: '#signIn',
+    baseUrl: `https://dev-629374.okta.com`,
+    clientId: `0oaczs0htz5S0gIhN4x6`,
+    logo: `/universal_music_group_logo__.png`,
+    redirectUri: typeof window !== `undefined` && `${window.location.origin}/`,
+    el: `#signIn`,
     authParams: {
         pkce: true,
-        responseType: ['token', 'id_token']
+        responseType: [`token`, `id_token`],
     },
     features: {
         registration: true,
-    }
-}
+    },
+};
 
-const signIn = typeof window !== 'undefined' && new OktaSignIn(config)
+const signIn = typeof window !== `undefined` && new OktaSignIn(config);
 
 const signOut = () => {
-    signIn.authClient.signOut()
-}
+    signIn.authClient.signOut();
+};
 
-const getSession = async () => {
-    return await signIn.authClient.session.get()
-}
+const getSession = async () => await signIn.authClient.session.get();
 
 const getIdToken = async () => {
-    let idToken
+    let idToken;
     const { tokens } = await signIn.authClient.token.getWithoutPrompt({
-        scopes: ['openid', 'email', 'profile'],
-    })
+        scopes: [`openid`, `email`, `profile`],
+    });
 
     if (tokens && tokens.idToken) {
-        idToken = tokens.idToken
+        idToken = tokens.idToken;
     }
 
-    return idToken
-}
+    return idToken;
+};
 
 const getUserName = async () => {
-    let user
+    let user;
 
-    const idToken = await getIdToken()
+    const idToken = await getIdToken();
     if (idToken) {
-        user = idToken.claims.name
+        user = idToken.claims.name;
     }
 
-    return user
-}
+    return user;
+};
 
 const isAuthenticated = async () => {
-    const session = await getSession()
-    return session.status === 'ACTIVE'
-}
+    const session = await getSession();
+    return session.status === `ACTIVE`;
+};
 
-export {
-    signIn,
-    signOut,
-    getIdToken,
-    getUserName,
-    getSession,
-    isAuthenticated
-}
+export { signIn, signOut, getIdToken, getUserName, getSession, isAuthenticated };

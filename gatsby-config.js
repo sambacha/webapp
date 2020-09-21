@@ -27,7 +27,15 @@ module.exports = {
     pathPrefix: `/gtc`,
     plugins: [
         `gatsby-plugin-eslint`,
-        `gatsby-plugin-netlify-cms`,
+        resolve: `gatsby-plugin-netlify-cms`,
+        options: {
+          /**
+           * One convention is to place your Netlify CMS customization code in a
+           * `src/cms` directory.
+           */
+          enableIdentityWidget: true,
+          modulePath: `${__dirname}/src/cms/cms.js`,
+        },
         //     {
         //      resolve: 'gatsby-plugin-mailchimp',
         //       options: {
