@@ -29,7 +29,7 @@ import LeftNavResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/Res
 import LeftNavWrapper from 'gatsby-theme-carbon/src/components/LeftNav/LeftNavWrapper';
 import { sideNavDark } from 'gatsby-theme-carbon/src/components/LeftNav/LeftNav.module.scss';
 
-const LeftNav = props => {
+const LeftNav = (props) => {
     const { leftNavIsOpen } = useContext(NavContext);
 
     const defaultNavItems = useNavItems();

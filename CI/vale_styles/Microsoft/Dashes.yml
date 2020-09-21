@@ -5,4 +5,4 @@ ignorecase: true
 nonword: true
 level: error
 tokens:
-  - '\s[—–]\s'
+    - '\s[—–]\s'

@@ -36,7 +36,7 @@ const Switcher = ({ children }) => {
     );
 };
 
-export const SwitcherDivider = props => (
+export const SwitcherDivider = (props) => (
     <li className={divider}>
         <span {...props} />
     </li>

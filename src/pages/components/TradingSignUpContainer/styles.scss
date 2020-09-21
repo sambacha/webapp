@@ -1,102 +1,102 @@
 // SPDX-License-Identifier: Apache-2.0
 // SPDXVersion: SPDX-2.2
 // SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .trading-signup-modal {
-  .bx--modal-container {
-    height: auto;
-    margin-top: 60px;
-    .bx--tile-group {
-      .bx--tile {
-        min-height: unset;
-      }
+    .bx--modal-container {
+        height: auto;
+        margin-top: 60px;
+        .bx--tile-group {
+            .bx--tile {
+                min-height: unset;
+            }
 
-      .bx--tile-content {
-        .tile-display-flex {
-          display: flex;
+            .bx--tile-content {
+                .tile-display-flex {
+                    display: flex;
+                }
+
+                span {
+                    display: inline-block;
+                    height: 20px;
+                    line-height: 20px;
+                }
+
+                .radio-title-right-span {
+                    margin-left: auto;
+                }
+
+                .radio-title-left-icon {
+                    margin-right: 10px;
+                }
+            }
         }
 
-        span {
-          display: inline-block;
-          height: 20px;
-          line-height: 20px;
+        .bx--modal-header__label {
+            margin-left: $spacing-07;
+            text-align: center;
+            line-height: 20px;
         }
 
-        .radio-title-right-span {
-          margin-left: auto;
+        .bx--modal-close:focus {
+            border-color: transparent;
         }
 
-        .radio-title-left-icon {
-          margin-right: 10px;
+        .modal-label {
+            svg {
+                width: 20px;
+                height: 20px;
+            }
         }
-      }
-    }
 
-    .bx--modal-header__label {
-      margin-left: $spacing-07;
-      text-align: center;
-      line-height: 20px;
-    }
+        .bx--modal-content {
+            h2 {
+                text-align: center;
+                @include carbon--type-style('productive-heading-03');
+                margin-top: $spacing-08;
+                margin-bottom: $spacing-05;
+            }
 
-    .bx--modal-close:focus {
-      border-color: transparent;
-    }
+            .bx--text-input-wrapper {
+                margin-top: $spacing-05;
+                width: 100%;
+            }
 
-    .modal-label {
-      svg {
-        width: 20px;
-        height: 20px;
-      }
-    }
+            button.bx--btn--primary {
+                justify-content: center;
+                margin-top: $spacing-05;
+                width: 100%;
+                max-width: 100%;
+            }
 
-    .bx--modal-content {
-      h2 {
-        text-align: center;
-        @include carbon--type-style("productive-heading-03");
-        margin-top: $spacing-08;
-        margin-bottom: $spacing-05;
-      }
+            button.back-btn {
+                color: $inverse-01;
+                border: 2px solid transparent;
+                padding: 12px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
 
-      .bx--text-input-wrapper {
-        margin-top: $spacing-05;
-        width: 100%;
-      }
+            h5 {
+                margin-top: $spacing-03;
+                text-align: center;
+            }
 
-      button.bx--btn--primary {
-        justify-content: center;
-        margin-top: $spacing-05;
-        width: 100%;
-        max-width: 100%;
-      }
+            overflow: initial;
 
-      button.back-btn {
-        color: $inverse-01;
-        border: 2px solid transparent;
-        padding: 12px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        svg {
-          width: 20px;
-          height: 20px;
+            .bx--loading {
+                margin: auto;
+            }
         }
-      }
-
-      h5 {
-        margin-top: $spacing-03;
-        text-align: center;
-      }
-
-      overflow: initial;
-
-      .bx--loading {
-        margin: auto;
-      }
     }
-  }
 }

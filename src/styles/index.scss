@@ -1,6 +1,6 @@
 // This is where your application styles could go.
-@import "@carbon/themes/scss/themes";
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap");
+@import '@carbon/themes/scss/themes';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -10,43 +10,43 @@ $carbon--theme: $carbon--theme--g90;
 // @import "carbon-components/scss/globals/scss/styles.scss";
 
 @media (min-width: 66rem) {
-  .container--homepage .bx--grid {
-    padding-left: 2rem;
-  }
+    .container--homepage .bx--grid {
+        padding-left: 2rem;
+    }
 }
 
 .bx--grid {
-  max-width: unset;
+    max-width: unset;
 }
 
 .bx--side-nav {
-  background-color: var(--cds-ui-05, #161616);
+    background-color: var(--cds-ui-05, #161616);
 }
 
 .container:not(.container--homepage) .bx--grid {
-  max-width: unset;
+    max-width: unset;
 }
 
 .container--homepage {
-  margin-top: 0px;
+    margin-top: 0px;
 }
 
 .bx--btn {
-  padding-right: 12px;
+    padding-right: 12px;
 }
 
 .bx--copy-btn {
-  font-size: 0;
+    font-size: 0;
 }
 
 .bx--feature-card {
-  max-width: 1152px;
+    max-width: 1152px;
 }
 
 .bx--row {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 #gatsby-focus-wrapper {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
