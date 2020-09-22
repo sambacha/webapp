@@ -27,7 +27,7 @@ module.exports = {
     pathPrefix: `/gtc`,
     plugins: [
         `gatsby-plugin-eslint`,
-        resolve: `gatsby-plugin-netlify-cms`,
+        `gatsby-plugin-netlify-cms`,
         options: {
           /**
            * One convention is to place your Netlify CMS customization code in a

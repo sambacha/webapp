@@ -1,3 +1,4 @@
+/* eslint-disable no-return-await */
 import OktaSignIn from '@okta/okta-signin-widget';
 
 const config = {

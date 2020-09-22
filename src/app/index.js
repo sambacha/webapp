@@ -1,3 +1,6 @@
+/* eslint-disable react/state-in-constructor */
+/* eslint-disable react/button-has-type */
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
