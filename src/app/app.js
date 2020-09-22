@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/button-has-type */
 /* eslint-disable import/no-unresolved */
@@ -87,7 +88,8 @@ function PrivateRoute({ component: Component, ...rest }) {
                             state: { from: props.location },
                         }}
                     />
-                )}
+                )
+            }
         />
     );
 }
