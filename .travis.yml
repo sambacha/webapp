@@ -1,4 +1,5 @@
 ---
+os: linux
 
 dist: xenial
 
@@ -41,4 +42,4 @@ jobs:
       install:
         - npm install
       script:
-        - ./series-ci.sh
+        - ./seriesci.sh
