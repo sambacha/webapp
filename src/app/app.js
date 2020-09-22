@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-curly-newline */
 /* eslint-disable no-use-before-define */
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/button-has-type */
