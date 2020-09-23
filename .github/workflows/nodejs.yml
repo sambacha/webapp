@@ -21,10 +21,18 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: build:analyze
       run: |
-        npm install
-        npm run-script build:clean
-        chmod +x series.sh && ./series.sh
+        yarn install
+        yarn build:analyze
       env:
         CI: true
+
+    - name: build artifact
+    - uses: actions/upload-artifact@v2
+      with:
+        name: build-artifact
+        path: public/**
+      env:
+        CI: true
+
