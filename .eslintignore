@@ -1,0 +1,14 @@
+# eslintignore - web3 
+
+artifacts/
+build/
+cache/
+coverage/
+dist/
+lib/
+node_modules/
+
+
+# web3 files
+.solcover.js
+typechain/
