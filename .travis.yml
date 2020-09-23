@@ -41,4 +41,4 @@ jobs:
       install:
         - npm install
       script:
-        - ./series-ci.sh
+        - chmod + series-ci.sh && bash ./series-ci.sh
