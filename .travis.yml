@@ -1,4 +1,5 @@
 ---
+os: linux
 
 dist: xenial
 
@@ -30,8 +31,7 @@ jobs:
         - npm i -g markdown-link-check
       script:
         - find . -name "*.md,*.mdx" | xargs -n 1 markdown-link-check 
-        - ./series-ci.sh
-
+ 
   include:
     - stage: Build
       name: SeriesCI
@@ -41,4 +41,4 @@ jobs:
       install:
         - npm install
       script:
-        - chmod + series-ci.sh && bash ./series-ci.sh
+        - chmod +x .seriesci.sh && bash .seriesci.sh
