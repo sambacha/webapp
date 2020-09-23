@@ -1,3 +1,4 @@
+# circle-ci nodejs build 
 version: 2
 jobs:
   build:
@@ -21,4 +22,4 @@ jobs:
             - ./node_modules
       - run:
           name: Gatsby Build
-          command: yarn run build && ./series-ci-circleci.sh
+          command: yarn run build
