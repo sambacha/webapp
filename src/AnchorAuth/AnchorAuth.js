@@ -1,9 +1,9 @@
-import { AnchorLink, AnchorLinks, Column, Row } from "gatsby-theme-carbon";
+import { AnchorLink, AnchorLinks, Column, Row } from 'gatsby-theme-carbon';
 
-import { ArrowRight32 } from "@carbon/icons-react";
-import { Button } from "carbon-components-react";
-import React from "react";
-import { useAuth } from "../../util/hooks/use-auth.js";
+import { ArrowRight32 } from '@carbon/icons-react';
+import { Button } from 'carbon-components-react';
+import React from 'react';
+import { useAuth } from '../../util/hooks/use-auth.js';
 
 const AnchorAuth = () => {
   const { token, login } = useAuth();
@@ -14,10 +14,10 @@ const AnchorAuth = () => {
         <Row>
           <Column colLg={8}>
             <Button
-              kind="primary"
+              kind='primary'
               onClick={() => login()}
               renderIcon={ArrowRight32}
-              type="button"
+              type='button'
             >
               Log in with GitHub
             </Button>
@@ -26,8 +26,8 @@ const AnchorAuth = () => {
         <Row>
           <Column>
             <p>
-              Don't have a GitHub account?{" "}
-              <a href="https://github.com/join">Join GitHub</a>
+              Don't have a GitHub account?{' '}
+              <a href='https://github.com/join'>Join GitHub</a>
             </p>
           </Column>
         </Row>
