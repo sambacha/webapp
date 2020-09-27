@@ -32,9 +32,21 @@ const modalProps = [
         helperText: null,
         renderContent: () => (
             <div>
-                <TextInput labelText="Company Name" placeholder="Company Name" id="companyName" />
-                <TextInput labelText="Company Legal Identifier" placeholder="Company Legal Identifier" id="companyLegalID" />
-                <TextInput labelText="Your Email" placeholder="Email" id="email" />
+                <TextInput
+                    labelText="Company Name"
+                    placeholder="Company Name"
+                    id="companyName"
+                />
+                <TextInput
+                    labelText="Company Legal Identifier"
+                    placeholder="Company Legal Identifier"
+                    id="companyLegalID"
+                />
+                <TextInput
+                    labelText="Your Email"
+                    placeholder="Email"
+                    id="email"
+                />
             </div>
         ),
     },
@@ -46,18 +58,33 @@ const modalProps = [
         renderContent: () => (
             <div>
                 <TextInput labelText="AS2 ID" placeholder="AS2 ID" id="as2ID" />
-                <TextInput labelText="AS2 URL" placeholder="AS2 URL" id="as2Url" />
-                <TextInput labelText="0x PUBLIC ADDRESS" placeholder="0x PUBLIC ADDRESS" id="publicAddress" />
+                <TextInput
+                    labelText="AS2 URL"
+                    placeholder="AS2 URL"
+                    id="as2Url"
+                />
+                <TextInput
+                    labelText="0x PUBLIC ADDRESS"
+                    placeholder="0x PUBLIC ADDRESS"
+                    id="publicAddress"
+                />
             </div>
         ),
     },
     // Step 2
     {
         modalLabel: `Verify Information`,
-        contentTexts: [`Verifying as2 id...`, `Resolving as2 url...`, `Authenticated`],
+        contentTexts: [
+            `Verifying as2 id...`,
+            `Resolving as2 url...`,
+            `Authenticated`,
+        ],
         renderContent: () => (
             <div>
-                <Loading description="Active loading indicator" withOverlay={false} />
+                <Loading
+                    description="Active loading indicator"
+                    withOverlay={false}
+                />
             </div>
         ),
     },
@@ -138,9 +165,15 @@ class TradingSignUpContainer extends Component {
     render() {
         const { modalVisible, currentStep, currentContentStep } = this.state;
 
-        const { modalLabel, headerLabel, buttonText, renderContent, helperText, contentText, contentTexts } = modalProps[currentStep]
-            ? modalProps[currentStep]
-            : {};
+        const {
+            modalLabel,
+            headerLabel,
+            buttonText,
+            renderContent,
+            helperText,
+            contentText,
+            contentTexts,
+        } = modalProps[currentStep] ? modalProps[currentStep] : {};
 
         const tradingSignUpModal = (
             <Modal
@@ -156,12 +189,20 @@ class TradingSignUpContainer extends Component {
                 {contentTexts && <h5>{contentTexts[currentContentStep]}</h5>}
                 {renderContent && renderContent()}
                 {buttonText && (
-                    <Button size="field" className="submit-btn" onClick={() => this.goToNextStep()}>
+                    <Button
+                        size="field"
+                        className="submit-btn"
+                        onClick={() => this.goToNextStep()}
+                    >
                         {buttonText}
                     </Button>
                 )}
                 {helperText}
-                <Button kind="ghost" className="back-btn" onClick={() => this.goToPrevStep()}>
+                <Button
+                    kind="ghost"
+                    className="back-btn"
+                    onClick={() => this.goToPrevStep()}
+                >
                     <ChevronLeft20 />
                 </Button>
             </Modal>

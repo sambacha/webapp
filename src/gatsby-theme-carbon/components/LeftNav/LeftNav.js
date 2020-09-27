@@ -29,7 +29,7 @@ import LeftNavResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/Res
 import LeftNavWrapper from 'gatsby-theme-carbon/src/components/LeftNav/LeftNavWrapper';
 import { sideNavDark } from 'gatsby-theme-carbon/src/components/LeftNav/LeftNav.module.scss';
 
-const LeftNav = props => {
+const LeftNav = (props) => {
     const { leftNavIsOpen } = useContext(NavContext);
 
     const defaultNavItems = useNavItems();
@@ -48,13 +48,20 @@ const LeftNav = props => {
                 className={classnames({
                     [sideNavDark]: props.theme === `dark` || props.homepage,
                     'bx--side-nav--website': true,
-                    'bx--side-nav--website--dark': props.theme === `dark` || props.homepage,
-                    'bx--side-nav--website--light': props.theme !== `dark` && !props.homepage,
+                    'bx--side-nav--website--dark':
+                        props.theme === `dark` || props.homepage,
+                    'bx--side-nav--website--light':
+                        props.theme !== `dark` && !props.homepage,
                 })}
             >
                 <SideNavItems>
                     {navItems.map((item, i) => (
-                        <LeftNavItem items={item.pages} category={item.title} isSpace={item.isSpace} key={i} />
+                        <LeftNavItem
+                            items={item.pages}
+                            category={item.title}
+                            isSpace={item.isSpace}
+                            key={i}
+                        />
                     ))}
                     {props.noResourceLinks ? null : <LeftNavResourceLinks />}
                 </SideNavItems>

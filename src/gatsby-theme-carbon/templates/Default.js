@@ -37,7 +37,11 @@ const Default = ({ pageContext, children, location, Title }) => {
             pageKeywords={keywords}
             titleType={titleType}
         >
-            <PageHeader title={Title ? <Title /> : title} label="label" tabs={tabs} />
+            <PageHeader
+                title={Title ? <Title /> : title}
+                label="label"
+                tabs={tabs}
+            />
             <Main className={mainContent}>{children}</Main>
         </Layout>
     );

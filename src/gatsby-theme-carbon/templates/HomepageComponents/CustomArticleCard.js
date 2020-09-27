@@ -17,9 +17,12 @@
  */
 import React from 'react';
 
-import { customArticleCardContainer, articleCardImage } from './CustomArticleCard.module.scss';
+import {
+    customArticleCardContainer,
+    articleCardImage,
+} from './CustomArticleCard.module.scss';
 
-export const CustomArticleCard = props => {
+export const CustomArticleCard = (props) => {
     const { imgSrc, title, subTitle } = props;
     return (
         <div className={customArticleCardContainer}>

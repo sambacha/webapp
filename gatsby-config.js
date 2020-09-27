@@ -26,8 +26,6 @@ module.exports = {
     },
     pathPrefix: `/gtc`,
     plugins: [
-        `gatsby-plugin-eslint`,
-
         {
             resolve: `gatsby-plugin-netlify-cms`,
             options: {
@@ -218,3 +216,4 @@ module.exports = {
         },
     ],
 };
+

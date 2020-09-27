@@ -22,8 +22,14 @@ import { Grid, Column, Row } from 'gatsby-theme-carbon';
 import { grid, row, firstColumn, secondColumn } from './Callout.module.scss';
 
 const StyledGrid = styled(Grid)`
-    background-color: ${props => props.theme.colors[props.backgroundColor] || props.backgroundColor || props.theme.colors.interactive02};
-    color: ${props => props.theme.colors[props.color] || props.color || props.theme.colors.inverse01}};
+    background-color: ${(props) =>
+        props.theme.colors[props.backgroundColor] ||
+        props.backgroundColor ||
+        props.theme.colors.interactive02};
+    color: ${(props) =>
+        props.theme.colors[props.color] ||
+        props.color ||
+        props.theme.colors.inverse01}};
     width: 100%;
     max-width: 100%;
 `;

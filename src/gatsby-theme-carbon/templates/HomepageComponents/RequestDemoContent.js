@@ -18,7 +18,11 @@
 import React from 'react';
 import { Row, Column } from 'gatsby-theme-carbon';
 
-import { requestDemoContent, requestDemoRow, requestDemoActions } from './RequestDemoContent.module.scss';
+import {
+    requestDemoContent,
+    requestDemoRow,
+    requestDemoActions,
+} from './RequestDemoContent.module.scss';
 
 export const RequestDemoContent = ({ title, subTitle, children }) => (
     <div className={requestDemoContent}>
@@ -27,7 +31,12 @@ export const RequestDemoContent = ({ title, subTitle, children }) => (
                 <h1>{title}</h1>
                 <h2>{subTitle}</h2>
             </Column>
-            <Column className={requestDemoActions} colSm={12} colMd={6} colLg={6}>
+            <Column
+                className={requestDemoActions}
+                colSm={12}
+                colMd={6}
+                colLg={6}
+            >
                 {children}
             </Column>
         </Row>

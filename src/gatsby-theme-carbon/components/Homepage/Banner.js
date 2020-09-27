@@ -28,7 +28,13 @@ const HomepageBanner = ({ image, position, renderText }) => (
             </Column>
             <Column className={column} colMd={1} colLg={1} />
             <Column className={column} colMd={6} colLg={6}>
-                {image && <img alt="img" src={image} href="https://freight.page.link/request-information" />}
+                {image && (
+                    <img
+                        alt="img"
+                        src={image}
+                        href="https://freight.page.link/request-information"
+                    />
+                )}
             </Column>
         </Row>
     </div>

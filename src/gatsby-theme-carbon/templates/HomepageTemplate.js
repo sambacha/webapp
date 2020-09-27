@@ -59,7 +59,9 @@ Homepage.defaultProps = {
         />
     ),
     FirstCallout: <HomepageCallout />,
-    SecondCallout: <HomepageCallout color="inverse01" backgroundColor="#061f80" />,
+    SecondCallout: (
+        <HomepageCallout color="inverse01" backgroundColor="#061f80" />
+    ),
 };
 
 export default Homepage;

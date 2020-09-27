@@ -76,9 +76,17 @@ const ResourcesFooter = (
 const CustomFooter = ({ homepage }) => {
     const { isAuthenticated, login, logout } = useAuth();
     return (
-        <div className={cx(footerContent, { [footerContentDefault]: !homepage })}>
+        <div
+            className={cx(footerContent, { [footerContentDefault]: !homepage })}
+        >
             <Row className={footerRow}>
-                <Column colSm={12} colMd={3} colLg={3} colXl={3} className={footerLinkCol}>
+                <Column
+                    colSm={12}
+                    colMd={3}
+                    colLg={3}
+                    colXl={3}
+                    className={footerLinkCol}
+                >
                     <h1>Freight Trust & Clearing</h1>
                 </Column>
 
@@ -91,14 +99,26 @@ const CustomFooter = ({ homepage }) => {
                     </div>
                 </Column>
 
-                <Column colSm={12} colMd={0} colLg={0} colXl={0} className={footerLinkColMobile}>
+                <Column
+                    colSm={12}
+                    colMd={0}
+                    colLg={0}
+                    colXl={0}
+                    className={footerLinkColMobile}
+                >
                     <div className={footerLinkCol}>
                         {SolutionsFooter}
                         {ResourcesFooter}
                     </div>
                 </Column>
 
-                <Column colSm={12} colMd={2} colLg={2} colXl={1} className={footerButtonCol}>
+                <Column
+                    colSm={12}
+                    colMd={2}
+                    colLg={2}
+                    colXl={1}
+                    className={footerButtonCol}
+                >
                     {/* <div>
             <Button>Register</Button>
           </div> */}
@@ -128,14 +148,18 @@ const CustomFooter = ({ homepage }) => {
 
                 <Column colMd={2} colLg={2}>
                     <a href="https://twitter.com/freighttrustnet">Twitter</a>
-                    <a href="https://www.instagram.com/freight_Trust/">Instagram</a>
+                    <a href="https://www.instagram.com/freight_Trust/">
+                        Instagram
+                    </a>
                     <a href="https://medium.com/freighttrust">Medium</a>
                     <a href="https://t.me/freighttrust">Telegram</a>
                 </Column>
 
                 <Column colMd={2} colLg={2}>
                     <a href="https://github.com/freight-trust">GitHub</a>
-                    <a href="https://github.com/freight-trust/releases">Releases</a>
+                    <a href="https://github.com/freight-trust/releases">
+                        Releases
+                    </a>
                     <a href="https://hub.docker.com/r/freightnetwork">Docker</a>
                 </Column>
             </Row>
@@ -144,7 +168,9 @@ const CustomFooter = ({ homepage }) => {
                 <Column colMd={6} colLg={6}>
                     <div className={footerFollowSection}>
                         <span>
-                            <a href="/terms-of-service">Terms of Service{` `}</a>
+                            <a href="/terms-of-service">
+                                Terms of Service{` `}
+                            </a>
                         </span>
                         <span>
                             <a href="/privacy-policy">Privacy Policy{` `}</a>

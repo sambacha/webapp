@@ -18,19 +18,33 @@
 import React from 'react';
 import { Row, Column } from 'gatsby-theme-carbon';
 import { Button } from 'carbon-components-react';
-import { textContainer, textImageContainer, imageContainer } from './TextImage.module.scss';
+import {
+    textContainer,
+    textImageContainer,
+    imageContainer,
+} from './TextImage.module.scss';
 
 const TextContainer = ({ title, content, buttonLabel }) => (
     <div className={textContainer}>
         <h1>{title}</h1>
         <p>{content}</p>
-        <Button href="https://freight.page.link/request-information" kind="secondary">
+        <Button
+            href="https://freight.page.link/request-information"
+            kind="secondary"
+        >
             {buttonLabel}
         </Button>
     </div>
 );
 
-export const TextImage = ({ children, title, content, buttonLabel, leftText, rightText }) => (
+export const TextImage = ({
+    children,
+    title,
+    content,
+    buttonLabel,
+    leftText,
+    rightText,
+}) => (
     <div className={textImageContainer}>
         {rightText ? (
             <Row>
@@ -57,7 +71,10 @@ export const TextImage = ({ children, title, content, buttonLabel, leftText, rig
                     />
                 </Column>
                 <Column colSm={12} colMd={6} colLg={6}>
-                    <div className={imageContainer} href="https://freight.page.link/request-information" />
+                    <div
+                        className={imageContainer}
+                        href="https://freight.page.link/request-information"
+                    />
                 </Column>
             </Row>
         )}

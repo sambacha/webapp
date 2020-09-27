@@ -53,4 +53,11 @@ const isAuthenticated = async () => {
     return session.status === `ACTIVE`;
 };
 
-export { signIn, signOut, getIdToken, getUserName, getSession, isAuthenticated };
+export {
+    signIn,
+    signOut,
+    getIdToken,
+    getUserName,
+    getSession,
+    isAuthenticated,
+};
