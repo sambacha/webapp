@@ -1,7 +1,7 @@
 {
 	"name": "@freight-trust/webapp",
 	"private": true,
-	"version": "1.8.2",
+	"version": "1.9.0",
 	"license": "Apache-2.0",
 	"email": "corporate@freighttrust.com",
 	"url": "https://freighttrust.com",
