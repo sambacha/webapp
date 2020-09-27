@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* eslint-disable no-used-vars */
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -36,13 +38,18 @@ const Switcher = ({ children }) => {
     );
 };
 
-export const SwitcherDivider = props => (
+export const SwitcherDivider = (props) => (
     <li className={divider}>
         <span {...props} />
     </li>
 );
 
-export const SwitcherLink = ({ disabled, children, href: hrefProp, ...rest }) => {
+export const SwitcherLink = ({
+    disabled,
+    children,
+    href: hrefProp,
+    ...rest
+}) => {
     const href = disabled || !hrefProp ? undefined : hrefProp;
     const className = disabled ? linkDisabled : link;
     const { switcherIsOpen } = useContext(NavContext);

@@ -1,5 +1,11 @@
 TODO
 
+# Deps
+
+- @reach/router 
+   - this has only one use in the entire site, do we need it?
+
+
 ## New
 - Investigate:
     'footerDiectoryRow' Misspelled ?

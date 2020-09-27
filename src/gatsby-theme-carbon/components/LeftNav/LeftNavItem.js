@@ -19,14 +19,18 @@ import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import { Location } from '@reach/router';
 import cx from 'classnames';
-import { SideNavLink, SideNavMenu, SideNavMenuItem } from 'carbon-components-react';
+import {
+    SideNavLink,
+    SideNavMenu,
+    SideNavMenuItem,
+} from 'carbon-components-react';
 
 import styles from 'gatsby-theme-carbon/src/components/LeftNav/LeftNav.module.scss';
 
 import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
 import usePathprefix from 'gatsby-theme-carbon/src/util/hooks/usePathprefix';
 
-const LeftNavItem = props => {
+const LeftNavItem = (props) => {
     const { items, category, hasDivider, isSpace } = props;
     const { toggleNavState } = useContext(NavContext);
     const closeLeftNav = () => {
@@ -40,9 +44,13 @@ const LeftNavItem = props => {
                 if (isSpace) {
                     return <hr className={styles.divider} />;
                 }
-                const pathname = pathPrefix ? location.pathname.replace(pathPrefix, ``) : location.pathname;
+                const pathname = pathPrefix
+                    ? location.pathname.replace(pathPrefix, ``)
+                    : location.pathname;
 
-                const isActive = items.some(item => item.path.split(`/`)[1] === pathname.split(`/`)[1]);
+                const isActive = items.some(
+                    (item) => item.path.split(`/`)[1] === pathname.split(`/`)[1]
+                );
 
                 if (items.length === 1) {
                     return (
@@ -71,7 +79,11 @@ const LeftNavItem = props => {
                             defaultExpanded={isActive}
                             title={category}
                         >
-                            <SubNavItems onClick={closeLeftNav} items={items} pathname={pathname} />
+                            <SubNavItems
+                                onClick={closeLeftNav}
+                                items={items}
+                                pathname={pathname}
+                            />
                         </SideNavMenu>
                         {hasDivider && <hr className={styles.divider} />}
                     </>
@@ -84,7 +96,8 @@ const LeftNavItem = props => {
 const SubNavItems = ({ items, pathname, onClick }) =>
     items.map((item, i) => {
         const hasActiveTab =
-            `${item.path.split(`/`)[1]}/${item.path.split(`/`)[2]}` === `${pathname.split(`/`)[1]}/${pathname.split(`/`)[2]}`;
+            `${item.path.split(`/`)[1]}/${item.path.split(`/`)[2]}` ===
+            `${pathname.split(`/`)[1]}/${pathname.split(`/`)[2]}`;
         return (
             <SideNavMenuItem
                 to={`${item.path}`}

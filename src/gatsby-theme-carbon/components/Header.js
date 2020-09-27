@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /**
  *   SPDX-License-Identifier: Apache-2.0
  *   SPDXVersion: SPDX-2.2
@@ -17,7 +18,13 @@
  */
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
-import { Header as ShellHeader, HeaderMenuButton, SkipToContent, HeaderGlobalBar, HeaderGlobalAction } from 'carbon-components-react';
+import {
+    Header as ShellHeader,
+    HeaderMenuButton,
+    SkipToContent,
+    HeaderGlobalBar,
+    HeaderGlobalAction,
+} from 'carbon-components-react';
 import { AppSwitcher20, Close20 } from '@carbon/icons-react';
 import cx from 'classnames';
 
@@ -34,15 +41,29 @@ import {
     switcherButton,
 } from 'gatsby-theme-carbon/src/components/Header/Header.module.scss';
 
-import { navLists, navLeftBorder, navLink, globalBar } from './Header.module.scss';
+import {
+    navLists,
+    navLeftBorder,
+    navLink,
+    globalBar,
+} from './Header.module.scss';
 // href="https://freight.page.link/request-information"
 const Header = ({ children }) => {
-    const { leftNavIsOpen, toggleNavState, switcherIsOpen } = useContext(NavContext);
+    const { leftNavIsOpen, toggleNavState, switcherIsOpen } = useContext(
+        NavContext
+    );
     const { navigationStyle } = useMetadata();
 
     return (
-        <ShellHeader href="https://freight.page.link/request-information" aria-label="Header" className={header}>
-            <SkipToContent href="https://freight.page.link/request-information" className={skipToContent} />
+        <ShellHeader
+            href="https://freight.page.link/request-information"
+            aria-label="Header"
+            className={header}
+        >
+            <SkipToContent
+                href="https://freight.page.link/request-information"
+                className={skipToContent}
+            />
 
             <HeaderMenuButton
                 className={cx(`bx--header__action--menu`, headerButton)}

@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-param-reassign */
 /* eslint-disable import/no-unresolved */
@@ -43,7 +44,11 @@ import {
     OverflowMenu,
     OverflowMenuItem,
 } from 'carbon-components-react';
-import { Delete16 as Delete, Save16 as Save, Download16 as Download } from '@carbon/icons-react';
+import {
+    Delete16 as Delete,
+    Save16 as Save,
+    Download16 as Download,
+} from '@carbon/icons-react';
 
 import './style.scss';
 
@@ -135,43 +140,90 @@ class Dashboard extends Component {
                         return (
                             <TableContainer title={null}>
                                 <TableToolbar>
-                                    <TableBatchActions {...getBatchActionProps()}>
+                                    <TableBatchActions
+                                        {...getBatchActionProps()}
+                                    >
                                         <TableBatchAction
-                                            tabIndex={getBatchActionProps().shouldShowBatchActions ? 0 : -1}
+                                            tabIndex={
+                                                getBatchActionProps()
+                                                    .shouldShowBatchActions
+                                                    ? 0
+                                                    : -1
+                                            }
                                             renderIcon={Delete}
-                                            onClick={() => console.log(`clicked`)}
+                                            onClick={() =>
+                                                console.log(`clicked`)}
                                         >
                                             Delete
                                         </TableBatchAction>
                                         <TableBatchAction
-                                            tabIndex={getBatchActionProps().shouldShowBatchActions ? 0 : -1}
+                                            tabIndex={
+                                                getBatchActionProps()
+                                                    .shouldShowBatchActions
+                                                    ? 0
+                                                    : -1
+                                            }
                                             renderIcon={Save}
-                                            onClick={() => console.log(`clicked`)}
+                                            onClick={() =>
+                                                console.log(`clicked`)}
                                         >
                                             Save
                                         </TableBatchAction>
                                         <TableBatchAction
-                                            tabIndex={getBatchActionProps().shouldShowBatchActions ? 0 : -1}
+                                            tabIndex={
+                                                getBatchActionProps()
+                                                    .shouldShowBatchActions
+                                                    ? 0
+                                                    : -1
+                                            }
                                             renderIcon={Download}
-                                            onClick={() => console.log(`clicked`)}
+                                            onClick={() =>
+                                                console.log(`clicked`)}
                                         >
                                             Download
                                         </TableBatchAction>
                                     </TableBatchActions>
                                     <TableToolbarContent>
                                         <TableToolbarSearch
-                                            tabIndex={getBatchActionProps().shouldShowBatchActions ? -1 : 0}
+                                            tabIndex={
+                                                getBatchActionProps()
+                                                    .shouldShowBatchActions
+                                                    ? -1
+                                                    : 0
+                                            }
                                             onChange={onInputChange}
                                         />
-                                        <TableToolbarMenu tabIndex={getBatchActionProps().shouldShowBatchActions ? -1 : 0}>
-                                            <TableToolbarAction primaryFocus onClick={() => console.log(`Alert 1`)}>
+                                        <TableToolbarMenu
+                                            tabIndex={
+                                                getBatchActionProps()
+                                                    .shouldShowBatchActions
+                                                    ? -1
+                                                    : 0
+                                            }
+                                        >
+                                            <TableToolbarAction
+                                                primaryFocus
+                                                onClick={() =>
+                                                    console.log(`Alert 1`)}
+                                            >
                                                 Show Details
                                             </TableToolbarAction>
-                                            <TableToolbarAction onClick={() => console.log(`Alert 2`)}>Clear all</TableToolbarAction>
+                                            <TableToolbarAction
+                                                onClick={() =>
+                                                    console.log(`Alert 2`)}
+                                            >
+                                                Clear all
+                                            </TableToolbarAction>
                                         </TableToolbarMenu>
                                         <Button
-                                            tabIndex={getBatchActionProps().shouldShowBatchActions ? -1 : 0}
-                                            onClick={() => console.log(`clicked`)}
+                                            tabIndex={
+                                                getBatchActionProps()
+                                                    .shouldShowBatchActions
+                                                    ? -1
+                                                    : 0
+                                            }
+                                            onClick={() =>
+                                                console.log(`clicked`)}
                                             size="small"
                                             kind="primary"
                                         >
@@ -182,35 +234,68 @@ class Dashboard extends Component {
                                 <Table useZebraStyles>
                                     <TableHead>
                                         <TableRow>
-                                            <TableSelectAll {...getSelectionProps()} />
-                                            {headers.map(header => (
-                                                <TableHeader {...getHeaderProps({ header })} id={header.key}>
+                                            <TableSelectAll
+                                                {...getSelectionProps()}
+                                            />
+                                            {headers.map((header) => (
+                                                <TableHeader
+                                                    {...getHeaderProps({
+                                                        header,
+                                                    })}
+                                                    id={header.key}
+                                                >
                                                     {header.header}
                                                 </TableHeader>
                                             ))}
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
-                                        {rows.map(row => (
+                                        {rows.map((row) => (
                                             <TableRow {...getRowProps({ row })}>
-                                                <TableSelectRow {...getSelectionProps({ row })} />
-                                                {row.cells.map(cell => {
+                                                <TableSelectRow
+                                                    {...getSelectionProps({
+                                                        row,
+                                                    })}
+                                                />
+                                                {row.cells.map((cell) => {
                                                     try {
-                                                        if (cell.info.header === `status`) {
+                                                        if (
+                                                            cell.info.header ===
+                                                            `status`
+                                                        ) {
                                                             return (
-                                                                <TableCell key={cell.id}>
-                                                                    <Tag type="blue" title="Clear Filter">
-                                                                        {cell.value}
+                                                                <TableCell
+                                                                    key={
+                                                                        cell.id
+                                                                    }
+                                                                >
+                                                                    <Tag
+                                                                        type="blue"
+                                                                        title="Clear Filter"
+                                                                    >
+                                                                        {
+                                                                            cell.value
+                                                                        }
                                                                     </Tag>
                                                                 </TableCell>
                                                             );
                                                         }
 
-                                                        if (cell.info.header === `config`) {
+                                                        if (
+                                                            cell.info.header ===
+                                                            `config`
+                                                        ) {
                                                             return (
-                                                                <TableCell key={cell.id}>
+                                                                <TableCell
+                                                                    key={
+                                                                        cell.id
+                                                                    }
+                                                                >
                                                                     <OverflowMenu>
-                                                                        <OverflowMenuItem itemText="Show details" hasDivider />
+                                                                        <OverflowMenuItem
+                                                                            itemText="Show details"
+                                                                            hasDivider
+                                                                        />
                                                                     </OverflowMenu>
                                                                 </TableCell>
                                                             );
@@ -219,7 +304,13 @@ class Dashboard extends Component {
                                                         console.log(e);
                                                     }
 
-                                                    return <TableCell key={cell.id}>{cell.value}</TableCell>;
+                                                    return (
+                                                        <TableCell
+                                                            key={cell.id}
+                                                        >
+                                                            {cell.value}
+                                                        </TableCell>
+                                                    );
                                                 })}
                                             </TableRow>
                                         ))}

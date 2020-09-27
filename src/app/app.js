@@ -5,7 +5,13 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
 import netlifyIdentity from 'netlify-identity-widget';
-import { BrowserRouter as Router, Route, Link, Redirect, withRouter } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Redirect,
+    withRouter,
+} from 'react-router-dom';
 import Protected from './Protected';
 import Public from './Public';
 
@@ -43,7 +49,7 @@ const netlifyAuth = {
     authenticate(callback) {
         this.isAuthenticated = true;
         netlifyIdentity.open();
-        netlifyIdentity.on(`login`, user => {
+        netlifyIdentity.on(`login`, (user) => {
             this.user = user;
             callback(user);
         });
@@ -79,7 +85,7 @@ function PrivateRoute({ component: Component, ...rest }) {
     return (
         <Route
             {...rest}
-            render={props =>
+            render={(props) =>
                 netlifyAuth.isAuthenticated ? (
                     <Component {...props} />
                 ) : (
@@ -105,7 +111,9 @@ class Login extends React.Component {
     };
 
     render() {
-        const { from } = this.props.location.state || { from: { pathname: `/` } };
+        const { from } = this.props.location.state || {
+            from: { pathname: `/` },
+        };
         const { redirectToReferrer } = this.state;
 
         if (redirectToReferrer) return <Redirect to={from} />;

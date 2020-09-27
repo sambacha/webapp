@@ -39,7 +39,12 @@ const Layout = ({
 
     return (
         <>
-            <Meta titleType={titleType} pageTitle={pageTitle} pageDescription={pageDescription} pageKeywords={pageKeywords} />
+            <Meta
+                titleType={titleType}
+                pageTitle={pageTitle}
+                pageDescription={pageDescription}
+                pageKeywords={pageKeywords}
+            />
             <Header />
             <Switcher />
 
