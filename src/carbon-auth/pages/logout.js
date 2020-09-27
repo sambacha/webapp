@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React, { useEffect } from 'react';
 
 import style from './pages.module.scss';

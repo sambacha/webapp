@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React, { useEffect, useState } from 'react';
 
 import { InlineNotification } from 'gatsby-theme-carbon';
@@ -13,8 +14,8 @@ const EmailsNotification = () => {
     fetch(`/api/github/user-emails?access_token=${token}`, {
       method: 'GET',
     })
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(data => {
         setEmails(data || []);
       });
   }, [token]);
@@ -22,8 +23,8 @@ const EmailsNotification = () => {
   if (!token || emails.length === 0) return null;
 
   const emailArray = emails
-    .filter((email) => email.verified)
-    .map((email) => email.email);
+    .filter(email => email.verified)
+    .map(email => email.email);
 
   return (
     <InlineNotification>

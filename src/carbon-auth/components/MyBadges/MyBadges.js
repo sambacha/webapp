@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import { ArticleCard, Column, Row } from 'gatsby-theme-carbon';
 import { H2, P } from 'gatsby-theme-carbon/src/components/markdown';
 import React, { useEffect, useState } from 'react';
@@ -16,8 +17,8 @@ const MyBadges = () => {
     fetch(`/api/github/badges?access_token=${token}`, {
       method: 'GET',
     })
-      .then((response) => response.json())
-      .then((emails) => {
+      .then(response => response.json())
+      .then(emails => {
         const flatBadges = emails.reduce((arr, email) => {
           arr.push(email.data);
           return arr;

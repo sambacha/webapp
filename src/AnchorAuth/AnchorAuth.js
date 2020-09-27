@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+
 import { AnchorLink, AnchorLinks, Column, Row } from 'gatsby-theme-carbon';
 
 import { ArrowRight32 } from '@carbon/icons-react';

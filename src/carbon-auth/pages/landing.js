@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React, { useEffect } from 'react';
 
 import { ArrowRight32 } from '@carbon/icons-react';
@@ -5,7 +6,7 @@ import { Button } from 'carbon-components-react';
 import { Helmet } from 'react-helmet';
 import Layout from 'gatsby-theme-carbon/src/components/Layout';
 import { navigate } from 'gatsby';
-import pictogram from '../images/carbon-pictogram-gradient.png';
+import pictogram from '../images/pictogram.png';
 import style from './landing.module.scss';
 import { useAuth } from '../util/hooks/use-auth.js';
 
@@ -14,7 +15,7 @@ const Landing = () => {
 
   useEffect(() => {
     if (token) {
-      navigate('/badges', {
+      navigate('/landing', {
         replace: true,
       });
     }
@@ -22,25 +23,24 @@ const Landing = () => {
 
   return (
     <Layout homepage>
-      <Helmet title='Carbon Badges' />
+      <Helmet title='Freight Trust Services' />
       <div className='bx--grid bx--grid--full-width'>
         <div className='bx--row'>
           <div className='bx--col-lg-8 bx--col-md-7'>
             <h1 className={style.heading}>
-              The Carbon Design System offers IBM Digital Badges based on
-              completion of the{' '}
-              <a href='https://www.carbondesignsystem.com/tutorial/angular/overview'>
-                Angular
+              AS2 and EDI Services complete overivew{' '}
+              <a href='https://www.freighttrust.com/services/edi/overview'>
+                EDI
               </a>
               ,{' '}
-              <a href='https://www.carbondesignsystem.com/tutorial/react/overview'>
-                React
+              <a href='https://www.freighttrust.com/services/as2/overview'>
+                AS2
               </a>
               , and{' '}
-              <a href='https://www.carbondesignsystem.com/tutorial/vue/overview'>
-                Vue
+              <a href='https://www.freighttrust.com/services/customs/overview'>
+                Customs
               </a>{' '}
-              tutorials. Log in with GitHub to view and apply for Carbon badges.
+              tutorials. Log in with GitHub to view and apply.
             </h1>
           </div>
         </div>
