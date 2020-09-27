@@ -6,29 +6,29 @@ import {
   NotificationActionButton,
   SkeletonText,
   TextArea,
-} from 'carbon-components-react';
-import { Column, Row } from 'gatsby-theme-carbon';
-import { Controller, useForm } from 'react-hook-form';
-import React, { useEffect, useState } from 'react';
+} from "carbon-components-react";
+import { Column, Row } from "gatsby-theme-carbon";
+import { Controller, useForm } from "react-hook-form";
+import React, { useEffect, useState } from "react";
 
-import { H2 } from 'gatsby-theme-carbon/src/components/markdown';
-import badgeConfig from '../../../config/badges';
-import style from './BadgeForm.module.scss';
-import { useAuth } from '../../util/hooks/use-auth.js';
+import { H2 } from "gatsby-theme-carbon/src/components/markdown";
+import badgeConfig from "../../../config/badges";
+import style from "./BadgeForm.module.scss";
+import { useAuth } from "../../util/hooks/use-auth.js";
 
 const cleanPRs = (prs) =>
   prs.map((pr) => {
     const { number, state, title, html_url } = pr;
 
     const approved = pr.labels.reduce((approved, label) => {
-      if (label.name === 'status: approved') {
+      if (label.name === "status: approved") {
         approved = true;
       }
       return approved;
     }, false);
 
     const correction = pr.labels.reduce((correction, label) => {
-      if (label.name === 'status: needs correction') {
+      if (label.name === "status: needs correction") {
         correction = true;
       }
       return correction;
@@ -39,29 +39,25 @@ const cleanPRs = (prs) =>
     return {
       number,
       state,
-      status: approved
-        ? 'approved'
-        : correction
-        ? 'correction'
-        : 'not-reviewed',
-      step: step ? step[0] : '',
+      status: approved ? "approved" : correction ? "correction" : "not-reviewed",
+      step: step ? step[0] : "",
       url: html_url,
     };
   });
 
 const getAcclaimError = (data) => {
-  if (!data || !data.errors) return '';
+  if (!data || !data.errors) return "";
 
   const [error] = data.errors;
 
-  if (error.attribute === 'recipient_email') {
-    return 'Recipient email already has this badge.';
+  if (error.attribute === "recipient_email") {
+    return "Recipient email already has this badge.";
   }
-  if (error.attribute === 'user_id') {
-    return 'User already has this badge.';
+  if (error.attribute === "user_id") {
+    return "User already has this badge.";
   }
 
-  return 'An error occurred.';
+  return "An error occurred.";
 };
 
 const BadgeForm = () => {
@@ -69,7 +65,7 @@ const BadgeForm = () => {
   const [steps, setSteps] = useState([]);
   const [stepsLoading, setStepsLoading] = useState(false);
   const [submitLoading, setSubmitLoading] = useState(false);
-  const [acceptUrl, setAcceptUrl] = useState('');
+  const [acceptUrl, setAcceptUrl] = useState("");
   const { token } = useAuth();
   const {
     handleSubmit,
@@ -82,9 +78,9 @@ const BadgeForm = () => {
     register,
     reset,
   } = useForm({
-    mode: 'onChange',
+    mode: "onChange",
   });
-  const selectedTutorial = watch('badge', {});
+  const selectedTutorial = watch("badge", {});
 
   useEffect(() => {
     if (!token) return;
@@ -122,24 +118,24 @@ const BadgeForm = () => {
           uniqueItems.push(foundItem);
         } else {
           uniqueItems.push({
-            status: 'not-found',
+            status: "not-found",
             step: `Step ${i}`,
           });
         }
       }
 
       const hasError = uniqueItems.reduce(
-        (error, item) => (error ? true : item.status !== 'approved'),
+        (error, item) => (error ? true : item.status !== "approved"),
         false
       );
 
       if (hasError) {
-        setError('badge', {
-          type: 'manual',
-          message: 'A pull request for each step 1 - 5 must be approved.',
+        setError("badge", {
+          type: "manual",
+          message: "A pull request for each step 1 - 5 must be approved.",
         });
       } else {
-        clearErrors('badge');
+        clearErrors("badge");
       }
 
       setSteps(uniqueItems);
@@ -148,9 +144,7 @@ const BadgeForm = () => {
     setSteps([]);
     setStepsLoading(true);
 
-    fetch(
-      `/api/github/pull-requests?access_token=${token}&tutorial=${selectedTutorial.id}`
-    )
+    fetch(`/api/github/pull-requests?access_token=${token}&tutorial=${selectedTutorial.id}`)
       .then((response) => response.json())
       .then((data) => {
         preSetSteps(data.items || []);
@@ -160,12 +154,12 @@ const BadgeForm = () => {
 
   const onSubmit = (values) => {
     setSubmitLoading(true);
-    setAcceptUrl('');
+    setAcceptUrl("");
 
     fetch(`/api/github/badge-issue?access_token=${token}`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-type': 'application/json',
+        "Content-type": "application/json",
       },
       body: JSON.stringify(values),
     })
@@ -177,19 +171,19 @@ const BadgeForm = () => {
         const acclaimError = getAcclaimError(data.data);
 
         if (data.error) {
-          setError('email', {
-            type: 'submit',
+          setError("email", {
+            type: "submit",
             message: data.error,
           });
         } else if (acclaimError) {
-          setError('email', {
-            type: 'submit',
+          setError("email", {
+            type: "submit",
             message: acclaimError,
           });
         } else if (data.data && data.data.accept_badge_url) {
           reset({
-            badge: '',
-            email: '',
+            badge: "",
+            email: "",
           });
           setSteps([]);
           setAcceptUrl(data.data.accept_badge_url);
@@ -223,10 +217,7 @@ const BadgeForm = () => {
                       invalid={!!errors.badge && !stepsLoading}
                       selectedItem={value}
                       onChange={(item) => onChange(item.selectedItem)}
-                      invalidText={
-                        (errors.badge && errors.badge.message) ||
-                        'A value is required.'
-                      }
+                      invalidText={(errors.badge && errors.badge.message) || "A value is required."}
                       ariaLabel='Badge dropdown'
                       titleText='Carbon tutorial'
                       label='Choose a badge'
@@ -234,7 +225,7 @@ const BadgeForm = () => {
                         id: name,
                         text: badgeConfig.badges[name].label,
                       }))}
-                      itemToString={(item) => (item ? item.text : '')}
+                      itemToString={(item) => (item ? item.text : "")}
                       light
                     />
                   )}
@@ -254,32 +245,30 @@ const BadgeForm = () => {
                     key={i}
                     hideCloseButton
                     kind={
-                      step.status === 'approved'
-                        ? 'success'
-                        : step.status === 'correction'
-                        ? 'error'
-                        : 'warning'
+                      step.status === "approved"
+                        ? "success"
+                        : step.status === "correction"
+                        ? "error"
+                        : "warning"
                     }
                     lowContrast
-                    title={
-                      step.step.charAt(0).toUpperCase() + step.step.slice(1)
-                    }
+                    title={step.step.charAt(0).toUpperCase() + step.step.slice(1)}
                     subtitle={
                       <span>
                         {step.number && (
                           <>
                             <a href={step.url} rel='noreferrer' target='_blank'>
                               PR #{step.number}
-                            </a>{' '}
+                            </a>{" "}
                           </>
                         )}
-                        {step.status === 'approved'
-                          ? 'approved.'
-                          : step.status === 'correction'
-                          ? 'needs correction.'
-                          : step.status === 'not-reviewed'
-                          ? 'not reviewed.'
-                          : 'not found.'}
+                        {step.status === "approved"
+                          ? "approved."
+                          : step.status === "correction"
+                          ? "needs correction."
+                          : step.status === "not-reviewed"
+                          ? "not reviewed."
+                          : "not found."}
                       </span>
                     }
                   />
@@ -297,17 +286,12 @@ const BadgeForm = () => {
                       invalid={!!errors.email}
                       selectedItem={value}
                       onChange={(item) => onChange(item.selectedItem)}
-                      invalidText={
-                        (errors.email && errors.email.message) ||
-                        'A value is required.'
-                      }
+                      invalidText={(errors.email && errors.email.message) || "A value is required."}
                       ariaLabel='Email dropdown'
                       titleText='Email address'
                       label='Choose an email address'
                       helperText="Don't see your work email address? Verify it in GitHub email settings to use here."
-                      items={emails
-                        .filter((email) => email.verified)
-                        .map((email) => email.email)}
+                      items={emails.filter((email) => email.verified).map((email) => email.email)}
                       light
                     />
                   )}
@@ -345,9 +329,7 @@ const BadgeForm = () => {
                 <div className={style.field}>
                   <InlineNotification
                     actions={
-                      <NotificationActionButton
-                        onClick={() => (window.location.href = acceptUrl)}
-                      >
+                      <NotificationActionButton onClick={() => (window.location.href = acceptUrl)}>
                         Accept badge
                       </NotificationActionButton>
                     }
@@ -360,11 +342,7 @@ const BadgeForm = () => {
               )}
 
               <div className={style.actions}>
-                <Button
-                  disabled={!formState.isValid || submitLoading}
-                  size='field'
-                  type='submit'
-                >
+                <Button disabled={!formState.isValid || submitLoading} size='field' type='submit'>
                   Apply for badge
                 </Button>
                 {submitLoading && (

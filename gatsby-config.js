@@ -146,17 +146,13 @@ module.exports = {
         // TODO: Enable React SDK , see gitlab.com/fr8/ft-gatsby#issues
         // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
         environment: process.env.NODE_ENV,
-        enabled: (() =>
-          [`production`, `stage`].indexOf(process.env.NODE_ENV) !== -1)(),
+        enabled: (() => [`production`, `stage`].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          `gatsby-remark-autolink-headers`,
-          `gatsby-remark-check-links`,
-        ],
+        plugins: [`gatsby-remark-autolink-headers`, `gatsby-remark-check-links`],
       },
     },
     {

@@ -8,11 +8,11 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
 
 **Last updated July 01, 2020**
 
--   [DISCLAIMER](#disclaimer)
-    -   [WEBSITE DISCLAIMER](#website-disclaimer)
-    -   [EXTERNAL LINKS DISCLAIMER](#external-links-disclaimer)
-    -   [PROFESSIONAL DISCLAIMER](#professional-disclaimer)
-    -   [TESTIMONIALS DISCLAIMER](#testimonials-disclaimer)
+- [DISCLAIMER](#disclaimer)
+  - [WEBSITE DISCLAIMER](#website-disclaimer)
+  - [EXTERNAL LINKS DISCLAIMER](#external-links-disclaimer)
+  - [PROFESSIONAL DISCLAIMER](#professional-disclaimer)
+  - [TESTIMONIALS DISCLAIMER](#testimonials-disclaimer)
 
 ## WEBSITE DISCLAIMER
 

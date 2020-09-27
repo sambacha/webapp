@@ -1,3 +1,3 @@
-import AnchorAuth from './AnchorAuth';
+import AnchorAuth from "./AnchorAuth";
 
 export default AnchorAuth;

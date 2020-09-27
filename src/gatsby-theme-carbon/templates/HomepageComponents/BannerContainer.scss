@@ -1,74 +1,74 @@
-@import '@carbon/themes/scss/themes';
+@import "@carbon/themes/scss/themes";
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .bannerContainer {
-    background-color: #1b1f23;
-    height: 100vh;
-    padding: 0 $layout-02;
-    padding-top: 30%;
-    color: $text-04;
-    position: relative;
+  background-color: #1b1f23;
+  height: 100vh;
+  padding: 0 $layout-02;
+  padding-top: 30%;
+  color: $text-04;
+  position: relative;
 
-    @include carbon--breakpoint('md') {
-        padding: 0 $layout-06;
-    }
+  @include carbon--breakpoint("md") {
+    padding: 0 $layout-06;
+  }
 
-    @include carbon--breakpoint('lg') {
-        padding: 0 $layout-06;
-    }
+  @include carbon--breakpoint("lg") {
+    padding: 0 $layout-06;
+  }
 }
 
 .bannerContainerWithBg {
-    background: url(../../../images/banner-background.svg);
-    background-color: #1b1f23;
-    background-size: auto 100%;
-    background-position: right bottom;
-    background-repeat: no-repeat;
+  background: url(../../../images/banner-background.svg);
+  background-color: #1b1f23;
+  background-size: auto 100%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
 
 .banner {
-    padding-top: 40%;
+  padding-top: 40%;
 }
 
 .banner h1 {
-    @include carbon--type-style('productive-heading-07');
-    color: $interactive-04;
+  @include carbon--type-style("productive-heading-07");
+  color: $interactive-04;
 }
 
 .banner p {
-    @include carbon--type-style('productive-heading-03');
+  @include carbon--type-style("productive-heading-03");
 
-    margin-top: $spacing-09;
-    margin-bottom: $spacing-06;
+  margin-top: $spacing-09;
+  margin-bottom: $spacing-06;
 }
 
 .banner .buttonContainer {
-    margin-top: $spacing-09;
-    margin-bottom: $spacing-08;
+  margin-top: $spacing-09;
+  margin-bottom: $spacing-08;
 
-    @include carbon--breakpoint('lg') {
-        margin-bottom: 0px;
-    }
+  @include carbon--breakpoint("lg") {
+    margin-bottom: 0px;
+  }
 }
 
 .bannerImage {
-    width: 90vw;
-    position: absolute;
-    right: 0;
-    opacity: 0.6;
+  width: 90vw;
+  position: absolute;
+  right: 0;
+  opacity: 0.6;
 
-    @include carbon--breakpoint('lg') {
-        width: 80vw;
-    }
+  @include carbon--breakpoint("lg") {
+    width: 80vw;
+  }
 
-    @include carbon--breakpoint('xlg') {
-        width: 80vw;
-    }
+  @include carbon--breakpoint("xlg") {
+    width: 80vw;
+  }
 
-    @include carbon--breakpoint('max') {
-        width: 70vw;
-    }
+  @include carbon--breakpoint("max") {
+    width: 70vw;
+  }
 }

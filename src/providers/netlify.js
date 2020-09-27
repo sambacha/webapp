@@ -40,16 +40,9 @@ class Authenticator {
 
   handshakeCallback(options, cb) {
     const fn = (e) => {
-      if (
-        e.data === `authorizing:${options.provider}` &&
-        e.origin === this.base_url
-      ) {
+      if (e.data === `authorizing:${options.provider}` && e.origin === this.base_url) {
         window.removeEventListener(`message`, fn, false);
-        window.addEventListener(
-          `message`,
-          this.authorizeCallback(options, cb),
-          false
-        );
+        window.addEventListener(`message`, this.authorizeCallback(options, cb), false);
         return this.authWindow.postMessage(e.data, e.origin);
       }
     };
@@ -65,9 +58,7 @@ class Authenticator {
       }
       if (e.data.indexOf(`authorization:${options.provider}:success:`) === 0) {
         data = JSON.parse(
-          e.data.match(
-            new RegExp(`^authorization:${options.provider}:success:(.+)$`)
-          )[1]
+          e.data.match(new RegExp(`^authorization:${options.provider}:success:(.+)$`))[1]
         );
         window.removeEventListener(`message`, fn, false);
         this.authWindow.close();
@@ -75,9 +66,7 @@ class Authenticator {
       }
       if (e.data.indexOf(`authorization:${options.provider}:error:`) === 0) {
         err = JSON.parse(
-          e.data.match(
-            new RegExp(`^authorization:${options.provider}:error:(.+)$`)
-          )[1]
+          e.data.match(new RegExp(`^authorization:${options.provider}:error:(.+)$`))[1]
         );
         window.removeEventListener(`message`, fn, false);
         this.authWindow.close();
@@ -119,11 +108,7 @@ class Authenticator {
     const conf = PROVIDERS[provider] || PROVIDERS.github;
     left = screen.width / 2 - conf.width / 2;
     top = screen.height / 2 - conf.height / 2;
-    window.addEventListener(
-      `message`,
-      this.handshakeCallback(options, cb),
-      false
-    );
+    window.addEventListener(`message`, this.handshakeCallback(options, cb), false);
     url = `${this.base_url}/auth?provider=${options.provider}&site_id=${siteID}`;
     if (options.scope) {
       url += `&scope=${options.scope}`;

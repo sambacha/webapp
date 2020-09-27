@@ -14,6 +14,6 @@ Also, the sum of the packed sizes can add up to more than the repository size; i
 
 === Renames === Renames share the same non-binary nature that deletions do, plus additional challenges:
 
--   If the renamed file is renamed again, instead of just two names for a path you can have three or more.
--   Rename pairs of the form (oldname, newname) that we consider to be different names of the "same file" might only be valid over certain commit ranges. For example, if a new commit reintroduces a file named oldname, then new versions of oldname aren't the "same file" anymore. We could try to portray this to the user, but it's easier for the user to just break the pairing and only report unbroken rename pairings to the user.
--   The ability for users to rename files differently in different branches means that our chains of renames will not necessarily be linear but may branch out.
+- If the renamed file is renamed again, instead of just two names for a path you can have three or more.
+- Rename pairs of the form (oldname, newname) that we consider to be different names of the "same file" might only be valid over certain commit ranges. For example, if a new commit reintroduces a file named oldname, then new versions of oldname aren't the "same file" anymore. We could try to portray this to the user, but it's easier for the user to just break the pairing and only report unbroken rename pairings to the user.
+- The ability for users to rename files differently in different branches means that our chains of renames will not necessarily be linear but may branch out.

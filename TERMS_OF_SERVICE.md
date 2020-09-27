@@ -6,45 +6,45 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
 
 # TERMS OF USE
 
--   [TERMS OF USE](#terms-of-use)
-    -   [AGREEMENT TO TERMS](#agreement-to-terms)
-    -   [INTELLECTUAL PROPERTY RIGHTS](#intellectual-property-rights)
-    -   [USER REPRESENTATIONS](#user-representations)
-    -   [USER REGISTRATION](#user-registration)
-    -   [FEES AND PAYMENT](#fees-and-payment)
-    -   [FREE TRIAL](#free-trial)
-    -   [CANCELLATION](#cancellation)
-    -   [SOFTWARE](#software)
-    -   [PROHIBITED ACTIVITIES](#prohibited-activities)
-        -   [As a user of the Site, you agree not to:](#as-a-user-of-the-site--you-agree-not-to-)
-    -   [USER GENERATED CONTRIBUTIONS](#user-generated-contributions)
-    -   [CONTRIBUTION LICENSE](#contribution-license)
-    -   [GUIDELINES FOR REVIEWS](#guidelines-for-reviews)
-    -   [MOBILE APPLICATION LICENSE](#mobile-application-license)
-        -   [Use License](#use-license)
-    -   [Apple and Android Devices](#apple-and-android-devices)
-    -   [SUBMISSIONS](#submissions)
-    -   [THIRD-PARTY WEBSITES AND CONTENT](#third-party-websites-and-content)
-    -   [U.S. GOVERNMENT RIGHTS](#us-government-rights)
-    -   [SITE MANAGEMENT](#site-management)
-    -   [PRIVACY POLICY](#privacy-policy)
-    -   [DIGITAL MILLENNIUM COPYRIGHT ACT (DMCA) NOTICE AND POLICY](#digital-millennium-copyright-act--dmca--notice-and-policy)
-        -   [Notifications](#notifications)
-        -   [Counter Notification](#counter-notification)
-    -   [MODIFICATIONS AND INTERRUPTIONS](#modifications-and-interruptions)
-    -   [GOVERNING LAW](#governing-law)
-    -   [DISPUTE RESOLUTION](#dispute-resolution)
-    -   [Restrictions](#restrictions)
-        -   [Exceptions to Informal Negotiations and Arbitration](#exceptions-to-informal-negotiations-and-arbitration)
-    -   [CORRECTIONS](#corrections)
-    -   [DISCLAIMER](#disclaimer)
-    -   [LIMITATIONS OF LIABILITY](#limitations-of-liability)
-    -   [INDEMNIFICATION](#indemnification)
-    -   [USER DATA](#user-data)
-    -   [ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES](#electronic-communications--transactions--and-signatures)
-    -   [CALIFORNIA USERS AND RESIDENTS](#california-users-and-residents)
-    -   [MISCELLANEOUS](#miscellaneous)
-    -   [CONTACT US](#contact-us)
+- [TERMS OF USE](#terms-of-use)
+  - [AGREEMENT TO TERMS](#agreement-to-terms)
+  - [INTELLECTUAL PROPERTY RIGHTS](#intellectual-property-rights)
+  - [USER REPRESENTATIONS](#user-representations)
+  - [USER REGISTRATION](#user-registration)
+  - [FEES AND PAYMENT](#fees-and-payment)
+  - [FREE TRIAL](#free-trial)
+  - [CANCELLATION](#cancellation)
+  - [SOFTWARE](#software)
+  - [PROHIBITED ACTIVITIES](#prohibited-activities)
+    - [As a user of the Site, you agree not to:](#as-a-user-of-the-site--you-agree-not-to-)
+  - [USER GENERATED CONTRIBUTIONS](#user-generated-contributions)
+  - [CONTRIBUTION LICENSE](#contribution-license)
+  - [GUIDELINES FOR REVIEWS](#guidelines-for-reviews)
+  - [MOBILE APPLICATION LICENSE](#mobile-application-license)
+    - [Use License](#use-license)
+  - [Apple and Android Devices](#apple-and-android-devices)
+  - [SUBMISSIONS](#submissions)
+  - [THIRD-PARTY WEBSITES AND CONTENT](#third-party-websites-and-content)
+  - [U.S. GOVERNMENT RIGHTS](#us-government-rights)
+  - [SITE MANAGEMENT](#site-management)
+  - [PRIVACY POLICY](#privacy-policy)
+  - [DIGITAL MILLENNIUM COPYRIGHT ACT (DMCA) NOTICE AND POLICY](#digital-millennium-copyright-act--dmca--notice-and-policy)
+    - [Notifications](#notifications)
+    - [Counter Notification](#counter-notification)
+  - [MODIFICATIONS AND INTERRUPTIONS](#modifications-and-interruptions)
+  - [GOVERNING LAW](#governing-law)
+  - [DISPUTE RESOLUTION](#dispute-resolution)
+  - [Restrictions](#restrictions)
+    - [Exceptions to Informal Negotiations and Arbitration](#exceptions-to-informal-negotiations-and-arbitration)
+  - [CORRECTIONS](#corrections)
+  - [DISCLAIMER](#disclaimer)
+  - [LIMITATIONS OF LIABILITY](#limitations-of-liability)
+  - [INDEMNIFICATION](#indemnification)
+  - [USER DATA](#user-data)
+  - [ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES](#electronic-communications--transactions--and-signatures)
+  - [CALIFORNIA USERS AND RESIDENTS](#california-users-and-residents)
+  - [MISCELLANEOUS](#miscellaneous)
+  - [CONTACT US](#contact-us)
 
 Last updated July 01, 2020
 
@@ -80,13 +80,13 @@ You may be required to register with the Site. You agree to keep your password c
 
 We accept the following forms of payment:
 
--   \$EDI Token
--   \$USDC
--   ACH
--   Wire Transfer
--   SWIFT
--   USD Deposit
--   Other Currencies ($ETH, $BTC, \$USDT)
+- \$EDI Token
+- \$USDC
+- ACH
+- Wire Transfer
+- SWIFT
+- USD Deposit
+- Other Currencies ($ETH, $BTC, \$USDT)
 
 You may be required to purchase or pay a fee to access some of our services. You agree to provide current, complete, and accurate purchase and account information for all purchases made via the Site. You further agree to promptly update account and payment information, including email address, payment method, and payment card expiration date, so that we can complete your transactions and contact you as needed. We bill you through an online billing account for purchases made via the Site. Sales tax will be added to the price of purchases as deemed required by us. We may change prices at any time. All payments shall be in U.S. dollars.
 

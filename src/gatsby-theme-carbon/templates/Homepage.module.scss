@@ -1,48 +1,48 @@
 // SPDX-License-Identifier: Apache-2.0
 // SPDXVersion: SPDX-2.2
 // SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
-@import '@carbon/themes/scss/themes';
+@import "@carbon/themes/scss/themes";
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .main-content {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .callout-link {
-    @include carbon--type-style('body-long-02');
-    margin-top: $spacing-06;
-    display: block;
+  @include carbon--type-style("body-long-02");
+  margin-top: $spacing-06;
+  display: block;
 }
 
 .row-text {
-    h1 {
-        font-size: 30px;
-        color: #000;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
+  h1 {
+    font-size: 30px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 
-    p {
-        margin-top: 35px;
-        font-size: 18px;
-        line-height: 36px;
-        color: #666666;
-        font-weight: 300;
-    }
+  p {
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #666666;
+    font-weight: 300;
+  }
 }
 
 .blogSection {
-    height: 860px;
-    background: white;
+  height: 860px;
+  background: white;
 }
 
 .posts {
-    padding: 80px 135px;
-    background: $ui-02;
-    padding-top: $layout-05;
-    padding-bottom: $layout-06;
+  padding: 80px 135px;
+  background: $ui-02;
+  padding-top: $layout-05;
+  padding-bottom: $layout-06;
 }

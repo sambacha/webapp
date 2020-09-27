@@ -9,10 +9,10 @@ public_folder: /media
 collections:
   - name: posts
     label: Posts
-    label_singular: 'Post'
+    label_singular: "Post"
     folder: content/posts
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - label: Template
         name: template
@@ -21,9 +21,9 @@ collections:
       - label: Title
         name: title
         widget: string
-      - label: 'Cover Image'
-        name: 'image'
-        widget: 'image'
+      - label: "Cover Image"
+        name: "image"
+        widget: "image"
         required: false
       - label: Publish Date
         name: date
@@ -42,10 +42,10 @@ collections:
         widget: list
   - name: pages
     label: Pages
-    label_singular: 'Page'
+    label_singular: "Page"
     folder: content/pages
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     fields:
       - label: Template
         name: template

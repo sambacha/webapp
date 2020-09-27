@@ -9,16 +9,16 @@ Welcome to the repository! The following links are a set of guidelines for contr
 
 Having a Github account is necessary for obtaining support including chat, troubleshooting, and issue management.
 
--   If you want to raise an issue, you can do so [on the github issue tab](https://github.com/${freight-trust}/${repository/{$ref}/issues).
+- If you want to raise an issue, you can do so [on the github issue tab](https://github.com/${freight-trust}/${repository/{$ref}/issues).
 
 ### Useful support links
 
--   [Corporate Website](https://freighttrust.com)
--   [Blockchain Network](https://github.com/freight-chain/networke)
--   [Omnibus Documentation](https://ft-docs.netlify.app)
--   [Did you find a bug?](/.github/ISSUE_TEMPLATE/bug_report.md)
--   [Feature Request](/.github/ISSUE_TEMPLATE/feature_request.md)
--   [Contributing Guidelines](#CONTRIBUTING.md)
+- [Corporate Website](https://freighttrust.com)
+- [Blockchain Network](https://github.com/freight-chain/networke)
+- [Omnibus Documentation](https://ft-docs.netlify.app)
+- [Did you find a bug?](/.github/ISSUE_TEMPLATE/bug_report.md)
+- [Feature Request](/.github/ISSUE_TEMPLATE/feature_request.md)
+- [Contributing Guidelines](#CONTRIBUTING.md)
 
 [telegram]: https://t.me/freighttrust
 [contributing guidelines]: CONTRIBUTING.md

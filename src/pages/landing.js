@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 /*
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
 import {
@@ -17,16 +17,16 @@ import {
 } from 'gatsby-theme-carbon/src/templates/HomepageComponents';
 TODO: FOR NOW WE KEEP THIS VERY BASIC LANDING PAGE
 */
-import { Button } from 'carbon-components-react';
+import { Button } from "carbon-components-react";
 
-import { ArrowRight32 } from '@carbon/icons-react';
+import { ArrowRight32 } from "@carbon/icons-react";
 
-import { Helmet } from 'react-helmet';
-import Layout from 'gatsby-theme-carbon/src/components/Layout';
-import { navigate } from 'gatsby';
-import pictogram from '../images/pictogram.png';
-import style from './landing.module.scss';
-import { useAuth } from '../util/hooks/use-auth.js';
+import { Helmet } from "react-helmet";
+import Layout from "gatsby-theme-carbon/src/components/Layout";
+import { navigate } from "gatsby";
+import pictogram from "../images/pictogram.png";
+import style from "./landing.module.scss";
+import { useAuth } from "../util/hooks/use-auth.js";
 
 const Landing = () => {
   const { login, token } = useAuth();
@@ -69,8 +69,7 @@ const Landing = () => {
         <div className='bx--row'>
           <div className='bx--col'>
             <p className={style.copy}>
-              Don't have a OAuth2 account? You can use{' '}
-              <a href='https://github.com/join'> GitHub</a>
+              Don't have a OAuth2 account? You can use <a href='https://github.com/join'> GitHub</a>
             </p>
           </div>
         </div>

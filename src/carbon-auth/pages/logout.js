@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import style from './pages.module.scss';
-import { useAuth } from '../util/hooks/use-auth.js';
+import style from "./pages.module.scss";
+import { useAuth } from "../util/hooks/use-auth.js";
 
 const Logout = () => {
   const { logout } = useAuth();

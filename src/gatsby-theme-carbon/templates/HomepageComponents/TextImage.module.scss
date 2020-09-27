@@ -1,46 +1,46 @@
-@import '@carbon/themes/scss/themes';
+@import "@carbon/themes/scss/themes";
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .textImageContainer {
-    background: $ui-05;
-    padding: $layout-05 $layout-03;
-    color: $inverse-01;
+  background: $ui-05;
+  padding: $layout-05 $layout-03;
+  color: $inverse-01;
 
-    @include carbon--breakpoint('md') {
-        padding: $layout-05 $layout-05;
-    }
+  @include carbon--breakpoint("md") {
+    padding: $layout-05 $layout-05;
+  }
 
-    @include carbon--breakpoint('lg') {
-        padding: $layout-05 $layout-06;
-    }
+  @include carbon--breakpoint("lg") {
+    padding: $layout-05 $layout-06;
+  }
 
-    .imageContainer {
-        background: url(../../../images/static/data-table-placeholder.svg);
-        background-size: cover;
-        background-position-y: center;
-        height: 100%;
-    }
+  .imageContainer {
+    background: url(../../../images/static/data-table-placeholder.svg);
+    background-size: cover;
+    background-position-y: center;
+    height: 100%;
+  }
 }
 
 .textContainer h1 {
-    @include carbon--type-style('productive-heading-06');
+  @include carbon--type-style("productive-heading-06");
 }
 
 .textContainer p {
-    @include carbon--type-style('productive-heading-03');
+  @include carbon--type-style("productive-heading-03");
 
-    margin-top: $spacing-09;
-    margin-bottom: $spacing-06;
+  margin-top: $spacing-09;
+  margin-bottom: $spacing-06;
 }
 
 .textContainer a {
-    margin-top: $spacing-09;
-    margin-bottom: $spacing-08;
+  margin-top: $spacing-09;
+  margin-bottom: $spacing-08;
 
-    @include carbon--breakpoint('lg') {
-        margin-bottom: 0px;
-    }
+  @include carbon--breakpoint("lg") {
+    margin-bottom: 0px;
+  }
 }

@@ -15,28 +15,18 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react';
-import { Row, Column } from 'gatsby-theme-carbon';
-import { Button } from 'carbon-components-react';
-import './BannerContainer.scss';
+import React from "react";
+import { Row, Column } from "gatsby-theme-carbon";
+import { Button } from "carbon-components-react";
+import "./BannerContainer.scss";
 
-const BannerText = ({
-  title,
-  content,
-  buttonLabel,
-  buttonComponent,
-  buttonAction,
-}) => (
+const BannerText = ({ title, content, buttonLabel, buttonComponent, buttonAction }) => (
   <div className='banner'>
     <h1>{title}</h1>
     <p>{content}</p>
     <div className='buttonContainer'>
       {buttonComponent || (
-        <Button
-          href='#top'
-          kind='primary'
-          onClick={buttonAction ? () => buttonAction() : () => {}}
-        >
+        <Button href='#top' kind='primary' onClick={buttonAction ? () => buttonAction() : () => {}}>
           {buttonLabel}
         </Button>
       )}
@@ -52,9 +42,7 @@ export const BannerContainer = ({
   buttonAction,
   noBgImage,
 }) => (
-  <div
-    className={`bannerContainer ${noBgImage ? `` : `bannerContainerWithBg`}`}
-  >
+  <div className={`bannerContainer ${noBgImage ? `` : `bannerContainerWithBg`}`}>
     <Row className='bannerRow'>
       <Column colSm={12} colMd={7} colLg={7}>
         <BannerText

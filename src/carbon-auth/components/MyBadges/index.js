@@ -1,3 +1,3 @@
-import MyBadges from './MyBadges';
+import MyBadges from "./MyBadges";
 
 export default MyBadges;

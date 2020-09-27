@@ -15,11 +15,11 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from 'react';
-import styled from '@emotion/styled';
-import { Grid, Column, Row } from 'gatsby-theme-carbon';
+import React from "react";
+import styled from "@emotion/styled";
+import { Grid, Column, Row } from "gatsby-theme-carbon";
 
-import { grid, row, firstColumn, secondColumn } from './Callout.module.scss';
+import { grid, row, firstColumn, secondColumn } from "./Callout.module.scss";
 
 const StyledGrid = styled(Grid)`
     background-color: ${(props) =>
@@ -27,9 +27,7 @@ const StyledGrid = styled(Grid)`
       props.backgroundColor ||
       props.theme.colors.interactive02};
     color: ${(props) =>
-      props.theme.colors[props.color] ||
-      props.color ||
-      props.theme.colors.inverse01}};
+      props.theme.colors[props.color] || props.color || props.theme.colors.inverse01}};
     width: 100%;
     max-width: 100%;
 `;
