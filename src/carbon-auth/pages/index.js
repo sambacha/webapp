@@ -1,4 +1,4 @@
-import LandingPage from "./landing";
-import React from "react";
+import React from 'react';
+import LandingPage from './landing';
 
 export default () => <LandingPage />;

@@ -24,27 +24,23 @@ import { mainContent } from './Default.module.scss';
 
 // eslint-disable-next-line no-unused-vars
 const Default = ({ pageContext, children, location, Title }) => {
-    const { frontmatter = {}, titleType } = pageContext;
-    const { tabs, title, theme, description, keywords } = frontmatter;
+  const { frontmatter = {}, titleType } = pageContext;
+  const { tabs, title, theme, description, keywords } = frontmatter;
 
-    return (
-        <Layout
-            tabs={tabs}
-            homepage={false}
-            theme={theme}
-            pageTitle={title}
-            pageDescription={description}
-            pageKeywords={keywords}
-            titleType={titleType}
-        >
-            <PageHeader
-                title={Title ? <Title /> : title}
-                label="label"
-                tabs={tabs}
-            />
-            <Main className={mainContent}>{children}</Main>
-        </Layout>
-    );
+  return (
+    <Layout
+      tabs={tabs}
+      homepage={false}
+      theme={theme}
+      pageTitle={title}
+      pageDescription={description}
+      pageKeywords={keywords}
+      titleType={titleType}
+    >
+      <PageHeader title={Title ? <Title /> : title} label='label' tabs={tabs} />
+      <Main className={mainContent}>{children}</Main>
+    </Layout>
+  );
 };
 
 export default Default;

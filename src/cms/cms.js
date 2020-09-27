@@ -13,11 +13,11 @@ import BlogPostPreview from './preview-templates/BlogPostPreview';
  */
 
 CMS.init({
-    config: {
-        backend: {
-            name: `git-gateway`,
-        },
+  config: {
+    backend: {
+      name: `git-gateway`,
     },
+  },
 });
 
 CMS.registerMediaLibrary(uploadcare);
