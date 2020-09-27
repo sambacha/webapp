@@ -15,8 +15,8 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from "react";
-import { brandsContent } from "./BrandsList.module.scss";
+import React from 'react';
+import { brandsContent } from './BrandsList.module.scss';
 
 export const BrandsList = ({ title, content, children }) => (
   <div className={brandsContent}>

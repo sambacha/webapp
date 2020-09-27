@@ -1,3 +1,3 @@
-import Pictogram from "./Pictogram";
+import Pictogram from './Pictogram';
 
 export default Pictogram;

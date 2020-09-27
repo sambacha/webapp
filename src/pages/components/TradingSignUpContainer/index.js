@@ -17,11 +17,11 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React, { Component } from "react";
-import { Modal, Button, TextInput, Loading } from "carbon-components-react";
-import { ChevronLeft20, CheckmarkOutline32 } from "@carbon/icons-react";
-import { BannerContainer } from "gatsby-theme-carbon/src/templates/HomepageComponents";
-import "./styles.scss";
+import React, { Component } from 'react';
+import { Modal, Button, TextInput, Loading } from 'carbon-components-react';
+import { ChevronLeft20, CheckmarkOutline32 } from '@carbon/icons-react';
+import { BannerContainer } from 'gatsby-theme-carbon/src/templates/HomepageComponents';
+import './styles.scss';
 
 const modalProps = [
   // Step 0
@@ -32,7 +32,11 @@ const modalProps = [
     helperText: null,
     renderContent: () => (
       <div>
-        <TextInput labelText='Company Name' placeholder='Company Name' id='companyName' />
+        <TextInput
+          labelText='Company Name'
+          placeholder='Company Name'
+          id='companyName'
+        />
         <TextInput
           labelText='Company Legal Identifier'
           placeholder='Company Legal Identifier'
@@ -62,7 +66,11 @@ const modalProps = [
   // Step 2
   {
     modalLabel: `Verify Information`,
-    contentTexts: [`Verifying as2 id...`, `Resolving as2 url...`, `Authenticated`],
+    contentTexts: [
+      `Verifying as2 id...`,
+      `Resolving as2 url...`,
+      `Authenticated`,
+    ],
     renderContent: () => (
       <div>
         <Loading description='Active loading indicator' withOverlay={false} />
@@ -170,12 +178,20 @@ class TradingSignUpContainer extends Component {
         {contentTexts && <h5>{contentTexts[currentContentStep]}</h5>}
         {renderContent && renderContent()}
         {buttonText && (
-          <Button size='field' className='submit-btn' onClick={() => this.goToNextStep()}>
+          <Button
+            size='field'
+            className='submit-btn'
+            onClick={() => this.goToNextStep()}
+          >
             {buttonText}
           </Button>
         )}
         {helperText}
-        <Button kind='ghost' className='back-btn' onClick={() => this.goToPrevStep()}>
+        <Button
+          kind='ghost'
+          className='back-btn'
+          onClick={() => this.goToPrevStep()}
+        >
           <ChevronLeft20 />
         </Button>
       </Modal>

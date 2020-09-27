@@ -1,7 +1,7 @@
-import React from "react";
-import { render } from "react-dom";
-import "carbon-components/css/carbon-components.min.css";
-import { ContentSwitcher, Switch } from "carbon-components-react";
+import React from 'react';
+import { render } from 'react-dom';
+import 'carbon-components/css/carbon-components.min.css';
+import { ContentSwitcher, Switch } from 'carbon-components-react';
 
 const App = () => (
   <ContentSwitcher onChange={console.log}>

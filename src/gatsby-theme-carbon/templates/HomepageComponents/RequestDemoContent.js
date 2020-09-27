@@ -15,14 +15,14 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from "react";
-import { Row, Column } from "gatsby-theme-carbon";
+import React from 'react';
+import { Row, Column } from 'gatsby-theme-carbon';
 
 import {
   requestDemoContent,
   requestDemoRow,
   requestDemoActions,
-} from "./RequestDemoContent.module.scss";
+} from './RequestDemoContent.module.scss';
 
 export const RequestDemoContent = ({ title, subTitle, children }) => (
   <div className={requestDemoContent}>

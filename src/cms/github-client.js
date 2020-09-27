@@ -2,9 +2,9 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/button-has-type */
 /* eslint-disable import/no-unresolved */
-import React from "react";
-import netlify from "netlify-auth-providers";
-import { GraphQLClient } from "graphql-request";
+import React from 'react';
+import netlify from 'netlify-auth-providers';
+import { GraphQLClient } from 'graphql-request';
 
 async function authWithGitHub() {
   return new Promise((resolve, reject) => {
@@ -36,7 +36,9 @@ class GitHubClientProvider extends React.Component {
   state = { client: null, error: null };
 
   componentDidMount() {
-    const token = window.localStorage.getItem(`github-token`) || process.env.REACT_APP_GITHUB_TOKEN;
+    const token =
+      window.localStorage.getItem(`github-token`) ||
+      process.env.REACT_APP_GITHUB_TOKEN;
     if (token) {
       this.setState({ client: getClient(token) });
     }
@@ -80,4 +82,8 @@ class GitHubClientProvider extends React.Component {
 
 const { Consumer } = GitHubClientContext;
 
-export { GitHubClientProvider as Provider, Consumer, GitHubClientContext as Context };
+export {
+  GitHubClientProvider as Provider,
+  Consumer,
+  GitHubClientContext as Context,
+};

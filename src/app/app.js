@@ -3,11 +3,17 @@
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/button-has-type */
 /* eslint-disable import/no-unresolved */
-import React from "react";
-import netlifyIdentity from "netlify-identity-widget";
-import { BrowserRouter as Router, Route, Link, Redirect, withRouter } from "react-router-dom";
-import Protected from "./Protected";
-import Public from "./Public";
+import React from 'react';
+import netlifyIdentity from 'netlify-identity-widget';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect,
+  withRouter,
+} from 'react-router-dom';
+import Protected from './Protected';
+import Public from './Public';
 
 // copied straight from https://reacttraining.com/react-router/web/example/auth-workflow
 /// /////////////////////////////////////////////////////////

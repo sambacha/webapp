@@ -1,5 +1,5 @@
 /* eslint-disable no-return-await */
-import OktaSignIn from "@okta/okta-signin-widget";
+import OktaSignIn from '@okta/okta-signin-widget';
 
 const config = {
   baseUrl: `https://dev-629374.okta.com`,
@@ -53,4 +53,11 @@ const isAuthenticated = async () => {
   return session.status === `ACTIVE`;
 };
 
-export { signIn, signOut, getIdToken, getUserName, getSession, isAuthenticated };
+export {
+  signIn,
+  signOut,
+  getIdToken,
+  getUserName,
+  getSession,
+  isAuthenticated,
+};

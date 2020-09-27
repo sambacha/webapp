@@ -15,11 +15,11 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import React from "react";
-import { Button } from "carbon-components-react";
-import { Row, Column } from "gatsby-theme-carbon";
-import { useAuth } from "react-use-auth";
-import cx from "classnames";
+import React from 'react';
+import { Button } from 'carbon-components-react';
+import { Row, Column } from 'gatsby-theme-carbon';
+import { useAuth } from 'react-use-auth';
+import cx from 'classnames';
 import {
   footerContent,
   footerContentDefault,
@@ -32,7 +32,7 @@ import {
   footerFollowSection,
   footerLinkColMobile,
   hideOnMobile,
-} from "./Footer.module.scss";
+} from './Footer.module.scss';
 
 const ProductFooter = (
   <div>
@@ -78,7 +78,13 @@ const CustomFooter = ({ homepage }) => {
   return (
     <div className={cx(footerContent, { [footerContentDefault]: !homepage })}>
       <Row className={footerRow}>
-        <Column colSm={12} colMd={3} colLg={3} colXl={3} className={footerLinkCol}>
+        <Column
+          colSm={12}
+          colMd={3}
+          colLg={3}
+          colXl={3}
+          className={footerLinkCol}
+        >
           <h1>Freight Trust & Clearing</h1>
         </Column>
 
@@ -91,14 +97,26 @@ const CustomFooter = ({ homepage }) => {
           </div>
         </Column>
 
-        <Column colSm={12} colMd={0} colLg={0} colXl={0} className={footerLinkColMobile}>
+        <Column
+          colSm={12}
+          colMd={0}
+          colLg={0}
+          colXl={0}
+          className={footerLinkColMobile}
+        >
           <div className={footerLinkCol}>
             {SolutionsFooter}
             {ResourcesFooter}
           </div>
         </Column>
 
-        <Column colSm={12} colMd={2} colLg={2} colXl={1} className={footerButtonCol}>
+        <Column
+          colSm={12}
+          colMd={2}
+          colLg={2}
+          colXl={1}
+          className={footerButtonCol}
+        >
           {/* <div>
             <Button>Register</Button>
           </div> */}
