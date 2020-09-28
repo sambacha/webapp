@@ -60,7 +60,6 @@
 		"@emotion/styled": "^10.0.11",
 		"@mdx-js/mdx": "^1.5.5",
 		"@mdx-js/react": "^1.5.5",
-		"@okta/okta-signin-widget": "^4.4.4",
 		"@reach/router": "^1.2.1",
 		"auth0-js": "^9.13.4",
 		"beautiful-react-hooks": "^0.23.1",
@@ -113,10 +112,6 @@
 		"gatsby-transformer-remark": "^2.8.27",
 		"gatsby-transformer-yaml": "^2.3.1",
 		"lodash.throttle": "^4.1.1",
-		"netlify-cms-app": "^2.12.24",
-		"netlify-cms-backend-github": "^2.11.6",
-		"netlify-cms-core": "^2.30.7",
-		"netlify-identity-widget": "^1.9.1",
 		"node-sass": "^4.11.0",
 		"prism-react-renderer": "^1.0.2",
 		"prop-types": "^15.7.2",
@@ -129,6 +124,7 @@
 		"react-transition-group": "^4.3.0",
 		"react-use-auth": "^0.7.5",
 		"recharts": "^1.8.5",
+		"redux": "3.0.0",
 		"remark-html": "^12.0.0",
 		"remark-lint-strong-marker": "^2.0.1",
 		"remark-preset-lint-consistent": "^3.0.1",
@@ -149,7 +145,6 @@
 		"lint-staged": "^10.2.13",
 		"prettier": "^2.1.1",
 		"react-test-renderer": "^16.13.1",
-		"typescript": "^3.9.7",
 		"webpack": "^4.43.0"
 	},
 	"peerDependencies": {
@@ -206,9 +201,7 @@
 		"env": {
 			"node": true,
 			"browser": true,
-			"es6": true,
-			"jest": true,
-			"jasmine": true
+			"es6": true
 		}
 	},
 	"config": {
