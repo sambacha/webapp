@@ -17,8 +17,8 @@ const MyBadges = () => {
     fetch(`/api/github/badges?access_token=${token}`, {
       method: 'GET',
     })
-      .then(response => response.json())
-      .then(emails => {
+      .then((response) => response.json())
+      .then((emails) => {
         const flatBadges = emails.reduce((arr, email) => {
           arr.push(email.data);
           return arr;

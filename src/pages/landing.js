@@ -26,7 +26,7 @@ import Layout from 'gatsby-theme-carbon/src/components/Layout';
 import { navigate } from 'gatsby';
 import pictogram from '../images/pictogram.png';
 import style from './landing.module.scss';
-import { useAuth } from '../util/hooks/use-auth.js';
+import { useAuth } from '../../util/hooks/use-auth.js';
 
 const Landing = () => {
   const { login, token } = useAuth();

@@ -25,7 +25,7 @@ const useProvideAuth = () => {
     }
   }, [token]);
 
-  const authorize = location => {
+  const authorize = (location) => {
     const urlParams = new URLSearchParams(location.search);
     const accessToken = urlParams.get('access_token');
     const redirectTo = isBrowser
