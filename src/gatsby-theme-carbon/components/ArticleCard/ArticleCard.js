@@ -32,15 +32,13 @@ export default class ArticleCard extends React.Component {
 
         let isLink;
         if (href !== undefined) {
-            isLink =
-                href.charAt(0) ===
-                `https://freight.page.link/request-information`;
+            isLink = href.charAt(0) === '/';
         }
 
         const ArticleCardClassNames = classnames([`${prefix}--article-card`], {
             [className]: className,
             [`${prefix}--article-card--disabled`]: disabled,
-            [`${prefix}--article-card--dark`]: color === `dark`,
+            [`${prefix}--article-card--dark`]: color === 'dark',
         });
 
         const aspectRatioClassNames = classnames(
@@ -94,19 +92,19 @@ export default class ArticleCard extends React.Component {
                         <div
                             className={`${prefix}--article-card__icon--action`}
                         >
-                            {actionIcon === `launch` && !disabled ? (
+                            {actionIcon === 'launch' && !disabled ? (
                                 <Launch20 aria-label="Open" />
                             ) : null}
-                            {actionIcon === `arrowRight` && !disabled ? (
+                            {actionIcon === 'arrowRight' && !disabled ? (
                                 <ArrowRight20 aria-label="Open" />
                             ) : null}
-                            {actionIcon === `download` && !disabled ? (
+                            {actionIcon === 'download' && !disabled ? (
                                 <Download20 aria-label="Download" />
                             ) : null}
-                            {actionIcon === `email` && !disabled ? (
+                            {actionIcon === 'email' && !disabled ? (
                                 <Email20 aria-label="Email" />
                             ) : null}
-                            {actionIcon === `disabled` || disabled === true ? (
+                            {actionIcon === 'disabled' || disabled === true ? (
                                 <Error20 aria-label="disabled" />
                             ) : null}
                         </div>
@@ -122,11 +120,7 @@ export default class ArticleCard extends React.Component {
             );
         } else if (isLink === true) {
             cardContainer = (
-                <Link
-                    to="https://freight.page.link/request-information"
-                    className={carbonTileclassNames}
-                    {...rest}
-                >
+                <Link to={href} className={carbonTileclassNames} {...rest}>
                     {cardContent}
                 </Link>
             );
@@ -135,7 +129,7 @@ export default class ArticleCard extends React.Component {
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://freight.page.link/request-information"
+                    href={href}
                     className={carbonTileclassNames}
                     {...rest}
                 >
@@ -203,7 +197,7 @@ ArticleCard.propTypes = {
 };
 
 ArticleCard.defaultProps = {
-    color: `light`,
+    color: 'light',
     disabled: false,
-    actionIcon: ``,
+    actionIcon: '',
 };
