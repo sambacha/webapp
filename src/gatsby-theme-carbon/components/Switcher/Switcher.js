@@ -44,12 +44,7 @@ export const SwitcherDivider = (props) => (
     </li>
 );
 
-export const SwitcherLink = ({
-    disabled,
-    children,
-    href: hrefProp,
-    ...rest
-}) => {
+export const SwitcherLink = ({ disabled, children, href: hrefProp, ...rest }) => {
     const href = disabled || !hrefProp ? undefined : hrefProp;
     const className = disabled ? linkDisabled : link;
     const { switcherIsOpen } = useContext(NavContext);
