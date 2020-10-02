@@ -1,3 +1,4 @@
+src/gatsby-theme-carbon/components/Tabs/Tabs.js
 # exclude eslint configuration file if its in *.js
 !.eslintrc.js
 !.eslintrc.json
