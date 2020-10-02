@@ -6,7 +6,6 @@ import { P, H1, H2, H3, H4, H5, Ul, Ol, Li, Blockquote } from '../markdown';
 import PageTable from '../PageTable';
 import Code from '../Code';
 import PageDescription from '../PageDescription';
-import DoDontRow from '../DoDontRow/DoDontRow';
 import Caption from '../Caption';
 import ResourceCard from '../ResourceCard';
 import ArticleCard from '../ArticleCard';
@@ -21,7 +20,6 @@ import { AnchorLink, AnchorLinks } from '../AnchorLinks';
 import { Tab, Tabs } from '../Tabs';
 import Link from '../Link';
 import { Accordion, AccordionItem } from '../Accordion';
-import ArtDirection from '../ArtDirection';
 import MediumPosts from '../MediumPosts';
 import Title from '../Title';
 import { MiniCard, CardGroup } from '../MiniCard';
@@ -49,13 +47,11 @@ const components = {
     a: Link,
     sup: Sup,
     abbr: Abbr,
-    ArtDirection,
     PageDescription,
     Accordion,
     AccordionItem,
     Row,
     Column,
-    GifPlayer,
     Grid,
     Caption,
     ResourceCard,
@@ -76,4 +72,3 @@ const components = {
     CardGroup,
 };
 
-export default components;
