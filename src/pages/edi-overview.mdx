@@ -1,0 +1,118 @@
+---
+title: EDI Format for Transactions
+description: X12 Transaction set
+---
+
+<!-- SPDX-License-Identifier: Apache-2.0
+SPDXVersion: SPDX-2.2
+SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation -->
+
+<PageDescription>
+
+
+ASC X12 Transaction Format
+
+</PageDescription>
+
+
+##  Code Elements
+
+N101 is assigned a non-built-in XSD data type consisting of the literal "DE_" and the data element number. 
+The resulting DE_98 is used to define the available internal code values and their descriptions. 
+
+The following example is for the code lists.
+
+```xml
+<xs:simpleType name="DE_98">
+<xs:annotation>
+<xs:documentation>
+```
+
+Code identifying an organizational entity, a physical location, property or an individual
+
+```xml
+</xs:documentation>
+</xs:annotation>
+<xs:restriction base="ID">
+<xs:enumeration value="01">
+<xs:annotation>
+<xs:documentation>
+Loan Applicant
+</xs:documentation>
+</xs:annotation>
+</xs:enumeration>
+```
+
+## X12 Data Type Elements
+
+In the example above, DE_98 is assigned a non-built-in XSD data type of ID.
+ Note that there isn't a minimum or maximum length. The enumerations themselves specify length. The following illustrates the method of defining X12 data types in XSD using a built-in XSD type.
+
+```xml
+<xs:simpleType name="AN">
+<xs:annotation>
+<xs:documentation>
+A string data element is a sequence of any characters from the basic or extended character sets and contains at least one non-space character. The significant characters shall be left justified. Leading spaces, when they occur, are presumed to be significant characters. In the actual data stream trailing spaces should be suppressed. The representation for this data element type is AN.
+</xs:documentation>
+</xs:annotation>
+<xs:restriction base="xs:string"/>
+</xs:simpleType>
+<xs:simpleType name="ID">
+<xs:annotation>
+<xs:documentation>
+An identifier data element always contains a unique value from a single, predefined list of values. That list of values is either enumerated within the data element in X12.3 Data Element Dictionary or the source of the list of values is specified in Appendix A in the X12.3 Data Element Dictionary. Trailing spaces should be suppressed. The representation for this data element type is ID.
+</xs:documentation>
+</xs:annotation>
+<xs:restriction base="xs:string"/>
+</xs:simpleType>
+```
+
+## X12 Namespace
+
+Many, but not all, of the properties specified in X12.6 map accurately to XML without change. For example, X12 data element types, such as date, do not correspond directly to the XSD date data type.
+
+Consequently all XML simple content is declared as a string and an X12 namespace, http://schemas.x12.org/isomorph, is declared.
+
+The elements that come from this namespace are prefixed with x12 and provide information to be used by applications within an annotation element.
+ For example, the following is contained within the element for ISA09, the interchange date:
+
+`<x12:STD_Info name="Interchange Date" Number="I08" DataType="DT" MaximumLength="6"/>`
+
+The attributes in the example above are from the X12 EDI standard. They are useful for applications that transform EDI to XML and vice versa.
+ The maximum length attribute is of particular interest because the simple type that is also within ISA09 has a larger length to accommodate the hyphens and the full four digits for the year that are in an XML date such as 2018-02-27. The entire simple type:
+
+```xml
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="6"/>
+<xs:maxLength value="10"/>
+</xs:restriction>
+</xs:simpleType>
+```
+
+As illustrated above, this special consideration is used for dates, but also for times for similar reasons. 
+Additionally it is used for numeric and decimal types to accommodate implied decimal positions and an optional sign.
+
+
+## Segment Elements
+
+In the example above, the N1 segment is the first segment in Loop_1-0700.
+
+The following example is for that segment. Not the entire segment is illustrated, just enough to point out how 
+ a code list for the first data element is specified.
+
+```xml
+<xs:element name="N1_PartyIdentification_1-0700">
+<xs:annotation>
+<xs:documentation>
+Party Identification
+</xs:documentation>
+</xs:annotation>
+<xs:complexType>
+<xs:sequence>
+<xs:element name="N101__EntityIdentifierCode" type="DE_98"/>
+<xs:annotation>
+<xs:documentation>
+Code identifying an organizational entity, a physical location, property or an individual
+</xs:documentation>
+```
