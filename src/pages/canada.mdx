@@ -8,6 +8,7 @@ import {
   BannerContainer,
   RequestDemoContent,
 } from 'gatsby-theme-carbon/src/templates/HomepageComponents'
+
 import {
   DataTable,
   Table,
@@ -29,72 +30,16 @@ export default HomepageTemplate
 >
 
 
-  <Row>
-    <Column colMd={2} colLg={2}>
-      <Button kind="secondary"   href="https://freight.page.link/request-information">
-       EDI Data Translation
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button kind="secondary"   href="https://freight.page.link/request-information">
-       EDI OpenAPI
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button kind="secondary"   href="https://freight.page.link/request-information">
-        Cloud AS2
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button kind="secondary"   href="https://freight.page.link/request-information">
-        Customs Trade
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button kind="secondary"   href="https://freight.page.link/request-information">
-        Mapping Schema
-      </Button>
-    </Column>
-    <Column colMd={2} colLg={2}>
-      <Button kind="secondary"   href="https://freight.page.link/request-information">
-      Finance Factoring
-      </Button>
-    </Column>
-  </Row>
-</BrandsList>
 
-<DataTable
-  filterRows={function noRefCheck() {}}
-  headers={[
-      {
-      key: 'error_code',
-      header: 'Error Code',
-    },
-    {
-      key: 'rule_number',
-      header: 'Rule No.',
-    },
-      {
-      key: 'element_id',
-      header: 'Element ID',
-    },
-      {
-      key: 'AX_error_nmber',
-      header: 'AX Error Number',
-    },
-  ]}
-  locale="en"
-  overflowMenuOnHover
-  render={function noRefCheck() {}}
-  rows={[
+<const rows = [
 {
-    "id": 3,
-"New/ reuse code": "x",
-"Error Code": "V02",
-"Rule No.": 187,
-"Program": "AX0Y9R",
-"Element ID": 4868,
-"AX Error Number": 100053
+      "id": 3,
+      "New/ reuse code": "x",
+      "Error Code": "V02",
+      "Rule No.": 187,
+      "Program": "AX0Y9R",
+      "Element ID": 4868,
+      "AX Error Number": 100053
 },
 {
     "id": 4,
@@ -105,7 +50,8 @@ export default HomepageTemplate
     "Element ID": 6084,
     "AX Error Number": 100874
 },
-{			"id": 5,
+{		
+    id": 5,
     "New/ reuse code": "",
     "Error Code": "K51",
     "Rule No.": 1519,
@@ -113,8 +59,49 @@ export default HomepageTemplate
     "Element ID": 2207,
     "AX Error Number": 100053
 }
-  ]}
-  size={null}
-  sortRow={function noRefCheck() {}}
-  translateWithId={function noRefCheck() {}}
-/>
+];
+
+const headers = [
+    {
+      key: 'error_code',
+      header: 'Error Code'
+    },
+    {
+      key: 'rule_number',
+      header: 'Rule No.'
+    },
+      {
+      key: 'element_id',
+      header: 'Element ID'
+    },
+      {
+      key: 'AX_error_nmber',
+      header: 'AX Error Number'
+    }
+  ];
+
+  <DataTable rows={rows} headers={headers}>
+  {({ rows, headers, getTableProps, getHeaderProps, getRowProps }) => (
+    <Table {...getTableProps()}>
+      <TableHead>
+        <TableRow>
+          {headers.map((header) => (
+            <TableHeader {...getHeaderProps({ header })}>
+              {header.header}
+            </TableHeader>
+          ))}
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {rows.map((row) => (
+          <TableRow {...getRowProps({ row })}>
+            {row.cells.map((cell) => (
+              <TableCell key={cell.id}>{cell.value}</TableCell>
+            ))}
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  )}
+</DataTable>
+
