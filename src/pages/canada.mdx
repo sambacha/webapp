@@ -1,0 +1,120 @@
+import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage'
+import {
+  ArticleContainer,
+  BrandsList,
+  SnapContent,
+  SnapCard,
+  SignUpContainer,
+  BannerContainer,
+  RequestDemoContent,
+} from 'gatsby-theme-carbon/src/templates/HomepageComponents'
+import {
+  DataTable,
+  Table,
+  TableHead,
+  TableRow,
+  TableHeader,
+  TableBody,
+  TableCell,
+} from 'carbon-components-react';
+import { Button } from 'carbon-components-react'
+
+export default HomepageTemplate
+
+<BannerContainer
+  title="Canadian Customs"
+  content="EDI X12 and EDIFACT"
+  buttonLabel="Request more information"
+  href="https://freight.page.link/request-information"
+>
+
+
+  <Row>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary"   href="https://freight.page.link/request-information">
+       EDI Data Translation
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary"   href="https://freight.page.link/request-information">
+       EDI OpenAPI
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary"   href="https://freight.page.link/request-information">
+        Cloud AS2
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary"   href="https://freight.page.link/request-information">
+        Customs Trade
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary"   href="https://freight.page.link/request-information">
+        Mapping Schema
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary"   href="https://freight.page.link/request-information">
+      Finance Factoring
+      </Button>
+    </Column>
+  </Row>
+</BrandsList>
+
+<DataTable
+  filterRows={function noRefCheck() {}}
+  headers={[
+      {
+      key: 'error_code',
+      header: 'Error Code',
+    },
+    {
+      key: 'rule_number',
+      header: 'Rule No.',
+    },
+      {
+      key: 'element_id',
+      header: 'Element ID',
+    },
+      {
+      key: 'AX_error_nmber',
+      header: 'AX Error Number',
+    },
+  ]}
+  locale="en"
+  overflowMenuOnHover
+  render={function noRefCheck() {}}
+  rows={[
+{
+    "id": 3,
+"New/ reuse code": "x",
+"Error Code": "V02",
+"Rule No.": 187,
+"Program": "AX0Y9R",
+"Element ID": 4868,
+"AX Error Number": 100053
+},
+{
+    "id": 4,
+    "New/ reuse code": "x",
+    "Error Code": "V66",
+    "Rule No.": 1508,
+    "Program": "A00Y9J",
+    "Element ID": 6084,
+    "AX Error Number": 100874
+},
+{			"id": 5,
+    "New/ reuse code": "",
+    "Error Code": "K51",
+    "Rule No.": 1519,
+    "Program": "A00YB4",
+    "Element ID": 2207,
+    "AX Error Number": 100053
+}
+  ]}
+  size={null}
+  sortRow={function noRefCheck() {}}
+  translateWithId={function noRefCheck() {}}
+/>
