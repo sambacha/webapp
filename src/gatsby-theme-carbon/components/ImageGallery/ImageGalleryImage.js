@@ -31,18 +31,17 @@ function ImageGalleryImage({
   return (
     // #906
     <Column colLg={col} className={cx(className, column)}>
-      <figure className={figure} role='group' aria-label={alt}>
+      <figure className={figure} role="group" aria-label={alt}>
         <div
           className={imageButtonWrapper}
           tabIndex={0}
-          role='button'
+          role="button"
           onKeyDown={(e) => {
             if (e.key === 'Enter') {
               onClick(e);
             }
           }}
-          onClick={onClick}
-        >
+          onClick={onClick}>
           {children}
         </div>
       </figure>

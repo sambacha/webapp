@@ -52,7 +52,7 @@ const Layout = ({
         <LeftNav
           homepage={homepage}
           is404Page={is404}
-          theme='dark'
+          theme="dark"
           isCustomNav={!!customNavItems}
           customNavItems={customNavItems}
           noResourceLinks={noResourceLinks}

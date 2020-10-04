@@ -15,14 +15,13 @@ const PathRow = ({ src, path, children }) => {
       <span className={styles.path}>{path}</span>
       {src ? (
         <a
-          target='_blank'
-          rel='noopener noreferrer'
-          title='View source'
+          target="_blank"
+          rel="noopener noreferrer"
+          title="View source"
           className={styles.button}
           href={src}
-          style={{ position: 'relative', zIndex: 200 }}
-        >
-          <Launch16 alt='View source' />
+          style={{ position: 'relative', zIndex: 200 }}>
+          <Launch16 alt="View source" />
         </a>
       ) : (
         <CopyButton

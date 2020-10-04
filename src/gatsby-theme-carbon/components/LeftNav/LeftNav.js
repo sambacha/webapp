@@ -44,7 +44,7 @@ const LeftNav = (props) => {
       <SideNav
         expanded
         defaultExpanded
-        aria-label='Side navigation'
+        aria-label="Side navigation"
         className={classnames({
           [sideNavDark]: props.theme === `dark` || props.homepage,
           'bx--side-nav--website': true,
@@ -52,8 +52,7 @@ const LeftNav = (props) => {
             props.theme === `dark` || props.homepage,
           'bx--side-nav--website--light':
             props.theme !== `dark` && !props.homepage,
-        })}
-      >
+        })}>
         <SideNavItems>
           {navItems.map((item, i) => (
             <LeftNavItem

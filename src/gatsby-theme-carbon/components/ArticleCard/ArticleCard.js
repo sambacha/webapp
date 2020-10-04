@@ -56,8 +56,7 @@ export default class ArticleCard extends React.Component {
         <div className={`${prefix}--article-card__img`}>{children}</div>
         <div className={aspectRatioClassNames}>
           <div
-            className={`${prefix}--aspect-ratio--object ${prefix}--article-card__tile`}
-          >
+            className={`${prefix}--aspect-ratio--object ${prefix}--article-card__tile`}>
             {subTitle ? (
               <h5 className={`${prefix}--article-card__subtitle`}>
                 {subTitle}
@@ -81,19 +80,19 @@ export default class ArticleCard extends React.Component {
             </div>
             <div className={`${prefix}--article-card__icon--action`}>
               {actionIcon === 'launch' && !disabled ? (
-                <Launch20 aria-label='Open' />
+                <Launch20 aria-label="Open" />
               ) : null}
               {actionIcon === 'arrowRight' && !disabled ? (
-                <ArrowRight20 aria-label='Open' />
+                <ArrowRight20 aria-label="Open" />
               ) : null}
               {actionIcon === 'download' && !disabled ? (
-                <Download20 aria-label='Download' />
+                <Download20 aria-label="Download" />
               ) : null}
               {actionIcon === 'email' && !disabled ? (
-                <Email20 aria-label='Email' />
+                <Email20 aria-label="Email" />
               ) : null}
               {actionIcon === 'disabled' || disabled === true ? (
-                <Error20 aria-label='disabled' />
+                <Error20 aria-label="disabled" />
               ) : null}
             </div>
           </div>
@@ -113,12 +112,11 @@ export default class ArticleCard extends React.Component {
     } else {
       cardContainer = (
         <a
-          target='_blank'
-          rel='noopener noreferrer'
+          target="_blank"
+          rel="noopener noreferrer"
           href={href}
           className={carbonTileclassNames}
-          {...rest}
-        >
+          {...rest}>
           {cardContent}
         </a>
       );

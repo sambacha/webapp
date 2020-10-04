@@ -63,8 +63,7 @@ const LeftNavItem = (props) => {
                   [styles.currentItem]: isActive,
                 })}
                 isActive={isActive}
-                to={`${items[0].path}`}
-              >
+                to={`${items[0].path}`}>
                 {category}
               </SideNavLink>
               {hasDivider && <hr className={styles.divider} />}
@@ -77,8 +76,7 @@ const LeftNavItem = (props) => {
               icon={<span>dummy icon</span>}
               isActive={isActive} // TODO similar categories
               defaultExpanded={isActive}
-              title={category}
-            >
+              title={category}>
               <SubNavItems
                 onClick={closeLeftNav}
                 items={items}
@@ -107,13 +105,11 @@ const SubNavItems = ({ items, pathname, onClick }) =>
         onClick={onClick}
         element={Link}
         isActive={hasActiveTab}
-        key={i}
-      >
+        key={i}>
         <span
           className={cx(styles.linkText, {
             [styles.linkText__active]: hasActiveTab,
-          })}
-        >
+          })}>
           {item.title}
         </span>
       </SideNavMenuItem>
