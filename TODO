@@ -1,0 +1,230 @@
+$ ./node_modules/.bin/eslint  --ext mdx src --fix
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/base.mdx
+  119:1  error  Parsing error: unknown jsx node: "<ArticleContainer\n  title=\"Innovative EDI for Businesses\"\n  subTitle=\"Logistics as Dynamic Infrastructure.\"\n  \n>\n<Row>\n<Column colMd={4} colLg={4}>\n    <ArticleCard\n      subTitle=\"Communication\"\n      title=\"Managed Connectivity\"\n      content=\"\n      - Container Automation\n      - Tracking and Events\n      - Air Waybill Automation\n      - Denied Party Screening\n      - Electronic Messaging\n      - CargoWise Enterprise\n      \"\n      color=\"dark\"\n     href=\"https://freight.page.link/request-information\"\n      >"
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/as2.mdx
+  10:1  warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+  10:2  error    'PageDescription' is not defined                react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/boilerplate.mdx
+  65:1  error  Parsing error: unknown jsx node: "<Row>\n<Column colLg='4'>"
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/canada.mdx
+  11:3  warning  'DataTable' is defined but never used           no-unused-vars
+  12:3  warning  'Table' is defined but never used               no-unused-vars
+  13:3  warning  'TableHead' is defined but never used           no-unused-vars
+  14:3  warning  'TableRow' is defined but never used            no-unused-vars
+  15:3  warning  'TableHeader' is defined but never used         no-unused-vars
+  16:3  warning  'TableBody' is defined but never used           no-unused-vars
+  17:3  warning  'TableCell' is defined but never used           no-unused-vars
+  18:3  warning  'Button' is defined but never used              no-unused-vars
+  21:1  warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+  21:2  error    'PageDescription' is not defined                react/jsx-no-undef
+  29:2  error    'Title' is not defined                          react/jsx-no-undef
+  30:2  error    'InlineNotification' is not defined             react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/contact.mdx
+   6:1   warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+   6:2   error    'PageDescription' is not defined                react/jsx-no-undef
+   9:2   error    'Title' is not defined                          react/jsx-no-undef
+   9:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+   9:30  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   9:50  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  10:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  13:2   error    'Title' is not defined                          react/jsx-no-undef
+  13:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  13:36  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  13:56  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  14:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  17:2   error    'Title' is not defined                          react/jsx-no-undef
+  17:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  17:38  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  17:58  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  18:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  21:2   error    'Title' is not defined                          react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/corporate.mdx
+   6:1   warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+   6:2   error    'PageDescription' is not defined                react/jsx-no-undef
+   9:2   error    'Title' is not defined                          react/jsx-no-undef
+   9:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+   9:30  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   9:50  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  10:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  13:2   error    'Title' is not defined                          react/jsx-no-undef
+  13:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  13:36  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  13:56  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  14:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  17:2   error    'Title' is not defined                          react/jsx-no-undef
+  17:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  17:38  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  17:58  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  18:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  21:2   error    'Title' is not defined                          react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/dashboard.mdx
+   10:31  error    Unable to resolve path to module 'gatsby-theme-carbon/src/templates/Dashboard'  import/no-unresolved
+  123:1   warning  JSX not allowed in files with extension '.mdx'                                  react/jsx-filename-extension
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/edi-overview.mdx
+  10:1  warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+  10:2  error    'PageDescription' is not defined                react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/finance.mdx
+   6:1   warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+   6:2   error    'PageDescription' is not defined                react/jsx-no-undef
+   9:2   error    'Title' is not defined                          react/jsx-no-undef
+   9:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+   9:30  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   9:50  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  10:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  13:2   error    'Title' is not defined                          react/jsx-no-undef
+  13:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  13:36  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  13:56  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  14:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  17:2   error    'Title' is not defined                          react/jsx-no-undef
+  17:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  17:38  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  17:58  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  18:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  21:2   error    'Title' is not defined                          react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/freight/contract.mdx
+  7:10  warning  'RadarChart' is defined but never used          no-unused-vars
+  9:28  warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/freight/drewry.mdx
+  6:28  warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/freight/index.mdx
+  9:3  warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/index.mdx
+  44:1  error  Parsing error: unknown jsx node: "<SnapContent\n  title=\"Solving the Hardest Problems in Supply Chain\n  \"\n>\n<Row>"
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/navigation.mdx
+   6:1   warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+   6:2   error    'Title' is not defined                          react/jsx-no-undef
+   6:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+   6:23  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   6:43  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   7:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  10:2   error    'Title' is not defined                          react/jsx-no-undef
+  10:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  10:39  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  10:59  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  11:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  14:2   error    'Title' is not defined                          react/jsx-no-undef
+  14:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  14:38  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  14:58  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  15:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  18:2   error    'Title' is not defined                          react/jsx-no-undef
+  18:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  18:41  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  18:61  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  19:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  22:2   error    'Title' is not defined                          react/jsx-no-undef
+  22:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  22:37  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  22:57  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  23:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/pricing.mdx
+  20:1  error  Parsing error: unknown jsx node: "<Accordion>\n<AccordionItem title=\"ASC X12\">"
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/privacy-policy.mdx
+   6:1   warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+   6:2   error    'PageDescription' is not defined                react/jsx-no-undef
+   7:2   error    'Title' is not defined                          react/jsx-no-undef
+   7:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+   7:30  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   7:50  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   8:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  11:2   error    'Title' is not defined                          react/jsx-no-undef
+  11:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  11:36  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  11:56  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  12:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  15:2   error    'Title' is not defined                          react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/products.mdx
+  79:1  error  Parsing error: unknown jsx node: "<SnapContent\n  title=\"Solving the Hardest Problems in Supply Chain\n  \"\n>\n<Row>"
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/security.mdx
+   7:1   warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+   7:2   error    'PageDescription' is not defined                react/jsx-no-undef
+   8:2   error    'Title' is not defined                          react/jsx-no-undef
+   8:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+   8:30  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   8:50  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   9:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  12:2   error    'Title' is not defined                          react/jsx-no-undef
+  12:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  12:36  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  12:56  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  13:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  16:2   error    'Title' is not defined                          react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/solutions.mdx
+  44:1  error  Parsing error: unknown jsx node: "<ArticleContainer\n  title=\"From spot quote rates to customer specific tarrif rates\"\n  subTitle=\"Automate your shipping processes by creating a Bill of Lading, share documents, create shipping labels, retrieve a rate quote, and pickup requests through a single API call\n  \"\n>\n- 204 Motor Carrier Shipment Information - Version 4010 <br />\n- 210 Freight Details and Invoice - Version 4010 <br />\n- 211 Motor Carrier Bill of Lading - Version 4010 <br />\n- 214 Shipment Status Message - Version 4010 <br />\n- 997 Functional Acknowledgement <br />"
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/support.mdx
+   6:1   warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+   6:2   error    'PageDescription' is not defined                react/jsx-no-undef
+   9:2   error    'Title' is not defined                          react/jsx-no-undef
+   9:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+   9:30  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   9:50  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  10:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  13:2   error    'Title' is not defined                          react/jsx-no-undef
+  13:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  13:36  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  13:56  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  14:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  17:2   error    'Title' is not defined                          react/jsx-no-undef
+  17:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  17:38  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  17:58  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  18:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  21:2   error    'Title' is not defined                          react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/terms-of-service.mdx
+   6:1   warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+   6:2   error    'PageDescription' is not defined                react/jsx-no-undef
+   7:2   error    'Title' is not defined                          react/jsx-no-undef
+   7:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+   7:30  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   7:50  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+   8:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  11:2   error    'Title' is not defined                          react/jsx-no-undef
+  11:2   error    'AnchorLinks' is not defined                    react/jsx-no-undef
+  11:36  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  11:56  warning  `>` can be escaped with `&gt;`                  mdx/no-unescaped-entities
+  12:4   error    'AnchorLink' is not defined                     react/jsx-no-undef
+  15:2   error    'Title' is not defined                          react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/trade-finance.mdx
+  10:1  warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+  10:2  error    'PageDescription' is not defined                react/jsx-no-undef
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/trading.mdx
+  12:3   warning  'ArticleContainer' is defined but never used                                             no-unused-vars
+  13:3   warning  'BrandsList' is defined but never used                                                   no-unused-vars
+  14:3   warning  'SnapContent' is defined but never used                                                  no-unused-vars
+  15:3   warning  'SnapCard' is defined but never used                                                     no-unused-vars
+  16:3   warning  'SignUpContainer' is defined but never used                                              no-unused-vars
+  17:3   warning  'BannerContainer' is defined but never used                                              no-unused-vars
+  18:3   warning  'RequestDemoContent' is defined but never used                                           no-unused-vars
+  19:8   error    Unable to resolve path to module 'gatsby-theme-carbon/src/templates/HomepageComponents'  import/no-unresolved
+  20:10  warning  'Button' is defined but never used                                                       no-unused-vars
+  25:1   warning  JSX not allowed in files with extension '.mdx'                                           react/jsx-filename-extension
+
+/Users/sbacha/gitlab-gatsby/master/webapp/src/pages/x12.mdx
+  10:1  warning  JSX not allowed in files with extension '.mdx'  react/jsx-filename-extension
+  10:2  error    'PageDescription' is not defined                react/jsx-no-undef
+
+✖ 179 problems (98 errors, 81 warnings)
