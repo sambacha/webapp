@@ -41,4 +41,4 @@ jobs:
       install:
         - npm install
       script:
-        - chmod +x .seriesci.sh && bash .seriesci.sh
+        - true
