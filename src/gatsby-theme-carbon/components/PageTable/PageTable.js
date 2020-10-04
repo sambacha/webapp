@@ -20,9 +20,9 @@ export default class PageTable extends React.Component {
     });
 
     return (
-      <div className='bx--row'>
+      <div className="bx--row">
         <div className={classNames}>
-          <table className='page-table'>{children}</table>
+          <table className="page-table">{children}</table>
         </div>
       </div>
     );

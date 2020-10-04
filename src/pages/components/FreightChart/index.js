@@ -65,17 +65,17 @@ class FreightChart extends PureComponent {
                   <Row>
                     <span>From</span>
                     <TextInput
-                      placeholder='From date'
-                      labelText=''
-                      id='fromDate'
-                      value='22-May-2019'
+                      placeholder="From date"
+                      labelText=""
+                      id="fromDate"
+                      value="22-May-2019"
                     />
                     <span>To</span>
                     <TextInput
-                      placeholder='To date'
-                      labelText=''
-                      id='toDate'
-                      value='22-May-2020'
+                      placeholder="To date"
+                      labelText=""
+                      id="toDate"
+                      value="22-May-2020"
                     />
                   </Row>
                 </div>
@@ -85,36 +85,34 @@ class FreightChart extends PureComponent {
               width={795}
               height={300}
               data={this.data}
-              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-            >
+              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
               <defs>
-                <linearGradient id='colorPrice' x1='0' y1='0' x2='0' y2='1'>
-                  <stop offset='5%' stopColor='#27D974' stopOpacity={0.8} />
-                  <stop offset='95%' stopColor='#27D974' stopOpacity={0} />
+                <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="5%" stopColor="#27D974" stopOpacity={0.8} />
+                  <stop offset="95%" stopColor="#27D974" stopOpacity={0} />
                 </linearGradient>
               </defs>
 
               <CartesianGrid vertical={false} />
-              <XAxis dataKey='date' tick={{ fill: `#f4f4f4` }} interval={10} />
+              <XAxis dataKey="date" tick={{ fill: `#f4f4f4` }} interval={10} />
 
               <Tooltip
                 wrapperStyle={{ background: `#000000` }}
                 contentStyle={{ background: `#525252` }}
               />
               <Area
-                type='linear'
-                dataKey='price'
-                stroke='#27D974'
+                type="linear"
+                dataKey="price"
+                stroke="#27D974"
                 fillOpacity={1}
-                fill='url(#colorPrice)'
+                fill="url(#colorPrice)"
               />
 
               <Brush
-                dataKey='date'
+                dataKey="date"
                 fillOpacity={1}
-                fill='none'
-                stroke='#c6c6c6'
-              >
+                fill="none"
+                stroke="#c6c6c6">
                 <AreaChart
                   width={750}
                   height={50}
@@ -124,12 +122,11 @@ class FreightChart extends PureComponent {
                     right: 30,
                     left: 0,
                     bottom: 0,
-                  }}
-                >
+                  }}>
                   <defs>
-                    <linearGradient id='colorPrice' x1='0' y1='0' x2='0' y2='1'>
-                      <stop offset='5%' stopColor='#27D974' stopOpacity={0.8} />
-                      <stop offset='95%' stopColor='#27D974' stopOpacity={0} />
+                    <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#27D974" stopOpacity={0.8} />
+                      <stop offset="95%" stopColor="#27D974" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                   <CartesianGrid
@@ -137,11 +134,11 @@ class FreightChart extends PureComponent {
                     verticalPoints={[50, 200, 350, 500, 650]}
                   />
                   <Area
-                    type='linear'
-                    dataKey='price'
-                    stroke='#27D974'
+                    type="linear"
+                    dataKey="price"
+                    stroke="#27D974"
                     fillOpacity={1}
-                    fill='url(#colorPrice)'
+                    fill="url(#colorPrice)"
                   />
                 </AreaChart>
               </Brush>
@@ -176,11 +173,10 @@ class FreightChart extends PureComponent {
                         right: 30,
                         left: 0,
                         bottom: 0,
-                      }}
-                    >
+                      }}>
                       <CartesianGrid vertical={false} />
                       <XAxis
-                        dataKey='date'
+                        dataKey="date"
                         tick={{ fill: `#f4f4f4` }}
                         interval={20}
                       />
@@ -192,8 +188,8 @@ class FreightChart extends PureComponent {
                           background: `#525252`,
                         }}
                       />
-                      <Bar dataKey='price' stackId='a' fill='none' />
-                      <Bar dataKey='price' stackId='a' fill='#27D974' />
+                      <Bar dataKey="price" stackId="a" fill="none" />
+                      <Bar dataKey="price" stackId="a" fill="#27D974" />
                     </BarChart>
                   </div>
                 </div>
@@ -221,15 +217,14 @@ class FreightChart extends PureComponent {
                         right: 30,
                         left: -15,
                         bottom: 0,
-                      }}
-                    >
+                      }}>
                       <CartesianGrid vertical={false} />
                       <XAxis
-                        dataKey='date'
+                        dataKey="date"
                         tick={{ fill: `#f4f4f4` }}
                         interval={20}
                       />
-                      <YAxis dataKey='price' tick={{ fill: `#f4f4f4` }} />
+                      <YAxis dataKey="price" tick={{ fill: `#f4f4f4` }} />
                       <Tooltip
                         wrapperStyle={{
                           background: `#000000`,
@@ -240,15 +235,15 @@ class FreightChart extends PureComponent {
                       />
                       {/* <Legend /> */}
                       <Line
-                        type='monotone'
-                        dataKey='price'
-                        stroke='#8884d8'
+                        type="monotone"
+                        dataKey="price"
+                        stroke="#8884d8"
                         dot={false}
                       />
                       <Line
-                        type='monotone'
-                        dataKey='price1'
-                        stroke='#82ca9d'
+                        type="monotone"
+                        dataKey="price1"
+                        stroke="#82ca9d"
                         dot={false}
                       />
                     </LineChart>

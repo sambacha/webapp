@@ -16,15 +16,15 @@ const { prefix } = settings;
 const getIcon = ({ actionIcon }) => {
   switch (actionIcon) {
     case 'arrowRight':
-      return <ArrowRight20 aria-label='Open resource' />;
+      return <ArrowRight20 aria-label="Open resource" />;
     case 'download':
-      return <Download20 aria-label='Download' />;
+      return <Download20 aria-label="Download" />;
     case 'email':
-      return <Email20 aria-label='Email' />;
+      return <Email20 aria-label="Email" />;
     case 'calendar':
-      return <Calendar20 aria-label='Calendar' />;
+      return <Calendar20 aria-label="Calendar" />;
     default:
-      return <Launch20 aria-label='Open resource' />;
+      return <Launch20 aria-label="Open resource" />;
   }
 };
 

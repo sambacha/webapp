@@ -29,9 +29,8 @@ const TextContainer = ({ title, content, buttonLabel }) => (
     <h1>{title}</h1>
     <p>{content}</p>
     <Button
-      href='https://freight.page.link/request-information'
-      kind='secondary'
-    >
+      href="https://freight.page.link/request-information"
+      kind="secondary">
       {buttonLabel}
     </Button>
   </div>
@@ -55,7 +54,7 @@ export const TextImage = ({
           <TextContainer
             title={title}
             content={content}
-            href='https://freight.page.link/request-information'
+            href="https://freight.page.link/request-information"
             buttonLabel={buttonLabel}
           />
         </Column>
@@ -66,14 +65,14 @@ export const TextImage = ({
           <TextContainer
             title={title}
             content={content}
-            href='https://freight.page.link/request-information'
+            href="https://freight.page.link/request-information"
             buttonLabel={buttonLabel}
           />
         </Column>
         <Column colSm={12} colMd={6} colLg={6}>
           <div
             className={imageContainer}
-            href='https://freight.page.link/request-information'
+            href="https://freight.page.link/request-information"
           />
         </Column>
       </Row>

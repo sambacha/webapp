@@ -37,39 +37,39 @@ import {
 const ProductFooter = (
   <div>
     <h5>Quick Links</h5>
-    <a href='https://drewry.co.uk'>Partners</a>
-    <a href='https://freight.page.link/request-information'>Integrations</a>
-    <a href='https://ft-docs.netlify.app'>API</a>
-    <a href='https://ft-docs.netlify.app'>Rulebook</a>
+    <a href="https://drewry.co.uk">Partners</a>
+    <a href="https://freight.page.link/request-information">Integrations</a>
+    <a href="https://ft-docs.netlify.app">API</a>
+    <a href="https://ft-docs.netlify.app">Rulebook</a>
   </div>
 );
 
 const CoporateFooter = (
   <div>
     <h5>Corporate</h5>
-    <a href='https://freight.page.link/request-information'>Press</a>
-    <a href='https://github.com/freight-trust/branding'>Branding</a>
-    <a href='https://freight.page.link/request-information'>Compliance</a>
+    <a href="https://freight.page.link/request-information">Press</a>
+    <a href="https://github.com/freight-trust/branding">Branding</a>
+    <a href="https://freight.page.link/request-information">Compliance</a>
   </div>
 );
 
 const SolutionsFooter = (
   <div>
     <h5>Solutions</h5>
-    <a href='/solutions'>For Trucking</a>
-    <a href='/solutions'>For Maritime</a>
-    <a href='/solutions'>For Intermodal</a>
-    <a href='/finance'>For Finance</a>
+    <a href="/solutions">For Trucking</a>
+    <a href="/solutions">For Maritime</a>
+    <a href="/solutions">For Intermodal</a>
+    <a href="/finance">For Finance</a>
   </div>
 );
 
 const ResourcesFooter = (
   <div>
     <h5>Resources</h5>
-    <a href='https://ft-docs.netlify.app'>Documentation</a>
-    <a href='https://github.com/freight-trust'>Open Source</a>
-    <a href='https://github.com/freight-trust/spec'>EDI Protocol</a>
-    <a href='https://github.com/freight-trust/pki'>PGP/PKI</a>
+    <a href="https://ft-docs.netlify.app">Documentation</a>
+    <a href="https://github.com/freight-trust">Open Source</a>
+    <a href="https://github.com/freight-trust/spec">EDI Protocol</a>
+    <a href="https://github.com/freight-trust/pki">PGP/PKI</a>
   </div>
 );
 
@@ -83,8 +83,7 @@ const CustomFooter = ({ homepage }) => {
           colMd={3}
           colLg={3}
           colXl={3}
-          className={footerLinkCol}
-        >
+          className={footerLinkCol}>
           <h1>Freight Trust & Clearing</h1>
         </Column>
 
@@ -102,8 +101,7 @@ const CustomFooter = ({ homepage }) => {
           colMd={0}
           colLg={0}
           colXl={0}
-          className={footerLinkColMobile}
-        >
+          className={footerLinkColMobile}>
           <div className={footerLinkCol}>
             {SolutionsFooter}
             {ResourcesFooter}
@@ -115,18 +113,17 @@ const CustomFooter = ({ homepage }) => {
           colMd={2}
           colLg={2}
           colXl={1}
-          className={footerButtonCol}
-        >
+          className={footerButtonCol}>
           {/* <div>
             <Button>Register</Button>
           </div> */}
           <div>
             {isAuthenticated() ? (
-              <Button kind='tertiary' onClick={logout}>
+              <Button kind="tertiary" onClick={logout}>
                 Log Out
               </Button>
             ) : (
-              <Button kind='tertiary' onClick={login}>
+              <Button kind="tertiary" onClick={login}>
                 Log In
               </Button>
             )}
@@ -145,16 +142,16 @@ const CustomFooter = ({ homepage }) => {
         <Column colMd={2} colLg={2} />
 
         <Column colMd={2} colLg={2}>
-          <a href='https://twitter.com/freighttrustnet'>Twitter</a>
-          <a href='https://www.instagram.com/freight_Trust/'>Instagram</a>
-          <a href='https://medium.com/freighttrust'>Medium</a>
-          <a href='https://t.me/freighttrust'>Telegram</a>
+          <a href="https://twitter.com/freighttrustnet">Twitter</a>
+          <a href="https://www.instagram.com/freight_Trust/">Instagram</a>
+          <a href="https://medium.com/freighttrust">Medium</a>
+          <a href="https://t.me/freighttrust">Telegram</a>
         </Column>
 
         <Column colMd={2} colLg={2}>
-          <a href='https://github.com/freight-trust'>GitHub</a>
-          <a href='https://github.com/freight-trust/releases'>Releases</a>
-          <a href='https://hub.docker.com/r/freightnetwork'>Docker</a>
+          <a href="https://github.com/freight-trust">GitHub</a>
+          <a href="https://github.com/freight-trust/releases">Releases</a>
+          <a href="https://hub.docker.com/r/freightnetwork">Docker</a>
         </Column>
       </Row>
 
@@ -162,13 +159,13 @@ const CustomFooter = ({ homepage }) => {
         <Column colMd={6} colLg={6}>
           <div className={footerFollowSection}>
             <span>
-              <a href='/terms-of-service'>Terms of Service{` `}</a>
+              <a href="/terms-of-service">Terms of Service{` `}</a>
             </span>
             <span>
-              <a href='/privacy-policy'>Privacy Policy{` `}</a>
+              <a href="/privacy-policy">Privacy Policy{` `}</a>
             </span>
             <span>
-              <a href='/security'>Security{` `}</a>
+              <a href="/security">Security{` `}</a>
             </span>
           </div>
         </Column>

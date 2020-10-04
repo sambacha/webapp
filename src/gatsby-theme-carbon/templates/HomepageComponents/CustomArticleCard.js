@@ -27,7 +27,7 @@ export const CustomArticleCard = (props) => {
   return (
     <div className={customArticleCardContainer}>
       <div className={articleCardImage}>
-        <img src={imgSrc} alt='article' />
+        <img src={imgSrc} alt="article" />
       </div>
       <h1>{title}</h1>
       <h2>{subTitle}</h2>

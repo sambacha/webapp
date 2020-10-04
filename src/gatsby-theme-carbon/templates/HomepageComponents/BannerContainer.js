@@ -27,16 +27,15 @@ const BannerText = ({
   buttonComponent,
   buttonAction,
 }) => (
-  <div className='banner'>
+  <div className="banner">
     <h1>{title}</h1>
     <p>{content}</p>
-    <div className='buttonContainer'>
+    <div className="buttonContainer">
       {buttonComponent || (
         <Button
-          href='#top'
-          kind='primary'
-          onClick={buttonAction ? () => buttonAction() : () => {}}
-        >
+          href="#top"
+          kind="primary"
+          onClick={buttonAction ? () => buttonAction() : () => {}}>
           {buttonLabel}
         </Button>
       )}
@@ -53,9 +52,8 @@ export const BannerContainer = ({
   noBgImage,
 }) => (
   <div
-    className={`bannerContainer ${noBgImage ? `` : `bannerContainerWithBg`}`}
-  >
-    <Row className='bannerRow'>
+    className={`bannerContainer ${noBgImage ? `` : `bannerContainerWithBg`}`}>
+    <Row className="bannerRow">
       <Column colSm={12} colMd={7} colLg={7}>
         <BannerText
           title={title}

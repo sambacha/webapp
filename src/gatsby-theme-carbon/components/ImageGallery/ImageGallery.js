@@ -117,7 +117,7 @@ function ImageGallery({ children }) {
 
   return (
     <>
-      <figure role='group' aria-label='Gallery of Various Media'>
+      <figure role="group" aria-label="Gallery of Various Media">
         <Row className={galleryContainer}>
           {Children.map(children, (child, index) =>
             React.cloneElement(child, {
@@ -134,17 +134,15 @@ function ImageGallery({ children }) {
             {/* Because of FocusTrap, the key down events will propagate up removing the accessibility problem that would be created by having a keydown event listener on a non-interactive element. */}
             {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
             <div
-              role='group'
+              role="group"
               className={inDialogGalleryContainer}
-              onKeyDown={onKeyDown}
-            >
+              onKeyDown={onKeyDown}>
               <Row>
                 <Column colLg={2}>
                   <button
-                    type='button'
+                    type="button"
                     className={closeButton}
-                    onClick={closeGallery}
-                  >
+                    onClick={closeGallery}>
                     <Close32 className={icon} />
                   </button>
                 </Column>
@@ -154,10 +152,9 @@ function ImageGallery({ children }) {
                   <Column colLg={3} className={navButtonsContainer}>
                     {activeImageIndex - 1 >= 0 && (
                       <button
-                        type='button'
+                        type="button"
                         className={leftNavButton}
-                        onClick={selectPrevImage}
-                      >
+                        onClick={selectPrevImage}>
                         <ChevronLeft32 className={icon} />
                       </button>
                     )}
@@ -178,10 +175,9 @@ function ImageGallery({ children }) {
                   <Column colLg={3} className={navButtonsContainer}>
                     {activeImageIndex + 1 < childrenAsArray.length && (
                       <button
-                        type='button'
+                        type="button"
                         className={rightNavButton}
-                        onClick={selectNextImage}
-                      >
+                        onClick={selectNextImage}>
                         <ChevronRight32 className={icon} />
                       </button>
                     )}

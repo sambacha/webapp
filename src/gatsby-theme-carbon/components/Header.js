@@ -56,18 +56,17 @@ const Header = ({ children }) => {
 
   return (
     <ShellHeader
-      href='https://freight.page.link/request-information'
-      aria-label='Header'
-      className={header}
-    >
+      href="https://freight.page.link/request-information"
+      aria-label="Header"
+      className={header}>
       <SkipToContent
-        href='https://freight.page.link/request-information'
+        href="https://freight.page.link/request-information"
         className={skipToContent}
       />
 
       <HeaderMenuButton
         className={cx(`bx--header__action--menu`, headerButton)}
-        aria-label='Open menu'
+        aria-label="Open menu"
         onClick={() => {
           toggleNavState(`leftNavIsOpen`);
           toggleNavState(`switcherIsOpen`, `close`);
@@ -77,25 +76,25 @@ const Header = ({ children }) => {
       {/** 
 TODO: Fix NAVIGATION ITEMS HERE 
 */}
-      <Link className={headerName} to='https://freighttrust.com'>
+      <Link className={headerName} to="https://freighttrust.com">
         Freight Trust
       </Link>
 
       <div className={navLists}>
         <div className={navLeftBorder} />
-        <Link className={navLink} to='/solutions'>
+        <Link className={navLink} to="/solutions">
           Solutions
         </Link>
-        <Link className={navLink} to='/trading'>
+        <Link className={navLink} to="/trading">
           EDI Protocol
         </Link>
-        <Link className={navLink} to='/finance'>
+        <Link className={navLink} to="/finance">
           Trade Finance
         </Link>
-        <Link className={navLink} to='/dashboard'>
+        <Link className={navLink} to="/dashboard">
           Trade Network
         </Link>
-        <Link className={navLink} to='/trading'>
+        <Link className={navLink} to="/trading">
           Contact
         </Link>
       </div>
@@ -107,13 +106,12 @@ TODO: Fix NAVIGATION ITEMS HERE
           className={cx(headerButton, switcherButton, {
             [switcherButtonOpen]: switcherIsOpen,
           })}
-          aria-label='Switch'
+          aria-label="Switch"
           onClick={() => {
             toggleNavState(`switcherIsOpen`, `close`);
             toggleNavState(`searchIsOpen`, `close`);
             toggleNavState(`leftNavIsOpen`, `close`);
-          }}
-        >
+          }}>
           {switcherIsOpen ? <Close20 /> : <AppSwitcher20 />}
         </HeaderGlobalAction>
       </HeaderGlobalBar>

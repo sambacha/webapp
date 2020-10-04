@@ -33,16 +33,16 @@ const modalProps = [
     renderContent: () => (
       <div>
         <TextInput
-          labelText='Company Name'
-          placeholder='Company Name'
-          id='companyName'
+          labelText="Company Name"
+          placeholder="Company Name"
+          id="companyName"
         />
         <TextInput
-          labelText='Company Legal Identifier'
-          placeholder='Company Legal Identifier'
-          id='companyLegalID'
+          labelText="Company Legal Identifier"
+          placeholder="Company Legal Identifier"
+          id="companyLegalID"
         />
-        <TextInput labelText='Your Email' placeholder='Email' id='email' />
+        <TextInput labelText="Your Email" placeholder="Email" id="email" />
       </div>
     ),
   },
@@ -53,12 +53,12 @@ const modalProps = [
     buttonText: `Submit`,
     renderContent: () => (
       <div>
-        <TextInput labelText='AS2 ID' placeholder='AS2 ID' id='as2ID' />
-        <TextInput labelText='AS2 URL' placeholder='AS2 URL' id='as2Url' />
+        <TextInput labelText="AS2 ID" placeholder="AS2 ID" id="as2ID" />
+        <TextInput labelText="AS2 URL" placeholder="AS2 URL" id="as2Url" />
         <TextInput
-          labelText='0x PUBLIC ADDRESS'
-          placeholder='0x PUBLIC ADDRESS'
-          id='publicAddress'
+          labelText="0x PUBLIC ADDRESS"
+          placeholder="0x PUBLIC ADDRESS"
+          id="publicAddress"
         />
       </div>
     ),
@@ -73,7 +73,7 @@ const modalProps = [
     ],
     renderContent: () => (
       <div>
-        <Loading description='Active loading indicator' withOverlay={false} />
+        <Loading description="Active loading indicator" withOverlay={false} />
       </div>
     ),
   },
@@ -167,31 +167,28 @@ class TradingSignUpContainer extends Component {
     const tradingSignUpModal = (
       <Modal
         passiveModal
-        size='xs'
+        size="xs"
         modalLabel={modalLabel}
-        className='trading-signup-modal'
+        className="trading-signup-modal"
         open={modalVisible}
-        onRequestClose={() => this.showModal(false)}
-      >
+        onRequestClose={() => this.showModal(false)}>
         <h2>{headerLabel}</h2>
         {contentText && <h5>{contentText}</h5>}
         {contentTexts && <h5>{contentTexts[currentContentStep]}</h5>}
         {renderContent && renderContent()}
         {buttonText && (
           <Button
-            size='field'
-            className='submit-btn'
-            onClick={() => this.goToNextStep()}
-          >
+            size="field"
+            className="submit-btn"
+            onClick={() => this.goToNextStep()}>
             {buttonText}
           </Button>
         )}
         {helperText}
         <Button
-          kind='ghost'
-          className='back-btn'
-          onClick={() => this.goToPrevStep()}
-        >
+          kind="ghost"
+          className="back-btn"
+          onClick={() => this.goToPrevStep()}>
           <ChevronLeft20 />
         </Button>
       </Modal>
@@ -200,9 +197,9 @@ class TradingSignUpContainer extends Component {
     return (
       <div>
         <BannerContainer
-          title='Trading Channel Protocol'
-          content='Trading Channel Creation Window'
-          buttonLabel='Create Trading Channel'
+          title="Trading Channel Protocol"
+          content="Trading Channel Creation Window"
+          buttonLabel="Create Trading Channel"
           buttonAction={this.showModal}
           noBgImage
         />

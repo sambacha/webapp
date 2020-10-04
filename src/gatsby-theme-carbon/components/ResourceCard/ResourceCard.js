@@ -55,22 +55,22 @@ export default class ResourceCard extends React.Component {
         <div className={`${prefix}--resource-card__icon--img`}>{children}</div>
         <div className={`${prefix}--resource-card__icon--action`}>
           {actionIcon === 'launch' && !disabled ? (
-            <Launch20 aria-label='Open resource' />
+            <Launch20 aria-label="Open resource" />
           ) : null}
           {actionIcon === 'arrowRight' && !disabled ? (
-            <ArrowRight20 aria-label='Open resource' />
+            <ArrowRight20 aria-label="Open resource" />
           ) : null}
           {actionIcon === 'download' && !disabled ? (
-            <Download20 aria-label='Download' />
+            <Download20 aria-label="Download" />
           ) : null}
           {actionIcon === 'email' && !disabled ? (
-            <Email20 aria-label='Email' />
+            <Email20 aria-label="Email" />
           ) : null}
           {actionIcon === 'calendar' && !disabled ? (
-            <Calendar20 aria-label='Calendar' />
+            <Calendar20 aria-label="Calendar" />
           ) : null}
           {actionIcon === 'disabled' || disabled === true ? (
-            <Error20 aria-label='disabled' />
+            <Error20 aria-label="disabled" />
           ) : null}
         </div>
       </>
@@ -96,8 +96,7 @@ export default class ResourceCard extends React.Component {
         <a
           href={rest.download && !isExternalURL ? hrefPrefixed : href}
           className={carbonTileclassNames}
-          {...rest}
-        >
+          {...rest}>
           {cardContent}
         </a>
       );
@@ -109,8 +108,7 @@ export default class ResourceCard extends React.Component {
           className={classnames(
             `${prefix}--aspect-ratio`,
             `${prefix}--aspect-ratio--${aspectRatio.replace(':', 'x')}`
-          )}
-        >
+          )}>
           <div className={`${prefix}--aspect-ratio--object`}>
             {cardContainer}
           </div>

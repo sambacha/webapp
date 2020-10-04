@@ -25,14 +25,13 @@ const Sidebar = ({ src, path, children }) => {
       )}
       {shouldShowSrcLink && (
         <a
-          title='View source'
-          target='_blank'
-          rel='noopener noreferrer'
+          title="View source"
+          target="_blank"
+          rel="noopener noreferrer"
           className={button}
           href={src}
-          style={{ zIndex: 200 }}
-        >
-          <Launch16 alt='View source' />
+          style={{ zIndex: 200 }}>
+          <Launch16 alt="View source" />
         </a>
       )}
     </div>

@@ -36,9 +36,8 @@ const Homepage = ({ pageContext, children, _frontmatter }) => {
       pageKeywords={keywords}
       titleType={titleType}
       homepage
-      theme='dark'
-      href='https://freight.page.link/request-information'
-    >
+      theme="dark"
+      href="https://freight.page.link/request-information">
       <Main className={mainContent}>{children}</Main>
 
       <BackToTopBtn />
@@ -60,7 +59,7 @@ Homepage.defaultProps = {
   ),
   FirstCallout: <HomepageCallout />,
   SecondCallout: (
-    <HomepageCallout color='inverse01' backgroundColor='#061f80' />
+    <HomepageCallout color="inverse01" backgroundColor="#061f80" />
   ),
 };
 
