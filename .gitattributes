@@ -27,4 +27,6 @@ src/gatsby-theme-carbon/* linguist-vendored
 #*.js linguist-vendored=false
 
 *.json diff=json
+*.png diff=exif
+*.svg diff=exif
 

@@ -24,15 +24,15 @@ The Feedback button only becomes visible once you've supplied an `onSubmit` hand
 2. Copy the following snippet into your new file
 
 ```jsx
-import React from 'react';
-import ThemeFeedbackDialog from 'gatsby-theme-carbon/src/components/FeedbackDialog/FeedbackDialog';
+import React from "react";
+import ThemeFeedbackDialog from "gatsby-theme-carbon/src/components/FeedbackDialog/FeedbackDialog";
 
 const FeedbackDialog = ({ props }) => {
-    const onSubmit = (data) => {
-        console.log({ ...data });
-    };
+  const onSubmit = (data) => {
+    console.log({ ...data });
+  };
 
-    return <ThemeFeedbackDialog {...props} onSubmit={onSubmit} />;
+  return <ThemeFeedbackDialog {...props} onSubmit={onSubmit} />;
 };
 
 export default FeedbackDialog;
@@ -44,9 +44,9 @@ Next, you'll need a place to send the data. For the Carbon website, we use a ser
 
 The handler can send a fetch request off to the endpoint you create. Update the `onSubmit` handler to send the data wherever you want. This function receives the following arguments:
 
--   `experience`: "Negative", "Positive" or "Neutral"
--   `comment`: An optional comment
--   `path`: the window location when the survey was submitted
+- `experience`: "Negative", "Positive" or "Neutral"
+- `comment`: An optional comment
+- `path`: the window location when the survey was submitted
 
 ```jsx
 const FeedbackDialog = ({ props }) => {
@@ -142,9 +142,9 @@ The `<Row>` component is a wrapper that adds the `bx--row` class to a wrapper di
 
 ```mdx path=components/Grid.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Grid
 <Row>
-    <Column>
-        Content or additional <Components />
-    </Column>
+  <Column>
+    Content or additional <Components />
+  </Column>
 </Row>
 ```
 
@@ -555,8 +555,8 @@ Click on an image to open the gallery.
 <ImageGalleryImage alt="IBM Cloud Platform Prototype" title="IBM Cloud Platform" col={4}>
 
 
-<Video src="/videos/hero-video.mp4" poster="/images/poster.jpg">
-    <track default src="/videos/vtt/hero-video.vtt" srcLang="en" />
+<Video src='/videos/hero-video.mp4' poster='/images/poster.jpg'>
+  <track default src='/videos/vtt/hero-video.vtt' srcLang='en' />
 </Video>
 
 </ImageGalleryImage>
@@ -749,7 +749,7 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 
 {" "}
 
-<MiniCard title="Choose from other icons" href="/demo" actionIcon="arrowRight" />
+<MiniCard title='Choose from other icons' href='/demo' actionIcon='arrowRight' />
 
   <MiniCard title="Or bring your own" href="/demo">
 
@@ -790,14 +790,14 @@ When you have the mini resource card sitting aside the main content, be sure to 
 
 ```mdx path=components/MiniCard/MiniCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/MiniCard
 <CardGroup>
-    <MiniCard title="26 characters per MiniCard" href="/demo">
-        ![Github icon](/images/github-icon.png)
-    </MiniCard>
-    <MiniCard title="Use the default icon" href="/demo" />
-    <MiniCard title="Choose from other icons" href="/demo" actionIcon="arrowRight" />
-    <MiniCard title="Or bring your own" href="/demo">
-        ![Github icon](/images/sketch-icon.png)
-    </MiniCard>
+  <MiniCard title='26 characters per MiniCard' href='/demo'>
+    ![Github icon](/images/github-icon.png)
+  </MiniCard>
+  <MiniCard title='Use the default icon' href='/demo' />
+  <MiniCard title='Choose from other icons' href='/demo' actionIcon='arrowRight' />
+  <MiniCard title='Or bring your own' href='/demo'>
+    ![Github icon](/images/sketch-icon.png)
+  </MiniCard>
 </CardGroup>
 ```
 
@@ -979,7 +979,12 @@ When you have the mini resource card sitting aside the main content, be sure to 
 
 ```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
 <Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard title="Disabled card" aspectRatio="2:1" disabled href="https://gatsby-theme-carbon.now.sh" />
+  <ResourceCard
+    title='Disabled card'
+    aspectRatio='2:1'
+    disabled
+    href='https://gatsby-theme-carbon.now.sh'
+  />
 </Column>
 ```
 
@@ -1057,7 +1062,9 @@ The tab component can be used for a variety of content. From text, to images, to
 <Title>Single image</Title>
 
 ```mdx path=components/Tabs/Tabs.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Tabs
-<Tab label="Single image">If your content is full width, you don’t need `Row` and `Column` ![color array](images/colors.jpg)</Tab>
+<Tab label='Single image'>
+  If your content is full width, you don’t need `Row` and `Column` ![color array](images/colors.jpg)
+</Tab>
 ```
 
 <Title>Multiple images</Title>

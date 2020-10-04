@@ -1,47 +1,47 @@
-@import '@carbon/themes/scss/themes';
+@import "@carbon/themes/scss/themes";
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .brands-content {
+  text-align: center;
+  padding: $layout-05 $layout-03 !important;
+  background: $ui-05;
+  color: $inverse-01;
+
+  @include carbon--breakpoint("md") {
+    padding: $layout-05 $layout-05 !important;
+  }
+
+  @include carbon--breakpoint("lg") {
+    padding: $layout-05 $layout-07 !important;
+  }
+
+  a {
+    width: 150px;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    justify-content: center;
     text-align: center;
-    padding: $layout-05 $layout-03 !important;
-    background: $ui-05;
-    color: $inverse-01;
-
-    @include carbon--breakpoint('md') {
-        padding: $layout-05 $layout-05 !important;
-    }
-
-    @include carbon--breakpoint('lg') {
-        padding: $layout-05 $layout-07 !important;
-    }
-
-    a {
-        width: 150px;
-        height: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-radius: 30px;
-        justify-content: center;
-        text-align: center;
-        @include carbon--type-style('productive-heading-02');
-    }
+    @include carbon--type-style("productive-heading-02");
+  }
 }
 
 .brands-content a {
-    margin-bottom: $spacing-05;
+  margin-bottom: $spacing-05;
 }
 
 .brands-content h1 {
-    text-align: center;
-    @include carbon--type-style('productive-heading-04');
-    text-shadow: 2px 2px 8px #ffffff;
+  text-align: center;
+  @include carbon--type-style("productive-heading-04");
+  text-shadow: 2px 2px 8px #ffffff;
 }
 
 .brands-content p {
-    @include carbon--type-style('productive-heading-03');
-    margin-top: $spacing-08;
-    margin-bottom: $spacing-08;
+  @include carbon--type-style("productive-heading-03");
+  margin-top: $spacing-08;
+  margin-bottom: $spacing-08;
 }
