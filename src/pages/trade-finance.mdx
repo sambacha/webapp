@@ -9,18 +9,17 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation -->
 
 <PageDescription>
 
-REST API for use by financial institution organizations to provide access to platform data 
+
+REST API for use by financial institution organizations to provide access to platform data
 
 </PageDescription>
 
 
-
 # Financial Institution
 
-
 - [Endpoints](#endpoints)
-  * [BillOfLadingVerifier](#billofladingverifier)
-    + [getBolDocumentUsingPOST](#getboldocumentusingpost)
+  - [BillOfLadingVerifier](#billofladingverifier)
+    - [getBolDocumentUsingPOST](#getboldocumentusingpost)
       - [Description](#description)
       - [Parameters](#parameters)
       - [Body Parameter](#body-parameter)
@@ -29,8 +28,8 @@ REST API for use by financial institution organizations to provide access to pla
       - [Responses](#responses)
       - [Samples](#samples)
 - [Models](#models)
-  * [*AppExceptionResponse* AppExceptionResponse](#-appexceptionresponse--appexceptionresponse)
-  * [*BolVerifyRequest* BolVerifyRequest](#-bolverifyrequest--bolverifyrequest)
+  - [_AppExceptionResponse_ AppExceptionResponse](#-appexceptionresponse--appexceptionresponse)
+  - [_BolVerifyRequest_ BolVerifyRequest](#-bolverifyrequest--bolverifyrequest)
 
 ## Endpoints
 
@@ -62,9 +61,9 @@ Minimum acceptable length is 6 characters.
 
 ##### Body Parameter
 
-| Name             | Description                                                            | Required | Default | Pattern |
-| ---------------- | ---------------------------------------------------------------------- | -------- | ------- | ------- |
-| BolVerifyRequest | Request object for BoL Verifier [ BolVerifyRequest](#BolVerifyRequest) | X        |         |         |
+| Name | Description | Required | Default | Pattern |
+| --- | --- | --- | --- | --- |
+| BolVerifyRequest | Request object for BoL Verifier [ BolVerifyRequest](#BolVerifyRequest) | X |  |  |
 
 ##### Return Type
 
@@ -72,18 +71,18 @@ Minimum acceptable length is 6 characters.
 
 ##### Content Type
 
-  - **/**
+- **/**
 
 ##### Responses
 
-| Code | Message                                                                                   | Datatype                                       |
-| ---- | ----------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| 200  | OK                                                                                        | \<\<\>\>                                       |
-| 400  | Bad request                                                                               | [ AppExceptionResponse](#AppExceptionResponse) |
-| 401  | Unauthorized                                                                              | \<\<\>\>                                       |
-| 403  | Forbidden                                                                                 | \<\<\>\>                                       |
-| 404  | No matching Bill of Lading available on the platform for the provided set of input params | [ AppExceptionResponse](#AppExceptionResponse) |
-| 500  | Server Error                                                                              | [ AppExceptionResponse](#AppExceptionResponse) |
+| Code | Message | Datatype |
+| --- | --- | --- |
+| 200 | OK | \<\<\>\> |
+| 400 | Bad request | [ AppExceptionResponse](#AppExceptionResponse) |
+| 401 | Unauthorized | \<\<\>\> |
+| 403 | Forbidden | \<\<\>\> |
+| 404 | No matching Bill of Lading available on the platform for the provided set of input params | [ AppExceptionResponse](#AppExceptionResponse) |
+| 500 | Server Error | [ AppExceptionResponse](#AppExceptionResponse) |
 
 http response codes
 
@@ -91,7 +90,7 @@ http response codes
 
 ## Models
 
-### *AppExceptionResponse* AppExceptionResponse
+### _AppExceptionResponse_ AppExceptionResponse
 
 | Field Name | Required | Type   | Description       | Format |
 | ---------- | -------- | ------ | ----------------- | ------ |
@@ -99,10 +98,10 @@ http response codes
 | message    | X        | String | Exception Message |        |
 | timestamp  | X        | String | timestamp         |        |
 
-### *BolVerifyRequest* BolVerifyRequest
+### _BolVerifyRequest_ BolVerifyRequest
 
-| Field Name            | Required | Type   | Description                                               | Format |
-| --------------------- | -------- | ------ | --------------------------------------------------------- | ------ |
-| billOfLadingNumber    | X        | String | Bill Of Lading number to search for                       |        |
-| oceanCarrierCode      | X        | String | Carrier SCAC code                                         |        |
-| consignorPrintedParty | X        | String | Consignor details field as in the Bill Of Lading document |        |
+| Field Name | Required | Type | Description | Format |
+| --- | --- | --- | --- | --- |
+| billOfLadingNumber | X | String | Bill Of Lading number to search for |  |
+| oceanCarrierCode | X | String | Carrier SCAC code |  |
+| consignorPrintedParty | X | String | Consignor details field as in the Bill Of Lading document |  |

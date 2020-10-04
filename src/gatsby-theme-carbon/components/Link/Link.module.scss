@@ -1,16 +1,16 @@
 .link:global(.bx--link) {
-    font-size: inherit;
-    text-decoration: underline;
+  font-size: inherit;
+  text-decoration: underline;
 
-    &:hover {
-        color: $carbon--blue-80;
-    }
+  &:hover {
+    color: $carbon--blue-80;
+  }
 
-    &:visited {
-        color: $link-01;
-    }
+  &:visited {
+    color: $link-01;
+  }
 
-    &:active {
-        color: $text-01;
-    }
+  &:active {
+    color: $text-01;
+  }
 }

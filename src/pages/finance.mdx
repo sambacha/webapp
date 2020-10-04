@@ -5,11 +5,11 @@ description: Corporate Contact
 
 <PageDescription>Corporate Contact and Public Key Infrastructure/PGP Keys</PageDescription>
 <Title>General Contact</Title> <AnchorLinks small>
-    <AnchorLink to="https://freight.page.link/request-information">Request Information</AnchorLink>
+  <AnchorLink to='https://freight.page.link/request-information'>Request Information</AnchorLink>
 </AnchorLinks> <Title>E-Mail</Title> <AnchorLinks small>
-    <AnchorLink to="mailto:corporate@freighttrust.com">corporate@freighttrust.com</AnchorLink>
+  <AnchorLink to='mailto:corporate@freighttrust.com'>corporate@freighttrust.com</AnchorLink>
 </AnchorLinks> <Title>Partners</Title> <AnchorLinks small>
-    <AnchorLink to="https://freight.page.link/request-information">Become a Partner</AnchorLink>
+  <AnchorLink to='https://freight.page.link/request-information'>Become a Partner</AnchorLink>
 </AnchorLinks> <Title>PKI & PGP</Title>
 
 # Financial Institutions
@@ -28,45 +28,34 @@ Fetch Bill Of Lading document.
 
 ##### Description
 
-Fetch a Trade Instrument, such as a  Bill Of Lading, matching all the input parameters. 
-The API will allow the caller to download the First Matching Bill Of Lading
-document matching all the input parameters. This API is accessible only
-to org’s of type Financial Institution and those that has been entitled
-to access the API tradeInstrumentVerifier: An exact case insensitive match is
-done for this parameter. oceanCarrierCode: An exact case insensitive
-match is done for this parameter. consignorPrintedParty: A partial case
-insensitive match is done for this parameter. Minimum acceptable length
-is 6 characters.
+Fetch a Trade Instrument, such as a Bill Of Lading, matching all the input parameters. The API will allow the caller to download the First Matching Bill Of Lading document matching all the input parameters. This API is accessible only to org’s of type Financial Institution and those that has been entitled to access the API tradeInstrumentVerifier: An exact case insensitive match is done for this parameter. oceanCarrierCode: An exact case insensitive match is done for this parameter. consignorPrintedParty: A partial case insensitive match is done for this parameter. Minimum acceptable length is 6 characters.
 
 ##### Parameters
 
 ##### Body Parameter
 
-| Name             | Description                                                            | Required | Default | Pattern |
-| ---------------- | ---------------------------------------------------------------------- | -------- | ------- | ------- |
-| TDocVerifyRequest | Request object for BoL Verifier [ TDocVerifyRequest](#TDocVerifyRequest) | X        |         |         |
+| Name | Description | Required | Default | Pattern |
+| --- | --- | --- | --- | --- |
+| TDocVerifyRequest | Request object for BoL Verifier [ TDocVerifyRequest](#TDocVerifyRequest) | X |  |  |
 
 ##### Return Type
 
-\- 
-Content-Type: application/json
-Content-Length: maxLength, 32
-\-
+\- Content-Type: application/json Content-Length: maxLength, 32 \-
 
 ##### Content Type
 
-  - **/**
+- **/**
 
 ##### Responses
 
-| Code | Message                                                                                   | Datatype                                       |
-| ---- | ----------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| 200  | OK                                                                                        | \<\<\>\>                                       |
-| 400  | Bad request                                                                               | [ AppExceptionResponse](#AppExceptionResponse) |
-| 401  | Unauthorized                                                                              | \<\<\>\>                                       |
-| 403  | Forbidden                                                                                 | \<\<\>\>                                       |
-| 404  | No matching Bill of Lading available on the platform for the provided set of input params | [ AppExceptionResponse](#AppExceptionResponse) |
-| 500  | Server Error                                                                              | [ AppExceptionResponse](#AppExceptionResponse) |
+| Code | Message | Datatype |
+| --- | --- | --- |
+| 200 | OK | \<\<\>\> |
+| 400 | Bad request | [ AppExceptionResponse](#AppExceptionResponse) |
+| 401 | Unauthorized | \<\<\>\> |
+| 403 | Forbidden | \<\<\>\> |
+| 404 | No matching Bill of Lading available on the platform for the provided set of input params | [ AppExceptionResponse](#AppExceptionResponse) |
+| 500 | Server Error | [ AppExceptionResponse](#AppExceptionResponse) |
 
 http response codes
 
@@ -74,7 +63,7 @@ http response codes
 
 ## Models
 
-### *AppExceptionResponse* AppExceptionResponse
+### _AppExceptionResponse_ AppExceptionResponse
 
 | Field Name | Required | Type   | Description       | Format |
 | ---------- | -------- | ------ | ----------------- | ------ |
@@ -82,10 +71,10 @@ http response codes
 | message    | X        | String | Exception Message |        |
 | timestamp  | X        | String | timestamp         |        |
 
-### *TDocVerifyRequest* TDocVerifyRequest
+### _TDocVerifyRequest_ TDocVerifyRequest
 
-| Field Name            | Required | Type   | Description                                               | Format |
-| --------------------- | -------- | ------ | --------------------------------------------------------- | ------ |
-| tradeInstrumentVerifier    | X        | String | Bill Of Lading number to search for                       |        |
-| oceanCarrierCode      | X        | String | Carrier SCAC code                                         |        |
-| consignorPrintedParty | X        | String | Consignor details field as in the Bill Of Lading document |        |
+| Field Name | Required | Type | Description | Format |
+| --- | --- | --- | --- | --- |
+| tradeInstrumentVerifier | X | String | Bill Of Lading number to search for |  |
+| oceanCarrierCode | X | String | Carrier SCAC code |  |
+| consignorPrintedParty | X | String | Consignor details field as in the Bill Of Lading document |  |

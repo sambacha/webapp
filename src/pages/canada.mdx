@@ -2,9 +2,11 @@
 title: Custtoms
 description: Canada
 ---
+
 <!-- SPDX-License-Identifier: Apache-2.0
 SPDXVersion: SPDX-2.2
 SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation -->
+
 import {
   DataTable,
   Table,
@@ -13,23 +15,24 @@ import {
   TableHeader,
   TableBody,
   TableCell,
-} from 'carbon-components-react';
-import { Button } from 'carbon-components-react'
-
+} from "carbon-components-react";
+import { Button } from "carbon-components-react";
 
 <PageDescription>
+
 
 Canadian Customs Codes
 
 </PageDescription>
 
+
 <Title>Success</Title>
-<InlineNotification kind="success">
-**Success:** Most Recent [](/components/InlineNotification) Error Codes 
+<InlineNotification kind='success'>
+  **Success:** Most Recent [](/components/InlineNotification) Error Codes
 </InlineNotification>
 
 | **id** | **New/ reuse code** | **Error Code** | **Rule No.** | **Program** | **Element ID** | **AX Error Number** | **Cargo/ Conv.** | **English Field name** | **English Message** | **Field name French** | **French Message** |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 2 | eManifest Highway \- New Codes \(Not documented in Appendix B of eManifest Highway ECCRD \- Version 1\.4\.1\) |
 | 3 | x | V02 | 187 | AX0Y9R | 4868 | 100053 | 976 | Highway Container CCN Exception Code | Is invalid | Code d’exception du NCF du conteneur routier | N’est pas valide |
 | 4 | x | V66 | 1508 | A00Y9J | 6084 | 100874 | 984 | Automotive Code | Automotive code not applicable for Highway | Code de véhicule | Code de véhicule non applicable pour le mode routier |
@@ -50,7 +53,7 @@ Canadian Customs Codes
 | 19 | x | W15 | 1529 | A00YCI | 4865 | 100877 | 976 | Trailor Related CCN | Input CCN or Exception Code, but not both | NCF lié à la remorque | Entrer le NCF ou le code d’exception, mais pas les deux |
 | 20 | x | W18 | 1529 | A00YCI | 4866 | 100877 | 976 | Tractor CCN Exception Code | Input CCN or Exception Code, but not both | Code d’exception du NCF lié au tracteur | Entrer le NCF ou le code d’exception, mais pas les deux |
 | 21 | x | W19 | 1529 | A00YCI | 4867 | 100877 | 976 | Trailer CCN Exception Code | Input CCN or Exception Code, but not both | Code d’exception du NCF lié à la remorque | Entrer le NCF ou le code d’exception, mais pas les deux |
-| 22 | x | W20 | 1529 | A00YCI | 4868 | 100877 | 976 | Highway Container CCN Exception Code | Input CCN or Exception Code, but not both | Code d’exception du NCF lié au conteneur routier  | Entrer le NCF ou le code d’exception, mais pas les deux |
+| 22 | x | W20 | 1529 | A00YCI | 4868 | 100877 | 976 | Highway Container CCN Exception Code | Input CCN or Exception Code, but not both | Code d’exception du NCF lié au conteneur routier | Entrer le NCF ou le code d’exception, mais pas les deux |
 | 23 | x | W23 | 993 | A00Y5Y | 2688 | 100010 | 984 | Delivery Address Postal Zip Code | Is mandatory when country code is "CA" or "US" | Code postal/Zip de l’adresse de livraison | Obligatoire lorsque le pays est le Canada ou les É\.\-U\. |
 | 24 | x | W24 | 993 | A00Y5Y | 4137 | 100010 | 984 | Railroad Postal Zip Code | Is mandatory when country code is "CA" or "US" | Code postal/Zip de la compagnie ferroviaire | Obligatoire lorsque le pays est le Canada ou les É\.\-U\. |
 | 25 | x | W25 | 993 | A00Y5Y | 4109 | 100724 | 984 | Shipper Postal Zip Code | Invalid format for country code "CA" or "US" | Code postal/Zip de l’expéditeur | Format invalide pour le code de pays "CA" ou "US" |
@@ -58,22 +61,22 @@ Canadian Customs Codes
 | 27 | x | W27 | 993 | A00Y5Y | 4081 | 100724 | 984 | Notify Party Postal Zip Code | Invalid format for country code "CA" or "US" | Code postal/Zip de la partie à aviser | Format invalide pour le code de pays "CA" ou "US" |
 | 28 | x | W28 | 993 | A00Y5Y | 2688 | 100724 | 984 | Delivery Address Postal Zip Code | Invalid format for country code "CA" or "US" | Code postal/Zip de l’adresse de livraison | Format invalide pour le code de pays "CA" ou "US" |
 | 29 | x | W29 | 993 | A00Y5Y | 4137 | 100724 | 984 | Railroad Postal Zip Code | Invalid format for country code "CA" or "US" | Code postal/Zip de la compagnie ferroviaire | Format invalide pour le code de pays "CA" ou "US" |
-| 30 | x | W32 | 187 | AX0Y9R | 4918 | 100240 | 984 | Intransit BOL \(future use\) | Element value exceeds size allowed | Feuille due route \- En transit  \(usage futur\) | Valeur de l’élément supérieure à la grandeur allouée |
+| 30 | x | W32 | 187 | AX0Y9R | 4918 | 100240 | 984 | Intransit BOL \(future use\) | Element value exceeds size allowed | Feuille due route \- En transit \(usage futur\) | Valeur de l’élément supérieure à la grandeur allouée |
 | 31 | x | W33 | 187 | AX0Y9R | 4859 | 100010 | 976 | Tractor Full/Empty Code | Is mandatory | Code de l’état chargé/ vide du tracteur | Est obligatoire |
 | 32 |  |  |  |  |  |  |  |  |  |  |  |
 | 33 | eManifest Highway \- Modified Error Codes |
 | 34 |  | V78 | 631 | AY0Y3A | 4864 | 100875 | 976 | Tractor Related CCN | CCN cannot be related to 2 conveyances | NCF lié au tracteur | Le NCF ne peut pas être lié à deux moyens de transport |
 | 35 |  | V79 | 631 | AY0Y3A | 4865 | 100875 | 976 | Trailer Related CCN | CCN cannot be related to 2 conveyances | NCF lié à la remorque | Le NCF ne peut pas être lié à deux moyens de transport |
-| 36 |  | V68                | 993 | A00Y5Y | 4109 | 100010 | 984 | Shipper Postal Zip Code | Is mandatory when country code is "CA" or "US" | Code postal/Zip de l’expéditeur | Obligatoire lorsque le pays est le Canada ou les É\.\-U\. |
-| 37 |  | V69                | 993 | A00Y5Y | 4151 | 100010 | 984 | Consignee Postal Zip Code | Is mandatory when country code is "CA" or "US" | Code postal/Zip du destinataire | Obligatoire lorsque le pays est le Canada ou les É\.\-U\. |
-| 38 |  | V70                | 993 | A00Y5Y | 4081 | 100010 | 984 | Notify Party Postal Zip Code | Is mandatory when country code is "CA" or "US" | Code postal/Zip de la partie à aviser | Obligatoire lorsque le pays est le Canada ou les É\.\-U\. |
+| 36 |  | V68 | 993 | A00Y5Y | 4109 | 100010 | 984 | Shipper Postal Zip Code | Is mandatory when country code is "CA" or "US" | Code postal/Zip de l’expéditeur | Obligatoire lorsque le pays est le Canada ou les É\.\-U\. |
+| 37 |  | V69 | 993 | A00Y5Y | 4151 | 100010 | 984 | Consignee Postal Zip Code | Is mandatory when country code is "CA" or "US" | Code postal/Zip du destinataire | Obligatoire lorsque le pays est le Canada ou les É\.\-U\. |
+| 38 |  | V70 | 993 | A00Y5Y | 4081 | 100010 | 984 | Notify Party Postal Zip Code | Is mandatory when country code is "CA" or "US" | Code postal/Zip de la partie à aviser | Obligatoire lorsque le pays est le Canada ou les É\.\-U\. |
 | 39 |  | I30 |  |  |  |  | 976 | Container Related CCN | Is invalid | NCF lié au conteneur | N’est pas valide |
 | 40 |  |  |  |  |  |  |  |  |  |  |  |
 | 41 | eManifest Rail \- New Codes |
-| 42 | x | R17 | 1501 | A00Y9C | 1103 | 100876 | 992 | Client Supply Request ID | EDI arrival not accepted – conveyance is rejected | Identification de la demande fournie par le client  | Arrivée EDI non acceptée – le moyen de transport est rejeté |
+| 42 | x | R17 | 1501 | A00Y9C | 1103 | 100876 | 992 | Client Supply Request ID | EDI arrival not accepted – conveyance is rejected | Identification de la demande fournie par le client | Arrivée EDI non acceptée – le moyen de transport est rejeté |
 | 43 | x | R18 | 1502 | A00Y9D | 1103 | 100873 | 984 | Client Supply Request ID | Related conveyance must be authorized to move and arrived | Identification de la demande fournie par le client | Le moyen de transport connexe doit être autorisé à être déplacé et être arrivé |
 | 44 | x | R19 | 1503 | A00Y9E | 1103 | 100765 | 992 | Client Supply Request ID | Port of Arrival must be the same as the Port of Report | Identification de la demande fournie par le client | Le bureau d’arrivée doit être le même que le bureau de déclaration |
-| 45 | x | R20 | 319 | AX0Y2C | 4995 | 100189 | 992 | Arrival Date  | Is future dated | Date d'arrivée | Est postdaté |
+| 45 | x | R20 | 319 | AX0Y2C | 4995 | 100189 | 992 | Arrival Date | Is future dated | Date d'arrivée | Est postdaté |
 | 46 | x | R21 | 187 | AX0Y9R | 4995 | 100240 | 992 | Arrival Date | Element value exceeds size allowed | Date d'arrivée | Valeur de l’élément supérieure à la grandeur allouée |
 | 47 | x | R22 | 187 | AX0Y9R | 4991 | 100240 | 992 | Port of Report | Element value exceeds size allowed | Bureau de déclaration | Valeur de l’élément supérieure à la grandeur allouée |
 | 48 | x | V36 | 326 | AX0Y2K | 4999 | 100322 | 992 | Rail Equipment Related CCN | Request in History | NCF lié au matériel ferroviaire | Demande dans l’historique |
@@ -83,7 +86,7 @@ Canadian Customs Codes
 | 52 | x | V61 | 1524 | A00YB7 | 4998 | 100858 | 992 | Rail Equipment CCN Exception Code | Not allowed if conveyance declared as empty | Code d’exception du NCF lié au matériel ferroviaire | Valeur de l’élément supérieure à la grandeur allouée |
 | 53 | x | V62 | 187 | AX0Y9R | 4998 | 100053 | 992 | Rail Equipment CCN Exception Code | Is invalid | Code d’exception du NCF lié au matériel ferroviaire | N’est pas valide |
 | 54 | x | V65 | 1504 | A00Y9F | 6084 | 100848 | 984 | Automotive Code | Submission cannot currently be amended | Code de véhicule | La transmission ne peut pas être modifiée présentement |
-| 55 | x | V71 | 1518187 | A00YB3 AX0Y9R  | 4997 | 100053 | 992 | Railcar CCN Exception Code | Is invalid | Code d’exception du NCF lié au wagon | N’est pas valide |
+| 55 | x | V71 | 1518187 | A00YB3 AX0Y9R | 4997 | 100053 | 992 | Railcar CCN Exception Code | Is invalid | Code d’exception du NCF lié au wagon | N’est pas valide |
 | 56 | x | V85 | 1524 | A00YB9 | 4580 | 100858 | 992 | Railcar CCN | Not allowed if conveyance declared as empty | NCF du wagon | N’est pas permis si le moyen de transport déclaré est vide |
 | 57 | x | V86 | 1524 | A00YB9 | 4997 | 100858 | 992 | Railcar Related Exception Code | Not allowed if conveyance declared as empty | Code d’exception lié au wagon | N’est pas permis si le moyen de transport déclaré est vide |
 | 58 | x | V89 | 1528 | A00YCC | 1103 | 100872 | 984 | Cargo Control Number | Arrival already on file | Numéro de contrôle du fret | L’arrivée est déjà au dossier |
@@ -99,7 +102,7 @@ Canadian Customs Codes
 | 68 |  | J20 | 916 | AY0YT3 | 4580 | 100730 | 992 | Railcar Related CCN | Already used for Export | NCF lié au wagon | Déjà utilisé pour une exportation |
 | 69 | x | W01 | 916 | AY0YT3 | 4999 | 100730 | 992 | Rail Equipment Related CCN | Already used for Export | NCF lié au matériel ferroviaire | Déjà utilisé pour une exportation |
 | 70 | x | W05 | 694 | AY0YAT | 4580 | 100324 | 992 | Railcar Related CCN | Invalid status of related request | NCF lié au wagon | STATUT INVALIDE DE LADEMANDE ASSOCIÉE |
-| 71 | x | W06 | 694 | AY0YAT | 4999 | 100324 | 992 | Rail Equipment Related CCN | Invalid status of related request | NCF lié au matériel ferroviaire  | STATUT INVALIDE DE LADEMANDE ASSOCIÉE |
+| 71 | x | W06 | 694 | AY0YAT | 4999 | 100324 | 992 | Rail Equipment Related CCN | Invalid status of related request | NCF lié au matériel ferroviaire | STATUT INVALIDE DE LADEMANDE ASSOCIÉE |
 | 72 | x | W09 | 1308 1451 | AX0YEO A00Y6K | 4580 | 100771 | 992 | Railcar Related CCN | Is related to an invalid request type | NCF lié au wagon | Est lié à un type de demande qui n’est pas valide |
 | 73 | x | W10 | 1308 | AX0YEO | 4999 | 100771 | 992 | Rail Equipment Related CCN | Is related to an invalid request type | NCF lié au matériel ferroviaire | Est lié à un type de demande qui n’est pas valide |
 | 74 | x | W16 | 1529 | A00YCI | 4580 | 100877 | 992 | Railcar Related CCN | Input CCN or Exception Code, but not both | NCF lié au wagon | Entrer le NCF ou le code d’exception, mais pas les deux |
@@ -109,8 +112,5 @@ Canadian Customs Codes
 | 78 | x | W30 | 1543 | A00YF9 | 3332 | 100018 | 992 | RailCar Equipment Init | Duplicate | Initiale du matériel ferroviaire | Double |
 | 79 | x | W31 | 1543 | A00YF9 | 3333 | 100018 | 992 | RailCar Equipment Nbr | Duplicate | Numéro du matériel ferroviaire | Double |
 | 80 | x | W34 | 1433 | A00Y5S | 1103 | 100314 | 984, 992\(Arrival Messages\) | Client Supplied Request ID | REQUEST ALREADY IN ARRIVED STATUS | Identification de la demande fournie par le client | DEMANDE DÉJÀ EN STATUT ARRIVÉ |
-
-
-
 
 <!-- TODO: DIALOG BOX FOR INQUIRIES -->
