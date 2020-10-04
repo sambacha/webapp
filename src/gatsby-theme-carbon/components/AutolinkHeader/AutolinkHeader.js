@@ -6,25 +6,25 @@ import slugify from 'slugify';
 import { header, anchor } from './AutolinkHeader.module.scss';
 
 const Anchor = ({ id, string }) => (
-    <a className={anchor} href={`#${id}`} aria-label={`${string} permalink`}>
-        <Link />
-    </a>
+  <a className={anchor} href={`#${id}`} aria-label={`${string} permalink`}>
+    <Link />
+  </a>
 );
 
 const AutolinkHeader = ({ is: Component, className, ...props }) => {
-    const string = React.Children.map(
-        props.children,
-        (child) => (child.props ? child.props.children : child) // handle bold/italic words
-    ).join('');
+  const string = React.Children.map(
+    props.children,
+    (child) => (child.props ? child.props.children : child) // handle bold/italic words
+  ).join('');
 
-    const id = `${slugify(string, { lower: true })}`;
+  const id = `${slugify(string, { lower: true })}`;
 
-    return (
-        <Component className={cx(header, className)} {...props} id={id}>
-            <Anchor id={id} string={string} />
-            {props.children}
-        </Component>
-    );
+  return (
+    <Component className={cx(header, className)} {...props} id={id}>
+      <Anchor id={id} string={string} />
+      {props.children}
+    </Component>
+  );
 };
 
 AutolinkHeader.defaultProps = { is: 'h2' };

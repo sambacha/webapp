@@ -4,9 +4,9 @@ import { Row } from '../Grid';
 import styles from './CardGroup.module.scss';
 
 const CardGroup = ({ children, className, ...rest }) => (
-    <Row className={cx(className, styles.cardGroup)} {...rest}>
-        {children}
-    </Row>
+  <Row className={cx(className, styles.cardGroup)} {...rest}>
+    {children}
+  </Row>
 );
 
 export default CardGroup;

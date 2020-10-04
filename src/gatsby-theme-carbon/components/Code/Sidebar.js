@@ -11,32 +11,32 @@ import { button, sidebar, copyButton } from './Code.module.scss';
 //
 // We'll still render the sidebar regardless of the path since we want the text fade.
 const Sidebar = ({ src, path, children }) => {
-    const shouldShowSrcLink = !path && src;
-    const shouldShowCopyButton = !path || src;
-    return (
-        <div className={sidebar}>
-            {shouldShowCopyButton && (
-                <CopyButton
-                    className={cx(button, copyButton)}
-                    onClick={() => {
-                        copy(children);
-                    }}
-                />
-            )}
-            {shouldShowSrcLink && (
-                <a
-                    title="View source"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={button}
-                    href={src}
-                    style={{ zIndex: 200 }}
-                >
-                    <Launch16 alt="View source" />
-                </a>
-            )}
-        </div>
-    );
+  const shouldShowSrcLink = !path && src;
+  const shouldShowCopyButton = !path || src;
+  return (
+    <div className={sidebar}>
+      {shouldShowCopyButton && (
+        <CopyButton
+          className={cx(button, copyButton)}
+          onClick={() => {
+            copy(children);
+          }}
+        />
+      )}
+      {shouldShowSrcLink && (
+        <a
+          title='View source'
+          target='_blank'
+          rel='noopener noreferrer'
+          className={button}
+          href={src}
+          style={{ zIndex: 200 }}
+        >
+          <Launch16 alt='View source' />
+        </a>
+      )}
+    </div>
+  );
 };
 
 export default Sidebar;

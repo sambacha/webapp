@@ -19,11 +19,11 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import {
-    Header as ShellHeader,
-    HeaderMenuButton,
-    SkipToContent,
-    HeaderGlobalBar,
-    HeaderGlobalAction,
+  Header as ShellHeader,
+  HeaderMenuButton,
+  SkipToContent,
+  HeaderGlobalBar,
+  HeaderGlobalAction,
 } from 'carbon-components-react';
 import { AppSwitcher20, Close20 } from '@carbon/icons-react';
 import cx from 'classnames';
@@ -33,92 +33,92 @@ import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
 import useMetadata from 'gatsby-theme-carbon/src/util/hooks/useMetadata';
 
 import {
-    header,
-    switcherButtonOpen,
-    skipToContent,
-    headerName,
-    headerButton,
-    switcherButton,
+  header,
+  switcherButtonOpen,
+  skipToContent,
+  headerName,
+  headerButton,
+  switcherButton,
 } from 'gatsby-theme-carbon/src/components/Header/Header.module.scss';
 
 import {
-    navLists,
-    navLeftBorder,
-    navLink,
-    globalBar,
+  navLists,
+  navLeftBorder,
+  navLink,
+  globalBar,
 } from './Header.module.scss';
 // href="https://freight.page.link/request-information"
 const Header = ({ children }) => {
-    const { leftNavIsOpen, toggleNavState, switcherIsOpen } = useContext(
-        NavContext
-    );
-    const { navigationStyle } = useMetadata();
+  const { leftNavIsOpen, toggleNavState, switcherIsOpen } = useContext(
+    NavContext
+  );
+  const { navigationStyle } = useMetadata();
 
-    return (
-        <ShellHeader
-            href="https://freight.page.link/request-information"
-            aria-label="Header"
-            className={header}
-        >
-            <SkipToContent
-                href="https://freight.page.link/request-information"
-                className={skipToContent}
-            />
+  return (
+    <ShellHeader
+      href='https://freight.page.link/request-information'
+      aria-label='Header'
+      className={header}
+    >
+      <SkipToContent
+        href='https://freight.page.link/request-information'
+        className={skipToContent}
+      />
 
-            <HeaderMenuButton
-                className={cx(`bx--header__action--menu`, headerButton)}
-                aria-label="Open menu"
-                onClick={() => {
-                    toggleNavState(`leftNavIsOpen`);
-                    toggleNavState(`switcherIsOpen`, `close`);
-                }}
-                isActive={leftNavIsOpen}
-            />
-            {/** 
+      <HeaderMenuButton
+        className={cx(`bx--header__action--menu`, headerButton)}
+        aria-label='Open menu'
+        onClick={() => {
+          toggleNavState(`leftNavIsOpen`);
+          toggleNavState(`switcherIsOpen`, `close`);
+        }}
+        isActive={leftNavIsOpen}
+      />
+      {/** 
 TODO: Fix NAVIGATION ITEMS HERE 
 */}
-            <Link className={headerName} to="https://freighttrust.com">
-                Freight Trust
-            </Link>
+      <Link className={headerName} to='https://freighttrust.com'>
+        Freight Trust
+      </Link>
 
-            <div className={navLists}>
-                <div className={navLeftBorder} />
-                <Link className={navLink} to="/solutions">
-                    Solutions
-                </Link>
-                <Link className={navLink} to="/trading">
-                    EDI Protocol
-                </Link>
-                <Link className={navLink} to="/finance">
-                    Trade Finance
-                </Link>
-                <Link className={navLink} to="/dashboard">
-                    Trade Network
-                </Link>
-                <Link className={navLink} to="/trading">
-                    Contact
-                </Link>
-            </div>
+      <div className={navLists}>
+        <div className={navLeftBorder} />
+        <Link className={navLink} to='/solutions'>
+          Solutions
+        </Link>
+        <Link className={navLink} to='/trading'>
+          EDI Protocol
+        </Link>
+        <Link className={navLink} to='/finance'>
+          Trade Finance
+        </Link>
+        <Link className={navLink} to='/dashboard'>
+          Trade Network
+        </Link>
+        <Link className={navLink} to='/trading'>
+          Contact
+        </Link>
+      </div>
 
-            {navigationStyle && <HeaderNav />}
+      {navigationStyle && <HeaderNav />}
 
-            <HeaderGlobalBar className={globalBar}>
-                <HeaderGlobalAction
-                    className={cx(headerButton, switcherButton, {
-                        [switcherButtonOpen]: switcherIsOpen,
-                    })}
-                    aria-label="Switch"
-                    onClick={() => {
-                        toggleNavState(`switcherIsOpen`, `close`);
-                        toggleNavState(`searchIsOpen`, `close`);
-                        toggleNavState(`leftNavIsOpen`, `close`);
-                    }}
-                >
-                    {switcherIsOpen ? <Close20 /> : <AppSwitcher20 />}
-                </HeaderGlobalAction>
-            </HeaderGlobalBar>
-        </ShellHeader>
-    );
+      <HeaderGlobalBar className={globalBar}>
+        <HeaderGlobalAction
+          className={cx(headerButton, switcherButton, {
+            [switcherButtonOpen]: switcherIsOpen,
+          })}
+          aria-label='Switch'
+          onClick={() => {
+            toggleNavState(`switcherIsOpen`, `close`);
+            toggleNavState(`searchIsOpen`, `close`);
+            toggleNavState(`leftNavIsOpen`, `close`);
+          }}
+        >
+          {switcherIsOpen ? <Close20 /> : <AppSwitcher20 />}
+        </HeaderGlobalAction>
+      </HeaderGlobalBar>
+    </ShellHeader>
+  );
 };
 
 export default Header;
