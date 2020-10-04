@@ -4,25 +4,25 @@ import classnames from 'classnames';
 import { list, listSmall, multipleColumns } from './AnchorLinks.module.scss';
 
 export default class AnchorLinks extends React.Component {
-    render() {
-        const { children, small } = this.props;
-        const isColumn = React.Children.count(children) > 6;
-        const classNames = classnames(list, {
-            [listSmall]: small,
-            [multipleColumns]: isColumn,
-        });
+  render() {
+    const { children, small } = this.props;
+    const isColumn = React.Children.count(children) > 6;
+    const classNames = classnames(list, {
+      [listSmall]: small,
+      [multipleColumns]: isColumn,
+    });
 
-        return (
-            <ul className={classNames}>
-                {React.Children.map(children, (link, i) => (
-                    <li key={i}>{link}</li>
-                ))}
-            </ul>
-        );
-    }
+    return (
+      <ul className={classNames}>
+        {React.Children.map(children, (link, i) => (
+          <li key={i}>{link}</li>
+        ))}
+      </ul>
+    );
+  }
 }
 
 AnchorLinks.propTypes = {
-    children: PropTypes.node.isRequired,
-    small: PropTypes.bool,
+  children: PropTypes.node.isRequired,
+  small: PropTypes.bool,
 };

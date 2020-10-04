@@ -4,26 +4,26 @@ import classnames from 'classnames';
 import { aside } from './Aside.module.scss';
 
 export default class Aside extends React.Component {
-    render() {
-        const { children, className, ...rest } = this.props;
+  render() {
+    const { children, className, ...rest } = this.props;
 
-        const captionClasses = classnames(aside, {
-            [className]: className,
-        });
+    const captionClasses = classnames(aside, {
+      [className]: className,
+    });
 
-        return (
-            <aside className={captionClasses} {...rest}>
-                {children}
-            </aside>
-        );
-    }
+    return (
+      <aside className={captionClasses} {...rest}>
+        {children}
+      </aside>
+    );
+  }
 }
 
 Aside.propTypes = {
-    children: PropTypes.node,
+  children: PropTypes.node,
 
-    /**
-     * Specify a custom class
-     */
-    className: PropTypes.string,
+  /**
+   * Specify a custom class
+   */
+  className: PropTypes.string,
 };

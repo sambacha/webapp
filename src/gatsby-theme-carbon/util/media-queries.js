@@ -14,8 +14,8 @@ import { breakpoints as CarbonBreakpoints, breakpoint } from '@carbon/elements';
  * max: "@media (min-width: 99rem)"
  */
 const mq = Object.keys(CarbonBreakpoints).reduce((obj, bp) => {
-    obj[bp] = breakpoint(bp);
-    return obj;
+  obj[bp] = breakpoint(bp);
+  return obj;
 }, {});
 
 export default mq;

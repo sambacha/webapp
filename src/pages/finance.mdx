@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Finance
 description: Corporate Contact
 ---
 
@@ -12,53 +12,80 @@ description: Corporate Contact
     <AnchorLink to="https://freight.page.link/request-information">Become a Partner</AnchorLink>
 </AnchorLinks> <Title>PKI & PGP</Title>
 
-## Signing Key
+# Financial Institutions
 
-`curl https://raw.githubusercontent.com/freight-trust/pki/update/asc/6F6EB43E.asc --output 6F6EB43E.asc`
+> This REST API is exclusively for use by financial institution organizations to provide access to platform data.
 
-[verify on keys.gnupgp](http://keys.gnupg.net/pks/lookup?search=freighttrust&fingerprint=on&op=index)
+## Endpoints
 
-## Docker Trust Signature
+### TradeInstrumentVerifier
 
-`freight-trust` key with `ID: fbda181`
+#### getBolDocumentUsingPOST
 
-```bash
------BEGIN PUBLIC KEY-----
-role: freight-trust
+`POST /api/v1/TradeInstrumentVerifier/search`
 
-MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEXRTPyINRxXaIs+tXqGv99Fnm83Jy
-DR8xgYoRFTzTMF4V13jx43Fn9nFJLfmdqyFovngiedFIm9htFve9qToAZg==
------END PUBLIC KEY-----
-```
+Fetch Bill Of Lading document.
 
-## PGP
+##### Description
 
-Public Key Infrastructure and other Cryptographic Signing Instruments
+Fetch a Trade Instrument, such as a  Bill Of Lading, matching all the input parameters. 
+The API will allow the caller to download the First Matching Bill Of Lading
+document matching all the input parameters. This API is accessible only
+to org’s of type Financial Institution and those that has been entitled
+to access the API tradeInstrumentVerifier: An exact case insensitive match is
+done for this parameter. oceanCarrierCode: An exact case insensitive
+match is done for this parameter. consignorPrintedParty: A partial case
+insensitive match is done for this parameter. Minimum acceptable length
+is 6 characters.
 
-```bash
-pub   rsa4096 2020-06-04 [SC] [expires: 2024-06-04]
-      858023A92C8DA82FB996BB37361D5A506F6EB43E
-uid           [ultimate] sam bacha <sam@freighttrust.com>
-uid           [ultimate] Freight Trust Corp <sam@freighttrust.com>
-sub   rsa4096 2020-06-04 [E] [expires: 2024-06-04]
-sub   rsa4096 2020-06-16 [S] [expires: 2022-08-29]'
+##### Parameters
 
-      8580 23A9 2C8D A82F B996  BB37 361D 5A50 6F6E B43E
-```
+##### Body Parameter
 
-The playbook and instructions are located in {url-site-readme}[Freight Trust & Clearing Corporation].
+| Name             | Description                                                            | Required | Default | Pattern |
+| ---------------- | ---------------------------------------------------------------------- | -------- | ------- | ------- |
+| TDocVerifyRequest | Request object for BoL Verifier [ TDocVerifyRequest](#TDocVerifyRequest) | X        |         |         |
 
-## Usage
+##### Return Type
 
-Example
+\- 
+Content-Type: application/json
+Content-Length: maxLength, 32
+\-
 
-```bash
-$ gpg --verify besu-xt.asc
-gpg: assuming signed data in 'besu-xt'
-gpg: Signature made Thu Jun 25 07:01:55 2020 PDT
-gpg:                using RSA key C00B2090F23C5629029111CBF5D2A7216C51FB94
-gpg: Good signature from "sam bacha <sam@freighttrust.com>" [ultimate]
-gpg:                 aka "Freight Trust Corp <sam@freighttrust.com>" [ultimate]
-```
+##### Content Type
 
-Public Key is = C00B2090F23C5629029111CBF5D2A7216C51FB94
+  - **/**
+
+##### Responses
+
+| Code | Message                                                                                   | Datatype                                       |
+| ---- | ----------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| 200  | OK                                                                                        | \<\<\>\>                                       |
+| 400  | Bad request                                                                               | [ AppExceptionResponse](#AppExceptionResponse) |
+| 401  | Unauthorized                                                                              | \<\<\>\>                                       |
+| 403  | Forbidden                                                                                 | \<\<\>\>                                       |
+| 404  | No matching Bill of Lading available on the platform for the provided set of input params | [ AppExceptionResponse](#AppExceptionResponse) |
+| 500  | Server Error                                                                              | [ AppExceptionResponse](#AppExceptionResponse) |
+
+http response codes
+
+##### Samples
+
+## Models
+
+### *AppExceptionResponse* AppExceptionResponse
+
+| Field Name | Required | Type   | Description       | Format |
+| ---------- | -------- | ------ | ----------------- | ------ |
+| code       | X        | String | Error Code        |        |
+| message    | X        | String | Exception Message |        |
+| timestamp  | X        | String | timestamp         |        |
+
+### *TDocVerifyRequest* TDocVerifyRequest
+
+| Field Name            | Required | Type   | Description                                               | Format |
+| --------------------- | -------- | ------ | --------------------------------------------------------- | ------ |
+| tradeInstrumentVerifier    | X        | String | Bill Of Lading number to search for                       |        |
+| oceanCarrierCode      | X        | String | Carrier SCAC code                                         |        |
+| consignorPrintedParty | X        | String | Consignor details field as in the Bill Of Lading document |        |

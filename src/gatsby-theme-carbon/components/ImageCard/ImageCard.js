@@ -75,19 +75,19 @@ export default class ImageCard extends React.Component {
         {title ? <h4 className={titleClassNames}>{title}</h4> : null}
         <div className={iconClassNames}>
           {actionIcon === 'launch' && !disabled ? (
-            <Launch20 aria-label="Open resource" />
+            <Launch20 aria-label='Open resource' />
           ) : null}
           {actionIcon === 'arrowRight' && !disabled ? (
-            <ArrowRight20 aria-label="Open resource" />
+            <ArrowRight20 aria-label='Open resource' />
           ) : null}
           {actionIcon === 'download' && !disabled ? (
-            <Download20 aria-label="Download" />
+            <Download20 aria-label='Download' />
           ) : null}
           {actionIcon === 'email' && !disabled ? (
-            <Email20 aria-label="Email" />
+            <Email20 aria-label='Email' />
           ) : null}
           {actionIcon === 'disabled' || disabled === true ? (
-            <Error20 aria-label="disabled" />
+            <Error20 aria-label='disabled' />
           ) : null}
         </div>
         <div className={`${prefix}--image-card__img`}>{children}</div>
@@ -106,10 +106,11 @@ export default class ImageCard extends React.Component {
     } else {
       cardContainer = (
         <a
-          target="_blank"
-          rel="noopener noreferrer"
+          target='_blank'
+          rel='noopener noreferrer'
           href={href}
-          className={carbonTileclassNames}>
+          className={carbonTileclassNames}
+        >
           {cardContent}
         </a>
       );
