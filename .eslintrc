@@ -8,7 +8,7 @@
       "react/no-access-state-in-setstate": 1,
       "react/jsx-props-no-spreading": 1,
       "react/jsx-no-useless-fragment": 1,
-      "no-useless-escape": 1
+      "no-useless-escape": 0
     }
   }
 }

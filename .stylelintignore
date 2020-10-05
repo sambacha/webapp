@@ -1,0 +1,10 @@
+# stylelint-disable
+**/*.js
+vendor/**/*.css
+**/*.mdx
+**/*.jsx
+# explictly stop from running naked on source, will go after binary files as well
+**/*.png
+**/*.jpg
+**/*.svg
+**/*.webp

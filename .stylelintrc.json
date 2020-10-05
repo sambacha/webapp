@@ -1,6 +1,8 @@
 {
   "extends": "stylelint-config-recommended-scss",
   "rules": {
+    "ignoreFiles": ["**/*.js", "**/*.mdx", "**/*.jsx"],
+    "defaultSeverity": "warning",
     "selector-pseudo-class-no-unknown": [
       true,
       {
