@@ -1,41 +1,13 @@
 ---
 os: linux
-
 dist: xenial
 
-language: generic
+language: node_js
+node_js:
+  - 12.18.4
 
-stages:
-  - Test
-  - Build
-
-jobs:
-  fast_finish: true
-  allow_failures:
-    - env:
-        - TEST=mardown_lint
-
-  include:
-    - stage: Test
-      name: Markdown link check
-      env:
-        - TEST=mardown_lint
-      language: node_js
-      node_js:
-        - lts/*
-      install:
-        - npm i -g markdown-link-check
-      script:
-        - find . -name "*.md,*.mdx" | xargs -n 1 markdown-link-check 
- 
-  include:
-    - stage: Build
-      name: build 
-      language: node_js
-      node_js:
-        - 12.18.4
-      before-install: npm i -g markdown-link-check
-      install:
-        - npm install 
-      script:
-        - npm run-script gatsby build && find . -name "*.md,*.mdx" | xargs -n 1 markdown-link-check 
+before-install: npm i -g markdown-link-check
+install:
+  - yarn install
+script:
+  - ./node_modules/.bin/mdspell -r -n -a -x --en-us 'src/pages/**/*.mdx'
