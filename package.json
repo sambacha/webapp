@@ -23,7 +23,7 @@
     "lint:js": "eslint . --fix",
     "lint:scss": "stylelint \"src/**/*.scss\" --fix",
     "lint:fix": "eslint --ext js,jsx src --fix",
-    "format-lint": "prettier-eslint --write \"src/**/*.{js,jsx}\"",
+    "format-lint": "./node_modules/.bin/prettier-eslint --write $PWD/src/gatsby-theme-carbon/components/**/*.js",
     "npm-lock": "npm i --package-lock-only",
     "prettier:diff": "prettier --check \"**/*.{scss,css,js,md}\"",
     "ci-check": "yarn prettier:diff && yarn lint && yarn test --runInBand && yarn test-ssr"
@@ -142,7 +142,8 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.13",
     "prettier": "2.1.2",
-    "prettier-eslint": "11.0.0",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0",
     "react-test-renderer": "^16.13.1",
     "remark-preset-prettier": "^0.4.0",
     "stylelint": "^13.7.2",
