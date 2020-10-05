@@ -3,11 +3,7 @@ os: linux
 
 dist: xenial
 
-language: minimal
-
-services:
-  - docker
-
+language: generic
 
 stages:
   - Test
@@ -34,11 +30,12 @@ jobs:
  
   include:
     - stage: Build
-      name: SeriesCI
+      name: build 
       language: node_js
       node_js:
-        - 12.18.0
+        - 12.18.4
+      before-install: npm i -g markdown-link-check
       install:
-        - npm install
+        - npm install 
       script:
-        - true
+        - npm run-script gatsby build && find . -name "*.md,*.mdx" | xargs -n 1 markdown-link-check 
