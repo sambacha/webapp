@@ -52,7 +52,8 @@ const LeftNav = (props) => {
             props.theme === `dark` || props.homepage,
           'bx--side-nav--website--light':
             props.theme !== `dark` && !props.homepage,
-        })}>
+        })}
+      >
         <SideNavItems>
           {navItems.map((item, i) => (
             <LeftNavItem

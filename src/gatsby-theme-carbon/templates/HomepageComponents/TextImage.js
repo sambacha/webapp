@@ -30,7 +30,8 @@ const TextContainer = ({ title, content, buttonLabel }) => (
     <p>{content}</p>
     <Button
       href="https://freight.page.link/request-information"
-      kind="secondary">
+      kind="secondary"
+    >
       {buttonLabel}
     </Button>
   </div>

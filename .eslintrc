@@ -1,12 +1,14 @@
-
 {
   "extends": ["wesbos", "plugin:mdx/recommended"],
-  "rules": {
-    "react/prop-types": 0,
-    "react/destructuring-assignment": 0,
-    "react/no-access-state-in-setstate": 0,
-    "react/jsx-props-no-spreading": 0,
-    "react/jsx-no-useless-fragment": 1,
-    "no-useless-escape": 0
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "rules": {
+      "react/prop-types": 1,
+      "react/destructuring-assignment": 1,
+      "react/no-access-state-in-setstate": 1,
+      "react/jsx-props-no-spreading": 1,
+      "react/jsx-no-useless-fragment": 1,
+      "no-useless-escape": 1
+    }
   }
 }

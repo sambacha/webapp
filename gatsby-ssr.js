@@ -22,7 +22,10 @@ import { navigate } from 'gatsby';
 import { AuthProvider } from 'react-use-auth';
 
 export const wrapRootElement = ({ element }) => (
-    <AuthProvider navigate={navigate} auth0_domain="freight-trust.auth0.com" auth0_client_id="hcf0P8AXTt5NZu1c0NEdscZ2Y8IuX6jf">
-        {element}
-    </AuthProvider>
+  <AuthProvider
+    navigate={navigate}
+    auth0_domain="freight-trust.auth0.com"
+    auth0_client_id="hcf0P8AXTt5NZu1c0NEdscZ2Y8IuX6jf">
+    {element}
+  </AuthProvider>
 );

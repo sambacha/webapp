@@ -1,4 +1,4 @@
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -10,11 +10,11 @@ $carbon--theme: $carbon--theme--g90;
   // background: $ui-05;
   // color: $inverse-01;
 
-  @include carbon--breakpoint("md") {
+  @include carbon--breakpoint('md') {
     padding: $layout-05 $layout-05 !important;
   }
 
-  @include carbon--breakpoint("lg") {
+  @include carbon--breakpoint('lg') {
     padding: $layout-05 $layout-07 !important;
   }
 }
@@ -23,13 +23,13 @@ $carbon--theme: $carbon--theme--g90;
   text-align: center;
   // color: $text-03;
   color: $text-04;
-  @include carbon--type-style("productive-heading-05");
+  @include carbon--type-style('productive-heading-05');
 }
 
 .requestDemoRow h2 {
   text-align: center;
   color: $text-02;
-  @include carbon--type-style("productive-heading-05");
+  @include carbon--type-style('productive-heading-05');
 }
 
 .requestDemoActions {

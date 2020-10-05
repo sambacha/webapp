@@ -26,7 +26,8 @@ export const SnapCard = (props) => (
     <p>{props.content}</p>
     <Button
       href="https://freight.page.link/request-information"
-      kind="tertiary">
+      kind="tertiary"
+    >
       {props.buttonLabel}
     </Button>
   </div>

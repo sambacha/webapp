@@ -34,7 +34,8 @@ const DashboardTemplate = ({ pageContext, children, customNavItems }) => {
       pageKeywords={keywords}
       titleType={titleType}
       customNavItems={customNavItems}
-      noResourceLinks>
+      noResourceLinks
+    >
       <Main className={mainContent}>{children}</Main>
     </Layout>
   );

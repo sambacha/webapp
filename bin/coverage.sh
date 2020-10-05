@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # Upload test coverage to Codecov
 

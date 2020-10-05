@@ -10,4 +10,4 @@ before-install: npm i -g markdown-link-check
 install:
   - yarn install
 script:
-  - ./node_modules/.bin/mdspell -r -n -a -x --en-us 'src/pages/**/*.mdx'
+  - yarn run ci-check

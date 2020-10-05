@@ -83,7 +83,8 @@ const CustomFooter = ({ homepage }) => {
           colMd={3}
           colLg={3}
           colXl={3}
-          className={footerLinkCol}>
+          className={footerLinkCol}
+        >
           <h1>Freight Trust & Clearing</h1>
         </Column>
 
@@ -101,7 +102,8 @@ const CustomFooter = ({ homepage }) => {
           colMd={0}
           colLg={0}
           colXl={0}
-          className={footerLinkColMobile}>
+          className={footerLinkColMobile}
+        >
           <div className={footerLinkCol}>
             {SolutionsFooter}
             {ResourcesFooter}
@@ -113,7 +115,8 @@ const CustomFooter = ({ homepage }) => {
           colMd={2}
           colLg={2}
           colXl={1}
-          className={footerButtonCol}>
+          className={footerButtonCol}
+        >
           {/* <div>
             <Button>Register</Button>
           </div> */}

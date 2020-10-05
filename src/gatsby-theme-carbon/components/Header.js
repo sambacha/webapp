@@ -58,7 +58,8 @@ const Header = ({ children }) => {
     <ShellHeader
       href="https://freight.page.link/request-information"
       aria-label="Header"
-      className={header}>
+      className={header}
+    >
       <SkipToContent
         href="https://freight.page.link/request-information"
         className={skipToContent}
@@ -111,7 +112,8 @@ TODO: Fix NAVIGATION ITEMS HERE
             toggleNavState(`switcherIsOpen`, `close`);
             toggleNavState(`searchIsOpen`, `close`);
             toggleNavState(`leftNavIsOpen`, `close`);
-          }}>
+          }}
+        >
           {switcherIsOpen ? <Close20 /> : <AppSwitcher20 />}
         </HeaderGlobalAction>
       </HeaderGlobalBar>

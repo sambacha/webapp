@@ -41,7 +41,8 @@ function ImageGalleryImage({
               onClick(e);
             }
           }}
-          onClick={onClick}>
+          onClick={onClick}
+        >
           {children}
         </div>
       </figure>

@@ -30,7 +30,8 @@ const Sidebar = ({ src, path, children }) => {
           rel="noopener noreferrer"
           className={button}
           href={src}
-          style={{ zIndex: 200 }}>
+          style={{ zIndex: 200 }}
+        >
           <Launch16 alt="View source" />
         </a>
       )}

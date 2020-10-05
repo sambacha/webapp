@@ -171,7 +171,8 @@ class TradingSignUpContainer extends Component {
         modalLabel={modalLabel}
         className="trading-signup-modal"
         open={modalVisible}
-        onRequestClose={() => this.showModal(false)}>
+        onRequestClose={() => this.showModal(false)}
+      >
         <h2>{headerLabel}</h2>
         {contentText && <h5>{contentText}</h5>}
         {contentTexts && <h5>{contentTexts[currentContentStep]}</h5>}
@@ -180,7 +181,8 @@ class TradingSignUpContainer extends Component {
           <Button
             size="field"
             className="submit-btn"
-            onClick={() => this.goToNextStep()}>
+            onClick={() => this.goToNextStep()}
+          >
             {buttonText}
           </Button>
         )}
@@ -188,7 +190,8 @@ class TradingSignUpContainer extends Component {
         <Button
           kind="ghost"
           className="back-btn"
-          onClick={() => this.goToPrevStep()}>
+          onClick={() => this.goToPrevStep()}
+        >
           <ChevronLeft20 />
         </Button>
       </Modal>
