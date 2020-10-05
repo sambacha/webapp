@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // SPDXVersion: SPDX-2.2
 // SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation
-@import '@carbon/themes/scss/themes';
+@import "@carbon/themes/scss/themes";
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -13,7 +13,7 @@ $carbon--theme: $carbon--theme--g90;
 }
 
 .callout-link {
-  @include carbon--type-style('body-long-02');
+  @include carbon--type-style("body-long-02");
   margin-top: $spacing-06;
   display: block;
 }
