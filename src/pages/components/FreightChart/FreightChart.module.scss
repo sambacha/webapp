@@ -1,4 +1,4 @@
-@import "@carbon/themes/scss/themes";
+@import '@carbon/themes/scss/themes';
 
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g90;
@@ -67,13 +67,13 @@ $carbon--theme: $carbon--theme--g90;
 
 .chart-control {
   h6 {
-    @include carbon--type-style("productive-heading-02");
+    @include carbon--type-style('productive-heading-02');
     text-align: center;
     margin-bottom: $spacing-03;
   }
 
   h3 {
-    @include carbon--type-style("productive-heading-03");
+    @include carbon--type-style('productive-heading-03');
     margin-bottom: $spacing-03;
     margin-left: $spacing-03;
     color: $text-04;
@@ -85,7 +85,7 @@ $carbon--theme: $carbon--theme--g90;
       display: inline-block;
       padding: $spacing-03;
       color: $text-04;
-      @include carbon--type-style("productive-heading-01");
+      @include carbon--type-style('productive-heading-01');
       cursor: pointer;
     }
 
