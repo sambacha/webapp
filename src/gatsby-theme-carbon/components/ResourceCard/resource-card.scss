@@ -12,13 +12,13 @@
 }
 
 .#{$prefix}--resource-card__title {
-  @include carbon--type-style("productive-heading-03");
+  @include carbon--type-style('productive-heading-03');
   text-decoration: none;
   color: $text-01;
 }
 
 .#{$prefix}--resource-card__subtitle {
-  @include carbon--type-style("heading-01");
+  @include carbon--type-style('heading-01');
   font-weight: 400;
   text-decoration: none;
   color: $text-01;
@@ -35,8 +35,8 @@
 }
 
 .#{$prefix}--resource-card__icon--img .gatsby-resp-image-wrapper,
-.#{$prefix}--resource-card__icon--img img[src*="gif"],
-.#{$prefix}--resource-card__icon--img img[src*="svg"] {
+.#{$prefix}--resource-card__icon--img img[src*='gif'],
+.#{$prefix}--resource-card__icon--img img[src*='svg'] {
   margin-bottom: 0;
 }
 
@@ -85,7 +85,9 @@
   color: $disabled-03;
 }
 
-.#{$prefix}--resource-card--disabled .#{$prefix}--resource-card__icon--action svg {
+.#{$prefix}--resource-card--disabled
+  .#{$prefix}--resource-card__icon--action
+  svg {
   fill: $disabled-02;
 }
 
@@ -95,7 +97,8 @@
 }
 
 // Disabled dark
-.#{$prefix}--resource-card--disabled.#{$prefix}--resource-card--dark .#{$prefix}--tile:hover {
+.#{$prefix}--resource-card--disabled.#{$prefix}--resource-card--dark
+  .#{$prefix}--tile:hover {
   background: $carbon--gray-90; //$ui-background for gray 90 theme
 }
 

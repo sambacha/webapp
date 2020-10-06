@@ -29,4 +29,3 @@ src/gatsby-theme-carbon/* linguist-vendored
 *.json diff=json
 *.png diff=exif
 *.svg diff=exif
-

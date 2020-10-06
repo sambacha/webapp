@@ -17,15 +17,18 @@ Boilerplate of all the components of the carbon theme
 
 ## Activating the dialog
 
-The Feedback button only becomes visible once you've supplied an `onSubmit` handler. To do that, we'll need to shadow the `FeedbackDialog` component.
+The Feedback button only becomes visible once you've supplied an `onSubmit`
+handler. To do that, we'll need to shadow the `FeedbackDialog` component.
 
-1. Create a new javascript file under `src/gatsby-theme-carbon/components/FeedbackDialog/FeedbackDialog.js`. Matching the filepath exactly is important here.
+1. Create a new javascript file under
+   `src/gatsby-theme-carbon/components/FeedbackDialog/FeedbackDialog.js`.
+   Matching the filepath exactly is important here.
 
 2. Copy the following snippet into your new file
 
 ```jsx
-import React from "react";
-import ThemeFeedbackDialog from "gatsby-theme-carbon/src/components/FeedbackDialog/FeedbackDialog";
+import React from 'react';
+import ThemeFeedbackDialog from 'gatsby-theme-carbon/src/components/FeedbackDialog/FeedbackDialog';
 
 const FeedbackDialog = ({ props }) => {
   const onSubmit = (data) => {
@@ -40,9 +43,14 @@ export default FeedbackDialog;
 
 ## Creating a handler
 
-Next, you'll need a place to send the data. For the Carbon website, we use a serverless function that forwards the data to a [SurveyGizmo](https://www.surveygizmo.com/) quiz. You can see that function [here](https://github.com/carbon-design-system/carbon-website/blob/master/api/survey.ts).
+Next, you'll need a place to send the data. For the Carbon website, we use a
+serverless function that forwards the data to a
+[SurveyGizmo](https://www.surveygizmo.com/) quiz. You can see that function
+[here](https://github.com/carbon-design-system/carbon-website/blob/master/api/survey.ts).
 
-The handler can send a fetch request off to the endpoint you create. Update the `onSubmit` handler to send the data wherever you want. This function receives the following arguments:
+The handler can send a fetch request off to the endpoint you create. Update the
+`onSubmit` handler to send the data wherever you want. This function receives
+the following arguments:
 
 - `experience`: "Negative", "Positive" or "Neutral"
 - `comment`: An optional comment
@@ -100,7 +108,10 @@ const FeedbackDialog = ({ props }) => {
 
 ## Code
 
-Place two images inside of the GifPlayer component. The first image will be used as the gif, the second image will be used as the static image on pause. Only provide two images inside the component, do not place any other children inside the component.
+Place two images inside of the GifPlayer component. The first image will be used
+as the gif, the second image will be used as the static image on pause. Only
+provide two images inside the component, do not place any other children inside
+the component.
 
 <Title>Light</Title>
 
@@ -111,7 +122,8 @@ Place two images inside of the GifPlayer component. The first image will be used
 
 ![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif) // must be gif
 
-![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.jpg) // must be static image
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.jpg) // must be static
+image
 
 </GifPlayer>
 </Column>
@@ -125,9 +137,11 @@ Place two images inside of the GifPlayer component. The first image will be used
 <GifPlayer color='dark'>
 
 
-![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif) // must be gif
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif) //
+must be gif
 
-![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.jpg) //must be static image
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.jpg) //must
+be static image
 
 </GifPlayer>
 </Column>
@@ -136,7 +150,9 @@ Place two images inside of the GifPlayer component. The first image will be used
 
 ## Row
 
-The `<Row>` component is a wrapper that adds the `bx--row` class to a wrapper div. You will want to use this to define rows that you will place `<Column>` components inside of.
+The `<Row>` component is a wrapper that adds the `bx--row` class to a wrapper
+div. You will want to use this to define rows that you will place `<Column>`
+components inside of.
 
 ### Code
 
@@ -157,7 +173,8 @@ The `<Row>` component is a wrapper that adds the `bx--row` class to a wrapper di
 
 ## Column
 
-The `<Column>` component is used to define column widths for your content, you can set the rules at different breakpoints with the props.
+The `<Column>` component is used to define column widths for your content, you
+can set the rules at different breakpoints with the props.
 
 ### Example
 
@@ -528,7 +545,8 @@ Click on an image to open the gallery.
 <GifPlayer color='dark'>
 
 
-![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif) ![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.jpg)
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.gif)
+![IBM Cloud Platform Prototype](/images/IBM_Cloud_Platform_Prototype.jpg)
 
 </GifPlayer>
 
@@ -540,7 +558,8 @@ Click on an image to open the gallery.
 <GifPlayer>
 
 
-![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif) ![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.jpg)
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.gif)
+![IBM Cloud Pictograms](/images/IBM_Cloud_Pictograms.jpg)
 
 </GifPlayer>
 
@@ -555,8 +574,8 @@ Click on an image to open the gallery.
 <ImageGalleryImage alt="IBM Cloud Platform Prototype" title="IBM Cloud Platform" col={4}>
 
 
-<Video src='/videos/hero-video.mp4' poster='/images/poster.jpg'>
-  <track default src='/videos/vtt/hero-video.vtt' srcLang='en' />
+<Video src="/videos/hero-video.mp4" poster="/images/poster.jpg">
+  <track default src="/videos/vtt/hero-video.vtt" srcLang="en" />
 </Video>
 
 </ImageGalleryImage>
@@ -573,9 +592,14 @@ Click on an image to open the gallery.
 
 ## Code
 
-You can use the ImageGallery component in markdown by nesting your images inside the ImageGallery component and using the ImageGalleryImage component to define the image’s location, title, alt tag, and the columns the image on the page will span at the medium and large breakpoints. There is no gallery view for mobile so the small breakpoint is not defined.
+You can use the ImageGallery component in markdown by nesting your images inside
+the ImageGallery component and using the ImageGalleryImage component to define
+the image’s location, title, alt tag, and the columns the image on the page will
+span at the medium and large breakpoints. There is no gallery view for mobile so
+the small breakpoint is not defined.
 
-Here’s an example of how to use the ImageGallery and the ImageGalleryImage components in markdown.
+Here’s an example of how to use the ImageGallery and the ImageGalleryImage
+components in markdown.
 
 ```mdx path=/components/ImageGallery.mdx src=https://gatsby-theme-carbon.now.sh
 <ImageGallery>
@@ -652,7 +676,12 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 <InlineNotification>
 
 
-**Lorem ipsum:** dolor sit amet, [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit non vel quam.
+**Lorem ipsum:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
 
 </InlineNotification>
 
@@ -662,7 +691,12 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 <InlineNotification kind="error">
 
 
-**Error:** dolor sit amet, [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit non vel quam.
+**Error:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
 
 </InlineNotification>
 
@@ -672,7 +706,12 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 <InlineNotification kind="success">
 
 
-**Success:** dolor sit amet, [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit non vel quam.
+**Success:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
 
 </InlineNotification>
 
@@ -682,7 +721,12 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 <InlineNotification kind="warning">
 
 
-**Warning:** dolor sit amet, [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit non vel quam.
+**Warning:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
 
 </InlineNotification>
 
@@ -695,7 +739,12 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 <InlineNotification>
 
 
-**Lorem ipsum:** dolor sit amet, [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit non vel quam.
+**Lorem ipsum:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
 
 </InlineNotification>
 
@@ -705,7 +754,12 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 <InlineNotification kind="error">
 
 
-**Error:** dolor sit amet, [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit non vel quam.
+**Error:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
 
 </InlineNotification>
 
@@ -715,7 +769,12 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 <InlineNotification kind="success">
 
 
-**Success:** dolor sit amet, [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit non vel quam.
+**Success:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
 
 </InlineNotification>
 
@@ -725,7 +784,12 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 <InlineNotification kind="warning">
 
 
-**Warning:** dolor sit amet, [consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit non vel quam.
+**Warning:** dolor sit amet,
+[consectetur adipiscing](/components/InlineNotification) elit. Curabitur ac odio
+arcu. Vestibulum egestas eleifend porttitor. Quisque malesuada pulvinar
+pellentesque. Nunc dictum odio eu enim venenatis fringilla. Nunc finibus enim
+dui, a tempus quam commodo vitae. Donec non eros gravida dolor porta suscipit
+non vel quam.
 
 </InlineNotification>
 
@@ -749,7 +813,11 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 
 {" "}
 
-<MiniCard title='Choose from other icons' href='/demo' actionIcon='arrowRight' />
+<MiniCard
+  title="Choose from other icons"
+  href="/demo"
+  actionIcon="arrowRight"
+/>
 
   <MiniCard title="Or bring your own" href="/demo">
 
@@ -768,7 +836,9 @@ Here’s an example of how to use the ImageGallery and the ImageGalleryImage com
 <Column colLg={8}>
 
 
-When you have the mini resource card sitting aside the main content, be sure to add the `gutterLg`, properties to the `<MiniCard>`. This will ensure the MiniCard has the appropriate gutters at the approriate breakpoints.
+When you have the mini resource card sitting aside the main content, be sure to
+add the `gutterLg`, properties to the `<MiniCard>`. This will ensure the
+MiniCard has the appropriate gutters at the approriate breakpoints.
 
 </Column>
 <MiniCard 
@@ -790,12 +860,16 @@ When you have the mini resource card sitting aside the main content, be sure to 
 
 ```mdx path=components/MiniCard/MiniCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/MiniCard
 <CardGroup>
-  <MiniCard title='26 characters per MiniCard' href='/demo'>
+  <MiniCard title="26 characters per MiniCard" href="/demo">
     ![Github icon](/images/github-icon.png)
   </MiniCard>
-  <MiniCard title='Use the default icon' href='/demo' />
-  <MiniCard title='Choose from other icons' href='/demo' actionIcon='arrowRight' />
-  <MiniCard title='Or bring your own' href='/demo'>
+  <MiniCard title="Use the default icon" href="/demo" />
+  <MiniCard
+    title="Choose from other icons"
+    href="/demo"
+    actionIcon="arrowRight"
+  />
+  <MiniCard title="Or bring your own" href="/demo">
     ![Github icon](/images/sketch-icon.png)
   </MiniCard>
 </CardGroup>
@@ -808,7 +882,9 @@ When you have the mini resource card sitting aside the main content, be sure to 
 <Column colLg={8}>
 
 
-When you have the mini resource card sitting aside the main content, be sure to add the `gutterLg`, properties to the `<MiniCard>`. This will ensure the MiniCard has the appropriate gutters at the approriate breakpoints.
+When you have the mini resource card sitting aside the main content, be sure to
+add the `gutterLg`, properties to the `<MiniCard>`. This will ensure the
+MiniCard has the appropriate gutters at the approriate breakpoints.
 
 </Column>
 <MiniCard
@@ -980,10 +1056,10 @@ When you have the mini resource card sitting aside the main content, be sure to 
 ```mdx path=components/ResourceCard/ResourceCard.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/ResourceCard
 <Column colMd={4} colLg={4} noGutterSm>
   <ResourceCard
-    title='Disabled card'
-    aspectRatio='2:1'
+    title="Disabled card"
+    aspectRatio="2:1"
     disabled
-    href='https://gatsby-theme-carbon.now.sh'
+    href="https://gatsby-theme-carbon.now.sh"
   />
 </Column>
 ```
@@ -996,7 +1072,9 @@ When you have the mini resource card sitting aside the main content, be sure to 
 <Tab label="Just text">
 
 
-The tab component can be used for a variety of content. From text, to images, to columns. If you want to have multiple columns, you’ll need to use our `Row` and `Column` helpers as demonstrated in the "Two images" tab.
+The tab component can be used for a variety of content. From text, to images, to
+columns. If you want to have multiple columns, you’ll need to use our `Row` and
+`Column` helpers as demonstrated in the "Two images" tab.
 
 </Tab>
 
@@ -1053,7 +1131,9 @@ Column two
 <Tab label="Text">
 
 
-The tab component can be used for a variety of content. From text, to images, to columns. If you want to have multiple columns, you’ll need to use our `Row` and `Column` helpers as demonstrated in the "Two images" tab.
+The tab component can be used for a variety of content. From text, to images, to
+columns. If you want to have multiple columns, you’ll need to use our `Row` and
+`Column` helpers as demonstrated in the "Two images" tab.
 
 </Tab>
 
@@ -1062,8 +1142,9 @@ The tab component can be used for a variety of content. From text, to images, to
 <Title>Single image</Title>
 
 ```mdx path=components/Tabs/Tabs.js src=https://github.com/carbon-design-system/gatsby-theme-carbon/tree/main/packages/gatsby-theme-carbon/src/components/Tabs
-<Tab label='Single image'>
-  If your content is full width, you don’t need `Row` and `Column` ![color array](images/colors.jpg)
+<Tab label="Single image">
+  If your content is full width, you don’t need `Row` and `Column` ![color
+  array](images/colors.jpg)
 </Tab>
 ```
 
