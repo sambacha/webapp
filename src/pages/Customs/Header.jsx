@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./patterns.scss";
+import React, { Component } from 'react';
+import './patterns.scss';
 
 class Header extends Component {
   render() {
@@ -11,20 +11,18 @@ class Header extends Component {
           <div
             data-notification
             className="bx--inline-notification bx--inline-notification--info"
-            role="alert"
-          >
+            role="alert">
             <div className="bx--inline-notification__details">
               <svg
                 className="bx--inline-notification__icon"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zm1-3V7H7v6h2zM8 5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
               </svg>
               <div className="bx--inline-notification__text-wrapper">
-                <p className="bx--inline-notification__title">{""}</p>
+                <p className="bx--inline-notification__title" />
                 <p className="bx--inline-notification__subtitle">{subtitle}</p>
               </div>
             </div>

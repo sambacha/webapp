@@ -16,7 +16,7 @@ class TableList extends Component {
   title = 'Table List';
   subtitle = 'This pattern will display and array of model objects in a multi column grid/table.';
 
-  columns = ['New/Reuse code', 'Error Code', 'Rule No', 'Program,' 'Element ID,' 'AX Error Number', 'Cargo/ Conv.', 'English Field name', 'English Message', 'Field name French', 'French Message'];
+  columns = ['New/Reuse code', 'Error Code', 'Rule No', 'Program', 'Element ID,' 'AX Error Number', 'Cargo/ Conv.', 'English Field name', 'English Message', 'Field name French', 'French Message'];
   formatters = {
     'ZipCode': function(val) {
       return val + '-0000';
