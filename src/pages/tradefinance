@@ -1,0 +1,78 @@
+---
+title: Trade Finance
+description: Trade Finance Reference Guide
+---
+
+# Financial Institutions
+
+This REST API is exclusively for use by financial institution organizations to provide access to platform data.
+
+## Endpoints
+
+### TradeInstrumentVerifier
+
+#### getDocumentUsingPOST
+
+``` POST /api/v1/TradeInstrumentVerifier/search ````
+
+Fetch a Trade Instrument, e.g. Bill of Lading document.
+
+##### Description
+
+Fetch a Trade Instrument, such as a Bill Of Lading, matching all the input
+parameters. The API will allow the caller to download the First Matching Bill Of
+Lading document matching all the input parameters. This API is accessible only
+to org’s of type Financial Institution and those that has been entitled to
+access the API tradeInstrumentVerifier: An exact case insensitive match is done
+for this parameter. oceanCarrierCode: An exact case insensitive match is done
+for this parameter. consignorPrintedParty: A partial case insensitive match is
+done for this parameter. Minimum acceptable length is 6 characters.
+
+##### Parameters
+
+##### Body Parameter
+
+| Name              | Description                                                              | Required | Default | Pattern |
+| ----------------- | ------------------------------------------------------------------------ | -------- | ------- | ------- |
+| TDocVerifyRequest | Request object for BoL Verifier [ TDocVerifyRequest](#TDocVerifyRequest) | X        |         |         |
+
+##### Return Type
+
+\- Content-Type: application/json Content-Length: maxLength, 32 \-
+
+##### Content Type
+
+- **/**
+
+##### Responses
+
+| Code | Message                                                                                   | Datatype                                       |
+| ---- | ----------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| 200  | OK                                                                                        | \<\<\>\>                                       |
+| 400  | Bad request                                                                               | [ AppExceptionResponse](#AppExceptionResponse) |
+| 401  | Unauthorized                                                                              | \<\<\>\>                                       |
+| 403  | Forbidden                                                                                 | \<\<\>\>                                       |
+| 404  | No matching Bill of Lading available on the platform for the provided set of input params | [ AppExceptionResponse](#AppExceptionResponse) |
+| 500  | Server Error                                                                              | [ AppExceptionResponse](#AppExceptionResponse) |
+
+http response codes
+
+##### Samples
+
+## Models
+
+### _AppExceptionResponse_ AppExceptionResponse
+
+| Field Name | Required | Type   | Description       | Format |
+| ---------- | -------- | ------ | ----------------- | ------ |
+| code       | X        | String | Error Code        |        |
+| message    | X        | String | Exception Message |        |
+| timestamp  | X        | String | timestamp         |        |
+
+### _TDocVerifyRequest_ TDocVerifyRequest
+
+| Field Name              | Required | Type   | Description                                               | Format |
+| ----------------------- | -------- | ------ | --------------------------------------------------------- | ------ |
+| tradeInstrumentVerifier | X        | String | Bill Of Lading number to search for                       |        |
+| oceanCarrierCode        | X        | String | Carrier SCAC code                                         |        |
+| consignorPrintedParty   | X        | String | Consignor details field as in the Bill Of Lading document |        |
