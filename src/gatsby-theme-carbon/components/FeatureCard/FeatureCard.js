@@ -96,38 +96,38 @@ FeatureCard.propTypes = {
   children: PropTypes.node,
 
   /**
-  * Set url for card
-  */
+   * Set url for card
+   */
   href: PropTypes.string,
 
   /**
-  * Smaller heading
-  */
+   * Smaller heading
+   */
   subTitle: PropTypes.string,
 
   /**
-  * Large heading
-  */
+   * Large heading
+   */
   title: PropTypes.string,
 
   /**
-  * Action icon, default is launch, options are Launch, ArrowRight, Download, Error
-  */
+   * Action icon, default is launch, options are Launch, ArrowRight, Download, Error
+   */
   actionIcon: PropTypes.string,
 
   /**
-  * Use for disabled card
-  */
+   * Use for disabled card
+   */
   disabled: PropTypes.bool,
 
   /**
-  * Specify a custom class
-  */
+   * Specify a custom class
+   */
   className: PropTypes.string,
 
   /**
-  * Pass through props to resource card
-  */
+   * Pass through props to resource card
+   */
   resourceCardProps: PropTypes.object,
 };
 
