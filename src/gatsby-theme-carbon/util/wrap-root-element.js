@@ -5,11 +5,11 @@ import { NavContextProvider } from './context/NavContext';
 import MDXProvider from '../components/MDXProvider';
 
 const wrapRootElement = ({ element }) => (
-    <NavContextProvider>
-        <ThemeProvider>
-            <MDXProvider element={element} />
-        </ThemeProvider>
-    </NavContextProvider>
+  <NavContextProvider>
+    <ThemeProvider>
+      <MDXProvider element={element} />
+    </ThemeProvider>
+  </NavContextProvider>
 );
 
 export default wrapRootElement;
