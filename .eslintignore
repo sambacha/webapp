@@ -3,6 +3,10 @@ src/gatsby-theme-carbon/components/Tabs/Tabs.js
 !.eslintrc.js
 !.eslintrc.json
 
+# ignore these pages
+/src/pages/terms-of-service.mdx
+/src/pages/support.mdx 
+
 # specific 
 bin/
 .circleci/
