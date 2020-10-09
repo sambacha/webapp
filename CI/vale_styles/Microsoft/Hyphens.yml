@@ -5,4 +5,4 @@ level: warning
 ignorecase: false
 nonword: true
 tokens:
-    - '\s[^\s-]+ly-'
+  - '\s[^\s-]+ly-'

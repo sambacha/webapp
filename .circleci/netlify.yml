@@ -1,60 +1,64 @@
 orbs: # declare what orbs we are going to use
-    node: circleci/node@2.0.2 # the node orb provides common node-related configuration
-    codecov: codecov/codecov@1.0.2
+  node: circleci/node@2.0.2 # the node orb provides common node-related configuration
+  codecov: codecov/codecov@1.0.2
 version: 2.1 # using 2.1 provides access to orbs and other features
 
 workflows:
-    matrix-tests:
-        jobs:
-            - node/test:
-                  version: 12.16.2
+  matrix-tests:
+    jobs:
+      - node/test:
+          version: 12.16.2
 commands:
-    run_yarn:
-        steps:
-            - restore_cache:
-                  keys:
-                      - v4-yarn-cache-{{ arch }}-{{ checksum "yarn.lock" }}
-                      - v4-yarn-cache-{{ arch }}
-            - run:
-                  name: 'Yarn: Install Dependencies'
-                  command: |
-                      # Skip yarn install on metro bump commits as the package is not yet
-                      # available on npm
-                      if [[ $(echo "$GIT_COMMIT_DESC" | grep -c "Bump metro@") -eq 0 ]]; then
-                        yarn install --non-interactive --cache-folder ~/.cache/yarn
-                      fi
-            - save_cache:
-                  paths:
-                      - ~/.cache/yarn
-                  key: v4-yarn-cache-{{ arch }}-{{ checksum "yarn.lock" }}
+  run_yarn:
+    steps:
+      - restore_cache:
+          keys:
+            - v4-yarn-cache-{{ arch }}-{{ checksum "yarn.lock" }}
+            - v4-yarn-cache-{{ arch }}
+      - run:
+          name: 'Yarn: Install Dependencies'
+          command: |
+            # Skip yarn install on metro bump commits as the package is not yet
+            # available on npm
+            if [[ $(echo "$GIT_COMMIT_DESC" | grep -c "Bump metro@") -eq 0 ]]; then
+              yarn install --non-interactive --cache-folder ~/.cache/yarn
+            fi
+      - save_cache:
+          paths:
+            - ~/.cache/yarn
+          key: v4-yarn-cache-{{ arch }}-{{ checksum "yarn.lock" }}
 jobs:
-    setup:
-        parameters:
-            executor:
-                type: executor
-                default: nodelts
-            checkout_type:
-                type: string
-                default: node
-        executor: << parameters.executor >>
-        steps:
-            - checkout
-            - codecov/upload:
-                  file: { { coverage_report_filepath } }
-            - save_cache:
-                  key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}-<< parameters.checkout_type >>
-                  paths:
-                      - ~/react-native
-    # ANALYZE
-    analyze_code:
-        executor: nodelts
-        steps:
-            - restore_cache_checkout:
-                  checkout_type: node
-            - setup_artifacts
-            - run_yarn
+  setup:
+    parameters:
+      executor:
+        type: executor
+        default: nodelts
+      checkout_type:
+        type: string
+        default: node
+    executor: << parameters.executor >>
+    steps:
+      - checkout
+      - codecov/upload:
+          file: { { coverage_report_filepath } }
+      - save_cache:
+          key:
+            v1-repo-{{ .Environment.CIRCLE_SHA1 }}-<< parameters.checkout_type
+            >>
+          paths:
+            - ~/react-native
+  # ANALYZE
+  analyze_code:
+    executor: nodelts
+    steps:
+      - restore_cache_checkout:
+          checkout_type: node
+      - setup_artifacts
+      - run_yarn
 
-            - run:
-                  name: Lint code
-                  command: scripts/circleci/exec_swallow_error.sh yarn lint --format junit -o ./reports/junit/eslint/results.xml
-                  when: always
+      - run:
+          name: Lint code
+          command:
+            scripts/circleci/exec_swallow_error.sh yarn lint --format junit -o
+            ./reports/junit/eslint/results.xml
+          when: always
