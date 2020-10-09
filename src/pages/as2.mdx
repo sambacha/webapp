@@ -9,7 +9,6 @@ SPDX-FileCopyrightText: Copyright 2020 FreightTrust and Clearing Corporation -->
 
 <PageDescription>
 
-
 AS2/AS4 Non-repudiation B2B Messaging over Blockchain
 
 </PageDescription>
@@ -83,12 +82,12 @@ return an MDN to the sender. You can select one of the following options:
 
 None: The recipient of the AS2 message does not return an MDN to the sender.
 
-##### Synchronous:
+##### Synchronous
 
 The recipient of the AS2 message returns an MDN to the sender through the same
 HTTP connection used to send the original AS2 message.
 
-##### Asynchronous:
+##### Asynchronous
 
 The recipient of the AS2 message returns an MDN to the sender through a
 different HTTP connection instead of the one used to send the original AS2
@@ -192,49 +191,8 @@ Input Parameters
 
 #### The following options are available by default:
 
-application/edi-x12 application/edifact application/xml application/json
+application/edi-x12 
+application/edifact 
+application/xml
+application/json
 text/binary
-
-You can also type a custom value.
-
-otherHeaders Document Optional. key and value strings of the header for an
-outbound message. attachments Document Array Optional. Attachments for a
-message, if any. stream Object java.io.InputStream object you want add to the
-attachment. contentType String Content type of the attachment. For example,
-application/zip if the attachment is a .zip file. otherHeaders Document
-Optional. key and value strings of the header you want to add to the attachment.
-customHeaders Document Optional. Custom headers you want to include in an AS2
-message. key String Key for the custom header. value String Value for the
-customer header.
-
-### Output Parameters
-
-| **key**                            | **value**                                                                        |
-| ---------------------------------- | -------------------------------------------------------------------------------- |
-| status                             | String Status of an outbound message\.                                           |
-| statusMessage                      | String Processing status of an outbound message\.                                |
-| request                            | Document AS2 message sent to a recipient\.                                       |
-| stream                             | Object AS2 message stream\.                                                      |
-| headers                            | Document Optional\. AS2 message headers\.                                        |
-| AS2\-To                            | String AS2 ID of the recipient\.                                                 |
-| AS2\-From                          | String AS2 ID of the sender\.                                                    |
-| Message\-ID                        | String Message ID of the outbound message\.                                      |
-| AS2\-Version                       | String AS2 protocol version used for the outbound message\.                      |
-| Content\-Type                      | String MIME content type of the outbound message\.                               |
-| EDIINT\-Features                   | String Optional features supported by the application\.                          |
-| Receipt\-Delivery\-Option          | String Optional\. Recipient's asynchronous MDN endpoint URL\.                    |
-| Disposition\-Notification\-To      | String Optional\. Acknowledgment request for the outbound message\.              |
-| Disposition\-Notification\-Options | String Optional\. Acknowledgment request to be signed for the outbound message\. |
-| response                           | Document Received MDN response\.                                                 |
-| status                             | String Status of the received MDN\.                                              |
-| statusMessage                      | String Status message of the received MDN\.                                      |
-| receipt                            | Document Optional\. Received MDN\.                                               |
-| stream                             | Object Object stream of the received MDN\.                                       |
-| headers                            | Document Optional\. Headers of the received MDN\.                                |
-| AS2\-To                            | String AS2 ID of the recipient\.                                                 |
-| AS2\-From                          | String AS2 ID of the sender\.                                                    |
-| Message\-ID                        | String Message ID of the inbound MDN\.                                           |
-| AS2\-Version                       | String AS2 protocol version used for the inbound MDN\.                           |
-| Content\-Type                      | String MIME content type of the inbound message\.                                |
-
-<!-- TODO: DIALOG BOX FOR INQUIRIES -->
