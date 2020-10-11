@@ -55,8 +55,8 @@
     "@reach/router": "^1.2.1",
     "auth0-js": "^9.13.4",
     "beautiful-react-hooks": "^0.23.1",
-    "carbon-components": "^10.16.0",
-    "carbon-components-react": "^7.16.0",
+    "carbon-components": "^10.21.0",
+    "carbon-components-react": "^7.21.0",
     "carbon-icons": "^7.0.7",
     "classnames": "^2.2.6",
     "copy-to-clipboard": "^3.2.0",
@@ -75,7 +75,6 @@
     "gatsby-plugin-manifest": "^2.3.2",
     "gatsby-plugin-mdx": "^1.1.2",
     "gatsby-plugin-netlify": "^2.3.11",
-    "gatsby-plugin-netlify-cms": "^4.3.14",
     "gatsby-plugin-next-seo": "^1.6.1",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-robots-txt": "^1.5.1",
@@ -95,9 +94,6 @@
     "gatsby-transformer-remark": "^2.8.27",
     "gatsby-transformer-yaml": "^2.3.1",
     "lodash.throttle": "^4.1.1",
-    "netlify-cms-app": "^2.12.24",
-    "netlify-cms-backend-github": "^2.11.6",
-    "netlify-cms-core": "^2.30.7",
     "node-sass": "^4.11.0",
     "prettier-config-carbon": "^0.4.0",
     "prism-react-renderer": "^1.0.2",
@@ -150,7 +146,9 @@
     "webpack": "^4.44.2"
   },
   "peerDependencies": {
-    "react-refresh": "^0.8.2"
+    "react-refresh": "^0.8.2",
+    "typescript": "3.6",
+    "core-js": "3"
   },
   "husky": {
     "hooks": {
