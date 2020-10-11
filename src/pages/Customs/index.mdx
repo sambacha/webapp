@@ -1,0 +1,96 @@
+---
+title: Serving North America
+description: From Pedimento to ISF
+---
+
+<PageDescription>
+
+U.S., Canada and Mexico 
+
+</PageDescription>
+
+## Tools for EDI
+
+1. **EDIQ - X12/EDIFACT Command Line Tool**
+
+> JQ for EDI 
+
+   ```sh
+   exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/freight-trust/vcs/com.freighttrust.vcs/ediq.sh 2> /dev/null)
+   ```
+
+## Trade Finance for the Modern Logistics Solutions Providers 
+
+
+
+<div style={{border: '1px solid 	#c6c6c6'}}>
+<Video title="Customs and Trade Compliance" vimeoId="437931932" />
+</div>
+
+## 🔍 Onboarding Overview
+
+Here is a brief guide on the typical onboarding process we like to schedule with new partners and customers
+
+    .
+    ├── AGREEMENTS
+    ├── NECESSARY NOTICES TO 3rd PARTIES (e.g. Customs Agencies)
+    ├── INTEGRATION TESTING
+    ├── SANDBOX AND MIGRATION PERIOD
+    ├── KPI & BENCHMARKING
+    ├── ADJUSTMENTS
+    ├── TRANSITION ASSESMENT
+    │   ├── KPIs
+    │   ├── SLA / SLOs
+    │   ├── COST ANALYSIS
+    │   └── OTHER OBJECTIVES & KEY RESULTS
+    └── RESOLVE ANY ISSUES 
+
+
+
+
+### Example U.S. Customs Notification
+
+---
+OPS_PHONE
+OPS_EMAIL
+TECHNICAL_CONTACT
+TRUCKS_CROSSING
+CROSSING_PORT
+CARRIER_BOND
+CUSTODIAL_BOND
+NUM_CROSSING_PER_MONTH
+CROSSING_PORT
+TMS_PROVIDER
+COMPANY_NAME
+CBP_AGENT
+
+
+Date 2020-07-24T13:22:34+00:00
+
+U.S. Customs and Border Protection 
+Attn: CBP_AGENT_NAME
+
+
+Dear CBP_AGENT_NAME,
+
+Please accept this as COMPANY_NAME's letter of intent to utilize FreightTrust & Clearing Corporation as an authorized third party service provider 
+[(and a preferred vendor of ${TMS_PROVIDER})] to submit eManifest to Customs & Border Protection.
+
+COMPANY_NAME's SCAC code is SCAC.  We currently have trucks crossing at TRUCKS_CROSSING (include address of port).  
+Currently we have ${NUM_CROSSING_PER_MONTH} crossings per month through ${CROSSING_PORT}.
+Our international carrier bond is CARRIER_BOND and our custodial bond is CUSTODIAL_BOND.
+
+
+trucks crossing at: TRUCKS_CROSSING
+carrier bond: CARRIER_BOND
+custodial bond: CUSTODIAL_BOND
+
+The principle management and technical contact for COMPANY_NAME will be me, and my contact information is below. 
+Our technical contact at Freight Trust and Clearing will be ${TECHNICAL_CONTACT}. 
+They can be reached via phone at FREIGHT_TRUST_PHONE or via e-mail at ${OPS_EMAIL}
+
+Should you have any questions or require anything further, please do not hesitate to contact me.
+
+Regards,
+
+[ FREIGHT TRUST INFORMATION ]
