@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { DataTable, Button } from "carbon-components-react";
-import Header from "./Header";
-import "./patterns.scss";
+import React, { Component } from 'react';
+import { DataTable, Button } from 'carbon-components-react';
+import Header from './Header';
+import './patterns.scss';
 
 const {
   Table,
@@ -12,7 +12,7 @@ const {
   TableHeader,
   TableRow,
   TableSelectAll,
-  TableSelectRow
+  TableSelectRow,
 } = DataTable;
 
 class ListToList extends Component {
@@ -21,59 +21,59 @@ class ListToList extends Component {
     this.state = {
       rowsListA: [
         {
-          id: "aa",
-          name: "Load Balancer 1",
-          port: 25
+          id: 'aa',
+          name: 'Load Balancer 1',
+          port: 25,
         },
         {
-          id: "ab",
-          name: "Load Balancer 2",
-          port: 80
+          id: 'ab',
+          name: 'Load Balancer 2',
+          port: 80,
         },
         {
-          id: "ac",
-          name: "Load Balancer 3",
-          port: 443
-        }
+          id: 'ac',
+          name: 'Load Balancer 3',
+          port: 443,
+        },
       ],
       rowsListB: [
         {
-          id: "ba",
-          name: "Load Balancer 4",
-          port: 3000
+          id: 'ba',
+          name: 'Load Balancer 4',
+          port: 3000,
         },
         {
-          id: "bb",
-          name: "Load Balancer 5",
-          port: 4000
+          id: 'bb',
+          name: 'Load Balancer 5',
+          port: 4000,
         },
         {
-          id: "bc",
-          name: "Load Balancer 6",
-          port: 5000
-        }
+          id: 'bc',
+          name: 'Load Balancer 6',
+          port: 5000,
+        },
       ],
       headers: [
         {
-          key: "name",
-          header: "Name"
+          key: 'name',
+          header: 'Name',
         },
         {
-          key: "port",
-          header: "Port"
-        }
-      ]
+          key: 'port',
+          header: 'Port',
+        },
+      ],
     };
   }
 
   selectedRowsListA = [];
   selectedRowsListB = [];
 
-  moveFromListAToB = event => {
+  moveFromListAToB = (event) => {
     let rowsListA = this.state.rowsListA.slice();
     let rowsListB = this.state.rowsListB.slice();
-    this.selectedRowsListA.forEach(elem => {
-      rowsListA = rowsListA.filter(item => {
+    this.selectedRowsListA.forEach((elem) => {
+      rowsListA = rowsListA.filter((item) => {
         if (item.id !== elem.id) {
           return true;
         } else {
@@ -85,11 +85,11 @@ class ListToList extends Component {
     this.setState({ rowsListA, rowsListB });
   };
 
-  moveFromListBToA = event => {
+  moveFromListBToA = (event) => {
     let rowsListA = this.state.rowsListA.slice();
     let rowsListB = this.state.rowsListB.slice();
-    this.selectedRowsListB.forEach(elem => {
-      rowsListB = rowsListB.filter(item => {
+    this.selectedRowsListB.forEach((elem) => {
+      rowsListB = rowsListB.filter((item) => {
         if (item.id !== elem.id) {
           return true;
         } else {
@@ -119,7 +119,7 @@ class ListToList extends Component {
                 getHeaderProps,
                 getRowProps,
                 getSelectionProps,
-                selectedRows
+                selectedRows,
               }) => {
                 this.selectedRowsListA = selectedRows;
                 return (
@@ -128,7 +128,7 @@ class ListToList extends Component {
                       <TableHead>
                         <TableRow>
                           <TableSelectAll {...getSelectionProps()} />
-                          {headers.map(header => (
+                          {headers.map((header) => (
                             <TableHeader {...getHeaderProps({ header })}>
                               {header.header}
                             </TableHeader>
@@ -136,10 +136,10 @@ class ListToList extends Component {
                         </TableRow>
                       </TableHead>
                       <TableBody>
-                        {rows.map(row => (
+                        {rows.map((row) => (
                           <TableRow {...getRowProps({ row })}>
                             <TableSelectRow {...getSelectionProps({ row })} />
-                            {row.cells.map(cell => (
+                            {row.cells.map((cell) => (
                               <TableCell key={cell.id}>{cell.value}</TableCell>
                             ))}
                           </TableRow>
@@ -155,15 +155,13 @@ class ListToList extends Component {
             <div>
               <Button
                 className="list-to-list-moving-btn"
-                onClick={this.moveFromListAToB}
-              >
+                onClick={this.moveFromListAToB}>
                 &gt;&gt;
               </Button>
               <br />
               <Button
                 className="list-to-list-moving-btn"
-                onClick={this.moveFromListBToA}
-              >
+                onClick={this.moveFromListBToA}>
                 &lt;&lt;
               </Button>
             </div>
@@ -178,7 +176,7 @@ class ListToList extends Component {
                 getHeaderProps,
                 getRowProps,
                 getSelectionProps,
-                selectedRows
+                selectedRows,
               }) => {
                 this.selectedRowsListB = selectedRows;
                 return (
@@ -187,7 +185,7 @@ class ListToList extends Component {
                       <TableHead>
                         <TableRow>
                           <TableSelectAll {...getSelectionProps()} />
-                          {headers.map(header => (
+                          {headers.map((header) => (
                             <TableHeader {...getHeaderProps({ header })}>
                               {header.header}
                             </TableHeader>
@@ -195,10 +193,10 @@ class ListToList extends Component {
                         </TableRow>
                       </TableHead>
                       <TableBody>
-                        {rows.map(row => (
+                        {rows.map((row) => (
                           <TableRow {...getRowProps({ row })}>
                             <TableSelectRow {...getSelectionProps({ row })} />
-                            {row.cells.map(cell => (
+                            {row.cells.map((cell) => (
                               <TableCell key={cell.id}>{cell.value}</TableCell>
                             ))}
                           </TableRow>

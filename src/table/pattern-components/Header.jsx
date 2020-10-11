@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./patterns.scss";
+import React, { Component } from 'react';
+import './patterns.scss';
 
 class Header extends Component {
   render() {
@@ -11,11 +11,10 @@ class Header extends Component {
           <div
             data-notification
             className="bx--inline-notification bx--inline-notification--info"
-            role="alert"
-          >
+            role="alert">
             <div className="bx--inline-notification__details">
               <div className="bx--inline-notification__text-wrapper">
-                <p className="bx--inline-notification__title">{""}</p>
+                <p className="bx--inline-notification__title">{''}</p>
                 <p className="bx--inline-notification__subtitle">{subtitle}</p>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   StructuredListWrapper,
   StructuredListRow,
@@ -7,50 +7,50 @@ import {
   StructuredListBody,
   StructuredListInput,
   Icon,
-  Button
-} from "carbon-components-react";
-import { iconCheckmarkSolid } from "carbon-icons";
-import Header from "./Header";
-import ValidatingForm from "./ValidatingForm";
-import "./patterns.scss";
+  Button,
+} from 'carbon-components-react';
+import { iconCheckmarkSolid } from 'carbon-icons';
+import Header from './Header';
+import ValidatingForm from './ValidatingForm';
+import './patterns.scss';
 
 class CreateReadUpdateDelete extends Component {
   constructor(props) {
     super(props);
     const data = [
       [
-        { label: "Name", value: "Lin", type: "textinput" },
-        { label: "Address", value: "123 Main Street", type: "textinput" },
-        { label: "City", value: "Austin", type: "textinput" },
-        { label: "State", value: ["TX"], type: "dropdown" },
-        { label: "ZipCode", value: "12345", type: "textinput" },
-        { label: "Country", value: ["United States"], type: "dropdown" }
+        { label: 'Name', value: 'Lin', type: 'textinput' },
+        { label: 'Address', value: '123 Main Street', type: 'textinput' },
+        { label: 'City', value: 'Austin', type: 'textinput' },
+        { label: 'State', value: ['TX'], type: 'dropdown' },
+        { label: 'ZipCode', value: '12345', type: 'textinput' },
+        { label: 'Country', value: ['United States'], type: 'dropdown' },
       ],
       [
-        { label: "Name", value: "Mak", type: "textinput" },
-        { label: "Address", value: "45 2nd Street", type: "textinput" },
-        { label: "City", value: "Austin", type: "textinput" },
-        { label: "State", value: ["TX"], type: "dropdown" },
-        { label: "ZipCode", value: "78766", type: "textinput" },
-        { label: "Country", value: ["United States"], type: "dropdown" }
+        { label: 'Name', value: 'Mak', type: 'textinput' },
+        { label: 'Address', value: '45 2nd Street', type: 'textinput' },
+        { label: 'City', value: 'Austin', type: 'textinput' },
+        { label: 'State', value: ['TX'], type: 'dropdown' },
+        { label: 'ZipCode', value: '78766', type: 'textinput' },
+        { label: 'Country', value: ['United States'], type: 'dropdown' },
       ],
       [
-        { label: "Name", value: "Joe", type: "textinput" },
-        { label: "Address", value: "40 Down Street", type: "textinput" },
-        { label: "City", value: "San Francisco", type: "textinput" },
-        { label: "State", value: ["CA"], type: "dropdown" },
-        { label: "ZipCode", value: "90706", type: "textinput" },
-        { label: "Country", value: ["United States"], type: "dropdown" }
-      ]
+        { label: 'Name', value: 'Joe', type: 'textinput' },
+        { label: 'Address', value: '40 Down Street', type: 'textinput' },
+        { label: 'City', value: 'San Francisco', type: 'textinput' },
+        { label: 'State', value: ['CA'], type: 'dropdown' },
+        { label: 'ZipCode', value: '90706', type: 'textinput' },
+        { label: 'Country', value: ['United States'], type: 'dropdown' },
+      ],
     ];
     this.state = {
       selectedRow: 0,
       data,
-      adding: false
+      adding: false,
     };
   }
 
-  onRowClick = id => {
+  onRowClick = (id) => {
     this.setState({ selectedRow: id });
   };
 
@@ -58,12 +58,12 @@ class CreateReadUpdateDelete extends Component {
     let data = this.state.data.slice();
     let selectedRow = this.state.data.length;
     data[selectedRow] = [
-      { label: "Name", value: "Enter data below", type: "textinput" },
-      { label: "Address", value: "", type: "textinput" },
-      { label: "City", value: "", type: "textinput" },
-      { label: "State", value: [""], type: "dropdown" },
-      { label: "ZipCode", value: "", type: "textinput" },
-      { label: "Country", value: [""], type: "dropdown" }
+      { label: 'Name', value: 'Enter data below', type: 'textinput' },
+      { label: 'Address', value: '', type: 'textinput' },
+      { label: 'City', value: '', type: 'textinput' },
+      { label: 'State', value: [''], type: 'dropdown' },
+      { label: 'ZipCode', value: '', type: 'textinput' },
+      { label: 'Country', value: [''], type: 'dropdown' },
     ];
     this.setState({ data, selectedRow, adding: true });
   };
@@ -76,16 +76,16 @@ class CreateReadUpdateDelete extends Component {
     }
   };
 
-  updateRow = newData => {
+  updateRow = (newData) => {
     let data = this.state.data.slice();
     let selectedRow = this.state.selectedRow;
     data[selectedRow] = [
-      { label: "Name", value: newData.name, type: "textinput" },
-      { label: "Address", value: newData.address, type: "textinput" },
-      { label: "City", value: newData.city, type: "textinput" },
-      { label: "State", value: [newData.state], type: "dropdown" },
-      { label: "ZipCode", value: newData.zipCode, type: "textinput" },
-      { label: "Country", value: [newData.country], type: "dropdown" }
+      { label: 'Name', value: newData.name, type: 'textinput' },
+      { label: 'Address', value: newData.address, type: 'textinput' },
+      { label: 'City', value: newData.city, type: 'textinput' },
+      { label: 'State', value: [newData.state], type: 'dropdown' },
+      { label: 'ZipCode', value: newData.zipCode, type: 'textinput' },
+      { label: 'Country', value: [newData.country], type: 'dropdown' },
     ];
     this.setState({ data });
   };
@@ -113,7 +113,7 @@ class CreateReadUpdateDelete extends Component {
             />
           </StructuredListCell>
         </div>
-        {Object.keys(row).map(col => {
+        {Object.keys(row).map((col) => {
           return (
             <StructuredListCell key={col} className="simple-list-row">
               {row[col]}
@@ -128,7 +128,7 @@ class CreateReadUpdateDelete extends Component {
     const selectedRow = this.state.selectedRow;
     const data = this.state.data;
     const columns = data.length
-      ? data[selectedRow].map(item => item.label)
+      ? data[selectedRow].map((item) => item.label)
       : [];
 
     return (
@@ -143,11 +143,11 @@ class CreateReadUpdateDelete extends Component {
               <StructuredListHead>
                 <StructuredListRow head>
                   <StructuredListCell head />
-                  {columns.map(key => {
+                  {columns.map((key) => {
                     return (
                       <StructuredListCell head key={key}>
                         {key.charAt(0).toUpperCase() +
-                          key.slice(1).replace(/([A-Z])/g, " $1")}
+                          key.slice(1).replace(/([A-Z])/g, ' $1')}
                       </StructuredListCell>
                     );
                   })}
@@ -155,7 +155,7 @@ class CreateReadUpdateDelete extends Component {
               </StructuredListHead>
               <StructuredListBody>
                 {data.map((row, i) => {
-                  const values = row.map(item => item.value);
+                  const values = row.map((item) => item.value);
                   return this.renderRow(values, i);
                 })}
               </StructuredListBody>

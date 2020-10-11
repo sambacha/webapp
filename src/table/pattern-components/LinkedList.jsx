@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Form, DropdownV2, Button, Tile } from "carbon-components-react";
-import Header from "./Header";
-import "./patterns.scss";
+import React, { Component } from 'react';
+import { Form, DropdownV2, Button, Tile } from 'carbon-components-react';
+import Header from './Header';
+import './patterns.scss';
 
 let checkFlag = true;
 
@@ -9,36 +9,36 @@ class LinkedList extends Component {
   constructor(props) {
     super(props);
     const data = {
-      "United States": {
-        TX: ["Austin", "Dallas", "Other"],
-        CA: ["San Francisco", "Los Angeles", "Other"],
-        Other: ["Other"]
+      'United States': {
+        TX: ['Austin', 'Dallas', 'Other'],
+        CA: ['San Francisco', 'Los Angeles', 'Other'],
+        Other: ['Other'],
       },
       Mexico: {
-        Aguascalientes: ["Aguascalientes", "Calvillo", "Other"],
-        "Baja California": ["Tijuana", "Mexicali", "Other"],
-        Other: ["Other"]
-      }
+        Aguascalientes: ['Aguascalientes', 'Calvillo', 'Other'],
+        'Baja California': ['Tijuana', 'Mexicali', 'Other'],
+        Other: ['Other'],
+      },
     };
     this.state = {
       data,
       dataToSave: {},
       countryList: Object.keys(data),
       stateList: [],
-      cityList: []
+      cityList: [],
     };
   }
 
-  saveData = event => {
+  saveData = (event) => {
     const target = event.target;
     let fieldName = target.name;
     let fieldValue = target.value;
     if (!fieldValue) {
-      this.setState({ [fieldName]: fieldValue, [fieldName + "Invalid"]: true });
+      this.setState({ [fieldName]: fieldValue, [fieldName + 'Invalid']: true });
     } else {
       this.setState({
         [fieldName]: fieldValue,
-        [fieldName + "Invalid"]: false
+        [fieldName + 'Invalid']: false,
       });
     }
   };
@@ -47,9 +47,9 @@ class LinkedList extends Component {
     this.setState({
       country: selectedItem,
       countryInvalid: false,
-      state: "",
-      city: "",
-      stateList: Object.keys(this.state.data[selectedItem])
+      state: '',
+      city: '',
+      stateList: Object.keys(this.state.data[selectedItem]),
     });
   };
 
@@ -57,15 +57,15 @@ class LinkedList extends Component {
     this.setState({
       state: selectedItem,
       stateInvalid: false,
-      city: "",
-      cityList: this.state.data[this.state.country][selectedItem]
+      city: '',
+      cityList: this.state.data[this.state.country][selectedItem],
     });
   };
 
   saveDataDropdown3 = ({ selectedItem }) => {
     this.setState({
       city: selectedItem,
-      cityInvalid: false
+      cityInvalid: false,
     });
   };
 
@@ -86,13 +86,13 @@ class LinkedList extends Component {
     return checkFlag;
   };
 
-  saveForm = event => {
+  saveForm = (event) => {
     event.preventDefault();
     if (this.checkForm()) {
       let dataToSave = {
         country: this.state.country,
         state: this.state.state,
-        city: this.state.city
+        city: this.state.city,
       };
       this.setState({ dataToSave });
     }
@@ -164,12 +164,12 @@ class LinkedList extends Component {
           <div className="bx--row">
             <div className="bx--col-xs-12 left-align">
               <Tile>
-                {Object.keys(this.state.dataToSave).map(item => (
+                {Object.keys(this.state.dataToSave).map((item) => (
                   <p key={item}>
                     &nbsp;&nbsp;
                     <strong>
                       {item.charAt(0).toUpperCase() + item.slice(1)}:
-                    </strong>{" "}
+                    </strong>{' '}
                     {this.state.dataToSave[item]}
                   </p>
                 ))}

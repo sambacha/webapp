@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   StructuredListWrapper,
   StructuredListRow,
@@ -6,21 +6,21 @@ import {
   StructuredListHead,
   StructuredListBody,
   StructuredListInput,
-  Icon
-} from "carbon-components-react";
-import { iconCheckmarkSolid } from "carbon-icons";
-import Header from "./Header";
-import "./patterns.scss";
+  Icon,
+} from 'carbon-components-react';
+import { iconCheckmarkSolid } from 'carbon-icons';
+import Header from './Header';
+import './patterns.scss';
 
 class SimpleList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedRow: 0
+      selectedRow: 0,
     };
   }
 
-  onRowClick = id => {
+  onRowClick = (id) => {
     this.setState({ selectedRow: id });
   };
 
@@ -52,7 +52,7 @@ class SimpleList extends Component {
   };
 
   render() {
-    const data = ["row1", "row2", "row3"];
+    const data = ['row1', 'row2', 'row3'];
     return (
       <div className="bx--grid pattern-container">
         <Header

@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Search, DataTable } from "carbon-components-react";
-import Header from "./Header";
-import "./patterns.scss";
+import React, { Component } from 'react';
+import { Search, DataTable } from 'carbon-components-react';
+import Header from './Header';
+import './patterns.scss';
 
 const {
   Table,
@@ -10,7 +10,7 @@ const {
   TableContainer,
   TableHead,
   TableHeader,
-  TableRow
+  TableRow,
 } = DataTable;
 
 class SearchList extends Component {
@@ -18,48 +18,48 @@ class SearchList extends Component {
     super(props);
     const rowsList = [
       {
-        id: "1",
-        name: "Load Balancer 1",
-        port: "25",
-        status: "Disabled"
+        id: '1',
+        name: 'Load Balancer 1',
+        port: '25',
+        status: 'Disabled',
       },
       {
-        id: "2",
-        name: "Load Balancer 2",
-        port: "80",
-        status: "Starting"
+        id: '2',
+        name: 'Load Balancer 2',
+        port: '80',
+        status: 'Starting',
       },
       {
-        id: "3",
-        name: "Load Balancer 3",
-        port: "443",
-        status: "Active"
-      }
+        id: '3',
+        name: 'Load Balancer 3',
+        port: '443',
+        status: 'Active',
+      },
     ];
     this.state = {
-      searchKeyword: "",
+      searchKeyword: '',
       initialRowsList: rowsList,
       rowsList: rowsList,
       headers: [
         {
-          key: "name",
-          header: "Name"
+          key: 'name',
+          header: 'Name',
         },
         {
-          key: "port",
-          header: "Port"
+          key: 'port',
+          header: 'Port',
         },
         {
-          key: "status",
-          header: "Status"
-        }
-      ]
+          key: 'status',
+          header: 'Status',
+        },
+      ],
     };
   }
 
-  onSearch = event => {
+  onSearch = (event) => {
     this.setState({ searchKeyword: event.target.value }, () => {
-      const subset = this.state.initialRowsList.filter(datarow =>
+      const subset = this.state.initialRowsList.filter((datarow) =>
         Object.keys(datarow).reduce((accumulator, field) => {
           return (
             accumulator ||
@@ -106,14 +106,14 @@ class SearchList extends Component {
                   headers,
                   getHeaderProps,
                   getRowProps,
-                  getSelectionProps
+                  getSelectionProps,
                 }) => {
                   return (
                     <TableContainer title="">
                       <Table>
                         <TableHead>
                           <TableRow>
-                            {headers.map(header => (
+                            {headers.map((header) => (
                               <TableHeader {...getHeaderProps({ header })}>
                                 {header.header}
                               </TableHeader>
@@ -121,9 +121,9 @@ class SearchList extends Component {
                           </TableRow>
                         </TableHead>
                         <TableBody>
-                          {rows.map(row => (
+                          {rows.map((row) => (
                             <TableRow {...getRowProps({ row })}>
-                              {row.cells.map(cell => (
+                              {row.cells.map((cell) => (
                                 <TableCell key={cell.id}>
                                   {cell.value}
                                 </TableCell>

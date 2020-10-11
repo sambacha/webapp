@@ -19,7 +19,7 @@ describe('timer', () => {
       await timer(expectedTime);
 
       const endTime = new Date().getTime();
-      expect(endTime - startTime).toBeGreaterThanOrEqual(expectedTime-2);
+      expect(endTime - startTime).toBeGreaterThanOrEqual(expectedTime - 2);
     });
   });
 
@@ -32,5 +32,5 @@ describe('timer', () => {
 
       expect(endTime - startTime).toBeGreaterThanOrEqual(expectedTime);
     });
-  })
+  });
 });

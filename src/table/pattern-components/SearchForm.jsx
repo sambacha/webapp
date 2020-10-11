@@ -1,57 +1,57 @@
-import React, { Component } from "react";
-import { Search } from "carbon-components-react";
-import "./patterns.scss";
-import Header from "./Header";
-import DisplayForm from "./DisplayForm";
+import React, { Component } from 'react';
+import { Search } from 'carbon-components-react';
+import './patterns.scss';
+import Header from './Header';
+import DisplayForm from './DisplayForm';
 
 class SearchForm extends Component {
   constructor(props) {
     super(props);
     const defaultData = [
       {
-        Name: "Lin",
-        Address: "123 Main Street",
-        City: "Austin",
-        State: "TX",
-        ZipCode: "12345",
-        Country: "USA"
+        Name: 'Lin',
+        Address: '123 Main Street',
+        City: 'Austin',
+        State: 'TX',
+        ZipCode: '12345',
+        Country: 'USA',
       },
       {
-        Name: "Mak",
-        Address: "45 2nd Street",
-        City: "Austin",
-        State: "TX",
-        ZipCode: "78766",
-        Country: "USA"
+        Name: 'Mak',
+        Address: '45 2nd Street',
+        City: 'Austin',
+        State: 'TX',
+        ZipCode: '78766',
+        Country: 'USA',
       },
       {
-        Name: "Joe",
-        Address: "40 Down Street",
-        City: "San Francisco",
-        State: "CA",
-        ZipCode: "90706",
-        Country: "USA"
-      }
+        Name: 'Joe',
+        Address: '40 Down Street',
+        City: 'San Francisco',
+        State: 'CA',
+        ZipCode: '90706',
+        Country: 'USA',
+      },
     ];
     this.state = {
-      searchKeyword: "",
-      data: defaultData
+      searchKeyword: '',
+      data: defaultData,
     };
   }
 
-  formatDataForDisplayForm = datarow => {
-    const displayData = Object.keys(datarow).map(label => {
-      return { label, value: datarow[label], type: "textinput" };
+  formatDataForDisplayForm = (datarow) => {
+    const displayData = Object.keys(datarow).map((label) => {
+      return { label, value: datarow[label], type: 'textinput' };
     });
     return displayData;
   };
 
-  onSearch = event => {
+  onSearch = (event) => {
     this.setState({ searchKeyword: event.target.value });
   };
 
-  getFilteredData = data => {
-    const subset = data.filter(datarow =>
+  getFilteredData = (data) => {
+    const subset = data.filter((datarow) =>
       Object.keys(datarow).reduce((accumulator, field) => {
         return (
           accumulator ||
@@ -88,7 +88,7 @@ class SearchForm extends Component {
           </div>
         </div>
         <br />
-        {this.state.searchKeyword !== "" && (
+        {this.state.searchKeyword !== '' && (
           <div className="bx--row">
             <div className="bx--col-xs-12">
               {filteredData.length > 0 ? (
