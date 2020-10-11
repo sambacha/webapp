@@ -67,7 +67,7 @@ td > code {
 .page-table__container {
   overflow-x: auto;
 
-  @include carbon--breakpoint("md") {
+  @include carbon--breakpoint('md') {
     overflow-x: initial;
   }
 }

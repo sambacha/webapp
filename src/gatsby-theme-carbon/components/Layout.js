@@ -1,12 +1,12 @@
 /* eslint-disable import/no-unresolved */
 import React, { useLayoutEffect } from 'react';
 
-import LeftNav from 'gatsby-theme-carbon/src/components/LeftNav';
-import Meta from 'gatsby-theme-carbon/src/components/Meta';
-import Header from 'gatsby-theme-carbon/src/components/Header';
-import Switcher from 'gatsby-theme-carbon/src/components/Switcher';
-import Footer from 'gatsby-theme-carbon/src/components/Footer';
-import Container from 'gatsby-theme-carbon/src/components/Container';
+import LeftNav from 'gatsby-theme-carbon/components/LeftNav';
+import Meta from 'gatsby-theme-carbon/components/Meta';
+import Header from 'gatsby-theme-carbon/components/Header';
+import Switcher from 'gatsby-theme-carbon/components/Switcher';
+import Footer from 'gatsby-theme-carbon/components/Footer';
+import Container from 'gatsby-theme-carbon/components/Container';
 
 import 'gatsby-theme-carbon/src/styles/index.scss';
 

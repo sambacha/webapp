@@ -22,7 +22,7 @@ import Layout from 'gatsby-theme-carbon/src/components/Layout';
 import Main from 'gatsby-theme-carbon/src/components/Main';
 
 import BackToTopBtn from 'gatsby-theme-carbon/src/components/BackToTopBtn';
-import Carbon from '../../images/carbon.jpg';
+// import Carbon from '../../images/carbon.jpg';
 
 import { mainContent } from './Homepage.module.scss';
 
@@ -54,7 +54,7 @@ Homepage.defaultProps = {
           Distributed Systems
         </h1>
       )}
-      image={Carbon}
+      //    image={''}
     />
   ),
   FirstCallout: <HomepageCallout />,

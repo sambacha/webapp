@@ -19,7 +19,7 @@
  */
 import React, { useContext } from 'react';
 import cx from 'classnames';
-import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
+import NavContext from 'gatsby-theme-carbon/util/context/NavContext';
 import { nav, open, divider, link, linkDisabled } from './Switcher.module.scss';
 
 const Switcher = ({ children }) => {

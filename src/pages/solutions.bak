@@ -3,7 +3,7 @@ title: Freight Trust & Clearing
 description: Seamless Trade & Compliance for Supply Chains, Trade Finance & Logistics
 ---
 
-import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage'
+import HomepageTemplate from 'gatsby-theme-carbon/templates/Homepage'
 import {
   ArticleContainer,
   CustomArticleCard,
@@ -14,7 +14,7 @@ import {
   BannerContainer,
   RequestDemoContent,
   TextImage,
-} from 'gatsby-theme-carbon/src/templates/HomepageComponents'
+} from 'gatsby-theme-carbon/templates/HomepageComponents'
 import { Button } from 'carbon-components-react'
 
 export default HomepageTemplate
