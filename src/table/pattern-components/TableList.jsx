@@ -14,13 +14,15 @@ import './patterns.scss';
 
 class TableList extends Component {
   title = 'Table List';
+
   subtitle =
     'This pattern will display and array of model objects in a multi column grid/table.';
 
   columns = ['Name', 'Address', 'City', 'State', 'ZipCode', 'Country'];
+
   formatters = {
-    ZipCode: function (val) {
-      return val + '-0000';
+    ZipCode(val) {
+      return `${val}-0000`;
     },
   };
 
@@ -69,44 +71,39 @@ class TableList extends Component {
     this.setState({ selectedRow: id });
   };
 
-  renderRow = (row, id) => {
-    return (
-      <StructuredListRow key={id} onClick={() => this.onRowClick(id)}>
-        <div>
-          <StructuredListInput
-            id={`row-${id}`}
-            value="row-0"
-            title="row-0"
-            name="row-0"
-            //defaultChecked={this.state.selectedRow === id}
-            checked={this.state.selectedRow === id}
-          />
-          <StructuredListCell>
-            <Icon
-              className="bx--structured-list-svg"
-              icon={iconCheckmarkSolid}
-            />
-          </StructuredListCell>
-        </div>
-        {this.columns.map((col) => {
-          const format =
-            this.formatters[col] ||
-            function (val) {
-              return val;
-            };
+  renderRow = (row, id) => (
+    <StructuredListRow key={id} onClick={() => this.onRowClick(id)}>
+      <div>
+        <StructuredListInput
+          id={`row-${id}`}
+          value="row-0"
+          title="row-0"
+          name="row-0"
+          // defaultChecked={this.state.selectedRow === id}
+          checked={this.state.selectedRow === id}
+        />
+        <StructuredListCell>
+          <Icon className="bx--structured-list-svg" icon={iconCheckmarkSolid} />
+        </StructuredListCell>
+      </div>
+      {this.columns.map((col) => {
+        const format =
+          this.formatters[col] ||
+          function (val) {
+            return val;
+          };
 
-          return (
-            <StructuredListCell key={col} className="simple-list-row">
-              {format(row[col])}
-            </StructuredListCell>
-          );
-        })}
-      </StructuredListRow>
-    );
-  };
+        return (
+          <StructuredListCell key={col} className="simple-list-row">
+            {format(row[col])}
+          </StructuredListCell>
+        );
+      })}
+    </StructuredListRow>
+  );
 
   render() {
-    const data = this.state.data;
+    const { data } = this.state;
 
     return (
       <div className="bx--grid pattern-container">
@@ -117,21 +114,17 @@ class TableList extends Component {
               <StructuredListHead>
                 <StructuredListRow head>
                   <StructuredListCell head />
-                  {this.columns.map((key) => {
-                    return (
-                      <StructuredListCell head key={key}>
-                        {key.charAt(0).toUpperCase() +
-                          key.slice(1).replace(/([A-Z])/g, ' $1')}
-                      </StructuredListCell>
-                    );
-                  })}
+                  {this.columns.map((key) => (
+                    <StructuredListCell head key={key}>
+                      {key.charAt(0).toUpperCase() +
+                        key.slice(1).replace(/([A-Z])/g, ' $1')}
+                    </StructuredListCell>
+                  ))}
                 </StructuredListRow>
               </StructuredListHead>
 
               <StructuredListBody>
-                {data.map((row, i) => {
-                  return this.renderRow(row, i);
-                })}
+                {data.map((row, i) => this.renderRow(row, i))}
               </StructuredListBody>
             </StructuredListWrapper>
           </div>

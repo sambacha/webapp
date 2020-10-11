@@ -25,8 +25,8 @@ class DisplayForm extends Component {
   }
 
   render() {
-    const data = this.state.data;
-    const showDescription = this.state.showDescription;
+    const { data } = this.state;
+    const { showDescription } = this.state;
     return (
       <div className="bx--grid">
         {showDescription && (
@@ -54,22 +54,22 @@ class DisplayForm extends Component {
                         />
                       </div>
                     );
-                  } else if (item.type === 'dropdown') {
+                  }
+                  if (item.type === 'dropdown') {
                     return (
                       <div key={item.label} className="display-form-item">
                         <p className="bx--label left-align">{item.label}</p>
                         <DropdownV2
                           disabled
                           id={item.label}
-                          label={'Select a ' + item.label.toLowerCase() + '..'}
+                          label={`Select a ${item.label.toLowerCase()}..`}
                           items={item.value}
                           selectedItem={item.value[0]}
                         />
                       </div>
                     );
-                  } else {
-                    return <div />;
                   }
+                  return <div />;
                 })}
               </Form>
             </Tile>

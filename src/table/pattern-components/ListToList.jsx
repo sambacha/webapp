@@ -67,35 +67,34 @@ class ListToList extends Component {
   }
 
   selectedRowsListA = [];
+
   selectedRowsListB = [];
 
   moveFromListAToB = (event) => {
     let rowsListA = this.state.rowsListA.slice();
-    let rowsListB = this.state.rowsListB.slice();
+    const rowsListB = this.state.rowsListB.slice();
     this.selectedRowsListA.forEach((elem) => {
       rowsListA = rowsListA.filter((item) => {
         if (item.id !== elem.id) {
           return true;
-        } else {
-          rowsListB.push(item);
-          return false;
         }
+        rowsListB.push(item);
+        return false;
       });
     });
     this.setState({ rowsListA, rowsListB });
   };
 
   moveFromListBToA = (event) => {
-    let rowsListA = this.state.rowsListA.slice();
+    const rowsListA = this.state.rowsListA.slice();
     let rowsListB = this.state.rowsListB.slice();
     this.selectedRowsListB.forEach((elem) => {
       rowsListB = rowsListB.filter((item) => {
         if (item.id !== elem.id) {
           return true;
-        } else {
-          rowsListA.push(item);
-          return false;
         }
+        rowsListA.push(item);
+        return false;
       });
     });
     this.setState({ rowsListA, rowsListB });

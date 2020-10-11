@@ -40,9 +40,11 @@ class SearchForm extends Component {
   }
 
   formatDataForDisplayForm = (datarow) => {
-    const displayData = Object.keys(datarow).map((label) => {
-      return { label, value: datarow[label], type: 'textinput' };
-    });
+    const displayData = Object.keys(datarow).map((label) => ({
+      label,
+      value: datarow[label],
+      type: 'textinput',
+    }));
     return displayData;
   };
 
@@ -52,20 +54,20 @@ class SearchForm extends Component {
 
   getFilteredData = (data) => {
     const subset = data.filter((datarow) =>
-      Object.keys(datarow).reduce((accumulator, field) => {
-        return (
+      Object.keys(datarow).reduce(
+        (accumulator, field) =>
           accumulator ||
           datarow[field]
             .toLocaleLowerCase()
-            .includes(this.state.searchKeyword.toLocaleLowerCase())
-        );
-      }, false)
+            .includes(this.state.searchKeyword.toLocaleLowerCase()),
+        false
+      )
     );
     return subset;
   };
 
   render() {
-    const data = this.state.data;
+    const { data } = this.state;
     const filteredData = this.getFilteredData(data);
 
     return (
@@ -83,7 +85,7 @@ class SearchForm extends Component {
               placeHolderText="Search"
               onChange={this.onSearch}
               id="search-1"
-              light={true}
+              light
             />
           </div>
         </div>

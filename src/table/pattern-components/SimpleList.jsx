@@ -24,32 +24,25 @@ class SimpleList extends Component {
     this.setState({ selectedRow: id });
   };
 
-  renderRow = (row, id) => {
-    return (
-      <StructuredListRow key={id} onClick={() => this.onRowClick(id)}>
-        <div>
-          <StructuredListInput
-            id={`row-${id}`}
-            value="row-0"
-            title="row-0"
-            name="row-0"
-            //defaultChecked={this.state.selectedRow === id}
-            checked={this.state.selectedRow === id}
-          />
-          <StructuredListCell>
-            <Icon
-              className="bx--structured-list-svg"
-              icon={iconCheckmarkSolid}
-            />
-          </StructuredListCell>
-        </div>
-
-        <StructuredListCell className="simple-list-row">
-          {row}
+  renderRow = (row, id) => (
+    <StructuredListRow key={id} onClick={() => this.onRowClick(id)}>
+      <div>
+        <StructuredListInput
+          id={`row-${id}`}
+          value="row-0"
+          title="row-0"
+          name="row-0"
+          // defaultChecked={this.state.selectedRow === id}
+          checked={this.state.selectedRow === id}
+        />
+        <StructuredListCell>
+          <Icon className="bx--structured-list-svg" icon={iconCheckmarkSolid} />
         </StructuredListCell>
-      </StructuredListRow>
-    );
-  };
+      </div>
+
+      <StructuredListCell className="simple-list-row">{row}</StructuredListCell>
+    </StructuredListRow>
+  );
 
   render() {
     const data = ['row1', 'row2', 'row3'];
@@ -72,9 +65,7 @@ class SimpleList extends Component {
               </StructuredListHead>
 
               <StructuredListBody>
-                {data.map((row, i) => {
-                  return this.renderRow(row, i);
-                })}
+                {data.map((row, i) => this.renderRow(row, i))}
               </StructuredListBody>
             </StructuredListWrapper>
           </div>

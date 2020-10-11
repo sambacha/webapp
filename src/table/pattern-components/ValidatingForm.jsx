@@ -19,7 +19,7 @@ class ValidatingForm extends Component {
       showDescription: props.showDescription || false,
     };
     if (this.props.data) {
-      let dataToLoad = this.convertData(this.props.data);
+      const dataToLoad = this.convertData(this.props.data);
       this.state = {
         ...this.state,
         name: dataToLoad.Name,
@@ -34,7 +34,7 @@ class ValidatingForm extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.data) {
-      let dataToLoad = this.convertData(nextProps.data);
+      const dataToLoad = this.convertData(nextProps.data);
       if (dataToLoad.Name === 'Enter data below') {
         dataToLoad.Name = '';
       }
@@ -50,7 +50,7 @@ class ValidatingForm extends Component {
   }
 
   convertData = (inputData) => {
-    let output = {};
+    const output = {};
     inputData.forEach((dataRow) => {
       output[dataRow.label] = dataRow.value;
     });
@@ -58,15 +58,15 @@ class ValidatingForm extends Component {
   };
 
   saveData = (event) => {
-    const target = event.target;
-    let fieldName = target.name;
-    let fieldValue = target.value;
+    const { target } = event;
+    const fieldName = target.name;
+    const fieldValue = target.value;
     if (!fieldValue) {
-      this.setState({ [fieldName]: fieldValue, [fieldName + 'Invalid']: true });
+      this.setState({ [fieldName]: fieldValue, [`${fieldName}Invalid`]: true });
     } else {
       this.setState({
         [fieldName]: fieldValue,
-        [fieldName + 'Invalid']: false,
+        [`${fieldName}Invalid`]: false,
       });
     }
   };
@@ -115,7 +115,7 @@ class ValidatingForm extends Component {
   saveForm = (event) => {
     event.preventDefault();
     if (this.checkForm()) {
-      let dataToSave = {
+      const dataToSave = {
         name: this.state.name,
         address: this.state.address,
         city: this.state.city,
@@ -135,7 +135,7 @@ class ValidatingForm extends Component {
   };
 
   render() {
-    const showDescription = this.state.showDescription;
+    const { showDescription } = this.state;
     return (
       <div className="bx--grid pattern-container">
         {showDescription && (

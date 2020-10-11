@@ -26,7 +26,7 @@ class UpdateForm extends Component {
   }
 
   componentDidMount() {
-    let dataToSave = {
+    const dataToSave = {
       name: this.state.name,
       address: this.state.address,
       city: this.state.city,
@@ -38,15 +38,15 @@ class UpdateForm extends Component {
   }
 
   saveData = (event) => {
-    const target = event.target;
-    let fieldName = target.name;
-    let fieldValue = target.value;
+    const { target } = event;
+    const fieldName = target.name;
+    const fieldValue = target.value;
     if (!fieldValue) {
-      this.setState({ [fieldName]: fieldValue, [fieldName + 'Invalid']: true });
+      this.setState({ [fieldName]: fieldValue, [`${fieldName}Invalid`]: true });
     } else {
       this.setState({
         [fieldName]: fieldValue,
-        [fieldName + 'Invalid']: false,
+        [`${fieldName}Invalid`]: false,
       });
     }
   };
@@ -95,7 +95,7 @@ class UpdateForm extends Component {
   saveForm = (event) => {
     event.preventDefault();
     if (this.checkForm()) {
-      let dataToSave = {
+      const dataToSave = {
         name: this.state.name,
         address: this.state.address,
         city: this.state.city,

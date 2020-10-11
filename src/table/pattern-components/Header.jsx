@@ -14,7 +14,7 @@ class Header extends Component {
             role="alert">
             <div className="bx--inline-notification__details">
               <div className="bx--inline-notification__text-wrapper">
-                <p className="bx--inline-notification__title">{''}</p>
+                <p className="bx--inline-notification__title" />
                 <p className="bx--inline-notification__subtitle">{subtitle}</p>
               </div>
             </div>

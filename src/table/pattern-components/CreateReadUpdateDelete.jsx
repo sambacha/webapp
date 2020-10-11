@@ -55,8 +55,8 @@ class CreateReadUpdateDelete extends Component {
   };
 
   addRow = () => {
-    let data = this.state.data.slice();
-    let selectedRow = this.state.data.length;
+    const data = this.state.data.slice();
+    const selectedRow = this.state.data.length;
     data[selectedRow] = [
       { label: 'Name', value: 'Enter data below', type: 'textinput' },
       { label: 'Address', value: '', type: 'textinput' },
@@ -69,7 +69,7 @@ class CreateReadUpdateDelete extends Component {
   };
 
   deleteRow = () => {
-    let data = this.state.data.slice();
+    const data = this.state.data.slice();
     if (data.length > 0) {
       data.splice(this.state.selectedRow, 1);
       this.setState({ data, selectedRow: 0 });
@@ -77,8 +77,8 @@ class CreateReadUpdateDelete extends Component {
   };
 
   updateRow = (newData) => {
-    let data = this.state.data.slice();
-    let selectedRow = this.state.selectedRow;
+    const data = this.state.data.slice();
+    const { selectedRow } = this.state;
     data[selectedRow] = [
       { label: 'Name', value: newData.name, type: 'textinput' },
       { label: 'Address', value: newData.address, type: 'textinput' },
@@ -91,42 +91,35 @@ class CreateReadUpdateDelete extends Component {
   };
 
   toggleAdding = () => {
-    const adding = this.state.adding;
+    const { adding } = this.state;
     this.setState({ adding: !adding });
   };
 
-  renderRow = (row, id) => {
-    return (
-      <StructuredListRow key={id} onClick={() => this.onRowClick(id)}>
-        <div>
-          <StructuredListInput
-            id={`row-${id}`}
-            value="row-0"
-            title="row-0"
-            name="row-0"
-            checked={this.state.selectedRow === id}
-          />
-          <StructuredListCell>
-            <Icon
-              className="bx--structured-list-svg"
-              icon={iconCheckmarkSolid}
-            />
-          </StructuredListCell>
-        </div>
-        {Object.keys(row).map((col) => {
-          return (
-            <StructuredListCell key={col} className="simple-list-row">
-              {row[col]}
-            </StructuredListCell>
-          );
-        })}
-      </StructuredListRow>
-    );
-  };
+  renderRow = (row, id) => (
+    <StructuredListRow key={id} onClick={() => this.onRowClick(id)}>
+      <div>
+        <StructuredListInput
+          id={`row-${id}`}
+          value="row-0"
+          title="row-0"
+          name="row-0"
+          checked={this.state.selectedRow === id}
+        />
+        <StructuredListCell>
+          <Icon className="bx--structured-list-svg" icon={iconCheckmarkSolid} />
+        </StructuredListCell>
+      </div>
+      {Object.keys(row).map((col) => (
+        <StructuredListCell key={col} className="simple-list-row">
+          {row[col]}
+        </StructuredListCell>
+      ))}
+    </StructuredListRow>
+  );
 
   render() {
-    const selectedRow = this.state.selectedRow;
-    const data = this.state.data;
+    const { selectedRow } = this.state;
+    const { data } = this.state;
     const columns = data.length
       ? data[selectedRow].map((item) => item.label)
       : [];
@@ -143,14 +136,12 @@ class CreateReadUpdateDelete extends Component {
               <StructuredListHead>
                 <StructuredListRow head>
                   <StructuredListCell head />
-                  {columns.map((key) => {
-                    return (
-                      <StructuredListCell head key={key}>
-                        {key.charAt(0).toUpperCase() +
-                          key.slice(1).replace(/([A-Z])/g, ' $1')}
-                      </StructuredListCell>
-                    );
-                  })}
+                  {columns.map((key) => (
+                    <StructuredListCell head key={key}>
+                      {key.charAt(0).toUpperCase() +
+                        key.slice(1).replace(/([A-Z])/g, ' $1')}
+                    </StructuredListCell>
+                  ))}
                 </StructuredListRow>
               </StructuredListHead>
               <StructuredListBody>

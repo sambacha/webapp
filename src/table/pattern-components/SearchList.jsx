@@ -39,7 +39,7 @@ class SearchList extends Component {
     this.state = {
       searchKeyword: '',
       initialRowsList: rowsList,
-      rowsList: rowsList,
+      rowsList,
       headers: [
         {
           key: 'name',
@@ -60,14 +60,14 @@ class SearchList extends Component {
   onSearch = (event) => {
     this.setState({ searchKeyword: event.target.value }, () => {
       const subset = this.state.initialRowsList.filter((datarow) =>
-        Object.keys(datarow).reduce((accumulator, field) => {
-          return (
+        Object.keys(datarow).reduce(
+          (accumulator, field) =>
             accumulator ||
             datarow[field]
               .toLocaleLowerCase()
-              .includes(this.state.searchKeyword.toLocaleLowerCase())
-          );
-        }, false)
+              .includes(this.state.searchKeyword.toLocaleLowerCase()),
+          false
+        )
       );
       this.setState({ rowsList: subset });
     });
@@ -89,7 +89,7 @@ class SearchList extends Component {
               placeHolderText="Search"
               onChange={this.onSearch}
               id="search-1"
-              light={true}
+              light
             />
           </div>
         </div>
@@ -107,34 +107,30 @@ class SearchList extends Component {
                   getHeaderProps,
                   getRowProps,
                   getSelectionProps,
-                }) => {
-                  return (
-                    <TableContainer title="">
-                      <Table>
-                        <TableHead>
-                          <TableRow>
-                            {headers.map((header) => (
-                              <TableHeader {...getHeaderProps({ header })}>
-                                {header.header}
-                              </TableHeader>
+                }) => (
+                  <TableContainer title="">
+                    <Table>
+                      <TableHead>
+                        <TableRow>
+                          {headers.map((header) => (
+                            <TableHeader {...getHeaderProps({ header })}>
+                              {header.header}
+                            </TableHeader>
+                          ))}
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {rows.map((row) => (
+                          <TableRow {...getRowProps({ row })}>
+                            {row.cells.map((cell) => (
+                              <TableCell key={cell.id}>{cell.value}</TableCell>
                             ))}
                           </TableRow>
-                        </TableHead>
-                        <TableBody>
-                          {rows.map((row) => (
-                            <TableRow {...getRowProps({ row })}>
-                              {row.cells.map((cell) => (
-                                <TableCell key={cell.id}>
-                                  {cell.value}
-                                </TableCell>
-                              ))}
-                            </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
-                    </TableContainer>
-                  );
-                }}
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                )}
               />
             )}
             {this.state.rowsList.length === 0 && (
