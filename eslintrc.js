@@ -1,10 +1,7 @@
-{
-  "ignorePatterns": ["lambdas/**/*.js", "src/gatsby-theme-carbon/**/*.js"],
-  "extends": ["wesbos", "plugin:mdx/recommended"],
+module.exports = {
+      "extends": ["wesbos", "plugin:mdx/recommended"],
     "overrides": [{
         "files": ["*.md"],
-        
-     
         "rules": {
           "react/prop-types": 1,
           "react/destructuring-assignment": 1,

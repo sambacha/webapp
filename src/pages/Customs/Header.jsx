@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './patterns.scss';
-
+/* eslint-disable */
 class Header extends Component {
   render() {
     const { title, subtitle } = this.props;
