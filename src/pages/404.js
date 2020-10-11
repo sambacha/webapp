@@ -18,6 +18,8 @@
 import React from 'react';
 import { FourOhFour } from 'gatsby-theme-carbon';
 
+/*eslint-disable*/
+
 const links = [
   { href: `https://freighttrust.com`, text: `Homepage` },
   { href: `mailto:support@freight.zendesk.com`, text: `Support` },

@@ -20,7 +20,7 @@
 import React, { Component } from 'react';
 import { Modal, Button, TextInput, Loading } from 'carbon-components-react';
 import { ChevronLeft20, CheckmarkOutline32 } from '@carbon/icons-react';
-import { BannerContainer } from 'gatsby-theme-carbon/templates/HomepageComponents';
+import { BannerContainer } from 'gatsby-theme-carbon/src/templates/HomepageComponents';
 import './styles.scss';
 
 const modalProps = [
