@@ -15,9 +15,18 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
+/*eslint-disable*/
 import React from 'react';
 import { FourOhFour } from 'gatsby-theme-carbon';
-
+<View>
+  <BuffetPlates />
+  <Stack size={16} />
+  <BuffetPlates />
+  <Stack size={16} />
+  <BuffetPlates />
+  <Stack size={16} />
+  <BuffetPlates />
+</View>;
 const links = [
   { href: `https://freighttrust.com`, text: `Homepage` },
   { href: `mailto:support@freight.zendesk.com`, text: `Support` },

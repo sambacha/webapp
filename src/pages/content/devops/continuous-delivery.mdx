@@ -1,39 +1,49 @@
 ---
 title: Continuous Delivery
-description: Continuous Delivery function of the DevOps pipelines for Event-Driven  Architecture.
+description:
+  Continuous Delivery function of the DevOps pipelines for
+  Event-Driven  Architecture.
 ---
 
 <PageDescription>
-DevOps pipelines for solutions  implement the Event-Driven Architecture
+  DevOps pipelines for solutions implement the Event-Driven Architecture
 </PageDescription>
 
 # Overview
 
 <strong>Continuous Delivery</strong> capability
 
-Our [Continuous Integration (CI) approach](#) is one of "zero-infrastructure 
-overhead". To accomplish this goal, we utilize [GitHub Actions](https://github.com/features/actions) to build and push a 
-microservice's associated container images to [Docker Hub](https://hub.docker.com/u/freightnetwork) for public consumption. 
+Our [Continuous Integration (CI) approach](#) is one of "zero-infrastructure
+overhead". To accomplish this goal, we utilize
+[GitHub Actions](https://github.com/features/actions) to build and push a
+microservice's associated container images to
+[Docker Hub](https://hub.docker.com/u/freightnetwork) for public consumption.
 
+Our [GitOps approach](/infrastructure/devops-gitops) focuses on a
+single-repository, environment-per-subdirectory model which can be forked and
+cloned to replicate deployments to other clusters and environments. The
+reference implementation utilizes [Kustomize](https://kustomize.io/) as its
+templating technology to utilize the `app-deploy.yaml` files, provided by each
+individual microservice, as a base and then layer in environment-specific
+configuration and credentials as needed.
 
-Our [GitOps approach](/infrastructure/devops-gitops) focuses on a single-repository, environment-per-subdirectory model which 
-can be forked and cloned to replicate deployments to other clusters and environments. The reference implementation utilizes 
-[Kustomize](https://kustomize.io/) as its templating technology to utilize the `app-deploy.yaml` files, provided by each 
-individual microservice, as a base and then layer in environment-specific configuration and credentials as needed.
-
-Our [Continuous Delivery (CD) approach](#continuous-delivery) focuses on a GitOps-based delivery 
-model, using a GitHub repository as a single source of truth for the deployment, management, and operations of our running 
-application components. In this model, we have the flexibility to use multiple open-source technologies to apply the single 
-source of truth from a given GitHub repository onto a desired cluster environment.
+Our [Continuous Delivery (CD) approach](#continuous-delivery) focuses on a
+GitOps-based delivery model, using a GitHub repository as a single source of
+truth for the deployment, management, and operations of our running application
+components. In this model, we have the flexibility to use multiple open-source
+technologies to apply the single source of truth from a given GitHub repository
+onto a desired cluster environment.
 
 # Continuous delivery
 
-One of the main tools used in this space is a GitOps-focused continuous delivery project named [ArgoCD](https://argoproj.
-github.io/argo-cd/). ArgoCD can monitor GitHub-based projects and apply changes stored in that repository's YAML 
-files to a running Kubernetes-based cluster.
+One of the main tools used in this space is a GitOps-focused continuous delivery
+project named [ArgoCD](https://argoproj. github.io/argo-cd/). ArgoCD can monitor
+GitHub-based projects and apply changes stored in that repository's YAML files
+to a running Kubernetes-based cluster.
 
-Another DevOps tool which provides the opportunity to deployment applications via the GitOps methodology is [Tekton]
-(https://tekton.dev/). The Tekton Pipelines project provides a declarative language for defining and executing both CI and 
-CD-style pipelines, all defined with common Kubernetes-like nomenclature. It even has the capability to kick off pipeline runs 
-based off of GitHub webhooks.
-
+Another DevOps tool which provides the opportunity to deployment applications
+via the GitOps methodology is [Tekton] (https://tekton.dev/). The Tekton
+Pipelines project provides a declarative language for defining and executing
+both CI and CD-style pipelines, all defined with common Kubernetes-like
+nomenclature. It even has the capability to kick off pipeline runs based off of
+GitHub webhooks.
