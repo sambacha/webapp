@@ -1,9 +1,9 @@
 - title: Features
   pages:
-    - path: https://freight.page.link/request-information
+    - path:
 - title: Solutions
   pages:
-    - path: https://freight.page.link/request-information
+    - path: 
 - title: Marketplace
   pages:
     - title: Marketplace Integrations
@@ -11,8 +11,16 @@
 - title: Corporate
   pages:
     - title: Corporate Information
-      path: https://freight.page.link/request-information
+      path:
 - title: Data
   pages:
     - title: Global Container Index
-      path: https://freight.page.link/request-information
+      path: 
+- title: Data
+  pages:
+    - title: Global Container Index
+      path:
+- title: Data
+  pages:
+    - title: Global Container Index
+      path:
