@@ -1,0 +1,75 @@
+---
+title: Auth
+description: Auth Microservice
+---
+
+## Introduction
+
+Authenticate the API user as well as to enable OAuth 2.0 authorization for all OAuth protected APIs. 
+The Spring Authorization Server is used as an OAuth provider; trading channel applications can  delegates authentication and authorization to this component, which verifies credentials using the Auth Microservice.
+
+## Architecture
+
+### Interaction with Identity Provider (Auth Microservice)
+
+
+### Interaction with Resource Server API
+
+
+- When a client wishes to acquire an OAuth token to call a protected API, it calls the OAuth Provider (Authorization microservice) token endpoint with the `username/password` of the user and requests a token with scope `blue`.
+- Authorization microservice will call the Customer microservice to get the credentials and perform the validation.
+- If the `username/password` are valid, `HTTP 200` is returned, along with a JWT (signed using a HS256 shared secret) in the JSON response under `access_token` which contains the auth ID of the user passed in the `user_name` claim.
+- The client uses the JWT in the `Authorization` header as a bearer token to call other Resource Servers that have OAuth protected API (such as the Orders microservice).
+- The service implementing the REST API verifies that the JWT is valid and signed using the shared secret, then extracts the `user_name` claim from the JWT to identify the caller.
+- The JWT is encoded with scope `blue` and the the expiry time in `exp`; once the token is generated, there is no additional interaction between the Resource Server and the OAuth server.
+
+## APIs
+
+| APIs                       | Function                          |
+| -------------------------- | --------------------------------- |
+| `/oauth/authorize`         | Get authorization token           |
+| `/oauth/token`             | post authorization token          |
+
+## Frameworks
+
+<Tabs>
+
+<Tab label="SpringBoot">
+
+
+
+### Project Features
+
+<br/><br/>
+
+- Leverage [Spring Boot](https://projects.spring.io/spring-boot/) framework to build a Microservices application.
+- Uses [Spring Security OAuth](https://spring.io/projects/spring-security-oauth).
+- Return a signed [JWT](https://jwt.io/) Bearer token back to caller for identity propagation and authorization
+- Uses [Docker](https://docs.docker.com/) to package application binary and its dependencies.
+
+<br/><br/>
+
+<Row>
+  <Column colMd={3} colLg={4} noGutterSm>
+  </Column>
+  <Column colMd={3} colLg={4} noGutterSm>
+  </Column>
+  <Column colMd={3} colLg={4} noGutterSm>
+  </Column>
+</Row>
+
+</Tab>
+
+<Tab label="OpenLiberty">
+
+TBD
+
+</Tab>
+
+<Tab label="Quarkus">
+
+TBD
+
+</Tab>
+
+</Tabs>

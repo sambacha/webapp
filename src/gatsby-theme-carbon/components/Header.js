@@ -74,7 +74,7 @@ const Header = ({ children }) => {
         isActive={leftNavIsOpen}
       />
       {/** 
-TODO: Fix NAVIGATION ITEMS HERE 
+
 */}
       <Link className={headerName} to="https://freighttrust.com">
         Freight Trust
@@ -82,19 +82,19 @@ TODO: Fix NAVIGATION ITEMS HERE
 
       <div className={navLists}>
         <div className={navLeftBorder} />
-        <Link className={navLink} to="/solutions">
+        <Link className={navLink} to="/Solutions/products">
           Solutions
         </Link>
-        <Link className={navLink} to="/trading">
+        <Link className={navLink} to="/Network/edi-overview">
           EDI Protocol
         </Link>
-        <Link className={navLink} to="/finance">
+        <Link className={navLink} to="/Finance/trade-finance">
           Trade Finance
         </Link>
-        <Link className={navLink} to="/dashboard">
+        <Link className={navLink} to="/Network/as2">
           Trade Network
         </Link>
-        <Link className={navLink} to="/trading">
+        <Link className={navLink} to="/Corporate/contact">
           Contact
         </Link>
       </div>
